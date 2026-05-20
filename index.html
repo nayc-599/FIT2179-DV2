@@ -23,26 +23,45 @@
 
     * { box-sizing: border-box; }
 
+    #migration-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      display: block;
+      background: #0d1b2a;
+    }
+
     body {
       margin: 0;
       font-family: "DM Sans", system-ui, sans-serif;
       font-size: 1.05rem;
       line-height: 1.6;
       color: var(--text);
-      background: var(--bg);
+      background: #0d1b2a;
+      position: relative;
     }
 
     header, main, footer {
       max-width: 72rem;
       margin: 0 auto;
       padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
     }
 
     header {
       padding-top: 3rem;
       padding-bottom: 2rem;
       border-bottom: 3px solid var(--accent);
-      background: var(--surface);
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+      margin-top: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
 
     header h1 {
@@ -66,8 +85,12 @@
     }
 
     section {
-      padding: var(--gap) 0;
-      border-bottom: 1px solid #e0e0e0;
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      margin: 2rem auto;
+      border-bottom: none;
     }
 
     section h2 {
@@ -123,10 +146,14 @@
     }
 
     footer {
-      padding: 2rem 1.5rem 3rem;
+      padding: 2rem;
+      margin: 2rem auto 3rem;
       font-size: 0.9rem;
       color: var(--muted);
-      max-width: var(--max-text);
+      max-width: 72rem;
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
     }
 
     footer h3 {
@@ -144,6 +171,7 @@
   </style>
 </head>
 <body>
+  <canvas id="migration-canvas" aria-hidden="true"></canvas>
   <header>
     <h1>Who Comes, Who Goes: Australia's Migration Story</h1>
     <p class="subtitle">Understanding who arrives, who leaves, and what it means for the economy</p>
@@ -171,7 +199,7 @@
     <section id="section-3">
       <h2>3. How Have Patterns Changed Over Time?</h2>
       <p class="narrative">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. The heatmap below shows every top country dipping together in 2020–21 — a fingerprint of the pandemic.</p>
-      <p class="insight">In the last decade, China and India have traded the top ranks, while the COVID year hit every country in the top 10 at once.</p>
+      <p class="insight">Follow the coloured bands — when they cross, countries swap rank. The COVID year (2020–21) pulled every band toward the bottom at once.</p>
       <div class="chart-wrap chart-full" id="chart4"></div>
       <div class="chart-wrap chart-full" id="chart5"></div>
     </section>
@@ -214,6 +242,7 @@
     <p><strong>Course:</strong> FIT2179 Data Visualisation 2, Monash University (Clayton)</p>
   </footer>
 
+  <script src="scripts/canvas-bg.js"></script>
   <script>
     const embedOpts = { actions: false, renderer: "svg" };
 

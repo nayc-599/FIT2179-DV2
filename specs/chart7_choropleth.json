@@ -7,16 +7,18 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
+  "width": 700,
   "height": 420,
   "projection": {
-    "type": "equalEarth",
-    "center": [134, -28],
-    "scale": 900
+    "type": "conicEqualArea",
+    "parallels": [-18, -36],
+    "rotate": [-134, 0],
+    "center": [0, -27],
+    "scale": 750
   },
   "data": {
     "url": "data/australian-states.json",
-    "format": {"type": "json", "feature": "features"}
+    "format": {"type": "json", "property": "features"}
   },
   "transform": [
     {
@@ -24,24 +26,60 @@
       "from": {
         "data": {"url": "data/chart7_choropleth.csv"},
         "key": "state_name",
-        "fields": ["departures", "state"]
+        "fields": ["departures", "state", "longitude", "latitude"]
       }
     }
   ],
-  "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.8},
-  "encoding": {
-    "color": {
-      "field": "departures",
-      "type": "quantitative",
-      "title": "Total departures",
-      "scale": {"scheme": "blues"},
-      "legend": {"format": ",.0f"}
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "color": {
+          "field": "departures",
+          "type": "quantitative",
+          "title": "Total departures",
+          "scale": {
+            "type": "log",
+            "scheme": "blues"
+          },
+          "legend": {
+            "format": ",.0f",
+            "titleFontSize": 11,
+            "labelFontSize": 10
+          }
+        },
+        "tooltip": [
+          {"field": "properties.STATE_NAME", "title": "State"},
+          {"field": "departures", "title": "Total departures", "format": ","}
+        ]
+      }
     },
-    "tooltip": [
-      {"field": "properties.STATE_NAME", "title": "State"},
-      {"field": "state", "title": "Code"},
-      {"field": "departures", "title": "Total departures", "format": ","}
-    ]
-  },
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "fill": "#333",
+        "align": "center",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "text": {"field": "state"},
+        "tooltip": [
+          {"field": "properties.STATE_NAME", "title": "State"},
+          {"field": "departures", "title": "Total departures", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "DM Sans"
+  }
 }

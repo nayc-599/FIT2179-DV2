@@ -7,13 +7,18 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
-  "height": 440,
+  "width": 700,
+  "height": 400,
   "projection": {"type": "naturalEarth1"},
   "params": [
     {
-      "name": "flowHighlight",
-      "select": {"type": "point", "fields": ["display_country"], "on": "mouseover", "clear": "mouseout"}
+      "name": "chart9_flowHighlight",
+      "select": {
+        "type": "point",
+        "fields": ["display_country"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
     }
   ],
   "layer": [
@@ -44,13 +49,17 @@
         "color": {
           "field": "continent",
           "type": "nominal",
+          "legend": {"orient": "bottom", "title": "Continent"},
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
             "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
           }
         },
         "opacity": {
-          "condition": {"param": "flowHighlight", "value": 1},
+          "condition": [
+            {"param": "chart9_flowHighlight", "value": 1},
+            {"test": "chart9_flowHighlight", "value": 0.15}
+          ],
           "value": 0.45
         },
         "tooltip": [
@@ -66,7 +75,22 @@
       "encoding": {
         "latitude": {"field": "lat"},
         "longitude": {"field": "lon"},
-        "color": {"field": "continent", "type": "nominal", "legend": null},
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
+            "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+          }
+        },
+        "opacity": {
+          "condition": [
+            {"param": "chart9_flowHighlight", "value": 1},
+            {"test": "chart9_flowHighlight", "value": 0.15}
+          ],
+          "value": 0.45
+        },
         "tooltip": [{"field": "display_country", "title": "Origin"}]
       }
     },

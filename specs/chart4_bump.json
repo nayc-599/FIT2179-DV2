@@ -2,59 +2,162 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Ranking of top departure countries, 2014–15 to 2024–25",
-    "subtitle": "Rank 1 = most departures. Hover a country to highlight its path.",
+    "subtitle": "Rank 1 = most departures (top). Thick bands show how each country's rank shifted — hover to focus.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
   "width": "container",
-  "height": 400,
+  "height": 480,
   "data": {"url": "data/chart4_bump.csv"},
   "params": [
     {
-      "name": "countryHighlight",
-      "select": {"type": "point", "fields": ["display_country"], "on": "mouseover", "clear": "mouseout"}
+      "name": "c4_hover",
+      "select": {
+        "type": "point",
+        "fields": ["display_country"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
     }
   ],
-  "mark": {"type": "line", "point": {"filled": true, "size": 60}},
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Financial year",
-      "sort": null,
-      "axis": {"labelAngle": -45}
-    },
-    "y": {
-      "field": "rank",
-      "type": "ordinal",
-      "title": "Rank",
-      "sort": "ascending",
-      "scale": {"reverse": true}
-    },
-    "color": {
-      "field": "display_country",
-      "type": "nominal",
-      "legend": {"orient": "right", "columns": 1},
-      "scale": {
-        "scheme": "tableau10",
-        "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"]
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "strokeWidth": 36,
+        "stroke": "transparent",
+        "tooltip": null
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "sort": null},
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false}
+        },
+        "detail": {"field": "display_country"},
+        "color": {"value": "transparent", "legend": null}
       }
     },
-    "opacity": {
-      "condition": {"param": "countryHighlight", "value": 1},
-      "value": 0.25
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "strokeWidth": 22,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": null,
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "title": "Rank",
+          "scale": {
+            "reverse": true,
+            "domain": [0.5, 10.5],
+            "nice": false
+          },
+          "axis": {"tickMinStep": 1, "format": "d"}
+        },
+        "color": {
+          "field": "display_country",
+          "type": "nominal",
+          "legend": {"orient": "right", "columns": 1, "title": "Country"},
+          "scale": {
+            "scheme": "tableau10",
+            "domain": [
+              "China",
+              "UK",
+              "New Zealand",
+              "India",
+              "USA",
+              "Korea South",
+              "Malaysia",
+              "Japan",
+              "Indonesia",
+              "Philippines"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "c4_hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0.7
+        },
+        "order": {"field": "rank", "type": "quantitative", "sort": "descending"},
+        "detail": {"field": "display_country"},
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "year", "title": "Year"},
+          {"field": "rank", "title": "Rank"},
+          {"field": "departures", "title": "Departures", "format": ","}
+        ]
+      }
     },
-    "strokeWidth": {
-      "condition": {"param": "countryHighlight", "value": 3.5},
-      "value": 1.5
-    },
-    "tooltip": [
-      {"field": "display_country", "title": "Country"},
-      {"field": "year", "title": "Year"},
-      {"field": "rank", "title": "Rank"},
-      {"field": "departures", "title": "Departures", "format": ","}
-    ]
-  },
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+    {
+      "transform": [{"filter": {"field": "year", "equal": "2024-25"}}],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "sort": null},
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false}
+        },
+        "text": {"field": "display_country"},
+        "color": {
+          "field": "display_country",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "scheme": "tableau10",
+            "domain": [
+              "China",
+              "UK",
+              "New Zealand",
+              "India",
+              "USA",
+              "Korea South",
+              "Malaysia",
+              "Japan",
+              "Indonesia",
+              "Philippines"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "c4_hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0.9
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
 }

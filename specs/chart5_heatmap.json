@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Departures heatmap by country and year",
-    "subtitle": "Use the slider to highlight a financial year. The COVID-19 dip is visible in 2020–21.",
+    "subtitle": "Use the dropdown to highlight a financial year. The COVID-19 dip is visible in 2020–21.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
@@ -12,7 +12,7 @@
   "data": {"url": "data/chart5_heatmap.csv"},
   "params": [
     {
-      "name": "yearHighlight",
+      "name": "chart5_heatHighlight",
       "value": "2020-21",
       "bind": {
         "input": "select",
@@ -34,7 +34,7 @@
           "field": "display_country",
           "type": "nominal",
           "title": null,
-          "sort": {"field": "departures", "op": "sum", "order": "descending"}
+          "sort": "-departures"
         },
         "x": {
           "field": "year",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "transform": [{"filter": {"equal": {"field": "year"}, "param": "yearHighlight"}}],
+      "transform": [{"filter": {"equal": {"field": "year"}, "param": "chart5_heatHighlight"}}],
       "mark": {"type": "rect", "fill": null, "stroke": "#e74c3c", "strokeWidth": 2.5},
       "encoding": {
         "y": {"field": "display_country", "type": "nominal"},

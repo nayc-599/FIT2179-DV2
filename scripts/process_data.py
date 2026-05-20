@@ -340,8 +340,20 @@ def main() -> None:
         "NT": "Northern Territory",
         "ACT": "Australian Capital Territory",
     }
+    state_coords = {
+        "ACT": (149.13, -35.47),
+        "NSW": (146.50, -32.00),
+        "NT": (133.00, -19.50),
+        "QLD": (144.50, -22.00),
+        "SA": (135.50, -30.00),
+        "TAS": (146.50, -42.00),
+        "VIC": (144.50, -37.00),
+        "WA": (121.00, -25.50),
+    }
     choropleth = state_df.groupby("state", as_index=False)["departures"].sum()
     choropleth["state_name"] = choropleth["state"].map(state_names)
+    choropleth["longitude"] = choropleth["state"].map(lambda s: state_coords[s][0])
+    choropleth["latitude"] = choropleth["state"].map(lambda s: state_coords[s][1])
     choropleth.to_csv(DATA / "chart7_choropleth.csv", index=False)
 
     # Chart 9: flow map

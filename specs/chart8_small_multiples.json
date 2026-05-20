@@ -7,7 +7,6 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
   "height": 280,
   "data": {
     "url": "data/chart8_state_timeseries.csv",
@@ -22,6 +21,7 @@
     "header": {"labelFontSize": 13, "labelFontWeight": "bold", "labelColor": "#1a5276"}
   },
   "spec": {
+    "width": 220,
     "layer": [
       {
         "mark": {"type": "line", "point": true, "color": "#1a5276", "strokeWidth": 2},
