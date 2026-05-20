@@ -10,17 +10,6 @@
   "width": 700,
   "height": 400,
   "projection": {"type": "naturalEarth1"},
-  "params": [
-    {
-      "name": "chart9_flowHighlight",
-      "select": {
-        "type": "point",
-        "fields": ["display_country"],
-        "on": "mouseover",
-        "clear": "mouseout"
-      }
-    }
-  ],
   "layer": [
     {
       "data": {
@@ -34,6 +23,17 @@
     },
     {
       "data": {"url": "data/chart9_flow.csv"},
+      "params": [
+        {
+          "name": "chart9_flowHoverUnique",
+          "select": {
+            "type": "point",
+            "fields": ["display_country"],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
       "mark": {"type": "rule", "strokeCap": "round"},
       "encoding": {
         "latitude": {"field": "lat"},
@@ -57,10 +57,10 @@
         },
         "opacity": {
           "condition": [
-            {"param": "chart9_flowHighlight", "value": 1},
-            {"test": "chart9_flowHighlight", "value": 0.15}
+            {"param": "chart9_flowHoverUnique", "empty": false, "value": 1},
+            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.45}
           ],
-          "value": 0.45
+          "value": 0.15
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -86,10 +86,10 @@
         },
         "opacity": {
           "condition": [
-            {"param": "chart9_flowHighlight", "value": 1},
-            {"test": "chart9_flowHighlight", "value": 0.15}
+            {"param": "chart9_flowHoverUnique", "empty": false, "value": 1},
+            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.45}
           ],
-          "value": 0.45
+          "value": 0.15
         },
         "tooltip": [{"field": "display_country", "title": "Origin"}]
       }

@@ -10,19 +10,19 @@
   "width": "container",
   "height": 480,
   "data": {"url": "data/chart4_bump.csv"},
-  "params": [
-    {
-      "name": "c4_hover",
-      "select": {
-        "type": "point",
-        "fields": ["display_country"],
-        "on": "mouseover",
-        "clear": "mouseout"
-      }
-    }
-  ],
   "layer": [
     {
+      "params": [
+        {
+          "name": "c4_hover",
+          "select": {
+            "type": "point",
+            "fields": ["display_country"],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
       "mark": {
         "type": "line",
         "interpolate": "monotone",
@@ -38,7 +38,7 @@
           "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false}
         },
         "detail": {"field": "display_country"},
-        "color": {"value": "transparent", "legend": null}
+        "color": {"value": "transparent"}
       }
     },
     {
@@ -61,11 +61,7 @@
           "field": "rank",
           "type": "quantitative",
           "title": "Rank",
-          "scale": {
-            "reverse": true,
-            "domain": [0.5, 10.5],
-            "nice": false
-          },
+          "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false},
           "axis": {"tickMinStep": 1, "format": "d"}
         },
         "color": {
@@ -74,29 +70,13 @@
           "legend": {"orient": "right", "columns": 1, "title": "Country"},
           "scale": {
             "scheme": "tableau10",
-            "domain": [
-              "China",
-              "UK",
-              "New Zealand",
-              "India",
-              "USA",
-              "Korea South",
-              "Malaysia",
-              "Japan",
-              "Indonesia",
-              "Philippines"
-            ]
+            "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"]
           }
         },
         "opacity": {
-          "condition": {
-            "param": "c4_hover",
-            "empty": false,
-            "value": 1
-          },
+          "condition": {"param": "c4_hover", "empty": false, "value": 1},
           "value": 0.7
         },
-        "order": {"field": "rank", "type": "quantitative", "sort": "descending"},
         "detail": {"field": "display_country"},
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -127,29 +107,13 @@
         "color": {
           "field": "display_country",
           "type": "nominal",
-          "legend": null,
           "scale": {
             "scheme": "tableau10",
-            "domain": [
-              "China",
-              "UK",
-              "New Zealand",
-              "India",
-              "USA",
-              "Korea South",
-              "Malaysia",
-              "Japan",
-              "Indonesia",
-              "Philippines"
-            ]
+            "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Phillips"]
           }
         },
         "opacity": {
-          "condition": {
-            "param": "c4_hover",
-            "empty": false,
-            "value": 1
-          },
+          "condition": {"param": "c4_hover", "empty": false, "value": 1},
           "value": 0.9
         }
       }
