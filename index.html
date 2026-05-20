@@ -13,7 +13,7 @@
   <style>
     :root {
       --bg: #f8f9fa;
-      --surface:rgba(255, 255, 255);
+      --surface: rgba(255, 255, 255, 0.95);
       --text: #1a1a1a;
       --muted: #555;
       --accent: #1a5276;
@@ -130,8 +130,23 @@
     .chart-medium {
       width: 100%;
       max-width: 36rem;
-      margin-left: 0;
+      margin-left: auto;
       margin-right: auto;
+    }
+
+    /* centre the waffle chart inside its container */
+    #chart3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chart-caption {
+      font-size: 0.82rem;
+      color: #777;
+      margin: 0.25rem 0 0.75rem;
+      font-style: italic;
+      max-width: 34rem;
     }
 
     .row-2 {
@@ -143,6 +158,29 @@
 
     @media (max-width: 900px) {
       .row-2 { grid-template-columns: 1fr; }
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .two-col-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 0;
+    }
+
+    .two-col-chart .chart-wrap {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 700px) {
+      .two-col { grid-template-columns: 1fr; }
     }
 
     footer {
@@ -168,35 +206,11 @@
     }
 
     footer a { color: var(--accent); }
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .two-col-text {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      min-width: 0;
-    }
-
-    .two-col-chart .chart-wrap {
-      width: 100%;
-      height: 100%;
-    }
-
-    @media (max-width: 700px) {
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-    }
-
   </style>
 </head>
 <body>
   <canvas id="migration-canvas" aria-hidden="true"></canvas>
+
   <header>
     <h1>Who Comes, Who Goes: Australia's Migration Story</h1>
     <p class="subtitle">Understanding who arrives, who leaves, and what it means for the economy</p>
@@ -219,6 +233,7 @@
         <div class="chart-wrap" id="chart2"></div>
         <div class="chart-wrap" id="chart3"></div>
       </div>
+      <p class="chart-caption">Each flag represents the country with the highest total departures within that continent, based on ABS data 2004–05 to 2024–25.</p>
     </section>
 
     <section id="section-3">
@@ -250,7 +265,6 @@
       <div class="chart-wrap chart-full" id="chart8"></div>
     </section>
 
-
     <section id="section-6">
       <h2>6. The Economic Angle</h2>
       <p class="narrative">Countries that send more emigrants from Australia are not isolated from Australia's economy. Personal remittances received by Australia have climbed over two decades. The flow map shows where leavers were born; the bubble chart links departure volumes to an estimated share of remittances and recent net migration.</p>
@@ -267,16 +281,18 @@
       <li><a href="https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=AU" target="_blank" rel="noopener">World Bank — Personal remittances, received (current US$), Australia</a></li>
       <li>Australian state boundaries: <a href="https://github.com/tonywr71/GeoJson-Data" target="_blank" rel="noopener">GeoJson-Data (australian-states.json)</a></li>
       <li>World map: <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas countries-110m</a></li>
+      <li>Flag icons: <a href="https://flagcdn.com" target="_blank" rel="noopener">flagcdn.com</a></li>
     </ul>
     <p><strong>Author:</strong> [Your Name]</p>
     <p><strong>Date:</strong> 2026</p>
-    <p><strong>AI acknowledgement:</strong> ChatGPT/Claude used for code generation and grammar checking.</p>
+    <p><strong>AI acknowledgement:</strong> Claude and ChatGPT used for code generation and grammar checking.</p>
     <p><strong>Course:</strong> FIT2179 Data Visualisation 2, Monash University (Clayton)</p>
   </footer>
 
   <script src="scripts/canvas-bg.js"></script>
   <script>
-    const embedOpts = { actions: false, renderer: "svg" };
+    /* Use canvas renderer — required for image marks (waffle chart flags) */
+    const embedOpts = { actions: false, renderer: "canvas" };
 
     const charts = [
       ["#chart1", "specs/chart1_dual_axis.json"],

@@ -1,11 +1,11 @@
-country,display_country,departures
-China,China,592460
-"UK, CIs & IOM",UK,396040
-New Zealand,New Zealand,331410
-India,India,260650
-USA,USA,169720
-"Korea, South",Korea South,169190
-Malaysia,Malaysia,139660
-Japan,Japan,109180
-Indonesia,Indonesia,99540
-Philippines,Philippines,76000
+country,display_country,departures,flag_url
+China,China,592460,flags/china.png
+"UK, CIs & IOM",UK,396040,flags/uk.png
+New Zealand,New Zealand,331410,flags/newzealand.png
+India,India,260650,flags/india.png
+USA,USA,169720,flags/usa.png
+"Korea, South",Korea South,169190,flags/south_korea.png
+Malaysia,Malaysia,139660,flags/malaysia.png
+Japan,Japan,109180,flags/japan.png
+Indonesia,Indonesia,99540,flags/indonesia.png
+Philippines,Philippines,76000,flags/philippines.png

@@ -10,34 +10,68 @@
   "width": "container",
   "height": 360,
   "data": {"url": "data/chart2_top10_totals.csv"},
-  "mark": {"type": "bar"},
-  "encoding": {
-    "y": {
-      "field": "display_country",
-      "type": "nominal",
-      "sort": "-x",
-      "title": null,
-      "axis": {"labelLimit": 120}
-    },
-    "x": {
-      "field": "departures",
-      "type": "quantitative",
-      "title": "Total departures",
-      "axis": {"format": ",.0f"}
-    },
-    "color": {
-      "field": "display_country",
-      "type": "nominal",
-      "legend": null,
-      "scale": {
-        "scheme": "tableau10",
-        "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"]
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "y": {
+          "field": "display_country",
+          "type": "nominal",
+          "sort": "-x",
+          "title": null,
+          "axis": {"labelLimit": 120}
+        },
+        "x": {
+          "field": "departures",
+          "type": "quantitative",
+          "title": "Total departures",
+          "axis": {"format": ",.0f"}
+        },
+        "color": {
+          "field": "display_country",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "scheme": "tableau10",
+            "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"]
+          }
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Total departures", "format": ","}
+        ]
       }
     },
-    "tooltip": [
-      {"field": "display_country", "title": "Country"},
-      {"field": "departures", "title": "Total departures", "format": ","}
-    ]
-  },
+    {
+      "mark": {
+        "type": "image",
+        "width": 24,
+        "height": 16,
+        "align": "left",
+        "baseline": "middle",
+        "dx": 6
+      },
+      "encoding": {
+        "y": {
+          "field": "display_country",
+          "type": "nominal",
+          "sort": "-x",
+          "title": null
+        },
+        "x": {
+          "field": "departures",
+          "type": "quantitative"
+        },
+        "url": {
+          "field": "flag_url",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Total departures", "format": ","}
+        ]
+      }
+    }
+  ],
   "config": {"view": {"stroke": null}, "font": "DM Sans"}
 }

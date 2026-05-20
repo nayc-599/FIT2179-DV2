@@ -69,8 +69,19 @@
           "type": "nominal",
           "legend": {"orient": "right", "columns": 1, "title": "Country"},
           "scale": {
-            "scheme": "tableau10",
-            "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"]
+            "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
+            "range": [
+              "#DE2910",
+              "#012169",
+              "#00247D",
+              "#FF9933",
+              "#B22234",
+              "#003478",
+              "#FFD700",
+              "#BC002D",
+              "#FF6B6B",
+              "#FCD116"
+            ]
           }
         },
         "opacity": {
@@ -89,11 +100,10 @@
     {
       "transform": [{"filter": {"field": "year", "equal": "2024-25"}}],
       "mark": {
-        "type": "text",
+        "type": "image",
+        "width": 28,
+        "height": 20,
         "align": "left",
-        "dx": 10,
-        "fontSize": 11,
-        "fontWeight": 600,
         "baseline": "middle"
       },
       "encoding": {
@@ -103,19 +113,20 @@
           "type": "quantitative",
           "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false}
         },
-        "text": {"field": "display_country"},
-        "color": {
-          "field": "display_country",
-          "type": "nominal",
-          "scale": {
-            "scheme": "tableau10",
-            "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Phillips"]
-          }
+        "url": {
+          "field": "flag_url",
+          "type": "nominal"
         },
         "opacity": {
           "condition": {"param": "c4_hover", "empty": false, "value": 1},
           "value": 0.9
-        }
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "year", "title": "Year"},
+          {"field": "rank", "title": "Rank"},
+          {"field": "departures", "title": "Departures", "format": ","}
+        ]
       }
     }
   ],
