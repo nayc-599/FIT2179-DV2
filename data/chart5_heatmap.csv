@@ -1,0 +1,211 @@
+sacc_code,country,year,departures,display_country
+1201,New Zealand,2004-05,15160,New Zealand
+2100,"UK, CIs & IOM",2004-05,17400,UK
+5202,Indonesia,2004-05,5930,Indonesia
+5203,Malaysia,2004-05,5140,Malaysia
+5204,Philippines,2004-05,2580,Philippines
+6101,China,2004-05,9780,China
+6201,Japan,2004-05,5400,Japan
+6203,"Korea, South",2004-05,4610,Korea South
+7103,India,2004-05,4730,India
+8104,USA,2004-05,7380,USA
+1201,New Zealand,2005-06,14680,New Zealand
+2100,"UK, CIs & IOM",2005-06,17840,UK
+5202,Indonesia,2005-06,6350,Indonesia
+5203,Malaysia,2005-06,5320,Malaysia
+5204,Philippines,2005-06,3490,Philippines
+6101,China,2005-06,10400,China
+6201,Japan,2005-06,5890,Japan
+6203,"Korea, South",2005-06,5180,Korea South
+7103,India,2005-06,5940,India
+8104,USA,2005-06,7730,USA
+1201,New Zealand,2006-07,14200,New Zealand
+2100,"UK, CIs & IOM",2006-07,16930,UK
+5202,Indonesia,2006-07,5430,Indonesia
+5203,Malaysia,2006-07,5400,Malaysia
+5204,Philippines,2006-07,3790,Philippines
+6101,China,2006-07,11660,China
+6201,Japan,2006-07,5720,Japan
+6203,"Korea, South",2006-07,6050,Korea South
+7103,India,2006-07,6590,India
+8104,USA,2006-07,6980,USA
+1201,New Zealand,2007-08,14340,New Zealand
+2100,"UK, CIs & IOM",2007-08,19920,UK
+5202,Indonesia,2007-08,4690,Indonesia
+5203,Malaysia,2007-08,5300,Malaysia
+5204,Philippines,2007-08,3210,Philippines
+6101,China,2007-08,12860,China
+6201,Japan,2007-08,6730,Japan
+6203,"Korea, South",2007-08,7430,Korea South
+7103,India,2007-08,7030,India
+8104,USA,2007-08,10460,USA
+1201,New Zealand,2008-09,14940,New Zealand
+2100,"UK, CIs & IOM",2008-09,18880,UK
+5202,Indonesia,2008-09,4580,Indonesia
+5203,Malaysia,2008-09,6100,Malaysia
+5204,Philippines,2008-09,3450,Philippines
+6101,China,2008-09,14950,China
+6201,Japan,2008-09,5610,Japan
+6203,"Korea, South",2008-09,8790,Korea South
+7103,India,2008-09,8390,India
+8104,USA,2008-09,11350,USA
+1201,New Zealand,2009-10,15810,New Zealand
+2100,"UK, CIs & IOM",2009-10,21240,UK
+5202,Indonesia,2009-10,4990,Indonesia
+5203,Malaysia,2009-10,6860,Malaysia
+5204,Philippines,2009-10,3490,Philippines
+6101,China,2009-10,20680,China
+6201,Japan,2009-10,5800,Japan
+6203,"Korea, South",2009-10,11590,Korea South
+7103,India,2009-10,12550,India
+8104,USA,2009-10,9340,USA
+1201,New Zealand,2010-11,14390,New Zealand
+2100,"UK, CIs & IOM",2010-11,20920,UK
+5202,Indonesia,2010-11,4980,Indonesia
+5203,Malaysia,2010-11,7310,Malaysia
+5204,Philippines,2010-11,3620,Philippines
+6101,China,2010-11,23520,China
+6201,Japan,2010-11,5000,Japan
+6203,"Korea, South",2010-11,11740,Korea South
+7103,India,2010-11,14530,India
+8104,USA,2010-11,8300,USA
+1201,New Zealand,2011-12,13690,New Zealand
+2100,"UK, CIs & IOM",2011-12,19180,UK
+5202,Indonesia,2011-12,4750,Indonesia
+5203,Malaysia,2011-12,6900,Malaysia
+5204,Philippines,2011-12,2370,Philippines
+6101,China,2011-12,24640,China
+6201,Japan,2011-12,4590,Japan
+6203,"Korea, South",2011-12,10430,Korea South
+7103,India,2011-12,11640,India
+8104,USA,2011-12,8450,USA
+1201,New Zealand,2012-13,16770,New Zealand
+2100,"UK, CIs & IOM",2012-13,21230,UK
+5202,Indonesia,2012-13,5210,Indonesia
+5203,Malaysia,2012-13,7500,Malaysia
+5204,Philippines,2012-13,2800,Philippines
+6101,China,2012-13,23980,China
+6201,Japan,2012-13,4900,Japan
+6203,"Korea, South",2012-13,10040,Korea South
+7103,India,2012-13,11610,India
+8104,USA,2012-13,10110,USA
+1201,New Zealand,2013-14,21200,New Zealand
+2100,"UK, CIs & IOM",2013-14,24930,UK
+5202,Indonesia,2013-14,5620,Indonesia
+5203,Malaysia,2013-14,8050,Malaysia
+5204,Philippines,2013-14,3060,Philippines
+6101,China,2013-14,22330,China
+6201,Japan,2013-14,4820,Japan
+6203,"Korea, South",2013-14,10480,Korea South
+7103,India,2013-14,12180,India
+8104,USA,2013-14,9560,USA
+1201,New Zealand,2014-15,22370,New Zealand
+2100,"UK, CIs & IOM",2014-15,24520,UK
+5202,Indonesia,2014-15,4860,Indonesia
+5203,Malaysia,2014-15,7220,Malaysia
+5204,Philippines,2014-15,3350,Philippines
+6101,China,2014-15,23220,China
+6201,Japan,2014-15,5070,Japan
+6203,"Korea, South",2014-15,9400,Korea South
+7103,India,2014-15,11410,India
+8104,USA,2014-15,9170,USA
+1201,New Zealand,2015-16,22740,New Zealand
+2100,"UK, CIs & IOM",2015-16,23640,UK
+5202,Indonesia,2015-16,4500,Indonesia
+5203,Malaysia,2015-16,7160,Malaysia
+5204,Philippines,2015-16,3430,Philippines
+6101,China,2015-16,24710,China
+6201,Japan,2015-16,5350,Japan
+6203,"Korea, South",2015-16,9030,Korea South
+7103,India,2015-16,11160,India
+8104,USA,2015-16,9920,USA
+1201,New Zealand,2016-17,20820,New Zealand
+2100,"UK, CIs & IOM",2016-17,22620,UK
+5202,Indonesia,2016-17,4470,Indonesia
+5203,Malaysia,2016-17,7960,Malaysia
+5204,Philippines,2016-17,3530,Philippines
+6101,China,2016-17,27740,China
+6201,Japan,2016-17,5450,Japan
+6203,"Korea, South",2016-17,8890,Korea South
+7103,India,2016-17,10580,India
+8104,USA,2016-17,9130,USA
+1201,New Zealand,2017-18,18270,New Zealand
+2100,"UK, CIs & IOM",2017-18,21920,UK
+5202,Indonesia,2017-18,4450,Indonesia
+5203,Malaysia,2017-18,9460,Malaysia
+5204,Philippines,2017-18,3750,Philippines
+6101,China,2017-18,37710,China
+6201,Japan,2017-18,6350,Japan
+6203,"Korea, South",2017-18,9420,Korea South
+7103,India,2017-18,11580,India
+8104,USA,2017-18,10020,USA
+1201,New Zealand,2018-19,17630,New Zealand
+2100,"UK, CIs & IOM",2018-19,21860,UK
+5202,Indonesia,2018-19,4870,Indonesia
+5203,Malaysia,2018-19,10790,Malaysia
+5204,Philippines,2018-19,4380,Philippines
+6101,China,2018-19,51640,China
+6201,Japan,2018-19,6270,Japan
+6203,"Korea, South",2018-19,10190,Korea South
+7103,India,2018-19,13160,India
+8104,USA,2018-19,10040,USA
+1201,New Zealand,2019-20,16010,New Zealand
+2100,"UK, CIs & IOM",2019-20,17000,UK
+5202,Indonesia,2019-20,5120,Indonesia
+5203,Malaysia,2019-20,9030,Malaysia
+5204,Philippines,2019-20,4110,Philippines
+6101,China,2019-20,78740,China
+6201,Japan,2019-20,6380,Japan
+6203,"Korea, South",2019-20,10910,Korea South
+7103,India,2019-20,19020,India
+8104,USA,2019-20,8500,USA
+1201,New Zealand,2020-21,14150,New Zealand
+2100,"UK, CIs & IOM",2020-21,10810,UK
+5202,Indonesia,2020-21,4030,Indonesia
+5203,Malaysia,2020-21,6430,Malaysia
+5204,Philippines,2020-21,2830,Philippines
+6101,China,2020-21,59540,China
+6201,Japan,2020-21,3060,Japan
+6203,"Korea, South",2020-21,5850,Korea South
+7103,India,2020-21,21830,India
+8104,USA,2020-21,4660,USA
+1201,New Zealand,2021-22,10900,New Zealand
+2100,"UK, CIs & IOM",2021-22,14590,UK
+5202,Indonesia,2021-22,3330,Indonesia
+5203,Malaysia,2021-22,4430,Malaysia
+5204,Philippines,2021-22,4400,Philippines
+6101,China,2021-22,29180,China
+6201,Japan,2021-22,2640,Japan
+6203,"Korea, South",2021-22,4310,Korea South
+7103,India,2021-22,20720,India
+8104,USA,2021-22,5260,USA
+1201,New Zealand,2022-23,11920,New Zealand
+2100,"UK, CIs & IOM",2022-23,12070,UK
+5202,Indonesia,2022-23,2870,Indonesia
+5203,Malaysia,2022-23,4370,Malaysia
+5204,Philippines,2022-23,3790,Philippines
+6101,China,2022-23,22650,China
+6201,Japan,2022-23,2670,Japan
+6203,"Korea, South",2022-23,3450,Korea South
+7103,India,2022-23,13080,India
+8104,USA,2022-23,4340,USA
+1201,New Zealand,2023-24,10690,New Zealand
+2100,"UK, CIs & IOM",2023-24,13990,UK
+5202,Indonesia,2023-24,3660,Indonesia
+5203,Malaysia,2023-24,4310,Malaysia
+5204,Philippines,2023-24,4450,Philippines
+6101,China,2023-24,27830,China
+6201,Japan,2023-24,4980,Japan
+6203,"Korea, South",2023-24,5290,Korea South
+7103,India,2023-24,15790,India
+8104,USA,2023-24,4670,USA
+1201,New Zealand,2024-25,10730,New Zealand
+2100,"UK, CIs & IOM",2024-25,14550,UK
+5202,Indonesia,2024-25,4850,Indonesia
+5203,Malaysia,2024-25,4620,Malaysia
+5204,Philippines,2024-25,6120,Philippines
+6101,China,2024-25,34700,China
+6201,Japan,2024-25,6500,Japan
+6203,"Korea, South",2024-25,6110,Korea South
+7103,India,2024-25,17130,India
+8104,USA,2024-25,4350,USA

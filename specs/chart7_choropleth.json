@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total emigrant departures by state and territory",
+    "subtitle": "Sum of all countries of birth, 2004–05 to 2024–25",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 420,
+  "projection": {
+    "type": "equalEarth",
+    "center": [134, -28],
+    "scale": 900
+  },
+  "data": {
+    "url": "data/australian-states.json",
+    "format": {"type": "json", "feature": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.STATE_NAME",
+      "from": {
+        "data": {"url": "data/chart7_choropleth.csv"},
+        "key": "state_name",
+        "fields": ["departures", "state"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.8},
+  "encoding": {
+    "color": {
+      "field": "departures",
+      "type": "quantitative",
+      "title": "Total departures",
+      "scale": {"scheme": "blues"},
+      "legend": {"format": ",.0f"}
+    },
+    "tooltip": [
+      {"field": "properties.STATE_NAME", "title": "State"},
+      {"field": "state", "title": "Code"},
+      {"field": "departures", "title": "Total departures", "format": ","}
+    ]
+  },
+  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+}

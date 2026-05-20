@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Departures over time in the three largest states",
+    "subtitle": "New South Wales, Victoria, and Queensland compared on the same scale",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 280,
+  "data": {
+    "url": "data/chart8_state_timeseries.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [{"filter": {"field": "state", "oneOf": ["NSW", "VIC", "QLD"]}}],
+  "facet": {
+    "field": "state",
+    "type": "ordinal",
+    "columns": 3,
+    "title": null,
+    "header": {"labelFontSize": 13, "labelFontWeight": "bold", "labelColor": "#1a5276"}
+  },
+  "spec": {
+    "layer": [
+      {
+        "mark": {"type": "line", "point": true, "color": "#1a5276", "strokeWidth": 2},
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Financial year",
+            "sort": null,
+            "axis": {"labelAngle": -45, "labelFontSize": 9}
+          },
+          "y": {
+            "field": "departures",
+            "type": "quantitative",
+            "title": "Departures",
+            "axis": {"format": ",.0f"},
+            "scale": {"domain": [0, 120000]}
+          },
+          "tooltip": [
+            {"field": "state", "title": "State"},
+            {"field": "year", "title": "Year"},
+            {"field": "departures", "title": "Departures", "format": ","}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "rule", "color": "#e74c3c", "strokeDash": [4, 4], "strokeWidth": 1.5},
+        "encoding": {"x": {"datum": "2020-21"}}
+      },
+      {
+        "mark": {"type": "text", "align": "left", "dx": 4, "dy": -6, "fontSize": 9, "color": "#e74c3c"},
+        "encoding": {
+          "x": {"datum": "2020-21"},
+          "y": {"value": 0},
+          "text": {"value": "COVID-19"}
+        }
+      }
+    ]
+  },
+  "resolve": {"scale": {"y": "shared"}},
+  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+}

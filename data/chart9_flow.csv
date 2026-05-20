@@ -1,0 +1,11 @@
+country,display_country,departures,lat,lon,dest_lat,dest_lon,continent
+China,China,592460,39.9042,116.4074,-35.2809,149.13,Asia
+"UK, CIs & IOM",UK,396040,51.5074,-0.1278,-35.2809,149.13,Europe
+New Zealand,New Zealand,331410,-41.2865,174.7762,-35.2809,149.13,Oceania
+India,India,260650,28.6139,77.209,-35.2809,149.13,Asia
+USA,USA,169720,38.9072,-77.0369,-35.2809,149.13,Americas
+"Korea, South",Korea South,169190,37.5665,126.978,-35.2809,149.13,Asia
+Malaysia,Malaysia,139660,3.139,101.6869,-35.2809,149.13,Asia
+Japan,Japan,109180,35.6762,139.6503,-35.2809,149.13,Asia
+Indonesia,Indonesia,99540,-6.2088,106.8456,-35.2809,149.13,Asia
+Philippines,Philippines,76000,14.5995,120.9842,-35.2809,149.13,Asia

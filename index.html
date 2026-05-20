@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Comes, Who Goes: Australia's Migration Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #1a5276;
+      --max-text: 42rem;
+      --gap: 2.5rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header, main, footer {
+      max-width: 72rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    header {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 3px solid var(--accent);
+      background: var(--surface);
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.2;
+    }
+
+    header .subtitle {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: var(--max-text);
+    }
+
+    header .intro {
+      margin: 1rem 0 0;
+      max-width: var(--max-text);
+    }
+
+    section {
+      padding: var(--gap) 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    section h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .narrative {
+      max-width: var(--max-text);
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+
+    .insight {
+      max-width: var(--max-text);
+      margin: 0.75rem 0 1rem;
+      padding: 0.75rem 1rem;
+      background: #e8f4f8;
+      border-left: 4px solid var(--accent);
+      font-size: 0.98rem;
+      color: #333;
+    }
+
+    .chart-wrap {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 1rem 1rem 0.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .chart-full { width: 100%; }
+
+    .chart-medium {
+      width: 100%;
+      max-width: 36rem;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .row-2 { grid-template-columns: 1fr; }
+    }
+
+    footer {
+      padding: 2rem 1.5rem 3rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: var(--max-text);
+    }
+
+    footer h3 {
+      font-size: 1rem;
+      color: var(--accent);
+      margin: 0 0 0.5rem;
+    }
+
+    footer ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1rem;
+    }
+
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Who Comes, Who Goes: Australia's Migration Story</h1>
+    <p class="subtitle">Understanding who arrives, who leaves, and what it means for the economy</p>
+    <p class="intro">Every year, hundreds of thousands of people move in and out of Australia. This page follows two decades of movement — from steady growth to the sudden stop of COVID-19 — and asks what happens to money when people cross borders.</p>
+  </header>
+
+  <main>
+    <section id="section-1">
+      <h2>1. The Big Picture</h2>
+      <p class="narrative">From the mid-2000s, more people born overseas were leaving Australia each year — until the pandemic brought travel to a near standstill in 2020–21. At the same time, money sent home to Australia as personal remittances has grown sharply, showing that migration and global money flows do not always move in the same direction.</p>
+      <p class="insight">The COVID-19 year 2020–21 saw overseas-born departures fall by roughly a quarter in a single year — the steepest drop in this dataset.</p>
+      <div class="chart-wrap chart-full" id="chart1"></div>
+    </section>
+
+    <section id="section-2">
+      <h2>2. Who's Leaving Australia?</h2>
+      <p class="narrative">People leave Australia for many reasons — to retire overseas, to reunite with family, or to pursue opportunities elsewhere. China, the United Kingdom, and New Zealand top the list when we add up departures across 21 years. Most leavers were born in Asia, reflecting Australia's close ties with the region.</p>
+      <p class="insight">Asia accounts for about half of all overseas-born departures — far more than Europe or Oceania.</p>
+      <div class="row-2">
+        <div class="chart-wrap" id="chart2"></div>
+        <div class="chart-wrap" id="chart3"></div>
+      </div>
+    </section>
+
+    <section id="section-3">
+      <h2>3. How Have Patterns Changed Over Time?</h2>
+      <p class="narrative">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. The heatmap below shows every top country dipping together in 2020–21 — a fingerprint of the pandemic.</p>
+      <p class="insight">In the last decade, China and India have traded the top ranks, while the COVID year hit every country in the top 10 at once.</p>
+      <div class="chart-wrap chart-full" id="chart4"></div>
+      <div class="chart-wrap chart-full" id="chart5"></div>
+    </section>
+
+    <section id="section-4">
+      <h2>4. Who's Coming vs Who's Going?</h2>
+      <p class="narrative">Migration is a two-way street. In 2024–25, India and China contributed the largest net gains to Australia's population — more people arrived than left. Countries such as Japan saw more departures than arrivals, making them net losers in population terms for that year.</p>
+      <p class="insight">India's net migration in 2024–25 was larger than any other country in the top 10 — a strong pull factor for Australia's workforce and communities.</p>
+      <div class="chart-wrap chart-medium" id="chart6"></div>
+    </section>
+
+    <section id="section-5">
+      <h2>5. Where in Australia Are They Leaving From?</h2>
+      <p class="narrative">Most emigrant departures happen from the states where most people live. New South Wales, Victoria, and Queensland dominate the totals, but every state and territory contributes. The three largest states show the same COVID dip, then a partial recovery.</p>
+      <p class="insight">New South Wales alone accounts for a large share of national departures — consistent with it being Australia's most populous state.</p>
+      <div class="chart-wrap chart-full" id="chart7"></div>
+      <div class="chart-wrap chart-full" id="chart8"></div>
+    </section>
+
+    <section id="section-6">
+      <h2>6. The Economic Angle</h2>
+      <p class="narrative">Countries that send more emigrants from Australia are not isolated from Australia's economy. Personal remittances received by Australia have climbed over two decades. The flow map shows where leavers were born; the bubble chart links departure volumes to an estimated share of remittances and recent net migration.</p>
+      <p class="insight">High-departure countries in Asia cluster with larger estimated remittance shares — suggesting that migration patterns and international money flows are intertwined, even when people are leaving rather than arriving.</p>
+      <div class="chart-wrap chart-full" id="chart9"></div>
+      <div class="chart-wrap chart-medium" id="chart10"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Data sources</h3>
+    <ul>
+      <li><a href="https://www.abs.gov.au/statistics/people/population/overseas-migration/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics — Overseas Migration 2024–25</a> (departures and arrivals by country of birth and state)</li>
+      <li><a href="https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=AU" target="_blank" rel="noopener">World Bank — Personal remittances, received (current US$), Australia</a></li>
+      <li>Australian state boundaries: <a href="https://github.com/tonywr71/GeoJson-Data" target="_blank" rel="noopener">GeoJson-Data (australian-states.json)</a></li>
+      <li>World map: <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas countries-110m</a></li>
+    </ul>
+    <p><strong>Author:</strong> [Your Name]</p>
+    <p><strong>Date:</strong> 2026</p>
+    <p><strong>AI acknowledgement:</strong> ChatGPT/Claude used for code generation and grammar checking.</p>
+    <p><strong>Course:</strong> FIT2179 Data Visualisation 2, Monash University (Clayton)</p>
+  </footer>
+
+  <script>
+    const embedOpts = { actions: false, renderer: "svg" };
+
+    const charts = [
+      ["#chart1", "specs/chart1_dual_axis.json"],
+      ["#chart2", "specs/chart2_bar_top10.json"],
+      ["#chart3", "specs/chart3_waffle.json"],
+      ["#chart4", "specs/chart4_bump.json"],
+      ["#chart5", "specs/chart5_heatmap.json"],
+      ["#chart6", "specs/chart6_diverging.json"],
+      ["#chart7", "specs/chart7_choropleth.json"],
+      ["#chart8", "specs/chart8_small_multiples.json"],
+      ["#chart9", "specs/chart9_flow_map.json"],
+      ["#chart10", "specs/chart10_bubble.json"]
+    ];
+
+    charts.forEach(([sel, spec]) => {
+      vegaEmbed(sel, spec, embedOpts).catch(console.error);
+    });
+  </script>
+</body>
+</html>

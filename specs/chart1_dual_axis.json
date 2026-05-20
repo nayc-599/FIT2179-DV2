@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Migration departures and remittances, 2004–05 to 2024–25",
+    "subtitle": "Overseas-born departures (left) and personal remittances received by Australia in US dollars (right)",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 380,
+  "data": {"url": "data/chart1_totals.csv"},
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true, "strokeWidth": 2.5},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": null,
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "departures",
+          "type": "quantitative",
+          "title": "Total departures (overseas-born)",
+          "axis": {"format": ",.0f", "titleColor": "#1a5276"},
+          "scale": {"zero": false}
+        },
+        "color": {"value": "#1a5276"},
+        "tooltip": [
+          {"field": "year", "title": "Year"},
+          {"field": "departures", "title": "Departures", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "point": true, "strokeWidth": 2.5},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "sort": null},
+        "y": {
+          "field": "remittances_usd",
+          "type": "quantitative",
+          "title": "Remittances received (US$)",
+          "axis": {"format": "~s", "titleColor": "#c0392b"},
+          "scale": {"zero": false}
+        },
+        "color": {"value": "#c0392b"},
+        "tooltip": [
+          {"field": "year", "title": "Year"},
+          {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#e74c3c", "strokeWidth": 2, "strokeDash": [6, 4]},
+      "encoding": {"x": {"datum": "2020-21"}}
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "fontSize": 11, "fontWeight": "bold", "color": "#e74c3c"},
+      "encoding": {
+        "x": {"datum": "2020-21"},
+        "y": {"value": 0},
+        "text": {"value": "COVID-19"}
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

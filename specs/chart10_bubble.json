@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Departures, remittances, and net migration",
+    "subtitle": "Remittances are Australia's total, split by each country's share of top-10 departures (approximation).",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": 560,
+  "height": 420,
+  "data": {"url": "data/chart10_bubble.csv"},
+  "layer": [
+    {
+      "mark": {"type": "circle", "opacity": 0.75, "stroke": "#333", "strokeWidth": 0.5},
+      "encoding": {
+        "x": {"field": "departures", "type": "quantitative", "title": "Total departures (21 years)", "axis": {"format": ",.0f"}},
+        "y": {"field": "remittances_share", "type": "quantitative", "title": "Estimated remittances share (US$)", "axis": {"format": "~s"}},
+        "size": {"field": "net", "type": "quantitative", "title": "Net migration (2024–25)", "scale": {"range": [80, 1200]}},
+        "color": {"field": "continent", "type": "nominal", "title": "Continent", "scale": {"domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"], "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]}},
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Departures", "format": ","},
+          {"field": "remittances_share", "title": "Remittances (est.)", "format": "~s"},
+          {"field": "net", "title": "Net migration", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -12, "fontSize": 11, "fontWeight": 600, "color": "#333"},
+      "encoding": {
+        "x": {"field": "departures"},
+        "y": {"field": "remittances_share"},
+        "text": {"field": "display_country"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+}

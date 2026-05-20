@@ -1,0 +1,4684 @@
+sacc_code,country,year,arrivals,display_country
+1102,Norfolk Island,2004-05,30,Norfolk Island
+1201,New Zealand,2004-05,32030,New Zealand
+1301,New Caledonia,2004-05,200,New Caledonia
+1302,PNG,2004-05,1370,PNG
+1303,Solomon Islands,2004-05,280,Solomon Islands
+1304,Vanuatu,2004-05,100,Vanuatu
+1401,Guam,2004-05,0,Guam
+1402,Kiribati,2004-05,80,Kiribati
+1403,Marshall Is,2004-05,0,Marshall Is
+1404,"Micronesia, F S",2004-05,20,"Micronesia, F S"
+1405,Nauru,2004-05,50,Nauru
+1406,N Mariana Is,2004-05,0,N Mariana Is
+1407,Palau,2004-05,0,Palau
+1501,Cook Islands,2004-05,410,Cook Islands
+1502,Fiji,2004-05,2380,Fiji
+1503,French Poly,2004-05,50,French Poly
+1504,Niue,2004-05,70,Niue
+1505,Samoa,2004-05,1430,Samoa
+1506,Samoa American,2004-05,30,Samoa American
+1507,Tokelau,2004-05,60,Tokelau
+1508,Tonga,2004-05,480,Tonga
+1511,Tuvalu,2004-05,30,Tuvalu
+1512,Wallis/Futuna,2004-05,0,Wallis/Futuna
+1513,Pitcairn Is,2004-05,0,Pitcairn Is
+1599,"Polynesia, nec",2004-05,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2004-05,39870,UK
+2201,Ireland,2004-05,3820,Ireland
+2301,Austria,2004-05,500,Austria
+2302,Belgium,2004-05,330,Belgium
+2303,France,2004-05,2610,France
+2304,Germany,2004-05,4530,Germany
+2305,Liechtenstein,2004-05,0,Liechtenstein
+2306,Luxembourg,2004-05,20,Luxembourg
+2307,Monaco,2004-05,10,Monaco
+2308,Netherlands,2004-05,1820,Netherlands
+2311,Switzerland,2004-05,990,Switzerland
+2401,Denmark,2004-05,600,Denmark
+2402,Faroe Islands,2004-05,0,Faroe Islands
+2403,Finland,2004-05,310,Finland
+2404,Greenland,2004-05,0,Greenland
+2405,Iceland,2004-05,40,Iceland
+2406,Norway,2004-05,880,Norway
+2407,Sweden,2004-05,1130,Sweden
+3101,Andorra,2004-05,0,Andorra
+3102,Gibraltar,2004-05,20,Gibraltar
+3104,Italy,2004-05,1670,Italy
+3105,Malta,2004-05,240,Malta
+3106,Portugal,2004-05,380,Portugal
+3107,San Marino,2004-05,0,San Marino
+3108,Spain,2004-05,660,Spain
+3201,Albania,2004-05,150,Albania
+3202,Bosnia/Herzegov,2004-05,510,Bosnia/Herzegov
+3203,Bulgaria,2004-05,190,Bulgaria
+3204,Croatia,2004-05,580,Croatia
+3205,Cyprus,2004-05,150,Cyprus
+3206,North Macedonia,2004-05,750,North Macedonia
+3207,Greece,2004-05,920,Greece
+3208,Moldova,2004-05,40,Moldova
+3211,Romania,2004-05,560,Romania
+3212,Slovenia,2004-05,80,Slovenia
+3214,Montenegro,2004-05,30,Montenegro
+3215,Serbia,2004-05,280,Serbia
+3216,Kosovo,2004-05,0,Kosovo
+3301,Belarus,2004-05,80,Belarus
+3302,Czechia,2004-05,640,Czechia
+3303,Estonia,2004-05,110,Estonia
+3304,Hungary,2004-05,380,Hungary
+3305,Latvia,2004-05,200,Latvia
+3306,Lithuania,2004-05,140,Lithuania
+3307,Poland,2004-05,1260,Poland
+3308,Russia,2004-05,980,Russia
+3311,Slovakia,2004-05,350,Slovakia
+3312,Ukraine,2004-05,500,Ukraine
+4101,Algeria,2004-05,60,Algeria
+4102,Egypt,2004-05,1180,Egypt
+4103,Libya,2004-05,60,Libya
+4104,Morocco,2004-05,80,Morocco
+4105,Sudan,2004-05,5760,Sudan
+4106,Tunisia,2004-05,20,Tunisia
+4111,South Sudan,2004-05,0,South Sudan
+4201,Bahrain,2004-05,120,Bahrain
+4202,Palestine,2004-05,20,Palestine
+4203,Iran,2004-05,1610,Iran
+4204,Iraq,2004-05,2280,Iraq
+4205,Israel,2004-05,780,Israel
+4206,Jordan,2004-05,380,Jordan
+4207,Kuwait,2004-05,210,Kuwait
+4208,Lebanon,2004-05,2270,Lebanon
+4211,Oman,2004-05,220,Oman
+4212,Qatar,2004-05,80,Qatar
+4213,Saudi Arabia,2004-05,680,Saudi Arabia
+4214,Syria,2004-05,320,Syria
+4215,Türkiye,2004-05,1300,Türkiye
+4216,Unit Arab Emir,2004-05,470,Unit Arab Emir
+4217,Yemen,2004-05,40,Yemen
+5101,Myanmar,2004-05,660,Myanmar
+5102,Cambodia,2004-05,880,Cambodia
+5103,Laos,2004-05,230,Laos
+5104,Thailand,2004-05,5080,Thailand
+5105,Vietnam,2004-05,4280,Vietnam
+5201,Brunei,2004-05,310,Brunei
+5202,Indonesia,2004-05,6160,Indonesia
+5203,Malaysia,2004-05,9650,Malaysia
+5204,Philippines,2004-05,7900,Philippines
+5205,Singapore,2004-05,6190,Singapore
+5206,Timor-Leste,2004-05,110,Timor-Leste
+6101,China,2004-05,28870,China
+6102,Hong Kong,2004-05,5420,Hong Kong
+6103,Macau,2004-05,160,Macau
+6104,Mongolia,2004-05,130,Mongolia
+6105,Taiwan,2004-05,2970,Taiwan
+6201,Japan,2004-05,8280,Japan
+6202,"Korea, North",2004-05,40,"Korea, North"
+6203,"Korea, South",2004-05,10110,Korea South
+7101,Bangladesh,2004-05,2820,Bangladesh
+7102,Bhutan,2004-05,70,Bhutan
+7103,India,2004-05,21070,India
+7104,Maldives,2004-05,90,Maldives
+7105,Nepal,2004-05,630,Nepal
+7106,Pakistan,2004-05,2170,Pakistan
+7107,Sri Lanka,2004-05,4110,Sri Lanka
+7201,Afghanistan,2004-05,1820,Afghanistan
+7202,Armenia,2004-05,40,Armenia
+7203,Azerbaijan,2004-05,20,Azerbaijan
+7204,Georgia,2004-05,40,Georgia
+7205,Kazakhstan,2004-05,90,Kazakhstan
+7206,Kyrgyzstan,2004-05,30,Kyrgyzstan
+7207,Tajikistan,2004-05,10,Tajikistan
+7208,Turkmenistan,2004-05,0,Turkmenistan
+7211,Uzbekistan,2004-05,80,Uzbekistan
+8101,Bermuda,2004-05,20,Bermuda
+8102,Canada,2004-05,3750,Canada
+8104,USA,2004-05,10700,USA
+8201,Argentina,2004-05,460,Argentina
+8202,Bolivia,2004-05,40,Bolivia
+8203,Brazil,2004-05,1860,Brazil
+8204,Chile,2004-05,530,Chile
+8205,Colombia,2004-05,590,Colombia
+8206,Ecuador,2004-05,90,Ecuador
+8207,Falkland Is,2004-05,0,Falkland Is
+8208,French Guiana,2004-05,0,French Guiana
+8211,Guyana,2004-05,10,Guyana
+8212,Paraguay,2004-05,20,Paraguay
+8213,Peru,2004-05,360,Peru
+8214,Suriname,2004-05,10,Suriname
+8215,Uruguay,2004-05,120,Uruguay
+8216,Venezuela,2004-05,170,Venezuela
+8301,Belize,2004-05,0,Belize
+8302,Costa Rica,2004-05,20,Costa Rica
+8303,El Salvador,2004-05,110,El Salvador
+8304,Guatemala,2004-05,20,Guatemala
+8305,Honduras,2004-05,10,Honduras
+8306,Mexico,2004-05,350,Mexico
+8307,Nicaragua,2004-05,10,Nicaragua
+8308,Panama,2004-05,20,Panama
+8402,Antigua/Barbuda,2004-05,0,Antigua/Barbuda
+8403,Aruba,2004-05,0,Aruba
+8404,Bahamas,2004-05,10,Bahamas
+8405,Barbados,2004-05,10,Barbados
+8406,Cayman Islands,2004-05,0,Cayman Islands
+8407,Cuba,2004-05,30,Cuba
+8408,Dominica,2004-05,10,Dominica
+8411,Dominican Rep,2004-05,10,Dominican Rep
+8412,Grenada,2004-05,10,Grenada
+8413,Guadeloupe,2004-05,0,Guadeloupe
+8414,Haiti,2004-05,10,Haiti
+8415,Jamaica,2004-05,50,Jamaica
+8416,Martinique,2004-05,0,Martinique
+8417,Montserrat,2004-05,0,Montserrat
+8421,Puerto Rico,2004-05,10,Puerto Rico
+8422,St Kitts/Nevis,2004-05,0,St Kitts/Nevis
+8423,St Lucia,2004-05,0,St Lucia
+8424,St Vinc/Grenad,2004-05,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2004-05,50,Trinidad/Tobago
+8427,"Virgin Is, Brit",2004-05,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2004-05,0,"Virgin Is, US"
+8434,Curacao,2004-05,0,Curacao
+8435,Sint Maarten Dp,2004-05,0,Sint Maarten Dp
+9101,Benin,2004-05,0,Benin
+9102,Burkina Faso,2004-05,0,Burkina Faso
+9103,Cameroon,2004-05,30,Cameroon
+9104,Cabo Verde,2004-05,0,Cabo Verde
+9105,Cent Africa Rep,2004-05,0,Cent Africa Rep
+9106,Chad,2004-05,0,Chad
+9107,"Congo, Rep",2004-05,300,"Congo, Rep"
+9108,"Congo, Dem Rep",2004-05,50,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2004-05,130,Cote d'Ivoire
+9113,Gabon,2004-05,0,Gabon
+9114,Gambia,2004-05,0,Gambia
+9115,Ghana,2004-05,230,Ghana
+9116,Guinea,2004-05,160,Guinea
+9118,Liberia,2004-05,860,Liberia
+9121,Mali,2004-05,0,Mali
+9122,Mauritania,2004-05,0,Mauritania
+9123,Niger,2004-05,10,Niger
+9124,Nigeria,2004-05,280,Nigeria
+9126,Senegal,2004-05,20,Senegal
+9127,Sierra Leone,2004-05,680,Sierra Leone
+9128,Togo,2004-05,10,Togo
+9201,Angola,2004-05,20,Angola
+9202,Botswana,2004-05,220,Botswana
+9203,Burundi,2004-05,260,Burundi
+9205,Djibouti,2004-05,10,Djibouti
+9206,Eritrea,2004-05,150,Eritrea
+9207,Ethiopia,2004-05,650,Ethiopia
+9208,Kenya,2004-05,1250,Kenya
+9211,Lesotho,2004-05,20,Lesotho
+9212,Madagascar,2004-05,20,Madagascar
+9213,Malawi,2004-05,100,Malawi
+9214,Mauritius,2004-05,730,Mauritius
+9215,Mayotte,2004-05,0,Mayotte
+9216,Mozambique,2004-05,60,Mozambique
+9217,Namibia,2004-05,80,Namibia
+9218,Reunion,2004-05,10,Reunion
+9221,Rwanda,2004-05,50,Rwanda
+9223,Seychelles,2004-05,140,Seychelles
+9224,Somalia,2004-05,430,Somalia
+9225,South Africa,2004-05,7400,South Africa
+9226,Eswatini,2004-05,20,Eswatini
+9227,Tanzania,2004-05,260,Tanzania
+9228,Uganda,2004-05,250,Uganda
+9231,Zambia,2004-05,380,Zambia
+9232,Zimbabwe,2004-05,2510,Zimbabwe
+1102,Norfolk Island,2005-06,30,Norfolk Island
+1201,New Zealand,2005-06,32770,New Zealand
+1301,New Caledonia,2005-06,150,New Caledonia
+1302,PNG,2005-06,1620,PNG
+1303,Solomon Islands,2005-06,190,Solomon Islands
+1304,Vanuatu,2005-06,120,Vanuatu
+1401,Guam,2005-06,10,Guam
+1402,Kiribati,2005-06,70,Kiribati
+1403,Marshall Is,2005-06,10,Marshall Is
+1404,"Micronesia, F S",2005-06,10,"Micronesia, F S"
+1405,Nauru,2005-06,100,Nauru
+1406,N Mariana Is,2005-06,0,N Mariana Is
+1407,Palau,2005-06,0,Palau
+1501,Cook Islands,2005-06,430,Cook Islands
+1502,Fiji,2005-06,2640,Fiji
+1503,French Poly,2005-06,50,French Poly
+1504,Niue,2005-06,60,Niue
+1505,Samoa,2005-06,1410,Samoa
+1506,Samoa American,2005-06,30,Samoa American
+1507,Tokelau,2005-06,90,Tokelau
+1508,Tonga,2005-06,440,Tonga
+1511,Tuvalu,2005-06,30,Tuvalu
+1512,Wallis/Futuna,2005-06,0,Wallis/Futuna
+1513,Pitcairn Is,2005-06,0,Pitcairn Is
+1599,"Polynesia, nec",2005-06,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2005-06,45530,UK
+2201,Ireland,2005-06,4420,Ireland
+2301,Austria,2005-06,460,Austria
+2302,Belgium,2005-06,390,Belgium
+2303,France,2005-06,3090,France
+2304,Germany,2005-06,4960,Germany
+2305,Liechtenstein,2005-06,0,Liechtenstein
+2306,Luxembourg,2005-06,20,Luxembourg
+2307,Monaco,2005-06,10,Monaco
+2308,Netherlands,2005-06,2110,Netherlands
+2311,Switzerland,2005-06,990,Switzerland
+2401,Denmark,2005-06,580,Denmark
+2402,Faroe Islands,2005-06,0,Faroe Islands
+2403,Finland,2005-06,350,Finland
+2404,Greenland,2005-06,0,Greenland
+2405,Iceland,2005-06,40,Iceland
+2406,Norway,2005-06,690,Norway
+2407,Sweden,2005-06,1230,Sweden
+3101,Andorra,2005-06,0,Andorra
+3102,Gibraltar,2005-06,10,Gibraltar
+3104,Italy,2005-06,1650,Italy
+3105,Malta,2005-06,200,Malta
+3106,Portugal,2005-06,360,Portugal
+3107,San Marino,2005-06,0,San Marino
+3108,Spain,2005-06,610,Spain
+3201,Albania,2005-06,190,Albania
+3202,Bosnia/Herzegov,2005-06,430,Bosnia/Herzegov
+3203,Bulgaria,2005-06,150,Bulgaria
+3204,Croatia,2005-06,490,Croatia
+3205,Cyprus,2005-06,180,Cyprus
+3206,North Macedonia,2005-06,750,North Macedonia
+3207,Greece,2005-06,970,Greece
+3208,Moldova,2005-06,50,Moldova
+3211,Romania,2005-06,590,Romania
+3212,Slovenia,2005-06,130,Slovenia
+3214,Montenegro,2005-06,30,Montenegro
+3215,Serbia,2005-06,320,Serbia
+3216,Kosovo,2005-06,0,Kosovo
+3301,Belarus,2005-06,100,Belarus
+3302,Czechia,2005-06,600,Czechia
+3303,Estonia,2005-06,140,Estonia
+3304,Hungary,2005-06,410,Hungary
+3305,Latvia,2005-06,200,Latvia
+3306,Lithuania,2005-06,130,Lithuania
+3307,Poland,2005-06,1210,Poland
+3308,Russia,2005-06,1030,Russia
+3311,Slovakia,2005-06,300,Slovakia
+3312,Ukraine,2005-06,550,Ukraine
+4101,Algeria,2005-06,70,Algeria
+4102,Egypt,2005-06,1300,Egypt
+4103,Libya,2005-06,40,Libya
+4104,Morocco,2005-06,100,Morocco
+4105,Sudan,2005-06,3880,Sudan
+4106,Tunisia,2005-06,20,Tunisia
+4111,South Sudan,2005-06,0,South Sudan
+4201,Bahrain,2005-06,170,Bahrain
+4202,Palestine,2005-06,10,Palestine
+4203,Iran,2005-06,1820,Iran
+4204,Iraq,2005-06,2900,Iraq
+4205,Israel,2005-06,780,Israel
+4206,Jordan,2005-06,330,Jordan
+4207,Kuwait,2005-06,320,Kuwait
+4208,Lebanon,2005-06,2190,Lebanon
+4211,Oman,2005-06,200,Oman
+4212,Qatar,2005-06,70,Qatar
+4213,Saudi Arabia,2005-06,1100,Saudi Arabia
+4214,Syria,2005-06,340,Syria
+4215,Türkiye,2005-06,1250,Türkiye
+4216,Unit Arab Emir,2005-06,590,Unit Arab Emir
+4217,Yemen,2005-06,20,Yemen
+5101,Myanmar,2005-06,970,Myanmar
+5102,Cambodia,2005-06,890,Cambodia
+5103,Laos,2005-06,220,Laos
+5104,Thailand,2005-06,5980,Thailand
+5105,Vietnam,2005-06,5720,Vietnam
+5201,Brunei,2005-06,290,Brunei
+5202,Indonesia,2005-06,6950,Indonesia
+5203,Malaysia,2005-06,10170,Malaysia
+5204,Philippines,2005-06,10140,Philippines
+5205,Singapore,2005-06,6000,Singapore
+5206,Timor-Leste,2005-06,220,Timor-Leste
+6101,China,2005-06,30370,China
+6102,Hong Kong,2005-06,5110,Hong Kong
+6103,Macau,2005-06,180,Macau
+6104,Mongolia,2005-06,100,Mongolia
+6105,Taiwan,2005-06,3310,Taiwan
+6201,Japan,2005-06,8480,Japan
+6202,"Korea, North",2005-06,50,"Korea, North"
+6203,"Korea, South",2005-06,13290,Korea South
+7101,Bangladesh,2005-06,2370,Bangladesh
+7102,Bhutan,2005-06,50,Bhutan
+7103,India,2005-06,27770,India
+7104,Maldives,2005-06,80,Maldives
+7105,Nepal,2005-06,1160,Nepal
+7106,Pakistan,2005-06,2570,Pakistan
+7107,Sri Lanka,2005-06,4990,Sri Lanka
+7201,Afghanistan,2005-06,2730,Afghanistan
+7202,Armenia,2005-06,50,Armenia
+7203,Azerbaijan,2005-06,20,Azerbaijan
+7204,Georgia,2005-06,30,Georgia
+7205,Kazakhstan,2005-06,100,Kazakhstan
+7206,Kyrgyzstan,2005-06,40,Kyrgyzstan
+7207,Tajikistan,2005-06,10,Tajikistan
+7208,Turkmenistan,2005-06,10,Turkmenistan
+7211,Uzbekistan,2005-06,110,Uzbekistan
+8101,Bermuda,2005-06,20,Bermuda
+8102,Canada,2005-06,4090,Canada
+8104,USA,2005-06,10430,USA
+8201,Argentina,2005-06,380,Argentina
+8202,Bolivia,2005-06,40,Bolivia
+8203,Brazil,2005-06,2680,Brazil
+8204,Chile,2005-06,610,Chile
+8205,Colombia,2005-06,970,Colombia
+8206,Ecuador,2005-06,90,Ecuador
+8207,Falkland Is,2005-06,0,Falkland Is
+8208,French Guiana,2005-06,0,French Guiana
+8211,Guyana,2005-06,20,Guyana
+8212,Paraguay,2005-06,30,Paraguay
+8213,Peru,2005-06,600,Peru
+8214,Suriname,2005-06,10,Suriname
+8215,Uruguay,2005-06,140,Uruguay
+8216,Venezuela,2005-06,250,Venezuela
+8301,Belize,2005-06,0,Belize
+8302,Costa Rica,2005-06,30,Costa Rica
+8303,El Salvador,2005-06,100,El Salvador
+8304,Guatemala,2005-06,10,Guatemala
+8305,Honduras,2005-06,10,Honduras
+8306,Mexico,2005-06,410,Mexico
+8307,Nicaragua,2005-06,20,Nicaragua
+8308,Panama,2005-06,20,Panama
+8402,Antigua/Barbuda,2005-06,10,Antigua/Barbuda
+8403,Aruba,2005-06,0,Aruba
+8404,Bahamas,2005-06,10,Bahamas
+8405,Barbados,2005-06,10,Barbados
+8406,Cayman Islands,2005-06,10,Cayman Islands
+8407,Cuba,2005-06,50,Cuba
+8408,Dominica,2005-06,0,Dominica
+8411,Dominican Rep,2005-06,10,Dominican Rep
+8412,Grenada,2005-06,0,Grenada
+8413,Guadeloupe,2005-06,10,Guadeloupe
+8414,Haiti,2005-06,10,Haiti
+8415,Jamaica,2005-06,50,Jamaica
+8416,Martinique,2005-06,0,Martinique
+8417,Montserrat,2005-06,10,Montserrat
+8421,Puerto Rico,2005-06,10,Puerto Rico
+8422,St Kitts/Nevis,2005-06,0,St Kitts/Nevis
+8423,St Lucia,2005-06,0,St Lucia
+8424,St Vinc/Grenad,2005-06,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2005-06,70,Trinidad/Tobago
+8427,"Virgin Is, Brit",2005-06,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2005-06,0,"Virgin Is, US"
+8434,Curacao,2005-06,10,Curacao
+8435,Sint Maarten Dp,2005-06,0,Sint Maarten Dp
+9101,Benin,2005-06,0,Benin
+9102,Burkina Faso,2005-06,0,Burkina Faso
+9103,Cameroon,2005-06,30,Cameroon
+9104,Cabo Verde,2005-06,0,Cabo Verde
+9105,Cent Africa Rep,2005-06,0,Cent Africa Rep
+9106,Chad,2005-06,0,Chad
+9107,"Congo, Rep",2005-06,120,"Congo, Rep"
+9108,"Congo, Dem Rep",2005-06,190,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2005-06,70,Cote d'Ivoire
+9113,Gabon,2005-06,0,Gabon
+9114,Gambia,2005-06,10,Gambia
+9115,Ghana,2005-06,330,Ghana
+9116,Guinea,2005-06,110,Guinea
+9118,Liberia,2005-06,570,Liberia
+9121,Mali,2005-06,0,Mali
+9122,Mauritania,2005-06,10,Mauritania
+9123,Niger,2005-06,10,Niger
+9124,Nigeria,2005-06,330,Nigeria
+9126,Senegal,2005-06,20,Senegal
+9127,Sierra Leone,2005-06,560,Sierra Leone
+9128,Togo,2005-06,10,Togo
+9201,Angola,2005-06,20,Angola
+9202,Botswana,2005-06,130,Botswana
+9203,Burundi,2005-06,450,Burundi
+9205,Djibouti,2005-06,0,Djibouti
+9206,Eritrea,2005-06,200,Eritrea
+9207,Ethiopia,2005-06,530,Ethiopia
+9208,Kenya,2005-06,1250,Kenya
+9211,Lesotho,2005-06,10,Lesotho
+9212,Madagascar,2005-06,20,Madagascar
+9213,Malawi,2005-06,70,Malawi
+9214,Mauritius,2005-06,1030,Mauritius
+9215,Mayotte,2005-06,0,Mayotte
+9216,Mozambique,2005-06,80,Mozambique
+9217,Namibia,2005-06,100,Namibia
+9218,Reunion,2005-06,30,Reunion
+9221,Rwanda,2005-06,80,Rwanda
+9223,Seychelles,2005-06,110,Seychelles
+9224,Somalia,2005-06,460,Somalia
+9225,South Africa,2005-06,9470,South Africa
+9226,Eswatini,2005-06,20,Eswatini
+9227,Tanzania,2005-06,490,Tanzania
+9228,Uganda,2005-06,220,Uganda
+9231,Zambia,2005-06,390,Zambia
+9232,Zimbabwe,2005-06,2710,Zimbabwe
+1102,Norfolk Island,2006-07,40,Norfolk Island
+1201,New Zealand,2006-07,36300,New Zealand
+1301,New Caledonia,2006-07,160,New Caledonia
+1302,PNG,2006-07,1610,PNG
+1303,Solomon Islands,2006-07,190,Solomon Islands
+1304,Vanuatu,2006-07,90,Vanuatu
+1401,Guam,2006-07,10,Guam
+1402,Kiribati,2006-07,70,Kiribati
+1403,Marshall Is,2006-07,10,Marshall Is
+1404,"Micronesia, F S",2006-07,10,"Micronesia, F S"
+1405,Nauru,2006-07,120,Nauru
+1406,N Mariana Is,2006-07,0,N Mariana Is
+1407,Palau,2006-07,0,Palau
+1501,Cook Islands,2006-07,410,Cook Islands
+1502,Fiji,2006-07,2630,Fiji
+1503,French Poly,2006-07,50,French Poly
+1504,Niue,2006-07,60,Niue
+1505,Samoa,2006-07,1280,Samoa
+1506,Samoa American,2006-07,30,Samoa American
+1507,Tokelau,2006-07,40,Tokelau
+1508,Tonga,2006-07,470,Tonga
+1511,Tuvalu,2006-07,20,Tuvalu
+1512,Wallis/Futuna,2006-07,10,Wallis/Futuna
+1513,Pitcairn Is,2006-07,0,Pitcairn Is
+1599,"Polynesia, nec",2006-07,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2006-07,48650,UK
+2201,Ireland,2006-07,5040,Ireland
+2301,Austria,2006-07,520,Austria
+2302,Belgium,2006-07,500,Belgium
+2303,France,2006-07,3510,France
+2304,Germany,2006-07,5610,Germany
+2305,Liechtenstein,2006-07,10,Liechtenstein
+2306,Luxembourg,2006-07,20,Luxembourg
+2307,Monaco,2006-07,10,Monaco
+2308,Netherlands,2006-07,2080,Netherlands
+2311,Switzerland,2006-07,920,Switzerland
+2401,Denmark,2006-07,550,Denmark
+2402,Faroe Islands,2006-07,0,Faroe Islands
+2403,Finland,2006-07,330,Finland
+2404,Greenland,2006-07,0,Greenland
+2405,Iceland,2006-07,40,Iceland
+2406,Norway,2006-07,720,Norway
+2407,Sweden,2006-07,1200,Sweden
+3101,Andorra,2006-07,0,Andorra
+3102,Gibraltar,2006-07,10,Gibraltar
+3104,Italy,2006-07,1920,Italy
+3105,Malta,2006-07,260,Malta
+3106,Portugal,2006-07,370,Portugal
+3107,San Marino,2006-07,0,San Marino
+3108,Spain,2006-07,690,Spain
+3201,Albania,2006-07,150,Albania
+3202,Bosnia/Herzegov,2006-07,450,Bosnia/Herzegov
+3203,Bulgaria,2006-07,210,Bulgaria
+3204,Croatia,2006-07,470,Croatia
+3205,Cyprus,2006-07,160,Cyprus
+3206,North Macedonia,2006-07,710,North Macedonia
+3207,Greece,2006-07,830,Greece
+3208,Moldova,2006-07,50,Moldova
+3211,Romania,2006-07,650,Romania
+3212,Slovenia,2006-07,150,Slovenia
+3214,Montenegro,2006-07,60,Montenegro
+3215,Serbia,2006-07,430,Serbia
+3216,Kosovo,2006-07,0,Kosovo
+3301,Belarus,2006-07,80,Belarus
+3302,Czechia,2006-07,680,Czechia
+3303,Estonia,2006-07,190,Estonia
+3304,Hungary,2006-07,520,Hungary
+3305,Latvia,2006-07,180,Latvia
+3306,Lithuania,2006-07,110,Lithuania
+3307,Poland,2006-07,1260,Poland
+3308,Russia,2006-07,990,Russia
+3311,Slovakia,2006-07,340,Slovakia
+3312,Ukraine,2006-07,520,Ukraine
+4101,Algeria,2006-07,70,Algeria
+4102,Egypt,2006-07,1520,Egypt
+4103,Libya,2006-07,110,Libya
+4104,Morocco,2006-07,100,Morocco
+4105,Sudan,2006-07,2580,Sudan
+4106,Tunisia,2006-07,30,Tunisia
+4111,South Sudan,2006-07,0,South Sudan
+4201,Bahrain,2006-07,130,Bahrain
+4202,Palestine,2006-07,20,Palestine
+4203,Iran,2006-07,2610,Iran
+4204,Iraq,2006-07,2820,Iraq
+4205,Israel,2006-07,870,Israel
+4206,Jordan,2006-07,420,Jordan
+4207,Kuwait,2006-07,330,Kuwait
+4208,Lebanon,2006-07,2800,Lebanon
+4211,Oman,2006-07,200,Oman
+4212,Qatar,2006-07,70,Qatar
+4213,Saudi Arabia,2006-07,1740,Saudi Arabia
+4214,Syria,2006-07,360,Syria
+4215,Türkiye,2006-07,1190,Türkiye
+4216,Unit Arab Emir,2006-07,660,Unit Arab Emir
+4217,Yemen,2006-07,20,Yemen
+5101,Myanmar,2006-07,2040,Myanmar
+5102,Cambodia,2006-07,1110,Cambodia
+5103,Laos,2006-07,300,Laos
+5104,Thailand,2006-07,7090,Thailand
+5105,Vietnam,2006-07,7370,Vietnam
+5201,Brunei,2006-07,300,Brunei
+5202,Indonesia,2006-07,7000,Indonesia
+5203,Malaysia,2006-07,11480,Malaysia
+5204,Philippines,2006-07,13150,Philippines
+5205,Singapore,2006-07,6060,Singapore
+5206,Timor-Leste,2006-07,120,Timor-Leste
+6101,China,2006-07,39540,China
+6102,Hong Kong,2006-07,5530,Hong Kong
+6103,Macau,2006-07,240,Macau
+6104,Mongolia,2006-07,120,Mongolia
+6105,Taiwan,2006-07,3480,Taiwan
+6201,Japan,2006-07,8260,Japan
+6202,"Korea, North",2006-07,60,"Korea, North"
+6203,"Korea, South",2006-07,15500,Korea South
+7101,Bangladesh,2006-07,3480,Bangladesh
+7102,Bhutan,2006-07,100,Bhutan
+7103,India,2006-07,43660,India
+7104,Maldives,2006-07,60,Maldives
+7105,Nepal,2006-07,4300,Nepal
+7106,Pakistan,2006-07,3570,Pakistan
+7107,Sri Lanka,2006-07,6430,Sri Lanka
+7201,Afghanistan,2006-07,2370,Afghanistan
+7202,Armenia,2006-07,40,Armenia
+7203,Azerbaijan,2006-07,30,Azerbaijan
+7204,Georgia,2006-07,50,Georgia
+7205,Kazakhstan,2006-07,110,Kazakhstan
+7206,Kyrgyzstan,2006-07,40,Kyrgyzstan
+7207,Tajikistan,2006-07,20,Tajikistan
+7208,Turkmenistan,2006-07,0,Turkmenistan
+7211,Uzbekistan,2006-07,90,Uzbekistan
+8101,Bermuda,2006-07,20,Bermuda
+8102,Canada,2006-07,4220,Canada
+8104,USA,2006-07,11380,USA
+8201,Argentina,2006-07,380,Argentina
+8202,Bolivia,2006-07,40,Bolivia
+8203,Brazil,2006-07,3340,Brazil
+8204,Chile,2006-07,760,Chile
+8205,Colombia,2006-07,1700,Colombia
+8206,Ecuador,2006-07,80,Ecuador
+8207,Falkland Is,2006-07,10,Falkland Is
+8208,French Guiana,2006-07,0,French Guiana
+8211,Guyana,2006-07,20,Guyana
+8212,Paraguay,2006-07,20,Paraguay
+8213,Peru,2006-07,780,Peru
+8214,Suriname,2006-07,10,Suriname
+8215,Uruguay,2006-07,100,Uruguay
+8216,Venezuela,2006-07,280,Venezuela
+8301,Belize,2006-07,0,Belize
+8302,Costa Rica,2006-07,30,Costa Rica
+8303,El Salvador,2006-07,90,El Salvador
+8304,Guatemala,2006-07,30,Guatemala
+8305,Honduras,2006-07,20,Honduras
+8306,Mexico,2006-07,510,Mexico
+8307,Nicaragua,2006-07,20,Nicaragua
+8308,Panama,2006-07,10,Panama
+8402,Antigua/Barbuda,2006-07,0,Antigua/Barbuda
+8403,Aruba,2006-07,0,Aruba
+8404,Bahamas,2006-07,10,Bahamas
+8405,Barbados,2006-07,10,Barbados
+8406,Cayman Islands,2006-07,10,Cayman Islands
+8407,Cuba,2006-07,50,Cuba
+8408,Dominica,2006-07,10,Dominica
+8411,Dominican Rep,2006-07,10,Dominican Rep
+8412,Grenada,2006-07,0,Grenada
+8413,Guadeloupe,2006-07,0,Guadeloupe
+8414,Haiti,2006-07,0,Haiti
+8415,Jamaica,2006-07,40,Jamaica
+8416,Martinique,2006-07,10,Martinique
+8417,Montserrat,2006-07,0,Montserrat
+8421,Puerto Rico,2006-07,10,Puerto Rico
+8422,St Kitts/Nevis,2006-07,0,St Kitts/Nevis
+8423,St Lucia,2006-07,10,St Lucia
+8424,St Vinc/Grenad,2006-07,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2006-07,80,Trinidad/Tobago
+8427,"Virgin Is, Brit",2006-07,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2006-07,0,"Virgin Is, US"
+8434,Curacao,2006-07,10,Curacao
+8435,Sint Maarten Dp,2006-07,0,Sint Maarten Dp
+9101,Benin,2006-07,20,Benin
+9102,Burkina Faso,2006-07,10,Burkina Faso
+9103,Cameroon,2006-07,30,Cameroon
+9104,Cabo Verde,2006-07,0,Cabo Verde
+9105,Cent Africa Rep,2006-07,0,Cent Africa Rep
+9106,Chad,2006-07,10,Chad
+9107,"Congo, Rep",2006-07,130,"Congo, Rep"
+9108,"Congo, Dem Rep",2006-07,610,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2006-07,90,Cote d'Ivoire
+9113,Gabon,2006-07,10,Gabon
+9114,Gambia,2006-07,10,Gambia
+9115,Ghana,2006-07,370,Ghana
+9116,Guinea,2006-07,150,Guinea
+9118,Liberia,2006-07,570,Liberia
+9121,Mali,2006-07,0,Mali
+9122,Mauritania,2006-07,0,Mauritania
+9123,Niger,2006-07,10,Niger
+9124,Nigeria,2006-07,460,Nigeria
+9126,Senegal,2006-07,20,Senegal
+9127,Sierra Leone,2006-07,540,Sierra Leone
+9128,Togo,2006-07,50,Togo
+9201,Angola,2006-07,30,Angola
+9202,Botswana,2006-07,170,Botswana
+9203,Burundi,2006-07,450,Burundi
+9205,Djibouti,2006-07,10,Djibouti
+9206,Eritrea,2006-07,170,Eritrea
+9207,Ethiopia,2006-07,690,Ethiopia
+9208,Kenya,2006-07,1380,Kenya
+9211,Lesotho,2006-07,10,Lesotho
+9212,Madagascar,2006-07,20,Madagascar
+9213,Malawi,2006-07,90,Malawi
+9214,Mauritius,2006-07,1350,Mauritius
+9215,Mayotte,2006-07,0,Mayotte
+9216,Mozambique,2006-07,70,Mozambique
+9217,Namibia,2006-07,90,Namibia
+9218,Reunion,2006-07,30,Reunion
+9221,Rwanda,2006-07,100,Rwanda
+9223,Seychelles,2006-07,110,Seychelles
+9224,Somalia,2006-07,550,Somalia
+9225,South Africa,2006-07,10350,South Africa
+9226,Eswatini,2006-07,20,Eswatini
+9227,Tanzania,2006-07,450,Tanzania
+9228,Uganda,2006-07,360,Uganda
+9231,Zambia,2006-07,500,Zambia
+9232,Zimbabwe,2006-07,2950,Zimbabwe
+1102,Norfolk Island,2007-08,40,Norfolk Island
+1201,New Zealand,2007-08,42070,New Zealand
+1301,New Caledonia,2007-08,190,New Caledonia
+1302,PNG,2007-08,1820,PNG
+1303,Solomon Islands,2007-08,200,Solomon Islands
+1304,Vanuatu,2007-08,100,Vanuatu
+1401,Guam,2007-08,10,Guam
+1402,Kiribati,2007-08,70,Kiribati
+1403,Marshall Is,2007-08,0,Marshall Is
+1404,"Micronesia, F S",2007-08,10,"Micronesia, F S"
+1405,Nauru,2007-08,50,Nauru
+1406,N Mariana Is,2007-08,10,N Mariana Is
+1407,Palau,2007-08,0,Palau
+1501,Cook Islands,2007-08,490,Cook Islands
+1502,Fiji,2007-08,3030,Fiji
+1503,French Poly,2007-08,60,French Poly
+1504,Niue,2007-08,90,Niue
+1505,Samoa,2007-08,1410,Samoa
+1506,Samoa American,2007-08,40,Samoa American
+1507,Tokelau,2007-08,80,Tokelau
+1508,Tonga,2007-08,690,Tonga
+1511,Tuvalu,2007-08,20,Tuvalu
+1512,Wallis/Futuna,2007-08,10,Wallis/Futuna
+1513,Pitcairn Is,2007-08,0,Pitcairn Is
+1599,"Polynesia, nec",2007-08,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2007-08,53330,UK
+2201,Ireland,2007-08,7450,Ireland
+2301,Austria,2007-08,520,Austria
+2302,Belgium,2007-08,540,Belgium
+2303,France,2007-08,4350,France
+2304,Germany,2007-08,6770,Germany
+2305,Liechtenstein,2007-08,0,Liechtenstein
+2306,Luxembourg,2007-08,20,Luxembourg
+2307,Monaco,2007-08,10,Monaco
+2308,Netherlands,2007-08,2400,Netherlands
+2311,Switzerland,2007-08,990,Switzerland
+2401,Denmark,2007-08,580,Denmark
+2402,Faroe Islands,2007-08,0,Faroe Islands
+2403,Finland,2007-08,410,Finland
+2404,Greenland,2007-08,0,Greenland
+2405,Iceland,2007-08,40,Iceland
+2406,Norway,2007-08,730,Norway
+2407,Sweden,2007-08,1290,Sweden
+3101,Andorra,2007-08,0,Andorra
+3102,Gibraltar,2007-08,10,Gibraltar
+3104,Italy,2007-08,1950,Italy
+3105,Malta,2007-08,240,Malta
+3106,Portugal,2007-08,420,Portugal
+3107,San Marino,2007-08,0,San Marino
+3108,Spain,2007-08,740,Spain
+3201,Albania,2007-08,160,Albania
+3202,Bosnia/Herzegov,2007-08,400,Bosnia/Herzegov
+3203,Bulgaria,2007-08,180,Bulgaria
+3204,Croatia,2007-08,430,Croatia
+3205,Cyprus,2007-08,160,Cyprus
+3206,North Macedonia,2007-08,760,North Macedonia
+3207,Greece,2007-08,780,Greece
+3208,Moldova,2007-08,60,Moldova
+3211,Romania,2007-08,570,Romania
+3212,Slovenia,2007-08,150,Slovenia
+3214,Montenegro,2007-08,30,Montenegro
+3215,Serbia,2007-08,420,Serbia
+3216,Kosovo,2007-08,0,Kosovo
+3301,Belarus,2007-08,70,Belarus
+3302,Czechia,2007-08,640,Czechia
+3303,Estonia,2007-08,270,Estonia
+3304,Hungary,2007-08,560,Hungary
+3305,Latvia,2007-08,140,Latvia
+3306,Lithuania,2007-08,160,Lithuania
+3307,Poland,2007-08,1240,Poland
+3308,Russia,2007-08,1360,Russia
+3311,Slovakia,2007-08,330,Slovakia
+3312,Ukraine,2007-08,600,Ukraine
+4101,Algeria,2007-08,80,Algeria
+4102,Egypt,2007-08,1610,Egypt
+4103,Libya,2007-08,180,Libya
+4104,Morocco,2007-08,100,Morocco
+4105,Sudan,2007-08,1140,Sudan
+4106,Tunisia,2007-08,20,Tunisia
+4111,South Sudan,2007-08,0,South Sudan
+4201,Bahrain,2007-08,130,Bahrain
+4202,Palestine,2007-08,20,Palestine
+4203,Iran,2007-08,2230,Iran
+4204,Iraq,2007-08,2860,Iraq
+4205,Israel,2007-08,990,Israel
+4206,Jordan,2007-08,480,Jordan
+4207,Kuwait,2007-08,350,Kuwait
+4208,Lebanon,2007-08,2480,Lebanon
+4211,Oman,2007-08,240,Oman
+4212,Qatar,2007-08,90,Qatar
+4213,Saudi Arabia,2007-08,4110,Saudi Arabia
+4214,Syria,2007-08,390,Syria
+4215,Türkiye,2007-08,1330,Türkiye
+4216,Unit Arab Emir,2007-08,820,Unit Arab Emir
+4217,Yemen,2007-08,30,Yemen
+5101,Myanmar,2007-08,2600,Myanmar
+5102,Cambodia,2007-08,1060,Cambodia
+5103,Laos,2007-08,290,Laos
+5104,Thailand,2007-08,7950,Thailand
+5105,Vietnam,2007-08,9720,Vietnam
+5201,Brunei,2007-08,430,Brunei
+5202,Indonesia,2007-08,7950,Indonesia
+5203,Malaysia,2007-08,12620,Malaysia
+5204,Philippines,2007-08,15120,Philippines
+5205,Singapore,2007-08,6540,Singapore
+5206,Timor-Leste,2007-08,120,Timor-Leste
+6101,China,2007-08,49200,China
+6102,Hong Kong,2007-08,5400,Hong Kong
+6103,Macau,2007-08,250,Macau
+6104,Mongolia,2007-08,170,Mongolia
+6105,Taiwan,2007-08,4250,Taiwan
+6201,Japan,2007-08,8020,Japan
+6202,"Korea, North",2007-08,50,"Korea, North"
+6203,"Korea, South",2007-08,17190,Korea South
+7101,Bangladesh,2007-08,3190,Bangladesh
+7102,Bhutan,2007-08,150,Bhutan
+7103,India,2007-08,56810,India
+7104,Maldives,2007-08,100,Maldives
+7105,Nepal,2007-08,8110,Nepal
+7106,Pakistan,2007-08,3860,Pakistan
+7107,Sri Lanka,2007-08,7900,Sri Lanka
+7201,Afghanistan,2007-08,1850,Afghanistan
+7202,Armenia,2007-08,40,Armenia
+7203,Azerbaijan,2007-08,20,Azerbaijan
+7204,Georgia,2007-08,40,Georgia
+7205,Kazakhstan,2007-08,140,Kazakhstan
+7206,Kyrgyzstan,2007-08,50,Kyrgyzstan
+7207,Tajikistan,2007-08,10,Tajikistan
+7208,Turkmenistan,2007-08,10,Turkmenistan
+7211,Uzbekistan,2007-08,100,Uzbekistan
+8101,Bermuda,2007-08,20,Bermuda
+8102,Canada,2007-08,5100,Canada
+8104,USA,2007-08,12540,USA
+8201,Argentina,2007-08,380,Argentina
+8202,Bolivia,2007-08,50,Bolivia
+8203,Brazil,2007-08,4080,Brazil
+8204,Chile,2007-08,830,Chile
+8205,Colombia,2007-08,2260,Colombia
+8206,Ecuador,2007-08,120,Ecuador
+8207,Falkland Is,2007-08,10,Falkland Is
+8208,French Guiana,2007-08,0,French Guiana
+8211,Guyana,2007-08,20,Guyana
+8212,Paraguay,2007-08,10,Paraguay
+8213,Peru,2007-08,990,Peru
+8214,Suriname,2007-08,10,Suriname
+8215,Uruguay,2007-08,130,Uruguay
+8216,Venezuela,2007-08,470,Venezuela
+8301,Belize,2007-08,0,Belize
+8302,Costa Rica,2007-08,40,Costa Rica
+8303,El Salvador,2007-08,130,El Salvador
+8304,Guatemala,2007-08,30,Guatemala
+8305,Honduras,2007-08,20,Honduras
+8306,Mexico,2007-08,580,Mexico
+8307,Nicaragua,2007-08,20,Nicaragua
+8308,Panama,2007-08,20,Panama
+8402,Antigua/Barbuda,2007-08,0,Antigua/Barbuda
+8403,Aruba,2007-08,0,Aruba
+8404,Bahamas,2007-08,20,Bahamas
+8405,Barbados,2007-08,30,Barbados
+8406,Cayman Islands,2007-08,10,Cayman Islands
+8407,Cuba,2007-08,60,Cuba
+8408,Dominica,2007-08,10,Dominica
+8411,Dominican Rep,2007-08,20,Dominican Rep
+8412,Grenada,2007-08,10,Grenada
+8413,Guadeloupe,2007-08,0,Guadeloupe
+8414,Haiti,2007-08,10,Haiti
+8415,Jamaica,2007-08,60,Jamaica
+8416,Martinique,2007-08,10,Martinique
+8417,Montserrat,2007-08,0,Montserrat
+8421,Puerto Rico,2007-08,30,Puerto Rico
+8422,St Kitts/Nevis,2007-08,0,St Kitts/Nevis
+8423,St Lucia,2007-08,0,St Lucia
+8424,St Vinc/Grenad,2007-08,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2007-08,90,Trinidad/Tobago
+8427,"Virgin Is, Brit",2007-08,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2007-08,0,"Virgin Is, US"
+8434,Curacao,2007-08,10,Curacao
+8435,Sint Maarten Dp,2007-08,0,Sint Maarten Dp
+9101,Benin,2007-08,20,Benin
+9102,Burkina Faso,2007-08,10,Burkina Faso
+9103,Cameroon,2007-08,40,Cameroon
+9104,Cabo Verde,2007-08,0,Cabo Verde
+9105,Cent Africa Rep,2007-08,10,Cent Africa Rep
+9106,Chad,2007-08,10,Chad
+9107,"Congo, Rep",2007-08,50,"Congo, Rep"
+9108,"Congo, Dem Rep",2007-08,540,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2007-08,80,Cote d'Ivoire
+9113,Gabon,2007-08,0,Gabon
+9114,Gambia,2007-08,10,Gambia
+9115,Ghana,2007-08,330,Ghana
+9116,Guinea,2007-08,100,Guinea
+9118,Liberia,2007-08,270,Liberia
+9121,Mali,2007-08,0,Mali
+9122,Mauritania,2007-08,50,Mauritania
+9123,Niger,2007-08,10,Niger
+9124,Nigeria,2007-08,460,Nigeria
+9126,Senegal,2007-08,70,Senegal
+9127,Sierra Leone,2007-08,300,Sierra Leone
+9128,Togo,2007-08,110,Togo
+9201,Angola,2007-08,30,Angola
+9202,Botswana,2007-08,180,Botswana
+9203,Burundi,2007-08,240,Burundi
+9205,Djibouti,2007-08,10,Djibouti
+9206,Eritrea,2007-08,170,Eritrea
+9207,Ethiopia,2007-08,590,Ethiopia
+9208,Kenya,2007-08,1210,Kenya
+9211,Lesotho,2007-08,20,Lesotho
+9212,Madagascar,2007-08,20,Madagascar
+9213,Malawi,2007-08,100,Malawi
+9214,Mauritius,2007-08,2590,Mauritius
+9215,Mayotte,2007-08,0,Mayotte
+9216,Mozambique,2007-08,80,Mozambique
+9217,Namibia,2007-08,120,Namibia
+9218,Reunion,2007-08,40,Reunion
+9221,Rwanda,2007-08,60,Rwanda
+9223,Seychelles,2007-08,130,Seychelles
+9224,Somalia,2007-08,390,Somalia
+9225,South Africa,2007-08,13070,South Africa
+9226,Eswatini,2007-08,30,Eswatini
+9227,Tanzania,2007-08,380,Tanzania
+9228,Uganda,2007-08,210,Uganda
+9231,Zambia,2007-08,540,Zambia
+9232,Zimbabwe,2007-08,3630,Zimbabwe
+1102,Norfolk Island,2008-09,30,Norfolk Island
+1201,New Zealand,2008-09,38090,New Zealand
+1301,New Caledonia,2008-09,190,New Caledonia
+1302,PNG,2008-09,1710,PNG
+1303,Solomon Islands,2008-09,190,Solomon Islands
+1304,Vanuatu,2008-09,100,Vanuatu
+1401,Guam,2008-09,10,Guam
+1402,Kiribati,2008-09,80,Kiribati
+1403,Marshall Is,2008-09,0,Marshall Is
+1404,"Micronesia, F S",2008-09,0,"Micronesia, F S"
+1405,Nauru,2008-09,40,Nauru
+1406,N Mariana Is,2008-09,0,N Mariana Is
+1407,Palau,2008-09,0,Palau
+1501,Cook Islands,2008-09,510,Cook Islands
+1502,Fiji,2008-09,3000,Fiji
+1503,French Poly,2008-09,60,French Poly
+1504,Niue,2008-09,70,Niue
+1505,Samoa,2008-09,1700,Samoa
+1506,Samoa American,2008-09,30,Samoa American
+1507,Tokelau,2008-09,80,Tokelau
+1508,Tonga,2008-09,710,Tonga
+1511,Tuvalu,2008-09,30,Tuvalu
+1512,Wallis/Futuna,2008-09,0,Wallis/Futuna
+1513,Pitcairn Is,2008-09,0,Pitcairn Is
+1599,"Polynesia, nec",2008-09,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2008-09,48910,UK
+2201,Ireland,2008-09,9650,Ireland
+2301,Austria,2008-09,490,Austria
+2302,Belgium,2008-09,490,Belgium
+2303,France,2008-09,4740,France
+2304,Germany,2008-09,5460,Germany
+2305,Liechtenstein,2008-09,0,Liechtenstein
+2306,Luxembourg,2008-09,20,Luxembourg
+2307,Monaco,2008-09,10,Monaco
+2308,Netherlands,2008-09,2030,Netherlands
+2311,Switzerland,2008-09,950,Switzerland
+2401,Denmark,2008-09,550,Denmark
+2402,Faroe Islands,2008-09,0,Faroe Islands
+2403,Finland,2008-09,380,Finland
+2404,Greenland,2008-09,0,Greenland
+2405,Iceland,2008-09,50,Iceland
+2406,Norway,2008-09,590,Norway
+2407,Sweden,2008-09,1190,Sweden
+3101,Andorra,2008-09,0,Andorra
+3102,Gibraltar,2008-09,10,Gibraltar
+3104,Italy,2008-09,2260,Italy
+3105,Malta,2008-09,170,Malta
+3106,Portugal,2008-09,430,Portugal
+3107,San Marino,2008-09,0,San Marino
+3108,Spain,2008-09,730,Spain
+3201,Albania,2008-09,210,Albania
+3202,Bosnia/Herzegov,2008-09,410,Bosnia/Herzegov
+3203,Bulgaria,2008-09,180,Bulgaria
+3204,Croatia,2008-09,400,Croatia
+3205,Cyprus,2008-09,160,Cyprus
+3206,North Macedonia,2008-09,660,North Macedonia
+3207,Greece,2008-09,770,Greece
+3208,Moldova,2008-09,60,Moldova
+3211,Romania,2008-09,590,Romania
+3212,Slovenia,2008-09,120,Slovenia
+3214,Montenegro,2008-09,40,Montenegro
+3215,Serbia,2008-09,420,Serbia
+3216,Kosovo,2008-09,20,Kosovo
+3301,Belarus,2008-09,90,Belarus
+3302,Czechia,2008-09,620,Czechia
+3303,Estonia,2008-09,610,Estonia
+3304,Hungary,2008-09,560,Hungary
+3305,Latvia,2008-09,200,Latvia
+3306,Lithuania,2008-09,150,Lithuania
+3307,Poland,2008-09,1270,Poland
+3308,Russia,2008-09,1410,Russia
+3311,Slovakia,2008-09,330,Slovakia
+3312,Ukraine,2008-09,580,Ukraine
+4101,Algeria,2008-09,70,Algeria
+4102,Egypt,2008-09,1330,Egypt
+4103,Libya,2008-09,290,Libya
+4104,Morocco,2008-09,110,Morocco
+4105,Sudan,2008-09,1060,Sudan
+4106,Tunisia,2008-09,20,Tunisia
+4111,South Sudan,2008-09,0,South Sudan
+4201,Bahrain,2008-09,150,Bahrain
+4202,Palestine,2008-09,20,Palestine
+4203,Iran,2008-09,2810,Iran
+4204,Iraq,2008-09,4770,Iraq
+4205,Israel,2008-09,780,Israel
+4206,Jordan,2008-09,440,Jordan
+4207,Kuwait,2008-09,470,Kuwait
+4208,Lebanon,2008-09,2100,Lebanon
+4211,Oman,2008-09,230,Oman
+4212,Qatar,2008-09,90,Qatar
+4213,Saudi Arabia,2008-09,4640,Saudi Arabia
+4214,Syria,2008-09,470,Syria
+4215,Türkiye,2008-09,1560,Türkiye
+4216,Unit Arab Emir,2008-09,870,Unit Arab Emir
+4217,Yemen,2008-09,40,Yemen
+5101,Myanmar,2008-09,2700,Myanmar
+5102,Cambodia,2008-09,1190,Cambodia
+5103,Laos,2008-09,340,Laos
+5104,Thailand,2008-09,8470,Thailand
+5105,Vietnam,2008-09,11370,Vietnam
+5201,Brunei,2008-09,280,Brunei
+5202,Indonesia,2008-09,8200,Indonesia
+5203,Malaysia,2008-09,12810,Malaysia
+5204,Philippines,2008-09,15560,Philippines
+5205,Singapore,2008-09,6200,Singapore
+5206,Timor-Leste,2008-09,170,Timor-Leste
+6101,China,2008-09,48540,China
+6102,Hong Kong,2008-09,5040,Hong Kong
+6103,Macau,2008-09,260,Macau
+6104,Mongolia,2008-09,270,Mongolia
+6105,Taiwan,2008-09,4740,Taiwan
+6201,Japan,2008-09,6520,Japan
+6202,"Korea, North",2008-09,70,"Korea, North"
+6203,"Korea, South",2008-09,17030,Korea South
+7101,Bangladesh,2008-09,3350,Bangladesh
+7102,Bhutan,2008-09,740,Bhutan
+7103,India,2008-09,68350,India
+7104,Maldives,2008-09,100,Maldives
+7105,Nepal,2008-09,11610,Nepal
+7106,Pakistan,2008-09,4320,Pakistan
+7107,Sri Lanka,2008-09,7840,Sri Lanka
+7201,Afghanistan,2008-09,2030,Afghanistan
+7202,Armenia,2008-09,30,Armenia
+7203,Azerbaijan,2008-09,40,Azerbaijan
+7204,Georgia,2008-09,30,Georgia
+7205,Kazakhstan,2008-09,170,Kazakhstan
+7206,Kyrgyzstan,2008-09,30,Kyrgyzstan
+7207,Tajikistan,2008-09,10,Tajikistan
+7208,Turkmenistan,2008-09,10,Turkmenistan
+7211,Uzbekistan,2008-09,130,Uzbekistan
+8101,Bermuda,2008-09,20,Bermuda
+8102,Canada,2008-09,5030,Canada
+8104,USA,2008-09,13160,USA
+8201,Argentina,2008-09,400,Argentina
+8202,Bolivia,2008-09,40,Bolivia
+8203,Brazil,2008-09,3580,Brazil
+8204,Chile,2008-09,930,Chile
+8205,Colombia,2008-09,2590,Colombia
+8206,Ecuador,2008-09,110,Ecuador
+8207,Falkland Is,2008-09,0,Falkland Is
+8208,French Guiana,2008-09,0,French Guiana
+8211,Guyana,2008-09,20,Guyana
+8212,Paraguay,2008-09,30,Paraguay
+8213,Peru,2008-09,990,Peru
+8214,Suriname,2008-09,10,Suriname
+8215,Uruguay,2008-09,90,Uruguay
+8216,Venezuela,2008-09,450,Venezuela
+8301,Belize,2008-09,0,Belize
+8302,Costa Rica,2008-09,30,Costa Rica
+8303,El Salvador,2008-09,160,El Salvador
+8304,Guatemala,2008-09,30,Guatemala
+8305,Honduras,2008-09,20,Honduras
+8306,Mexico,2008-09,580,Mexico
+8307,Nicaragua,2008-09,20,Nicaragua
+8308,Panama,2008-09,20,Panama
+8402,Antigua/Barbuda,2008-09,0,Antigua/Barbuda
+8403,Aruba,2008-09,0,Aruba
+8404,Bahamas,2008-09,10,Bahamas
+8405,Barbados,2008-09,20,Barbados
+8406,Cayman Islands,2008-09,10,Cayman Islands
+8407,Cuba,2008-09,60,Cuba
+8408,Dominica,2008-09,10,Dominica
+8411,Dominican Rep,2008-09,10,Dominican Rep
+8412,Grenada,2008-09,0,Grenada
+8413,Guadeloupe,2008-09,0,Guadeloupe
+8414,Haiti,2008-09,10,Haiti
+8415,Jamaica,2008-09,50,Jamaica
+8416,Martinique,2008-09,0,Martinique
+8417,Montserrat,2008-09,0,Montserrat
+8421,Puerto Rico,2008-09,10,Puerto Rico
+8422,St Kitts/Nevis,2008-09,0,St Kitts/Nevis
+8423,St Lucia,2008-09,10,St Lucia
+8424,St Vinc/Grenad,2008-09,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2008-09,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2008-09,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2008-09,0,"Virgin Is, US"
+8434,Curacao,2008-09,0,Curacao
+8435,Sint Maarten Dp,2008-09,0,Sint Maarten Dp
+9101,Benin,2008-09,10,Benin
+9102,Burkina Faso,2008-09,0,Burkina Faso
+9103,Cameroon,2008-09,40,Cameroon
+9104,Cabo Verde,2008-09,0,Cabo Verde
+9105,Cent Africa Rep,2008-09,0,Cent Africa Rep
+9106,Chad,2008-09,0,Chad
+9107,"Congo, Rep",2008-09,110,"Congo, Rep"
+9108,"Congo, Dem Rep",2008-09,320,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2008-09,90,Cote d'Ivoire
+9113,Gabon,2008-09,10,Gabon
+9114,Gambia,2008-09,0,Gambia
+9115,Ghana,2008-09,300,Ghana
+9116,Guinea,2008-09,70,Guinea
+9118,Liberia,2008-09,310,Liberia
+9121,Mali,2008-09,0,Mali
+9122,Mauritania,2008-09,0,Mauritania
+9123,Niger,2008-09,10,Niger
+9124,Nigeria,2008-09,610,Nigeria
+9126,Senegal,2008-09,20,Senegal
+9127,Sierra Leone,2008-09,260,Sierra Leone
+9128,Togo,2008-09,50,Togo
+9201,Angola,2008-09,20,Angola
+9202,Botswana,2008-09,150,Botswana
+9203,Burundi,2008-09,210,Burundi
+9205,Djibouti,2008-09,10,Djibouti
+9206,Eritrea,2008-09,210,Eritrea
+9207,Ethiopia,2008-09,870,Ethiopia
+9208,Kenya,2008-09,1320,Kenya
+9211,Lesotho,2008-09,10,Lesotho
+9212,Madagascar,2008-09,20,Madagascar
+9213,Malawi,2008-09,100,Malawi
+9214,Mauritius,2008-09,3030,Mauritius
+9215,Mayotte,2008-09,0,Mayotte
+9216,Mozambique,2008-09,80,Mozambique
+9217,Namibia,2008-09,140,Namibia
+9218,Reunion,2008-09,40,Reunion
+9221,Rwanda,2008-09,90,Rwanda
+9223,Seychelles,2008-09,60,Seychelles
+9224,Somalia,2008-09,570,Somalia
+9225,South Africa,2008-09,14960,South Africa
+9226,Eswatini,2008-09,30,Eswatini
+9227,Tanzania,2008-09,300,Tanzania
+9228,Uganda,2008-09,210,Uganda
+9231,Zambia,2008-09,450,Zambia
+9232,Zimbabwe,2008-09,3230,Zimbabwe
+1102,Norfolk Island,2009-10,30,Norfolk Island
+1201,New Zealand,2009-10,31580,New Zealand
+1301,New Caledonia,2009-10,220,New Caledonia
+1302,PNG,2009-10,1550,PNG
+1303,Solomon Islands,2009-10,170,Solomon Islands
+1304,Vanuatu,2009-10,140,Vanuatu
+1401,Guam,2009-10,10,Guam
+1402,Kiribati,2009-10,80,Kiribati
+1403,Marshall Is,2009-10,0,Marshall Is
+1404,"Micronesia, F S",2009-10,10,"Micronesia, F S"
+1405,Nauru,2009-10,30,Nauru
+1406,N Mariana Is,2009-10,0,N Mariana Is
+1407,Palau,2009-10,0,Palau
+1501,Cook Islands,2009-10,400,Cook Islands
+1502,Fiji,2009-10,2740,Fiji
+1503,French Poly,2009-10,60,French Poly
+1504,Niue,2009-10,80,Niue
+1505,Samoa,2009-10,1460,Samoa
+1506,Samoa American,2009-10,40,Samoa American
+1507,Tokelau,2009-10,60,Tokelau
+1508,Tonga,2009-10,680,Tonga
+1511,Tuvalu,2009-10,20,Tuvalu
+1512,Wallis/Futuna,2009-10,10,Wallis/Futuna
+1513,Pitcairn Is,2009-10,0,Pitcairn Is
+1599,"Polynesia, nec",2009-10,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2009-10,42100,UK
+2201,Ireland,2009-10,7650,Ireland
+2301,Austria,2009-10,410,Austria
+2302,Belgium,2009-10,540,Belgium
+2303,France,2009-10,5100,France
+2304,Germany,2009-10,5530,Germany
+2305,Liechtenstein,2009-10,0,Liechtenstein
+2306,Luxembourg,2009-10,20,Luxembourg
+2307,Monaco,2009-10,10,Monaco
+2308,Netherlands,2009-10,1910,Netherlands
+2311,Switzerland,2009-10,900,Switzerland
+2401,Denmark,2009-10,560,Denmark
+2402,Faroe Islands,2009-10,0,Faroe Islands
+2403,Finland,2009-10,420,Finland
+2404,Greenland,2009-10,0,Greenland
+2405,Iceland,2009-10,30,Iceland
+2406,Norway,2009-10,700,Norway
+2407,Sweden,2009-10,1320,Sweden
+3101,Andorra,2009-10,0,Andorra
+3102,Gibraltar,2009-10,10,Gibraltar
+3104,Italy,2009-10,2390,Italy
+3105,Malta,2009-10,160,Malta
+3106,Portugal,2009-10,380,Portugal
+3107,San Marino,2009-10,0,San Marino
+3108,Spain,2009-10,820,Spain
+3201,Albania,2009-10,180,Albania
+3202,Bosnia/Herzegov,2009-10,390,Bosnia/Herzegov
+3203,Bulgaria,2009-10,160,Bulgaria
+3204,Croatia,2009-10,410,Croatia
+3205,Cyprus,2009-10,160,Cyprus
+3206,North Macedonia,2009-10,630,North Macedonia
+3207,Greece,2009-10,800,Greece
+3208,Moldova,2009-10,60,Moldova
+3211,Romania,2009-10,610,Romania
+3212,Slovenia,2009-10,110,Slovenia
+3214,Montenegro,2009-10,30,Montenegro
+3215,Serbia,2009-10,380,Serbia
+3216,Kosovo,2009-10,30,Kosovo
+3301,Belarus,2009-10,70,Belarus
+3302,Czechia,2009-10,650,Czechia
+3303,Estonia,2009-10,650,Estonia
+3304,Hungary,2009-10,530,Hungary
+3305,Latvia,2009-10,220,Latvia
+3306,Lithuania,2009-10,200,Lithuania
+3307,Poland,2009-10,1260,Poland
+3308,Russia,2009-10,1280,Russia
+3311,Slovakia,2009-10,270,Slovakia
+3312,Ukraine,2009-10,590,Ukraine
+4101,Algeria,2009-10,70,Algeria
+4102,Egypt,2009-10,1270,Egypt
+4103,Libya,2009-10,500,Libya
+4104,Morocco,2009-10,100,Morocco
+4105,Sudan,2009-10,860,Sudan
+4106,Tunisia,2009-10,30,Tunisia
+4111,South Sudan,2009-10,0,South Sudan
+4201,Bahrain,2009-10,130,Bahrain
+4202,Palestine,2009-10,10,Palestine
+4203,Iran,2009-10,2990,Iran
+4204,Iraq,2009-10,3360,Iraq
+4205,Israel,2009-10,680,Israel
+4206,Jordan,2009-10,420,Jordan
+4207,Kuwait,2009-10,510,Kuwait
+4208,Lebanon,2009-10,1960,Lebanon
+4211,Oman,2009-10,250,Oman
+4212,Qatar,2009-10,90,Qatar
+4213,Saudi Arabia,2009-10,3160,Saudi Arabia
+4214,Syria,2009-10,370,Syria
+4215,Türkiye,2009-10,1470,Türkiye
+4216,Unit Arab Emir,2009-10,870,Unit Arab Emir
+4217,Yemen,2009-10,30,Yemen
+5101,Myanmar,2009-10,2330,Myanmar
+5102,Cambodia,2009-10,1430,Cambodia
+5103,Laos,2009-10,320,Laos
+5104,Thailand,2009-10,6780,Thailand
+5105,Vietnam,2009-10,9630,Vietnam
+5201,Brunei,2009-10,260,Brunei
+5202,Indonesia,2009-10,7780,Indonesia
+5203,Malaysia,2009-10,12300,Malaysia
+5204,Philippines,2009-10,12520,Philippines
+5205,Singapore,2009-10,6230,Singapore
+5206,Timor-Leste,2009-10,150,Timor-Leste
+6101,China,2009-10,49020,China
+6102,Hong Kong,2009-10,5420,Hong Kong
+6103,Macau,2009-10,260,Macau
+6104,Mongolia,2009-10,210,Mongolia
+6105,Taiwan,2009-10,4990,Taiwan
+6201,Japan,2009-10,6290,Japan
+6202,"Korea, North",2009-10,80,"Korea, North"
+6203,"Korea, South",2009-10,14760,Korea South
+7101,Bangladesh,2009-10,3440,Bangladesh
+7102,Bhutan,2009-10,800,Bhutan
+7103,India,2009-10,36610,India
+7104,Maldives,2009-10,100,Maldives
+7105,Nepal,2009-10,3370,Nepal
+7106,Pakistan,2009-10,4430,Pakistan
+7107,Sri Lanka,2009-10,6230,Sri Lanka
+7201,Afghanistan,2009-10,2310,Afghanistan
+7202,Armenia,2009-10,40,Armenia
+7203,Azerbaijan,2009-10,40,Azerbaijan
+7204,Georgia,2009-10,40,Georgia
+7205,Kazakhstan,2009-10,160,Kazakhstan
+7206,Kyrgyzstan,2009-10,40,Kyrgyzstan
+7207,Tajikistan,2009-10,20,Tajikistan
+7208,Turkmenistan,2009-10,10,Turkmenistan
+7211,Uzbekistan,2009-10,90,Uzbekistan
+8101,Bermuda,2009-10,20,Bermuda
+8102,Canada,2009-10,4810,Canada
+8104,USA,2009-10,12740,USA
+8201,Argentina,2009-10,510,Argentina
+8202,Bolivia,2009-10,50,Bolivia
+8203,Brazil,2009-10,2940,Brazil
+8204,Chile,2009-10,910,Chile
+8205,Colombia,2009-10,2080,Colombia
+8206,Ecuador,2009-10,120,Ecuador
+8207,Falkland Is,2009-10,0,Falkland Is
+8208,French Guiana,2009-10,10,French Guiana
+8211,Guyana,2009-10,20,Guyana
+8212,Paraguay,2009-10,30,Paraguay
+8213,Peru,2009-10,730,Peru
+8214,Suriname,2009-10,10,Suriname
+8215,Uruguay,2009-10,80,Uruguay
+8216,Venezuela,2009-10,650,Venezuela
+8301,Belize,2009-10,10,Belize
+8302,Costa Rica,2009-10,30,Costa Rica
+8303,El Salvador,2009-10,170,El Salvador
+8304,Guatemala,2009-10,20,Guatemala
+8305,Honduras,2009-10,10,Honduras
+8306,Mexico,2009-10,630,Mexico
+8307,Nicaragua,2009-10,20,Nicaragua
+8308,Panama,2009-10,30,Panama
+8402,Antigua/Barbuda,2009-10,0,Antigua/Barbuda
+8403,Aruba,2009-10,0,Aruba
+8404,Bahamas,2009-10,10,Bahamas
+8405,Barbados,2009-10,20,Barbados
+8406,Cayman Islands,2009-10,10,Cayman Islands
+8407,Cuba,2009-10,50,Cuba
+8408,Dominica,2009-10,0,Dominica
+8411,Dominican Rep,2009-10,20,Dominican Rep
+8412,Grenada,2009-10,0,Grenada
+8413,Guadeloupe,2009-10,0,Guadeloupe
+8414,Haiti,2009-10,10,Haiti
+8415,Jamaica,2009-10,50,Jamaica
+8416,Martinique,2009-10,10,Martinique
+8417,Montserrat,2009-10,0,Montserrat
+8421,Puerto Rico,2009-10,20,Puerto Rico
+8422,St Kitts/Nevis,2009-10,0,St Kitts/Nevis
+8423,St Lucia,2009-10,10,St Lucia
+8424,St Vinc/Grenad,2009-10,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2009-10,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2009-10,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2009-10,0,"Virgin Is, US"
+8434,Curacao,2009-10,10,Curacao
+8435,Sint Maarten Dp,2009-10,0,Sint Maarten Dp
+9101,Benin,2009-10,10,Benin
+9102,Burkina Faso,2009-10,10,Burkina Faso
+9103,Cameroon,2009-10,60,Cameroon
+9104,Cabo Verde,2009-10,0,Cabo Verde
+9105,Cent Africa Rep,2009-10,0,Cent Africa Rep
+9106,Chad,2009-10,10,Chad
+9107,"Congo, Rep",2009-10,120,"Congo, Rep"
+9108,"Congo, Dem Rep",2009-10,620,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2009-10,100,Cote d'Ivoire
+9113,Gabon,2009-10,0,Gabon
+9114,Gambia,2009-10,10,Gambia
+9115,Ghana,2009-10,370,Ghana
+9116,Guinea,2009-10,170,Guinea
+9118,Liberia,2009-10,340,Liberia
+9121,Mali,2009-10,10,Mali
+9122,Mauritania,2009-10,0,Mauritania
+9123,Niger,2009-10,10,Niger
+9124,Nigeria,2009-10,630,Nigeria
+9126,Senegal,2009-10,20,Senegal
+9127,Sierra Leone,2009-10,440,Sierra Leone
+9128,Togo,2009-10,60,Togo
+9201,Angola,2009-10,20,Angola
+9202,Botswana,2009-10,130,Botswana
+9203,Burundi,2009-10,140,Burundi
+9205,Djibouti,2009-10,10,Djibouti
+9206,Eritrea,2009-10,270,Eritrea
+9207,Ethiopia,2009-10,880,Ethiopia
+9208,Kenya,2009-10,1210,Kenya
+9211,Lesotho,2009-10,10,Lesotho
+9212,Madagascar,2009-10,20,Madagascar
+9213,Malawi,2009-10,70,Malawi
+9214,Mauritius,2009-10,1020,Mauritius
+9215,Mayotte,2009-10,0,Mayotte
+9216,Mozambique,2009-10,60,Mozambique
+9217,Namibia,2009-10,80,Namibia
+9218,Reunion,2009-10,20,Reunion
+9221,Rwanda,2009-10,150,Rwanda
+9223,Seychelles,2009-10,70,Seychelles
+9224,Somalia,2009-10,760,Somalia
+9225,South Africa,2009-10,8280,South Africa
+9226,Eswatini,2009-10,20,Eswatini
+9227,Tanzania,2009-10,220,Tanzania
+9228,Uganda,2009-10,240,Uganda
+9231,Zambia,2009-10,390,Zambia
+9232,Zimbabwe,2009-10,1850,Zimbabwe
+1102,Norfolk Island,2010-11,30,Norfolk Island
+1201,New Zealand,2010-11,43430,New Zealand
+1301,New Caledonia,2010-11,170,New Caledonia
+1302,PNG,2010-11,1560,PNG
+1303,Solomon Islands,2010-11,220,Solomon Islands
+1304,Vanuatu,2010-11,110,Vanuatu
+1401,Guam,2010-11,10,Guam
+1402,Kiribati,2010-11,40,Kiribati
+1403,Marshall Is,2010-11,0,Marshall Is
+1404,"Micronesia, F S",2010-11,0,"Micronesia, F S"
+1405,Nauru,2010-11,20,Nauru
+1406,N Mariana Is,2010-11,0,N Mariana Is
+1407,Palau,2010-11,20,Palau
+1501,Cook Islands,2010-11,500,Cook Islands
+1502,Fiji,2010-11,2560,Fiji
+1503,French Poly,2010-11,60,French Poly
+1504,Niue,2010-11,60,Niue
+1505,Samoa,2010-11,2020,Samoa
+1506,Samoa American,2010-11,40,Samoa American
+1507,Tokelau,2010-11,70,Tokelau
+1508,Tonga,2010-11,840,Tonga
+1511,Tuvalu,2010-11,10,Tuvalu
+1512,Wallis/Futuna,2010-11,10,Wallis/Futuna
+1513,Pitcairn Is,2010-11,0,Pitcairn Is
+1599,"Polynesia, nec",2010-11,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2010-11,45750,UK
+2201,Ireland,2010-11,12270,Ireland
+2301,Austria,2010-11,410,Austria
+2302,Belgium,2010-11,600,Belgium
+2303,France,2010-11,5660,France
+2304,Germany,2010-11,5590,Germany
+2305,Liechtenstein,2010-11,0,Liechtenstein
+2306,Luxembourg,2010-11,30,Luxembourg
+2307,Monaco,2010-11,10,Monaco
+2308,Netherlands,2010-11,2130,Netherlands
+2311,Switzerland,2010-11,990,Switzerland
+2401,Denmark,2010-11,590,Denmark
+2402,Faroe Islands,2010-11,0,Faroe Islands
+2403,Finland,2010-11,440,Finland
+2404,Greenland,2010-11,0,Greenland
+2405,Iceland,2010-11,40,Iceland
+2406,Norway,2010-11,710,Norway
+2407,Sweden,2010-11,1440,Sweden
+3101,Andorra,2010-11,0,Andorra
+3102,Gibraltar,2010-11,10,Gibraltar
+3104,Italy,2010-11,2850,Italy
+3105,Malta,2010-11,210,Malta
+3106,Portugal,2010-11,420,Portugal
+3107,San Marino,2010-11,0,San Marino
+3108,Spain,2010-11,1100,Spain
+3201,Albania,2010-11,120,Albania
+3202,Bosnia/Herzegov,2010-11,350,Bosnia/Herzegov
+3203,Bulgaria,2010-11,150,Bulgaria
+3204,Croatia,2010-11,430,Croatia
+3205,Cyprus,2010-11,180,Cyprus
+3206,North Macedonia,2010-11,570,North Macedonia
+3207,Greece,2010-11,1140,Greece
+3208,Moldova,2010-11,50,Moldova
+3211,Romania,2010-11,520,Romania
+3212,Slovenia,2010-11,130,Slovenia
+3214,Montenegro,2010-11,20,Montenegro
+3215,Serbia,2010-11,320,Serbia
+3216,Kosovo,2010-11,20,Kosovo
+3301,Belarus,2010-11,100,Belarus
+3302,Czechia,2010-11,610,Czechia
+3303,Estonia,2010-11,730,Estonia
+3304,Hungary,2010-11,440,Hungary
+3305,Latvia,2010-11,200,Latvia
+3306,Lithuania,2010-11,230,Lithuania
+3307,Poland,2010-11,1210,Poland
+3308,Russia,2010-11,1390,Russia
+3311,Slovakia,2010-11,290,Slovakia
+3312,Ukraine,2010-11,620,Ukraine
+4101,Algeria,2010-11,80,Algeria
+4102,Egypt,2010-11,1180,Egypt
+4103,Libya,2010-11,690,Libya
+4104,Morocco,2010-11,150,Morocco
+4105,Sudan,2010-11,830,Sudan
+4106,Tunisia,2010-11,30,Tunisia
+4111,South Sudan,2010-11,0,South Sudan
+4201,Bahrain,2010-11,180,Bahrain
+4202,Palestine,2010-11,10,Palestine
+4203,Iran,2010-11,3740,Iran
+4204,Iraq,2010-11,3690,Iraq
+4205,Israel,2010-11,690,Israel
+4206,Jordan,2010-11,390,Jordan
+4207,Kuwait,2010-11,570,Kuwait
+4208,Lebanon,2010-11,1870,Lebanon
+4211,Oman,2010-11,180,Oman
+4212,Qatar,2010-11,70,Qatar
+4213,Saudi Arabia,2010-11,2890,Saudi Arabia
+4214,Syria,2010-11,500,Syria
+4215,Türkiye,2010-11,1340,Türkiye
+4216,Unit Arab Emir,2010-11,810,Unit Arab Emir
+4217,Yemen,2010-11,20,Yemen
+5101,Myanmar,2010-11,1530,Myanmar
+5102,Cambodia,2010-11,1220,Cambodia
+5103,Laos,2010-11,440,Laos
+5104,Thailand,2010-11,5380,Thailand
+5105,Vietnam,2010-11,8240,Vietnam
+5201,Brunei,2010-11,220,Brunei
+5202,Indonesia,2010-11,7150,Indonesia
+5203,Malaysia,2010-11,12060,Malaysia
+5204,Philippines,2010-11,13240,Philippines
+5205,Singapore,2010-11,6540,Singapore
+5206,Timor-Leste,2010-11,140,Timor-Leste
+6101,China,2010-11,41210,China
+6102,Hong Kong,2010-11,5340,Hong Kong
+6103,Macau,2010-11,260,Macau
+6104,Mongolia,2010-11,230,Mongolia
+6105,Taiwan,2010-11,6290,Taiwan
+6201,Japan,2010-11,6270,Japan
+6202,"Korea, North",2010-11,70,"Korea, North"
+6203,"Korea, South",2010-11,13850,Korea South
+7101,Bangladesh,2010-11,2940,Bangladesh
+7102,Bhutan,2010-11,1050,Bhutan
+7103,India,2010-11,23760,India
+7104,Maldives,2010-11,100,Maldives
+7105,Nepal,2010-11,1760,Nepal
+7106,Pakistan,2010-11,4860,Pakistan
+7107,Sri Lanka,2010-11,5240,Sri Lanka
+7201,Afghanistan,2010-11,2210,Afghanistan
+7202,Armenia,2010-11,30,Armenia
+7203,Azerbaijan,2010-11,50,Azerbaijan
+7204,Georgia,2010-11,30,Georgia
+7205,Kazakhstan,2010-11,170,Kazakhstan
+7206,Kyrgyzstan,2010-11,50,Kyrgyzstan
+7207,Tajikistan,2010-11,20,Tajikistan
+7208,Turkmenistan,2010-11,0,Turkmenistan
+7211,Uzbekistan,2010-11,90,Uzbekistan
+8101,Bermuda,2010-11,20,Bermuda
+8102,Canada,2010-11,5200,Canada
+8104,USA,2010-11,13350,USA
+8201,Argentina,2010-11,400,Argentina
+8202,Bolivia,2010-11,60,Bolivia
+8203,Brazil,2010-11,2650,Brazil
+8204,Chile,2010-11,1000,Chile
+8205,Colombia,2010-11,1680,Colombia
+8206,Ecuador,2010-11,120,Ecuador
+8207,Falkland Is,2010-11,0,Falkland Is
+8208,French Guiana,2010-11,0,French Guiana
+8211,Guyana,2010-11,30,Guyana
+8212,Paraguay,2010-11,20,Paraguay
+8213,Peru,2010-11,540,Peru
+8214,Suriname,2010-11,10,Suriname
+8215,Uruguay,2010-11,100,Uruguay
+8216,Venezuela,2010-11,640,Venezuela
+8301,Belize,2010-11,10,Belize
+8302,Costa Rica,2010-11,40,Costa Rica
+8303,El Salvador,2010-11,140,El Salvador
+8304,Guatemala,2010-11,30,Guatemala
+8305,Honduras,2010-11,10,Honduras
+8306,Mexico,2010-11,680,Mexico
+8307,Nicaragua,2010-11,30,Nicaragua
+8308,Panama,2010-11,30,Panama
+8402,Antigua/Barbuda,2010-11,0,Antigua/Barbuda
+8403,Aruba,2010-11,0,Aruba
+8404,Bahamas,2010-11,10,Bahamas
+8405,Barbados,2010-11,10,Barbados
+8406,Cayman Islands,2010-11,10,Cayman Islands
+8407,Cuba,2010-11,40,Cuba
+8408,Dominica,2010-11,10,Dominica
+8411,Dominican Rep,2010-11,30,Dominican Rep
+8412,Grenada,2010-11,10,Grenada
+8413,Guadeloupe,2010-11,10,Guadeloupe
+8414,Haiti,2010-11,10,Haiti
+8415,Jamaica,2010-11,90,Jamaica
+8416,Martinique,2010-11,10,Martinique
+8417,Montserrat,2010-11,0,Montserrat
+8421,Puerto Rico,2010-11,10,Puerto Rico
+8422,St Kitts/Nevis,2010-11,0,St Kitts/Nevis
+8423,St Lucia,2010-11,10,St Lucia
+8424,St Vinc/Grenad,2010-11,10,St Vinc/Grenad
+8425,Trinidad/Tobago,2010-11,80,Trinidad/Tobago
+8427,"Virgin Is, Brit",2010-11,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2010-11,0,"Virgin Is, US"
+8434,Curacao,2010-11,10,Curacao
+8435,Sint Maarten Dp,2010-11,0,Sint Maarten Dp
+9101,Benin,2010-11,10,Benin
+9102,Burkina Faso,2010-11,0,Burkina Faso
+9103,Cameroon,2010-11,70,Cameroon
+9104,Cabo Verde,2010-11,0,Cabo Verde
+9105,Cent Africa Rep,2010-11,0,Cent Africa Rep
+9106,Chad,2010-11,10,Chad
+9107,"Congo, Rep",2010-11,100,"Congo, Rep"
+9108,"Congo, Dem Rep",2010-11,450,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2010-11,40,Cote d'Ivoire
+9113,Gabon,2010-11,0,Gabon
+9114,Gambia,2010-11,10,Gambia
+9115,Ghana,2010-11,330,Ghana
+9116,Guinea,2010-11,70,Guinea
+9118,Liberia,2010-11,110,Liberia
+9121,Mali,2010-11,0,Mali
+9122,Mauritania,2010-11,0,Mauritania
+9123,Niger,2010-11,10,Niger
+9124,Nigeria,2010-11,580,Nigeria
+9126,Senegal,2010-11,20,Senegal
+9127,Sierra Leone,2010-11,160,Sierra Leone
+9128,Togo,2010-11,50,Togo
+9201,Angola,2010-11,20,Angola
+9202,Botswana,2010-11,120,Botswana
+9203,Burundi,2010-11,80,Burundi
+9205,Djibouti,2010-11,20,Djibouti
+9206,Eritrea,2010-11,200,Eritrea
+9207,Ethiopia,2010-11,780,Ethiopia
+9208,Kenya,2010-11,890,Kenya
+9211,Lesotho,2010-11,10,Lesotho
+9212,Madagascar,2010-11,20,Madagascar
+9213,Malawi,2010-11,100,Malawi
+9214,Mauritius,2010-11,620,Mauritius
+9215,Mayotte,2010-11,0,Mayotte
+9216,Mozambique,2010-11,60,Mozambique
+9217,Namibia,2010-11,100,Namibia
+9218,Reunion,2010-11,30,Reunion
+9221,Rwanda,2010-11,100,Rwanda
+9223,Seychelles,2010-11,70,Seychelles
+9224,Somalia,2010-11,620,Somalia
+9225,South Africa,2010-11,8550,South Africa
+9226,Eswatini,2010-11,30,Eswatini
+9227,Tanzania,2010-11,220,Tanzania
+9228,Uganda,2010-11,240,Uganda
+9231,Zambia,2010-11,360,Zambia
+9232,Zimbabwe,2010-11,1560,Zimbabwe
+1102,Norfolk Island,2011-12,30,Norfolk Island
+1201,New Zealand,2011-12,48220,New Zealand
+1301,New Caledonia,2011-12,130,New Caledonia
+1302,PNG,2011-12,1640,PNG
+1303,Solomon Islands,2011-12,220,Solomon Islands
+1304,Vanuatu,2011-12,130,Vanuatu
+1401,Guam,2011-12,10,Guam
+1402,Kiribati,2011-12,50,Kiribati
+1403,Marshall Is,2011-12,10,Marshall Is
+1404,"Micronesia, F S",2011-12,10,"Micronesia, F S"
+1405,Nauru,2011-12,30,Nauru
+1406,N Mariana Is,2011-12,0,N Mariana Is
+1407,Palau,2011-12,0,Palau
+1501,Cook Islands,2011-12,600,Cook Islands
+1502,Fiji,2011-12,2600,Fiji
+1503,French Poly,2011-12,60,French Poly
+1504,Niue,2011-12,60,Niue
+1505,Samoa,2011-12,2590,Samoa
+1506,Samoa American,2011-12,60,Samoa American
+1507,Tokelau,2011-12,80,Tokelau
+1508,Tonga,2011-12,890,Tonga
+1511,Tuvalu,2011-12,30,Tuvalu
+1512,Wallis/Futuna,2011-12,10,Wallis/Futuna
+1513,Pitcairn Is,2011-12,0,Pitcairn Is
+1599,"Polynesia, nec",2011-12,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2011-12,50610,UK
+2201,Ireland,2011-12,15820,Ireland
+2301,Austria,2011-12,410,Austria
+2302,Belgium,2011-12,660,Belgium
+2303,France,2011-12,5630,France
+2304,Germany,2011-12,5190,Germany
+2305,Liechtenstein,2011-12,0,Liechtenstein
+2306,Luxembourg,2011-12,20,Luxembourg
+2307,Monaco,2011-12,10,Monaco
+2308,Netherlands,2011-12,1970,Netherlands
+2311,Switzerland,2011-12,840,Switzerland
+2401,Denmark,2011-12,580,Denmark
+2402,Faroe Islands,2011-12,0,Faroe Islands
+2403,Finland,2011-12,450,Finland
+2404,Greenland,2011-12,0,Greenland
+2405,Iceland,2011-12,20,Iceland
+2406,Norway,2011-12,620,Norway
+2407,Sweden,2011-12,1350,Sweden
+3101,Andorra,2011-12,0,Andorra
+3102,Gibraltar,2011-12,20,Gibraltar
+3104,Italy,2011-12,4030,Italy
+3105,Malta,2011-12,170,Malta
+3106,Portugal,2011-12,560,Portugal
+3107,San Marino,2011-12,0,San Marino
+3108,Spain,2011-12,1490,Spain
+3201,Albania,2011-12,170,Albania
+3202,Bosnia/Herzegov,2011-12,380,Bosnia/Herzegov
+3203,Bulgaria,2011-12,180,Bulgaria
+3204,Croatia,2011-12,420,Croatia
+3205,Cyprus,2011-12,210,Cyprus
+3206,North Macedonia,2011-12,580,North Macedonia
+3207,Greece,2011-12,2370,Greece
+3208,Moldova,2011-12,80,Moldova
+3211,Romania,2011-12,610,Romania
+3212,Slovenia,2011-12,140,Slovenia
+3214,Montenegro,2011-12,30,Montenegro
+3215,Serbia,2011-12,410,Serbia
+3216,Kosovo,2011-12,30,Kosovo
+3301,Belarus,2011-12,110,Belarus
+3302,Czechia,2011-12,610,Czechia
+3303,Estonia,2011-12,840,Estonia
+3304,Hungary,2011-12,600,Hungary
+3305,Latvia,2011-12,200,Latvia
+3306,Lithuania,2011-12,270,Lithuania
+3307,Poland,2011-12,1330,Poland
+3308,Russia,2011-12,1410,Russia
+3311,Slovakia,2011-12,340,Slovakia
+3312,Ukraine,2011-12,730,Ukraine
+4101,Algeria,2011-12,80,Algeria
+4102,Egypt,2011-12,1360,Egypt
+4103,Libya,2011-12,160,Libya
+4104,Morocco,2011-12,110,Morocco
+4105,Sudan,2011-12,650,Sudan
+4106,Tunisia,2011-12,40,Tunisia
+4111,South Sudan,2011-12,20,South Sudan
+4201,Bahrain,2011-12,110,Bahrain
+4202,Palestine,2011-12,0,Palestine
+4203,Iran,2011-12,4440,Iran
+4204,Iraq,2011-12,2730,Iraq
+4205,Israel,2011-12,680,Israel
+4206,Jordan,2011-12,440,Jordan
+4207,Kuwait,2011-12,700,Kuwait
+4208,Lebanon,2011-12,2080,Lebanon
+4211,Oman,2011-12,210,Oman
+4212,Qatar,2011-12,110,Qatar
+4213,Saudi Arabia,2011-12,2750,Saudi Arabia
+4214,Syria,2011-12,530,Syria
+4215,Türkiye,2011-12,1180,Türkiye
+4216,Unit Arab Emir,2011-12,850,Unit Arab Emir
+4217,Yemen,2011-12,20,Yemen
+5101,Myanmar,2011-12,2190,Myanmar
+5102,Cambodia,2011-12,1340,Cambodia
+5103,Laos,2011-12,340,Laos
+5104,Thailand,2011-12,5770,Thailand
+5105,Vietnam,2011-12,8300,Vietnam
+5201,Brunei,2011-12,200,Brunei
+5202,Indonesia,2011-12,6900,Indonesia
+5203,Malaysia,2011-12,11940,Malaysia
+5204,Philippines,2011-12,16910,Philippines
+5205,Singapore,2011-12,6930,Singapore
+5206,Timor-Leste,2011-12,180,Timor-Leste
+6101,China,2011-12,40150,China
+6102,Hong Kong,2011-12,4990,Hong Kong
+6103,Macau,2011-12,180,Macau
+6104,Mongolia,2011-12,240,Mongolia
+6105,Taiwan,2011-12,9010,Taiwan
+6201,Japan,2011-12,6320,Japan
+6202,"Korea, North",2011-12,70,"Korea, North"
+6203,"Korea, South",2011-12,14370,Korea South
+7101,Bangladesh,2011-12,3000,Bangladesh
+7102,Bhutan,2011-12,880,Bhutan
+7103,India,2011-12,30390,India
+7104,Maldives,2011-12,90,Maldives
+7105,Nepal,2011-12,2790,Nepal
+7106,Pakistan,2011-12,6190,Pakistan
+7107,Sri Lanka,2011-12,6020,Sri Lanka
+7201,Afghanistan,2011-12,1790,Afghanistan
+7202,Armenia,2011-12,50,Armenia
+7203,Azerbaijan,2011-12,50,Azerbaijan
+7204,Georgia,2011-12,50,Georgia
+7205,Kazakhstan,2011-12,220,Kazakhstan
+7206,Kyrgyzstan,2011-12,30,Kyrgyzstan
+7207,Tajikistan,2011-12,20,Tajikistan
+7208,Turkmenistan,2011-12,10,Turkmenistan
+7211,Uzbekistan,2011-12,120,Uzbekistan
+8101,Bermuda,2011-12,30,Bermuda
+8102,Canada,2011-12,5580,Canada
+8104,USA,2011-12,15460,USA
+8201,Argentina,2011-12,510,Argentina
+8202,Bolivia,2011-12,70,Bolivia
+8203,Brazil,2011-12,3050,Brazil
+8204,Chile,2011-12,1120,Chile
+8205,Colombia,2011-12,2260,Colombia
+8206,Ecuador,2011-12,130,Ecuador
+8207,Falkland Is,2011-12,0,Falkland Is
+8208,French Guiana,2011-12,0,French Guiana
+8211,Guyana,2011-12,30,Guyana
+8212,Paraguay,2011-12,20,Paraguay
+8213,Peru,2011-12,570,Peru
+8214,Suriname,2011-12,10,Suriname
+8215,Uruguay,2011-12,130,Uruguay
+8216,Venezuela,2011-12,570,Venezuela
+8301,Belize,2011-12,0,Belize
+8302,Costa Rica,2011-12,40,Costa Rica
+8303,El Salvador,2011-12,110,El Salvador
+8304,Guatemala,2011-12,30,Guatemala
+8305,Honduras,2011-12,20,Honduras
+8306,Mexico,2011-12,730,Mexico
+8307,Nicaragua,2011-12,30,Nicaragua
+8308,Panama,2011-12,20,Panama
+8402,Antigua/Barbuda,2011-12,0,Antigua/Barbuda
+8403,Aruba,2011-12,0,Aruba
+8404,Bahamas,2011-12,20,Bahamas
+8405,Barbados,2011-12,20,Barbados
+8406,Cayman Islands,2011-12,10,Cayman Islands
+8407,Cuba,2011-12,70,Cuba
+8408,Dominica,2011-12,0,Dominica
+8411,Dominican Rep,2011-12,30,Dominican Rep
+8412,Grenada,2011-12,10,Grenada
+8413,Guadeloupe,2011-12,10,Guadeloupe
+8414,Haiti,2011-12,10,Haiti
+8415,Jamaica,2011-12,60,Jamaica
+8416,Martinique,2011-12,10,Martinique
+8417,Montserrat,2011-12,0,Montserrat
+8421,Puerto Rico,2011-12,10,Puerto Rico
+8422,St Kitts/Nevis,2011-12,10,St Kitts/Nevis
+8423,St Lucia,2011-12,20,St Lucia
+8424,St Vinc/Grenad,2011-12,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2011-12,100,Trinidad/Tobago
+8427,"Virgin Is, Brit",2011-12,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2011-12,0,"Virgin Is, US"
+8434,Curacao,2011-12,10,Curacao
+8435,Sint Maarten Dp,2011-12,0,Sint Maarten Dp
+9101,Benin,2011-12,10,Benin
+9102,Burkina Faso,2011-12,10,Burkina Faso
+9103,Cameroon,2011-12,40,Cameroon
+9104,Cabo Verde,2011-12,10,Cabo Verde
+9105,Cent Africa Rep,2011-12,0,Cent Africa Rep
+9106,Chad,2011-12,10,Chad
+9107,"Congo, Rep",2011-12,190,"Congo, Rep"
+9108,"Congo, Dem Rep",2011-12,500,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2011-12,50,Cote d'Ivoire
+9113,Gabon,2011-12,10,Gabon
+9114,Gambia,2011-12,10,Gambia
+9115,Ghana,2011-12,430,Ghana
+9116,Guinea,2011-12,70,Guinea
+9118,Liberia,2011-12,170,Liberia
+9121,Mali,2011-12,10,Mali
+9122,Mauritania,2011-12,0,Mauritania
+9123,Niger,2011-12,10,Niger
+9124,Nigeria,2011-12,630,Nigeria
+9126,Senegal,2011-12,20,Senegal
+9127,Sierra Leone,2011-12,180,Sierra Leone
+9128,Togo,2011-12,20,Togo
+9201,Angola,2011-12,20,Angola
+9202,Botswana,2011-12,100,Botswana
+9203,Burundi,2011-12,90,Burundi
+9205,Djibouti,2011-12,20,Djibouti
+9206,Eritrea,2011-12,330,Eritrea
+9207,Ethiopia,2011-12,1000,Ethiopia
+9208,Kenya,2011-12,960,Kenya
+9211,Lesotho,2011-12,20,Lesotho
+9212,Madagascar,2011-12,10,Madagascar
+9213,Malawi,2011-12,130,Malawi
+9214,Mauritius,2011-12,750,Mauritius
+9215,Mayotte,2011-12,0,Mayotte
+9216,Mozambique,2011-12,80,Mozambique
+9217,Namibia,2011-12,90,Namibia
+9218,Reunion,2011-12,30,Reunion
+9221,Rwanda,2011-12,90,Rwanda
+9223,Seychelles,2011-12,60,Seychelles
+9224,Somalia,2011-12,640,Somalia
+9225,South Africa,2011-12,9230,South Africa
+9226,Eswatini,2011-12,30,Eswatini
+9227,Tanzania,2011-12,190,Tanzania
+9228,Uganda,2011-12,180,Uganda
+9231,Zambia,2011-12,350,Zambia
+9232,Zimbabwe,2011-12,1840,Zimbabwe
+1102,Norfolk Island,2012-13,40,Norfolk Island
+1201,New Zealand,2012-13,41500,New Zealand
+1301,New Caledonia,2012-13,130,New Caledonia
+1302,PNG,2012-13,1580,PNG
+1303,Solomon Islands,2012-13,230,Solomon Islands
+1304,Vanuatu,2012-13,140,Vanuatu
+1401,Guam,2012-13,10,Guam
+1402,Kiribati,2012-13,50,Kiribati
+1403,Marshall Is,2012-13,0,Marshall Is
+1404,"Micronesia, F S",2012-13,10,"Micronesia, F S"
+1405,Nauru,2012-13,40,Nauru
+1406,N Mariana Is,2012-13,0,N Mariana Is
+1407,Palau,2012-13,0,Palau
+1501,Cook Islands,2012-13,600,Cook Islands
+1502,Fiji,2012-13,2560,Fiji
+1503,French Poly,2012-13,70,French Poly
+1504,Niue,2012-13,70,Niue
+1505,Samoa,2012-13,3220,Samoa
+1506,Samoa American,2012-13,90,Samoa American
+1507,Tokelau,2012-13,70,Tokelau
+1508,Tonga,2012-13,740,Tonga
+1511,Tuvalu,2012-13,20,Tuvalu
+1512,Wallis/Futuna,2012-13,10,Wallis/Futuna
+1513,Pitcairn Is,2012-13,0,Pitcairn Is
+1599,"Polynesia, nec",2012-13,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2012-13,46250,UK
+2201,Ireland,2012-13,10570,Ireland
+2301,Austria,2012-13,340,Austria
+2302,Belgium,2012-13,690,Belgium
+2303,France,2012-13,5930,France
+2304,Germany,2012-13,4850,Germany
+2305,Liechtenstein,2012-13,0,Liechtenstein
+2306,Luxembourg,2012-13,20,Luxembourg
+2307,Monaco,2012-13,10,Monaco
+2308,Netherlands,2012-13,1890,Netherlands
+2311,Switzerland,2012-13,810,Switzerland
+2401,Denmark,2012-13,560,Denmark
+2402,Faroe Islands,2012-13,10,Faroe Islands
+2403,Finland,2012-13,440,Finland
+2404,Greenland,2012-13,0,Greenland
+2405,Iceland,2012-13,30,Iceland
+2406,Norway,2012-13,540,Norway
+2407,Sweden,2012-13,1450,Sweden
+3101,Andorra,2012-13,10,Andorra
+3102,Gibraltar,2012-13,10,Gibraltar
+3104,Italy,2012-13,6160,Italy
+3105,Malta,2012-13,180,Malta
+3106,Portugal,2012-13,700,Portugal
+3107,San Marino,2012-13,0,San Marino
+3108,Spain,2012-13,1700,Spain
+3201,Albania,2012-13,220,Albania
+3202,Bosnia/Herzegov,2012-13,340,Bosnia/Herzegov
+3203,Bulgaria,2012-13,230,Bulgaria
+3204,Croatia,2012-13,470,Croatia
+3205,Cyprus,2012-13,260,Cyprus
+3206,North Macedonia,2012-13,640,North Macedonia
+3207,Greece,2012-13,2700,Greece
+3208,Moldova,2012-13,80,Moldova
+3211,Romania,2012-13,620,Romania
+3212,Slovenia,2012-13,170,Slovenia
+3214,Montenegro,2012-13,30,Montenegro
+3215,Serbia,2012-13,470,Serbia
+3216,Kosovo,2012-13,30,Kosovo
+3301,Belarus,2012-13,120,Belarus
+3302,Czechia,2012-13,710,Czechia
+3303,Estonia,2012-13,1080,Estonia
+3304,Hungary,2012-13,690,Hungary
+3305,Latvia,2012-13,210,Latvia
+3306,Lithuania,2012-13,290,Lithuania
+3307,Poland,2012-13,1410,Poland
+3308,Russia,2012-13,1720,Russia
+3311,Slovakia,2012-13,430,Slovakia
+3312,Ukraine,2012-13,730,Ukraine
+4101,Algeria,2012-13,110,Algeria
+4102,Egypt,2012-13,1950,Egypt
+4103,Libya,2012-13,160,Libya
+4104,Morocco,2012-13,180,Morocco
+4105,Sudan,2012-13,670,Sudan
+4106,Tunisia,2012-13,60,Tunisia
+4111,South Sudan,2012-13,100,South Sudan
+4201,Bahrain,2012-13,130,Bahrain
+4202,Palestine,2012-13,10,Palestine
+4203,Iran,2012-13,5750,Iran
+4204,Iraq,2012-13,4390,Iraq
+4205,Israel,2012-13,680,Israel
+4206,Jordan,2012-13,550,Jordan
+4207,Kuwait,2012-13,560,Kuwait
+4208,Lebanon,2012-13,2130,Lebanon
+4211,Oman,2012-13,250,Oman
+4212,Qatar,2012-13,110,Qatar
+4213,Saudi Arabia,2012-13,2800,Saudi Arabia
+4214,Syria,2012-13,540,Syria
+4215,Türkiye,2012-13,1210,Türkiye
+4216,Unit Arab Emir,2012-13,780,Unit Arab Emir
+4217,Yemen,2012-13,30,Yemen
+5101,Myanmar,2012-13,2480,Myanmar
+5102,Cambodia,2012-13,1250,Cambodia
+5103,Laos,2012-13,270,Laos
+5104,Thailand,2012-13,6970,Thailand
+5105,Vietnam,2012-13,11210,Vietnam
+5201,Brunei,2012-13,190,Brunei
+5202,Indonesia,2012-13,6770,Indonesia
+5203,Malaysia,2012-13,11940,Malaysia
+5204,Philippines,2012-13,17010,Philippines
+5205,Singapore,2012-13,6810,Singapore
+5206,Timor-Leste,2012-13,150,Timor-Leste
+6101,China,2012-13,46560,China
+6102,Hong Kong,2012-13,6120,Hong Kong
+6103,Macau,2012-13,200,Macau
+6104,Mongolia,2012-13,300,Mongolia
+6105,Taiwan,2012-13,13350,Taiwan
+6201,Japan,2012-13,6330,Japan
+6202,"Korea, North",2012-13,70,"Korea, North"
+6203,"Korea, South",2012-13,14560,Korea South
+7101,Bangladesh,2012-13,3210,Bangladesh
+7102,Bhutan,2012-13,830,Bhutan
+7103,India,2012-13,35280,India
+7104,Maldives,2012-13,110,Maldives
+7105,Nepal,2012-13,3980,Nepal
+7106,Pakistan,2012-13,7320,Pakistan
+7107,Sri Lanka,2012-13,6630,Sri Lanka
+7201,Afghanistan,2012-13,2690,Afghanistan
+7202,Armenia,2012-13,50,Armenia
+7203,Azerbaijan,2012-13,50,Azerbaijan
+7204,Georgia,2012-13,70,Georgia
+7205,Kazakhstan,2012-13,210,Kazakhstan
+7206,Kyrgyzstan,2012-13,40,Kyrgyzstan
+7207,Tajikistan,2012-13,10,Tajikistan
+7208,Turkmenistan,2012-13,10,Turkmenistan
+7211,Uzbekistan,2012-13,120,Uzbekistan
+8101,Bermuda,2012-13,20,Bermuda
+8102,Canada,2012-13,5290,Canada
+8104,USA,2012-13,14650,USA
+8201,Argentina,2012-13,820,Argentina
+8202,Bolivia,2012-13,70,Bolivia
+8203,Brazil,2012-13,3250,Brazil
+8204,Chile,2012-13,1040,Chile
+8205,Colombia,2012-13,2540,Colombia
+8206,Ecuador,2012-13,260,Ecuador
+8207,Falkland Is,2012-13,0,Falkland Is
+8208,French Guiana,2012-13,10,French Guiana
+8211,Guyana,2012-13,30,Guyana
+8212,Paraguay,2012-13,20,Paraguay
+8213,Peru,2012-13,600,Peru
+8214,Suriname,2012-13,20,Suriname
+8215,Uruguay,2012-13,100,Uruguay
+8216,Venezuela,2012-13,530,Venezuela
+8301,Belize,2012-13,10,Belize
+8302,Costa Rica,2012-13,40,Costa Rica
+8303,El Salvador,2012-13,100,El Salvador
+8304,Guatemala,2012-13,30,Guatemala
+8305,Honduras,2012-13,20,Honduras
+8306,Mexico,2012-13,700,Mexico
+8307,Nicaragua,2012-13,40,Nicaragua
+8308,Panama,2012-13,30,Panama
+8402,Antigua/Barbuda,2012-13,0,Antigua/Barbuda
+8403,Aruba,2012-13,0,Aruba
+8404,Bahamas,2012-13,10,Bahamas
+8405,Barbados,2012-13,20,Barbados
+8406,Cayman Islands,2012-13,20,Cayman Islands
+8407,Cuba,2012-13,90,Cuba
+8408,Dominica,2012-13,0,Dominica
+8411,Dominican Rep,2012-13,30,Dominican Rep
+8412,Grenada,2012-13,10,Grenada
+8413,Guadeloupe,2012-13,10,Guadeloupe
+8414,Haiti,2012-13,10,Haiti
+8415,Jamaica,2012-13,90,Jamaica
+8416,Martinique,2012-13,10,Martinique
+8417,Montserrat,2012-13,0,Montserrat
+8421,Puerto Rico,2012-13,30,Puerto Rico
+8422,St Kitts/Nevis,2012-13,0,St Kitts/Nevis
+8423,St Lucia,2012-13,10,St Lucia
+8424,St Vinc/Grenad,2012-13,10,St Vinc/Grenad
+8425,Trinidad/Tobago,2012-13,130,Trinidad/Tobago
+8427,"Virgin Is, Brit",2012-13,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2012-13,0,"Virgin Is, US"
+8434,Curacao,2012-13,10,Curacao
+8435,Sint Maarten Dp,2012-13,0,Sint Maarten Dp
+9101,Benin,2012-13,0,Benin
+9102,Burkina Faso,2012-13,0,Burkina Faso
+9103,Cameroon,2012-13,50,Cameroon
+9104,Cabo Verde,2012-13,10,Cabo Verde
+9105,Cent Africa Rep,2012-13,0,Cent Africa Rep
+9106,Chad,2012-13,10,Chad
+9107,"Congo, Rep",2012-13,40,"Congo, Rep"
+9108,"Congo, Dem Rep",2012-13,300,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2012-13,30,Cote d'Ivoire
+9113,Gabon,2012-13,10,Gabon
+9114,Gambia,2012-13,20,Gambia
+9115,Ghana,2012-13,440,Ghana
+9116,Guinea,2012-13,40,Guinea
+9118,Liberia,2012-13,130,Liberia
+9121,Mali,2012-13,10,Mali
+9122,Mauritania,2012-13,0,Mauritania
+9123,Niger,2012-13,10,Niger
+9124,Nigeria,2012-13,850,Nigeria
+9126,Senegal,2012-13,20,Senegal
+9127,Sierra Leone,2012-13,150,Sierra Leone
+9128,Togo,2012-13,20,Togo
+9201,Angola,2012-13,20,Angola
+9202,Botswana,2012-13,130,Botswana
+9203,Burundi,2012-13,80,Burundi
+9205,Djibouti,2012-13,10,Djibouti
+9206,Eritrea,2012-13,180,Eritrea
+9207,Ethiopia,2012-13,640,Ethiopia
+9208,Kenya,2012-13,1070,Kenya
+9211,Lesotho,2012-13,10,Lesotho
+9212,Madagascar,2012-13,20,Madagascar
+9213,Malawi,2012-13,110,Malawi
+9214,Mauritius,2012-13,800,Mauritius
+9215,Mayotte,2012-13,0,Mayotte
+9216,Mozambique,2012-13,60,Mozambique
+9217,Namibia,2012-13,100,Namibia
+9218,Reunion,2012-13,30,Reunion
+9221,Rwanda,2012-13,70,Rwanda
+9223,Seychelles,2012-13,50,Seychelles
+9224,Somalia,2012-13,590,Somalia
+9225,South Africa,2012-13,7730,South Africa
+9226,Eswatini,2012-13,20,Eswatini
+9227,Tanzania,2012-13,190,Tanzania
+9228,Uganda,2012-13,200,Uganda
+9231,Zambia,2012-13,410,Zambia
+9232,Zimbabwe,2012-13,1650,Zimbabwe
+1102,Norfolk Island,2013-14,30,Norfolk Island
+1201,New Zealand,2013-14,28440,New Zealand
+1301,New Caledonia,2013-14,110,New Caledonia
+1302,PNG,2013-14,1270,PNG
+1303,Solomon Islands,2013-14,150,Solomon Islands
+1304,Vanuatu,2013-14,80,Vanuatu
+1401,Guam,2013-14,10,Guam
+1402,Kiribati,2013-14,40,Kiribati
+1403,Marshall Is,2013-14,0,Marshall Is
+1404,"Micronesia, F S",2013-14,10,"Micronesia, F S"
+1405,Nauru,2013-14,30,Nauru
+1406,N Mariana Is,2013-14,0,N Mariana Is
+1407,Palau,2013-14,0,Palau
+1501,Cook Islands,2013-14,480,Cook Islands
+1502,Fiji,2013-14,2440,Fiji
+1503,French Poly,2013-14,40,French Poly
+1504,Niue,2013-14,50,Niue
+1505,Samoa,2013-14,2450,Samoa
+1506,Samoa American,2013-14,50,Samoa American
+1507,Tokelau,2013-14,40,Tokelau
+1508,Tonga,2013-14,870,Tonga
+1511,Tuvalu,2013-14,30,Tuvalu
+1512,Wallis/Futuna,2013-14,0,Wallis/Futuna
+1513,Pitcairn Is,2013-14,0,Pitcairn Is
+1599,"Polynesia, nec",2013-14,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2013-14,37190,UK
+2201,Ireland,2013-14,5800,Ireland
+2301,Austria,2013-14,280,Austria
+2302,Belgium,2013-14,610,Belgium
+2303,France,2013-14,5920,France
+2304,Germany,2013-14,4600,Germany
+2305,Liechtenstein,2013-14,0,Liechtenstein
+2306,Luxembourg,2013-14,20,Luxembourg
+2307,Monaco,2013-14,10,Monaco
+2308,Netherlands,2013-14,1660,Netherlands
+2311,Switzerland,2013-14,670,Switzerland
+2401,Denmark,2013-14,440,Denmark
+2402,Faroe Islands,2013-14,0,Faroe Islands
+2403,Finland,2013-14,470,Finland
+2404,Greenland,2013-14,0,Greenland
+2405,Iceland,2013-14,30,Iceland
+2406,Norway,2013-14,510,Norway
+2407,Sweden,2013-14,1420,Sweden
+3101,Andorra,2013-14,0,Andorra
+3102,Gibraltar,2013-14,10,Gibraltar
+3104,Italy,2013-14,6310,Italy
+3105,Malta,2013-14,120,Malta
+3106,Portugal,2013-14,550,Portugal
+3107,San Marino,2013-14,0,San Marino
+3108,Spain,2013-14,1550,Spain
+3201,Albania,2013-14,310,Albania
+3202,Bosnia/Herzegov,2013-14,390,Bosnia/Herzegov
+3203,Bulgaria,2013-14,240,Bulgaria
+3204,Croatia,2013-14,440,Croatia
+3205,Cyprus,2013-14,260,Cyprus
+3206,North Macedonia,2013-14,730,North Macedonia
+3207,Greece,2013-14,1980,Greece
+3208,Moldova,2013-14,70,Moldova
+3211,Romania,2013-14,580,Romania
+3212,Slovenia,2013-14,150,Slovenia
+3214,Montenegro,2013-14,30,Montenegro
+3215,Serbia,2013-14,430,Serbia
+3216,Kosovo,2013-14,20,Kosovo
+3301,Belarus,2013-14,130,Belarus
+3302,Czechia,2013-14,680,Czechia
+3303,Estonia,2013-14,970,Estonia
+3304,Hungary,2013-14,500,Hungary
+3305,Latvia,2013-14,170,Latvia
+3306,Lithuania,2013-14,270,Lithuania
+3307,Poland,2013-14,1340,Poland
+3308,Russia,2013-14,1430,Russia
+3311,Slovakia,2013-14,400,Slovakia
+3312,Ukraine,2013-14,750,Ukraine
+4101,Algeria,2013-14,90,Algeria
+4102,Egypt,2013-14,1520,Egypt
+4103,Libya,2013-14,80,Libya
+4104,Morocco,2013-14,150,Morocco
+4105,Sudan,2013-14,590,Sudan
+4106,Tunisia,2013-14,50,Tunisia
+4111,South Sudan,2013-14,140,South Sudan
+4201,Bahrain,2013-14,120,Bahrain
+4202,Palestine,2013-14,0,Palestine
+4203,Iran,2013-14,4430,Iran
+4204,Iraq,2013-14,5510,Iraq
+4205,Israel,2013-14,660,Israel
+4206,Jordan,2013-14,480,Jordan
+4207,Kuwait,2013-14,510,Kuwait
+4208,Lebanon,2013-14,2060,Lebanon
+4211,Oman,2013-14,280,Oman
+4212,Qatar,2013-14,120,Qatar
+4213,Saudi Arabia,2013-14,3210,Saudi Arabia
+4214,Syria,2013-14,1090,Syria
+4215,Türkiye,2013-14,1120,Türkiye
+4216,Unit Arab Emir,2013-14,810,Unit Arab Emir
+4217,Yemen,2013-14,30,Yemen
+5101,Myanmar,2013-14,2050,Myanmar
+5102,Cambodia,2013-14,1480,Cambodia
+5103,Laos,2013-14,310,Laos
+5104,Thailand,2013-14,8260,Thailand
+5105,Vietnam,2013-14,12260,Vietnam
+5201,Brunei,2013-14,160,Brunei
+5202,Indonesia,2013-14,6880,Indonesia
+5203,Malaysia,2013-14,11710,Malaysia
+5204,Philippines,2013-14,15890,Philippines
+5205,Singapore,2013-14,5330,Singapore
+5206,Timor-Leste,2013-14,170,Timor-Leste
+6101,China,2013-14,53130,China
+6102,Hong Kong,2013-14,6540,Hong Kong
+6103,Macau,2013-14,190,Macau
+6104,Mongolia,2013-14,480,Mongolia
+6105,Taiwan,2013-14,11810,Taiwan
+6201,Japan,2013-14,6180,Japan
+6202,"Korea, North",2013-14,90,"Korea, North"
+6203,"Korea, South",2013-14,12780,Korea South
+7101,Bangladesh,2013-14,3390,Bangladesh
+7102,Bhutan,2013-14,1460,Bhutan
+7103,India,2013-14,45520,India
+7104,Maldives,2013-14,110,Maldives
+7105,Nepal,2013-14,8140,Nepal
+7106,Pakistan,2013-14,8240,Pakistan
+7107,Sri Lanka,2013-14,5680,Sri Lanka
+7201,Afghanistan,2013-14,4560,Afghanistan
+7202,Armenia,2013-14,70,Armenia
+7203,Azerbaijan,2013-14,70,Azerbaijan
+7204,Georgia,2013-14,50,Georgia
+7205,Kazakhstan,2013-14,180,Kazakhstan
+7206,Kyrgyzstan,2013-14,40,Kyrgyzstan
+7207,Tajikistan,2013-14,20,Tajikistan
+7208,Turkmenistan,2013-14,10,Turkmenistan
+7211,Uzbekistan,2013-14,110,Uzbekistan
+8101,Bermuda,2013-14,30,Bermuda
+8102,Canada,2013-14,4600,Canada
+8104,USA,2013-14,11880,USA
+8201,Argentina,2013-14,760,Argentina
+8202,Bolivia,2013-14,40,Bolivia
+8203,Brazil,2013-14,5450,Brazil
+8204,Chile,2013-14,1010,Chile
+8205,Colombia,2013-14,2570,Colombia
+8206,Ecuador,2013-14,480,Ecuador
+8207,Falkland Is,2013-14,10,Falkland Is
+8208,French Guiana,2013-14,10,French Guiana
+8211,Guyana,2013-14,20,Guyana
+8212,Paraguay,2013-14,20,Paraguay
+8213,Peru,2013-14,480,Peru
+8214,Suriname,2013-14,10,Suriname
+8215,Uruguay,2013-14,110,Uruguay
+8216,Venezuela,2013-14,510,Venezuela
+8301,Belize,2013-14,0,Belize
+8302,Costa Rica,2013-14,60,Costa Rica
+8303,El Salvador,2013-14,110,El Salvador
+8304,Guatemala,2013-14,50,Guatemala
+8305,Honduras,2013-14,50,Honduras
+8306,Mexico,2013-14,710,Mexico
+8307,Nicaragua,2013-14,30,Nicaragua
+8308,Panama,2013-14,30,Panama
+8402,Antigua/Barbuda,2013-14,10,Antigua/Barbuda
+8403,Aruba,2013-14,0,Aruba
+8404,Bahamas,2013-14,10,Bahamas
+8405,Barbados,2013-14,10,Barbados
+8406,Cayman Islands,2013-14,10,Cayman Islands
+8407,Cuba,2013-14,40,Cuba
+8408,Dominica,2013-14,0,Dominica
+8411,Dominican Rep,2013-14,30,Dominican Rep
+8412,Grenada,2013-14,10,Grenada
+8413,Guadeloupe,2013-14,10,Guadeloupe
+8414,Haiti,2013-14,20,Haiti
+8415,Jamaica,2013-14,60,Jamaica
+8416,Martinique,2013-14,10,Martinique
+8417,Montserrat,2013-14,0,Montserrat
+8421,Puerto Rico,2013-14,20,Puerto Rico
+8422,St Kitts/Nevis,2013-14,0,St Kitts/Nevis
+8423,St Lucia,2013-14,10,St Lucia
+8424,St Vinc/Grenad,2013-14,10,St Vinc/Grenad
+8425,Trinidad/Tobago,2013-14,110,Trinidad/Tobago
+8427,"Virgin Is, Brit",2013-14,10,"Virgin Is, Brit"
+8428,"Virgin Is, US",2013-14,0,"Virgin Is, US"
+8434,Curacao,2013-14,0,Curacao
+8435,Sint Maarten Dp,2013-14,0,Sint Maarten Dp
+9101,Benin,2013-14,10,Benin
+9102,Burkina Faso,2013-14,0,Burkina Faso
+9103,Cameroon,2013-14,50,Cameroon
+9104,Cabo Verde,2013-14,0,Cabo Verde
+9105,Cent Africa Rep,2013-14,10,Cent Africa Rep
+9106,Chad,2013-14,0,Chad
+9107,"Congo, Rep",2013-14,30,"Congo, Rep"
+9108,"Congo, Dem Rep",2013-14,570,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2013-14,40,Cote d'Ivoire
+9113,Gabon,2013-14,0,Gabon
+9114,Gambia,2013-14,10,Gambia
+9115,Ghana,2013-14,420,Ghana
+9116,Guinea,2013-14,60,Guinea
+9118,Liberia,2013-14,160,Liberia
+9121,Mali,2013-14,0,Mali
+9122,Mauritania,2013-14,0,Mauritania
+9123,Niger,2013-14,10,Niger
+9124,Nigeria,2013-14,1040,Nigeria
+9126,Senegal,2013-14,20,Senegal
+9127,Sierra Leone,2013-14,150,Sierra Leone
+9128,Togo,2013-14,20,Togo
+9201,Angola,2013-14,20,Angola
+9202,Botswana,2013-14,80,Botswana
+9203,Burundi,2013-14,110,Burundi
+9205,Djibouti,2013-14,10,Djibouti
+9206,Eritrea,2013-14,310,Eritrea
+9207,Ethiopia,2013-14,920,Ethiopia
+9208,Kenya,2013-14,1170,Kenya
+9211,Lesotho,2013-14,20,Lesotho
+9212,Madagascar,2013-14,10,Madagascar
+9213,Malawi,2013-14,110,Malawi
+9214,Mauritius,2013-14,810,Mauritius
+9215,Mayotte,2013-14,0,Mayotte
+9216,Mozambique,2013-14,60,Mozambique
+9217,Namibia,2013-14,60,Namibia
+9218,Reunion,2013-14,20,Reunion
+9221,Rwanda,2013-14,80,Rwanda
+9223,Seychelles,2013-14,60,Seychelles
+9224,Somalia,2013-14,760,Somalia
+9225,South Africa,2013-14,6240,South Africa
+9226,Eswatini,2013-14,20,Eswatini
+9227,Tanzania,2013-14,150,Tanzania
+9228,Uganda,2013-14,220,Uganda
+9231,Zambia,2013-14,310,Zambia
+9232,Zimbabwe,2013-14,1380,Zimbabwe
+1102,Norfolk Island,2014-15,20,Norfolk Island
+1201,New Zealand,2014-15,23300,New Zealand
+1301,New Caledonia,2014-15,150,New Caledonia
+1302,PNG,2014-15,1240,PNG
+1303,Solomon Islands,2014-15,180,Solomon Islands
+1304,Vanuatu,2014-15,80,Vanuatu
+1401,Guam,2014-15,0,Guam
+1402,Kiribati,2014-15,40,Kiribati
+1403,Marshall Is,2014-15,0,Marshall Is
+1404,"Micronesia, F S",2014-15,10,"Micronesia, F S"
+1405,Nauru,2014-15,50,Nauru
+1406,N Mariana Is,2014-15,0,N Mariana Is
+1407,Palau,2014-15,0,Palau
+1501,Cook Islands,2014-15,390,Cook Islands
+1502,Fiji,2014-15,2160,Fiji
+1503,French Poly,2014-15,40,French Poly
+1504,Niue,2014-15,40,Niue
+1505,Samoa,2014-15,2210,Samoa
+1506,Samoa American,2014-15,50,Samoa American
+1507,Tokelau,2014-15,60,Tokelau
+1508,Tonga,2014-15,710,Tonga
+1511,Tuvalu,2014-15,30,Tuvalu
+1512,Wallis/Futuna,2014-15,0,Wallis/Futuna
+1513,Pitcairn Is,2014-15,0,Pitcairn Is
+1599,"Polynesia, nec",2014-15,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2014-15,33920,UK
+2201,Ireland,2014-15,3970,Ireland
+2301,Austria,2014-15,330,Austria
+2302,Belgium,2014-15,670,Belgium
+2303,France,2014-15,6170,France
+2304,Germany,2014-15,5060,Germany
+2305,Liechtenstein,2014-15,0,Liechtenstein
+2306,Luxembourg,2014-15,20,Luxembourg
+2307,Monaco,2014-15,10,Monaco
+2308,Netherlands,2014-15,1770,Netherlands
+2311,Switzerland,2014-15,700,Switzerland
+2401,Denmark,2014-15,490,Denmark
+2402,Faroe Islands,2014-15,0,Faroe Islands
+2403,Finland,2014-15,540,Finland
+2404,Greenland,2014-15,0,Greenland
+2405,Iceland,2014-15,30,Iceland
+2406,Norway,2014-15,440,Norway
+2407,Sweden,2014-15,1350,Sweden
+3101,Andorra,2014-15,0,Andorra
+3102,Gibraltar,2014-15,10,Gibraltar
+3104,Italy,2014-15,5540,Italy
+3105,Malta,2014-15,110,Malta
+3106,Portugal,2014-15,440,Portugal
+3107,San Marino,2014-15,0,San Marino
+3108,Spain,2014-15,1540,Spain
+3201,Albania,2014-15,280,Albania
+3202,Bosnia/Herzegov,2014-15,380,Bosnia/Herzegov
+3203,Bulgaria,2014-15,210,Bulgaria
+3204,Croatia,2014-15,400,Croatia
+3205,Cyprus,2014-15,210,Cyprus
+3206,North Macedonia,2014-15,560,North Macedonia
+3207,Greece,2014-15,1340,Greece
+3208,Moldova,2014-15,70,Moldova
+3211,Romania,2014-15,490,Romania
+3212,Slovenia,2014-15,170,Slovenia
+3214,Montenegro,2014-15,40,Montenegro
+3215,Serbia,2014-15,400,Serbia
+3216,Kosovo,2014-15,30,Kosovo
+3301,Belarus,2014-15,120,Belarus
+3302,Czechia,2014-15,680,Czechia
+3303,Estonia,2014-15,810,Estonia
+3304,Hungary,2014-15,470,Hungary
+3305,Latvia,2014-15,160,Latvia
+3306,Lithuania,2014-15,280,Lithuania
+3307,Poland,2014-15,1380,Poland
+3308,Russia,2014-15,1370,Russia
+3311,Slovakia,2014-15,400,Slovakia
+3312,Ukraine,2014-15,810,Ukraine
+4101,Algeria,2014-15,70,Algeria
+4102,Egypt,2014-15,1360,Egypt
+4103,Libya,2014-15,90,Libya
+4104,Morocco,2014-15,180,Morocco
+4105,Sudan,2014-15,560,Sudan
+4106,Tunisia,2014-15,50,Tunisia
+4111,South Sudan,2014-15,330,South Sudan
+4201,Bahrain,2014-15,120,Bahrain
+4202,Palestine,2014-15,10,Palestine
+4203,Iran,2014-15,3870,Iran
+4204,Iraq,2014-15,4640,Iraq
+4205,Israel,2014-15,600,Israel
+4206,Jordan,2014-15,500,Jordan
+4207,Kuwait,2014-15,480,Kuwait
+4208,Lebanon,2014-15,2120,Lebanon
+4211,Oman,2014-15,390,Oman
+4212,Qatar,2014-15,130,Qatar
+4213,Saudi Arabia,2014-15,2810,Saudi Arabia
+4214,Syria,2014-15,2740,Syria
+4215,Türkiye,2014-15,1030,Türkiye
+4216,Unit Arab Emir,2014-15,1010,Unit Arab Emir
+4217,Yemen,2014-15,30,Yemen
+5101,Myanmar,2014-15,2240,Myanmar
+5102,Cambodia,2014-15,1450,Cambodia
+5103,Laos,2014-15,300,Laos
+5104,Thailand,2014-15,8560,Thailand
+5105,Vietnam,2014-15,10720,Vietnam
+5201,Brunei,2014-15,190,Brunei
+5202,Indonesia,2014-15,7350,Indonesia
+5203,Malaysia,2014-15,13890,Malaysia
+5204,Philippines,2014-15,15780,Philippines
+5205,Singapore,2014-15,5570,Singapore
+5206,Timor-Leste,2014-15,120,Timor-Leste
+6101,China,2014-15,62280,China
+6102,Hong Kong,2014-15,6330,Hong Kong
+6103,Macau,2014-15,260,Macau
+6104,Mongolia,2014-15,770,Mongolia
+6105,Taiwan,2014-15,11020,Taiwan
+6201,Japan,2014-15,6230,Japan
+6202,"Korea, North",2014-15,110,"Korea, North"
+6203,"Korea, South",2014-15,12360,Korea South
+7101,Bangladesh,2014-15,3740,Bangladesh
+7102,Bhutan,2014-15,850,Bhutan
+7103,India,2014-15,49810,India
+7104,Maldives,2014-15,120,Maldives
+7105,Nepal,2014-15,7270,Nepal
+7106,Pakistan,2014-15,8570,Pakistan
+7107,Sri Lanka,2014-15,5910,Sri Lanka
+7201,Afghanistan,2014-15,3100,Afghanistan
+7202,Armenia,2014-15,50,Armenia
+7203,Azerbaijan,2014-15,70,Azerbaijan
+7204,Georgia,2014-15,40,Georgia
+7205,Kazakhstan,2014-15,210,Kazakhstan
+7206,Kyrgyzstan,2014-15,40,Kyrgyzstan
+7207,Tajikistan,2014-15,20,Tajikistan
+7208,Turkmenistan,2014-15,10,Turkmenistan
+7211,Uzbekistan,2014-15,130,Uzbekistan
+8101,Bermuda,2014-15,20,Bermuda
+8102,Canada,2014-15,4490,Canada
+8104,USA,2014-15,11620,USA
+8201,Argentina,2014-15,800,Argentina
+8202,Bolivia,2014-15,30,Bolivia
+8203,Brazil,2014-15,5810,Brazil
+8204,Chile,2014-15,1280,Chile
+8205,Colombia,2014-15,2910,Colombia
+8206,Ecuador,2014-15,300,Ecuador
+8207,Falkland Is,2014-15,0,Falkland Is
+8208,French Guiana,2014-15,0,French Guiana
+8211,Guyana,2014-15,20,Guyana
+8212,Paraguay,2014-15,20,Paraguay
+8213,Peru,2014-15,510,Peru
+8214,Suriname,2014-15,10,Suriname
+8215,Uruguay,2014-15,130,Uruguay
+8216,Venezuela,2014-15,720,Venezuela
+8301,Belize,2014-15,0,Belize
+8302,Costa Rica,2014-15,40,Costa Rica
+8303,El Salvador,2014-15,100,El Salvador
+8304,Guatemala,2014-15,40,Guatemala
+8305,Honduras,2014-15,20,Honduras
+8306,Mexico,2014-15,690,Mexico
+8307,Nicaragua,2014-15,20,Nicaragua
+8308,Panama,2014-15,20,Panama
+8402,Antigua/Barbuda,2014-15,10,Antigua/Barbuda
+8403,Aruba,2014-15,10,Aruba
+8404,Bahamas,2014-15,10,Bahamas
+8405,Barbados,2014-15,20,Barbados
+8406,Cayman Islands,2014-15,10,Cayman Islands
+8407,Cuba,2014-15,50,Cuba
+8408,Dominica,2014-15,0,Dominica
+8411,Dominican Rep,2014-15,30,Dominican Rep
+8412,Grenada,2014-15,10,Grenada
+8413,Guadeloupe,2014-15,10,Guadeloupe
+8414,Haiti,2014-15,10,Haiti
+8415,Jamaica,2014-15,70,Jamaica
+8416,Martinique,2014-15,10,Martinique
+8417,Montserrat,2014-15,0,Montserrat
+8421,Puerto Rico,2014-15,20,Puerto Rico
+8422,St Kitts/Nevis,2014-15,0,St Kitts/Nevis
+8423,St Lucia,2014-15,10,St Lucia
+8424,St Vinc/Grenad,2014-15,10,St Vinc/Grenad
+8425,Trinidad/Tobago,2014-15,70,Trinidad/Tobago
+8427,"Virgin Is, Brit",2014-15,10,"Virgin Is, Brit"
+8428,"Virgin Is, US",2014-15,10,"Virgin Is, US"
+8434,Curacao,2014-15,10,Curacao
+8435,Sint Maarten Dp,2014-15,0,Sint Maarten Dp
+9101,Benin,2014-15,10,Benin
+9102,Burkina Faso,2014-15,10,Burkina Faso
+9103,Cameroon,2014-15,60,Cameroon
+9104,Cabo Verde,2014-15,0,Cabo Verde
+9105,Cent Africa Rep,2014-15,0,Cent Africa Rep
+9106,Chad,2014-15,10,Chad
+9107,"Congo, Rep",2014-15,30,"Congo, Rep"
+9108,"Congo, Dem Rep",2014-15,460,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2014-15,40,Cote d'Ivoire
+9113,Gabon,2014-15,10,Gabon
+9114,Gambia,2014-15,20,Gambia
+9115,Ghana,2014-15,440,Ghana
+9116,Guinea,2014-15,50,Guinea
+9118,Liberia,2014-15,90,Liberia
+9121,Mali,2014-15,10,Mali
+9122,Mauritania,2014-15,10,Mauritania
+9123,Niger,2014-15,10,Niger
+9124,Nigeria,2014-15,1210,Nigeria
+9126,Senegal,2014-15,20,Senegal
+9127,Sierra Leone,2014-15,80,Sierra Leone
+9128,Togo,2014-15,10,Togo
+9201,Angola,2014-15,20,Angola
+9202,Botswana,2014-15,80,Botswana
+9203,Burundi,2014-15,150,Burundi
+9205,Djibouti,2014-15,10,Djibouti
+9206,Eritrea,2014-15,430,Eritrea
+9207,Ethiopia,2014-15,960,Ethiopia
+9208,Kenya,2014-15,1390,Kenya
+9211,Lesotho,2014-15,10,Lesotho
+9212,Madagascar,2014-15,10,Madagascar
+9213,Malawi,2014-15,70,Malawi
+9214,Mauritius,2014-15,860,Mauritius
+9215,Mayotte,2014-15,0,Mayotte
+9216,Mozambique,2014-15,50,Mozambique
+9217,Namibia,2014-15,60,Namibia
+9218,Reunion,2014-15,20,Reunion
+9221,Rwanda,2014-15,80,Rwanda
+9223,Seychelles,2014-15,40,Seychelles
+9224,Somalia,2014-15,630,Somalia
+9225,South Africa,2014-15,5920,South Africa
+9226,Eswatini,2014-15,10,Eswatini
+9227,Tanzania,2014-15,180,Tanzania
+9228,Uganda,2014-15,250,Uganda
+9231,Zambia,2014-15,250,Zambia
+9232,Zimbabwe,2014-15,1380,Zimbabwe
+1102,Norfolk Island,2015-16,70,Norfolk Island
+1201,New Zealand,2015-16,24220,New Zealand
+1301,New Caledonia,2015-16,130,New Caledonia
+1302,PNG,2015-16,1490,PNG
+1303,Solomon Islands,2015-16,170,Solomon Islands
+1304,Vanuatu,2015-16,110,Vanuatu
+1401,Guam,2015-16,10,Guam
+1402,Kiribati,2015-16,40,Kiribati
+1403,Marshall Is,2015-16,0,Marshall Is
+1404,"Micronesia, F S",2015-16,0,"Micronesia, F S"
+1405,Nauru,2015-16,40,Nauru
+1406,N Mariana Is,2015-16,0,N Mariana Is
+1407,Palau,2015-16,10,Palau
+1501,Cook Islands,2015-16,410,Cook Islands
+1502,Fiji,2015-16,2150,Fiji
+1503,French Poly,2015-16,50,French Poly
+1504,Niue,2015-16,50,Niue
+1505,Samoa,2015-16,2440,Samoa
+1506,Samoa American,2015-16,60,Samoa American
+1507,Tokelau,2015-16,40,Tokelau
+1508,Tonga,2015-16,700,Tonga
+1511,Tuvalu,2015-16,10,Tuvalu
+1512,Wallis/Futuna,2015-16,0,Wallis/Futuna
+1513,Pitcairn Is,2015-16,10,Pitcairn Is
+1599,"Polynesia, nec",2015-16,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2015-16,32790,UK
+2201,Ireland,2015-16,3750,Ireland
+2301,Austria,2015-16,270,Austria
+2302,Belgium,2015-16,700,Belgium
+2303,France,2015-16,5870,France
+2304,Germany,2015-16,5610,Germany
+2305,Liechtenstein,2015-16,0,Liechtenstein
+2306,Luxembourg,2015-16,30,Luxembourg
+2307,Monaco,2015-16,20,Monaco
+2308,Netherlands,2015-16,1880,Netherlands
+2311,Switzerland,2015-16,700,Switzerland
+2401,Denmark,2015-16,510,Denmark
+2402,Faroe Islands,2015-16,0,Faroe Islands
+2403,Finland,2015-16,470,Finland
+2404,Greenland,2015-16,0,Greenland
+2405,Iceland,2015-16,30,Iceland
+2406,Norway,2015-16,460,Norway
+2407,Sweden,2015-16,1360,Sweden
+3101,Andorra,2015-16,10,Andorra
+3102,Gibraltar,2015-16,10,Gibraltar
+3104,Italy,2015-16,4820,Italy
+3105,Malta,2015-16,120,Malta
+3106,Portugal,2015-16,480,Portugal
+3107,San Marino,2015-16,0,San Marino
+3108,Spain,2015-16,1650,Spain
+3201,Albania,2015-16,230,Albania
+3202,Bosnia/Herzegov,2015-16,350,Bosnia/Herzegov
+3203,Bulgaria,2015-16,250,Bulgaria
+3204,Croatia,2015-16,370,Croatia
+3205,Cyprus,2015-16,170,Cyprus
+3206,North Macedonia,2015-16,580,North Macedonia
+3207,Greece,2015-16,1350,Greece
+3208,Moldova,2015-16,50,Moldova
+3211,Romania,2015-16,460,Romania
+3212,Slovenia,2015-16,150,Slovenia
+3214,Montenegro,2015-16,30,Montenegro
+3215,Serbia,2015-16,370,Serbia
+3216,Kosovo,2015-16,40,Kosovo
+3301,Belarus,2015-16,110,Belarus
+3302,Czechia,2015-16,640,Czechia
+3303,Estonia,2015-16,730,Estonia
+3304,Hungary,2015-16,540,Hungary
+3305,Latvia,2015-16,120,Latvia
+3306,Lithuania,2015-16,310,Lithuania
+3307,Poland,2015-16,1380,Poland
+3308,Russia,2015-16,1190,Russia
+3311,Slovakia,2015-16,350,Slovakia
+3312,Ukraine,2015-16,690,Ukraine
+4101,Algeria,2015-16,90,Algeria
+4102,Egypt,2015-16,1510,Egypt
+4103,Libya,2015-16,80,Libya
+4104,Morocco,2015-16,160,Morocco
+4105,Sudan,2015-16,520,Sudan
+4106,Tunisia,2015-16,50,Tunisia
+4111,South Sudan,2015-16,220,South Sudan
+4201,Bahrain,2015-16,120,Bahrain
+4202,Palestine,2015-16,10,Palestine
+4203,Iran,2015-16,3620,Iran
+4204,Iraq,2015-16,4070,Iraq
+4205,Israel,2015-16,660,Israel
+4206,Jordan,2015-16,630,Jordan
+4207,Kuwait,2015-16,490,Kuwait
+4208,Lebanon,2015-16,1770,Lebanon
+4211,Oman,2015-16,480,Oman
+4212,Qatar,2015-16,170,Qatar
+4213,Saudi Arabia,2015-16,2520,Saudi Arabia
+4214,Syria,2015-16,2250,Syria
+4215,Türkiye,2015-16,1340,Türkiye
+4216,Unit Arab Emir,2015-16,1240,Unit Arab Emir
+4217,Yemen,2015-16,60,Yemen
+5101,Myanmar,2015-16,2240,Myanmar
+5102,Cambodia,2015-16,1650,Cambodia
+5103,Laos,2015-16,320,Laos
+5104,Thailand,2015-16,8710,Thailand
+5105,Vietnam,2015-16,11440,Vietnam
+5201,Brunei,2015-16,240,Brunei
+5202,Indonesia,2015-16,7330,Indonesia
+5203,Malaysia,2015-16,19260,Malaysia
+5204,Philippines,2015-16,16430,Philippines
+5205,Singapore,2015-16,5470,Singapore
+5206,Timor-Leste,2015-16,120,Timor-Leste
+6101,China,2015-16,70190,China
+6102,Hong Kong,2015-16,6070,Hong Kong
+6103,Macau,2015-16,270,Macau
+6104,Mongolia,2015-16,1040,Mongolia
+6105,Taiwan,2015-16,10530,Taiwan
+6201,Japan,2015-16,6690,Japan
+6202,"Korea, North",2015-16,90,"Korea, North"
+6203,"Korea, South",2015-16,12310,Korea South
+7101,Bangladesh,2015-16,3780,Bangladesh
+7102,Bhutan,2015-16,880,Bhutan
+7103,India,2015-16,52020,India
+7104,Maldives,2015-16,80,Maldives
+7105,Nepal,2015-16,8800,Nepal
+7106,Pakistan,2015-16,8220,Pakistan
+7107,Sri Lanka,2015-16,6240,Sri Lanka
+7201,Afghanistan,2015-16,2950,Afghanistan
+7202,Armenia,2015-16,50,Armenia
+7203,Azerbaijan,2015-16,50,Azerbaijan
+7204,Georgia,2015-16,50,Georgia
+7205,Kazakhstan,2015-16,180,Kazakhstan
+7206,Kyrgyzstan,2015-16,50,Kyrgyzstan
+7207,Tajikistan,2015-16,10,Tajikistan
+7208,Turkmenistan,2015-16,10,Turkmenistan
+7211,Uzbekistan,2015-16,130,Uzbekistan
+8101,Bermuda,2015-16,10,Bermuda
+8102,Canada,2015-16,4550,Canada
+8104,USA,2015-16,11460,USA
+8201,Argentina,2015-16,990,Argentina
+8202,Bolivia,2015-16,40,Bolivia
+8203,Brazil,2015-16,8010,Brazil
+8204,Chile,2015-16,1670,Chile
+8205,Colombia,2015-16,3890,Colombia
+8206,Ecuador,2015-16,150,Ecuador
+8207,Falkland Is,2015-16,0,Falkland Is
+8208,French Guiana,2015-16,10,French Guiana
+8211,Guyana,2015-16,20,Guyana
+8212,Paraguay,2015-16,20,Paraguay
+8213,Peru,2015-16,500,Peru
+8214,Suriname,2015-16,0,Suriname
+8215,Uruguay,2015-16,130,Uruguay
+8216,Venezuela,2015-16,850,Venezuela
+8301,Belize,2015-16,0,Belize
+8302,Costa Rica,2015-16,50,Costa Rica
+8303,El Salvador,2015-16,120,El Salvador
+8304,Guatemala,2015-16,40,Guatemala
+8305,Honduras,2015-16,10,Honduras
+8306,Mexico,2015-16,860,Mexico
+8307,Nicaragua,2015-16,30,Nicaragua
+8308,Panama,2015-16,30,Panama
+8402,Antigua/Barbuda,2015-16,0,Antigua/Barbuda
+8403,Aruba,2015-16,0,Aruba
+8404,Bahamas,2015-16,10,Bahamas
+8405,Barbados,2015-16,20,Barbados
+8406,Cayman Islands,2015-16,20,Cayman Islands
+8407,Cuba,2015-16,50,Cuba
+8408,Dominica,2015-16,0,Dominica
+8411,Dominican Rep,2015-16,20,Dominican Rep
+8412,Grenada,2015-16,10,Grenada
+8413,Guadeloupe,2015-16,10,Guadeloupe
+8414,Haiti,2015-16,10,Haiti
+8415,Jamaica,2015-16,60,Jamaica
+8416,Martinique,2015-16,10,Martinique
+8417,Montserrat,2015-16,0,Montserrat
+8421,Puerto Rico,2015-16,20,Puerto Rico
+8422,St Kitts/Nevis,2015-16,0,St Kitts/Nevis
+8423,St Lucia,2015-16,0,St Lucia
+8424,St Vinc/Grenad,2015-16,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2015-16,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2015-16,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2015-16,0,"Virgin Is, US"
+8434,Curacao,2015-16,10,Curacao
+8435,Sint Maarten Dp,2015-16,0,Sint Maarten Dp
+9101,Benin,2015-16,0,Benin
+9102,Burkina Faso,2015-16,0,Burkina Faso
+9103,Cameroon,2015-16,60,Cameroon
+9104,Cabo Verde,2015-16,0,Cabo Verde
+9105,Cent Africa Rep,2015-16,0,Cent Africa Rep
+9106,Chad,2015-16,0,Chad
+9107,"Congo, Rep",2015-16,50,"Congo, Rep"
+9108,"Congo, Dem Rep",2015-16,650,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2015-16,20,Cote d'Ivoire
+9113,Gabon,2015-16,10,Gabon
+9114,Gambia,2015-16,10,Gambia
+9115,Ghana,2015-16,500,Ghana
+9116,Guinea,2015-16,30,Guinea
+9118,Liberia,2015-16,100,Liberia
+9121,Mali,2015-16,0,Mali
+9122,Mauritania,2015-16,0,Mauritania
+9123,Niger,2015-16,0,Niger
+9124,Nigeria,2015-16,1620,Nigeria
+9126,Senegal,2015-16,20,Senegal
+9127,Sierra Leone,2015-16,70,Sierra Leone
+9128,Togo,2015-16,10,Togo
+9201,Angola,2015-16,20,Angola
+9202,Botswana,2015-16,90,Botswana
+9203,Burundi,2015-16,120,Burundi
+9205,Djibouti,2015-16,10,Djibouti
+9206,Eritrea,2015-16,440,Eritrea
+9207,Ethiopia,2015-16,910,Ethiopia
+9208,Kenya,2015-16,1560,Kenya
+9211,Lesotho,2015-16,0,Lesotho
+9212,Madagascar,2015-16,30,Madagascar
+9213,Malawi,2015-16,100,Malawi
+9214,Mauritius,2015-16,910,Mauritius
+9215,Mayotte,2015-16,0,Mayotte
+9216,Mozambique,2015-16,40,Mozambique
+9217,Namibia,2015-16,80,Namibia
+9218,Reunion,2015-16,30,Reunion
+9221,Rwanda,2015-16,70,Rwanda
+9223,Seychelles,2015-16,40,Seychelles
+9224,Somalia,2015-16,730,Somalia
+9225,South Africa,2015-16,6440,South Africa
+9226,Eswatini,2015-16,10,Eswatini
+9227,Tanzania,2015-16,150,Tanzania
+9228,Uganda,2015-16,240,Uganda
+9231,Zambia,2015-16,250,Zambia
+9232,Zimbabwe,2015-16,1540,Zimbabwe
+1102,Norfolk Island,2016-17,80,Norfolk Island
+1201,New Zealand,2016-17,22660,New Zealand
+1301,New Caledonia,2016-17,160,New Caledonia
+1302,PNG,2016-17,1320,PNG
+1303,Solomon Islands,2016-17,170,Solomon Islands
+1304,Vanuatu,2016-17,110,Vanuatu
+1401,Guam,2016-17,0,Guam
+1402,Kiribati,2016-17,70,Kiribati
+1403,Marshall Is,2016-17,0,Marshall Is
+1404,"Micronesia, F S",2016-17,0,"Micronesia, F S"
+1405,Nauru,2016-17,40,Nauru
+1406,N Mariana Is,2016-17,0,N Mariana Is
+1407,Palau,2016-17,0,Palau
+1501,Cook Islands,2016-17,320,Cook Islands
+1502,Fiji,2016-17,2370,Fiji
+1503,French Poly,2016-17,50,French Poly
+1504,Niue,2016-17,40,Niue
+1505,Samoa,2016-17,2580,Samoa
+1506,Samoa American,2016-17,60,Samoa American
+1507,Tokelau,2016-17,50,Tokelau
+1508,Tonga,2016-17,730,Tonga
+1511,Tuvalu,2016-17,20,Tuvalu
+1512,Wallis/Futuna,2016-17,0,Wallis/Futuna
+1513,Pitcairn Is,2016-17,0,Pitcairn Is
+1599,"Polynesia, nec",2016-17,10,"Polynesia, nec"
+2100,"UK, CIs & IOM",2016-17,33080,UK
+2201,Ireland,2016-17,4240,Ireland
+2301,Austria,2016-17,300,Austria
+2302,Belgium,2016-17,710,Belgium
+2303,France,2016-17,5810,France
+2304,Germany,2016-17,6270,Germany
+2305,Liechtenstein,2016-17,0,Liechtenstein
+2306,Luxembourg,2016-17,40,Luxembourg
+2307,Monaco,2016-17,10,Monaco
+2308,Netherlands,2016-17,2230,Netherlands
+2311,Switzerland,2016-17,740,Switzerland
+2401,Denmark,2016-17,470,Denmark
+2402,Faroe Islands,2016-17,0,Faroe Islands
+2403,Finland,2016-17,510,Finland
+2404,Greenland,2016-17,0,Greenland
+2405,Iceland,2016-17,40,Iceland
+2406,Norway,2016-17,430,Norway
+2407,Sweden,2016-17,1190,Sweden
+3101,Andorra,2016-17,10,Andorra
+3102,Gibraltar,2016-17,0,Gibraltar
+3104,Italy,2016-17,4330,Italy
+3105,Malta,2016-17,130,Malta
+3106,Portugal,2016-17,430,Portugal
+3107,San Marino,2016-17,0,San Marino
+3108,Spain,2016-17,1830,Spain
+3201,Albania,2016-17,240,Albania
+3202,Bosnia/Herzegov,2016-17,330,Bosnia/Herzegov
+3203,Bulgaria,2016-17,200,Bulgaria
+3204,Croatia,2016-17,390,Croatia
+3205,Cyprus,2016-17,190,Cyprus
+3206,North Macedonia,2016-17,590,North Macedonia
+3207,Greece,2016-17,1160,Greece
+3208,Moldova,2016-17,70,Moldova
+3211,Romania,2016-17,440,Romania
+3212,Slovenia,2016-17,140,Slovenia
+3214,Montenegro,2016-17,30,Montenegro
+3215,Serbia,2016-17,410,Serbia
+3216,Kosovo,2016-17,40,Kosovo
+3301,Belarus,2016-17,100,Belarus
+3302,Czechia,2016-17,600,Czechia
+3303,Estonia,2016-17,780,Estonia
+3304,Hungary,2016-17,470,Hungary
+3305,Latvia,2016-17,150,Latvia
+3306,Lithuania,2016-17,340,Lithuania
+3307,Poland,2016-17,1490,Poland
+3308,Russia,2016-17,1410,Russia
+3311,Slovakia,2016-17,370,Slovakia
+3312,Ukraine,2016-17,730,Ukraine
+4101,Algeria,2016-17,80,Algeria
+4102,Egypt,2016-17,1540,Egypt
+4103,Libya,2016-17,70,Libya
+4104,Morocco,2016-17,170,Morocco
+4105,Sudan,2016-17,580,Sudan
+4106,Tunisia,2016-17,40,Tunisia
+4111,South Sudan,2016-17,420,South Sudan
+4201,Bahrain,2016-17,150,Bahrain
+4202,Palestine,2016-17,10,Palestine
+4203,Iran,2016-17,4130,Iran
+4204,Iraq,2016-17,10430,Iraq
+4205,Israel,2016-17,830,Israel
+4206,Jordan,2016-17,720,Jordan
+4207,Kuwait,2016-17,540,Kuwait
+4208,Lebanon,2016-17,2090,Lebanon
+4211,Oman,2016-17,390,Oman
+4212,Qatar,2016-17,190,Qatar
+4213,Saudi Arabia,2016-17,2440,Saudi Arabia
+4214,Syria,2016-17,8270,Syria
+4215,Türkiye,2016-17,1780,Türkiye
+4216,Unit Arab Emir,2016-17,1490,Unit Arab Emir
+4217,Yemen,2016-17,80,Yemen
+5101,Myanmar,2016-17,1940,Myanmar
+5102,Cambodia,2016-17,1640,Cambodia
+5103,Laos,2016-17,340,Laos
+5104,Thailand,2016-17,8460,Thailand
+5105,Vietnam,2016-17,11920,Vietnam
+5201,Brunei,2016-17,250,Brunei
+5202,Indonesia,2016-17,8310,Indonesia
+5203,Malaysia,2016-17,20140,Malaysia
+5204,Philippines,2016-17,17120,Philippines
+5205,Singapore,2016-17,5920,Singapore
+5206,Timor-Leste,2016-17,110,Timor-Leste
+6101,China,2016-17,77760,China
+6102,Hong Kong,2016-17,5800,Hong Kong
+6103,Macau,2016-17,270,Macau
+6104,Mongolia,2016-17,1300,Mongolia
+6105,Taiwan,2016-17,10350,Taiwan
+6201,Japan,2016-17,6500,Japan
+6202,"Korea, North",2016-17,90,"Korea, North"
+6203,"Korea, South",2016-17,12230,Korea South
+7101,Bangladesh,2016-17,3880,Bangladesh
+7102,Bhutan,2016-17,1300,Bhutan
+7103,India,2016-17,60310,India
+7104,Maldives,2016-17,80,Maldives
+7105,Nepal,2016-17,15800,Nepal
+7106,Pakistan,2016-17,8730,Pakistan
+7107,Sri Lanka,2016-17,7330,Sri Lanka
+7201,Afghanistan,2016-17,3200,Afghanistan
+7202,Armenia,2016-17,50,Armenia
+7203,Azerbaijan,2016-17,50,Azerbaijan
+7204,Georgia,2016-17,50,Georgia
+7205,Kazakhstan,2016-17,210,Kazakhstan
+7206,Kyrgyzstan,2016-17,50,Kyrgyzstan
+7207,Tajikistan,2016-17,10,Tajikistan
+7208,Turkmenistan,2016-17,10,Turkmenistan
+7211,Uzbekistan,2016-17,130,Uzbekistan
+8101,Bermuda,2016-17,10,Bermuda
+8102,Canada,2016-17,4550,Canada
+8104,USA,2016-17,11880,USA
+8201,Argentina,2016-17,1180,Argentina
+8202,Bolivia,2016-17,50,Bolivia
+8203,Brazil,2016-17,10170,Brazil
+8204,Chile,2016-17,1900,Chile
+8205,Colombia,2016-17,4980,Colombia
+8206,Ecuador,2016-17,190,Ecuador
+8207,Falkland Is,2016-17,0,Falkland Is
+8208,French Guiana,2016-17,10,French Guiana
+8211,Guyana,2016-17,20,Guyana
+8212,Paraguay,2016-17,80,Paraguay
+8213,Peru,2016-17,580,Peru
+8214,Suriname,2016-17,10,Suriname
+8215,Uruguay,2016-17,200,Uruguay
+8216,Venezuela,2016-17,780,Venezuela
+8301,Belize,2016-17,0,Belize
+8302,Costa Rica,2016-17,40,Costa Rica
+8303,El Salvador,2016-17,110,El Salvador
+8304,Guatemala,2016-17,30,Guatemala
+8305,Honduras,2016-17,20,Honduras
+8306,Mexico,2016-17,850,Mexico
+8307,Nicaragua,2016-17,20,Nicaragua
+8308,Panama,2016-17,20,Panama
+8402,Antigua/Barbuda,2016-17,0,Antigua/Barbuda
+8403,Aruba,2016-17,0,Aruba
+8404,Bahamas,2016-17,10,Bahamas
+8405,Barbados,2016-17,10,Barbados
+8406,Cayman Islands,2016-17,10,Cayman Islands
+8407,Cuba,2016-17,60,Cuba
+8408,Dominica,2016-17,0,Dominica
+8411,Dominican Rep,2016-17,30,Dominican Rep
+8412,Grenada,2016-17,0,Grenada
+8413,Guadeloupe,2016-17,10,Guadeloupe
+8414,Haiti,2016-17,10,Haiti
+8415,Jamaica,2016-17,80,Jamaica
+8416,Martinique,2016-17,10,Martinique
+8417,Montserrat,2016-17,0,Montserrat
+8421,Puerto Rico,2016-17,30,Puerto Rico
+8422,St Kitts/Nevis,2016-17,0,St Kitts/Nevis
+8423,St Lucia,2016-17,10,St Lucia
+8424,St Vinc/Grenad,2016-17,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2016-17,50,Trinidad/Tobago
+8427,"Virgin Is, Brit",2016-17,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2016-17,0,"Virgin Is, US"
+8434,Curacao,2016-17,10,Curacao
+8435,Sint Maarten Dp,2016-17,0,Sint Maarten Dp
+9101,Benin,2016-17,10,Benin
+9102,Burkina Faso,2016-17,0,Burkina Faso
+9103,Cameroon,2016-17,50,Cameroon
+9104,Cabo Verde,2016-17,0,Cabo Verde
+9105,Cent Africa Rep,2016-17,0,Cent Africa Rep
+9106,Chad,2016-17,0,Chad
+9107,"Congo, Rep",2016-17,80,"Congo, Rep"
+9108,"Congo, Dem Rep",2016-17,360,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2016-17,50,Cote d'Ivoire
+9113,Gabon,2016-17,10,Gabon
+9114,Gambia,2016-17,0,Gambia
+9115,Ghana,2016-17,540,Ghana
+9116,Guinea,2016-17,100,Guinea
+9118,Liberia,2016-17,140,Liberia
+9121,Mali,2016-17,10,Mali
+9122,Mauritania,2016-17,10,Mauritania
+9123,Niger,2016-17,10,Niger
+9124,Nigeria,2016-17,1850,Nigeria
+9126,Senegal,2016-17,20,Senegal
+9127,Sierra Leone,2016-17,140,Sierra Leone
+9128,Togo,2016-17,10,Togo
+9201,Angola,2016-17,20,Angola
+9202,Botswana,2016-17,110,Botswana
+9203,Burundi,2016-17,100,Burundi
+9205,Djibouti,2016-17,10,Djibouti
+9206,Eritrea,2016-17,350,Eritrea
+9207,Ethiopia,2016-17,970,Ethiopia
+9208,Kenya,2016-17,2150,Kenya
+9211,Lesotho,2016-17,10,Lesotho
+9212,Madagascar,2016-17,20,Madagascar
+9213,Malawi,2016-17,80,Malawi
+9214,Mauritius,2016-17,870,Mauritius
+9215,Mayotte,2016-17,0,Mayotte
+9216,Mozambique,2016-17,50,Mozambique
+9217,Namibia,2016-17,80,Namibia
+9218,Reunion,2016-17,40,Reunion
+9221,Rwanda,2016-17,60,Rwanda
+9223,Seychelles,2016-17,50,Seychelles
+9224,Somalia,2016-17,430,Somalia
+9225,South Africa,2016-17,7840,South Africa
+9226,Eswatini,2016-17,10,Eswatini
+9227,Tanzania,2016-17,210,Tanzania
+9228,Uganda,2016-17,240,Uganda
+9231,Zambia,2016-17,240,Zambia
+9232,Zimbabwe,2016-17,1590,Zimbabwe
+1102,Norfolk Island,2017-18,10,Norfolk Island
+1201,New Zealand,2017-18,21270,New Zealand
+1301,New Caledonia,2017-18,120,New Caledonia
+1302,PNG,2017-18,1140,PNG
+1303,Solomon Islands,2017-18,200,Solomon Islands
+1304,Vanuatu,2017-18,110,Vanuatu
+1401,Guam,2017-18,10,Guam
+1402,Kiribati,2017-18,120,Kiribati
+1403,Marshall Is,2017-18,0,Marshall Is
+1404,"Micronesia, F S",2017-18,0,"Micronesia, F S"
+1405,Nauru,2017-18,40,Nauru
+1406,N Mariana Is,2017-18,0,N Mariana Is
+1407,Palau,2017-18,0,Palau
+1501,Cook Islands,2017-18,250,Cook Islands
+1502,Fiji,2017-18,2390,Fiji
+1503,French Poly,2017-18,50,French Poly
+1504,Niue,2017-18,40,Niue
+1505,Samoa,2017-18,2300,Samoa
+1506,Samoa American,2017-18,50,Samoa American
+1507,Tokelau,2017-18,30,Tokelau
+1508,Tonga,2017-18,850,Tonga
+1511,Tuvalu,2017-18,30,Tuvalu
+1512,Wallis/Futuna,2017-18,0,Wallis/Futuna
+1513,Pitcairn Is,2017-18,0,Pitcairn Is
+1599,"Polynesia, nec",2017-18,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2017-18,29740,UK
+2201,Ireland,2017-18,4640,Ireland
+2301,Austria,2017-18,270,Austria
+2302,Belgium,2017-18,810,Belgium
+2303,France,2017-18,5920,France
+2304,Germany,2017-18,4550,Germany
+2305,Liechtenstein,2017-18,0,Liechtenstein
+2306,Luxembourg,2017-18,20,Luxembourg
+2307,Monaco,2017-18,10,Monaco
+2308,Netherlands,2017-18,1830,Netherlands
+2311,Switzerland,2017-18,690,Switzerland
+2401,Denmark,2017-18,430,Denmark
+2402,Faroe Islands,2017-18,0,Faroe Islands
+2403,Finland,2017-18,450,Finland
+2404,Greenland,2017-18,10,Greenland
+2405,Iceland,2017-18,30,Iceland
+2406,Norway,2017-18,480,Norway
+2407,Sweden,2017-18,1150,Sweden
+3101,Andorra,2017-18,10,Andorra
+3102,Gibraltar,2017-18,20,Gibraltar
+3104,Italy,2017-18,3670,Italy
+3105,Malta,2017-18,140,Malta
+3106,Portugal,2017-18,390,Portugal
+3107,San Marino,2017-18,10,San Marino
+3108,Spain,2017-18,1970,Spain
+3201,Albania,2017-18,250,Albania
+3202,Bosnia/Herzegov,2017-18,310,Bosnia/Herzegov
+3203,Bulgaria,2017-18,220,Bulgaria
+3204,Croatia,2017-18,260,Croatia
+3205,Cyprus,2017-18,120,Cyprus
+3206,North Macedonia,2017-18,590,North Macedonia
+3207,Greece,2017-18,940,Greece
+3208,Moldova,2017-18,50,Moldova
+3211,Romania,2017-18,410,Romania
+3212,Slovenia,2017-18,110,Slovenia
+3214,Montenegro,2017-18,30,Montenegro
+3215,Serbia,2017-18,360,Serbia
+3216,Kosovo,2017-18,30,Kosovo
+3301,Belarus,2017-18,110,Belarus
+3302,Czechia,2017-18,500,Czechia
+3303,Estonia,2017-18,780,Estonia
+3304,Hungary,2017-18,370,Hungary
+3305,Latvia,2017-18,90,Latvia
+3306,Lithuania,2017-18,310,Lithuania
+3307,Poland,2017-18,1250,Poland
+3308,Russia,2017-18,1330,Russia
+3311,Slovakia,2017-18,300,Slovakia
+3312,Ukraine,2017-18,670,Ukraine
+4101,Algeria,2017-18,100,Algeria
+4102,Egypt,2017-18,1540,Egypt
+4103,Libya,2017-18,80,Libya
+4104,Morocco,2017-18,160,Morocco
+4105,Sudan,2017-18,540,Sudan
+4106,Tunisia,2017-18,50,Tunisia
+4111,South Sudan,2017-18,220,South Sudan
+4201,Bahrain,2017-18,120,Bahrain
+4202,Palestine,2017-18,10,Palestine
+4203,Iran,2017-18,3610,Iran
+4204,Iraq,2017-18,4480,Iraq
+4205,Israel,2017-18,700,Israel
+4206,Jordan,2017-18,610,Jordan
+4207,Kuwait,2017-18,510,Kuwait
+4208,Lebanon,2017-18,2030,Lebanon
+4211,Oman,2017-18,300,Oman
+4212,Qatar,2017-18,260,Qatar
+4213,Saudi Arabia,2017-18,2580,Saudi Arabia
+4214,Syria,2017-18,3310,Syria
+4215,Türkiye,2017-18,1630,Türkiye
+4216,Unit Arab Emir,2017-18,1530,Unit Arab Emir
+4217,Yemen,2017-18,100,Yemen
+5101,Myanmar,2017-18,1960,Myanmar
+5102,Cambodia,2017-18,2040,Cambodia
+5103,Laos,2017-18,370,Laos
+5104,Thailand,2017-18,6430,Thailand
+5105,Vietnam,2017-18,11440,Vietnam
+5201,Brunei,2017-18,180,Brunei
+5202,Indonesia,2017-18,7820,Indonesia
+5203,Malaysia,2017-18,19050,Malaysia
+5204,Philippines,2017-18,16370,Philippines
+5205,Singapore,2017-18,5000,Singapore
+5206,Timor-Leste,2017-18,100,Timor-Leste
+6101,China,2017-18,82320,China
+6102,Hong Kong,2017-18,5030,Hong Kong
+6103,Macau,2017-18,200,Macau
+6104,Mongolia,2017-18,1560,Mongolia
+6105,Taiwan,2017-18,10440,Taiwan
+6201,Japan,2017-18,5990,Japan
+6202,"Korea, North",2017-18,90,"Korea, North"
+6203,"Korea, South",2017-18,11340,Korea South
+7101,Bangladesh,2017-18,3950,Bangladesh
+7102,Bhutan,2017-18,1810,Bhutan
+7103,India,2017-18,67440,India
+7104,Maldives,2017-18,70,Maldives
+7105,Nepal,2017-18,22070,Nepal
+7106,Pakistan,2017-18,9650,Pakistan
+7107,Sri Lanka,2017-18,7500,Sri Lanka
+7201,Afghanistan,2017-18,3510,Afghanistan
+7202,Armenia,2017-18,50,Armenia
+7203,Azerbaijan,2017-18,60,Azerbaijan
+7204,Georgia,2017-18,50,Georgia
+7205,Kazakhstan,2017-18,200,Kazakhstan
+7206,Kyrgyzstan,2017-18,40,Kyrgyzstan
+7207,Tajikistan,2017-18,10,Tajikistan
+7208,Turkmenistan,2017-18,10,Turkmenistan
+7211,Uzbekistan,2017-18,140,Uzbekistan
+8101,Bermuda,2017-18,20,Bermuda
+8102,Canada,2017-18,4460,Canada
+8104,USA,2017-18,10940,USA
+8201,Argentina,2017-18,1490,Argentina
+8202,Bolivia,2017-18,50,Bolivia
+8203,Brazil,2017-18,9260,Brazil
+8204,Chile,2017-18,2290,Chile
+8205,Colombia,2017-18,5350,Colombia
+8206,Ecuador,2017-18,190,Ecuador
+8207,Falkland Is,2017-18,0,Falkland Is
+8208,French Guiana,2017-18,10,French Guiana
+8211,Guyana,2017-18,10,Guyana
+8212,Paraguay,2017-18,40,Paraguay
+8213,Peru,2017-18,700,Peru
+8214,Suriname,2017-18,0,Suriname
+8215,Uruguay,2017-18,220,Uruguay
+8216,Venezuela,2017-18,360,Venezuela
+8301,Belize,2017-18,10,Belize
+8302,Costa Rica,2017-18,60,Costa Rica
+8303,El Salvador,2017-18,120,El Salvador
+8304,Guatemala,2017-18,40,Guatemala
+8305,Honduras,2017-18,20,Honduras
+8306,Mexico,2017-18,890,Mexico
+8307,Nicaragua,2017-18,20,Nicaragua
+8308,Panama,2017-18,10,Panama
+8402,Antigua/Barbuda,2017-18,0,Antigua/Barbuda
+8403,Aruba,2017-18,0,Aruba
+8404,Bahamas,2017-18,10,Bahamas
+8405,Barbados,2017-18,10,Barbados
+8406,Cayman Islands,2017-18,10,Cayman Islands
+8407,Cuba,2017-18,60,Cuba
+8408,Dominica,2017-18,0,Dominica
+8411,Dominican Rep,2017-18,30,Dominican Rep
+8412,Grenada,2017-18,10,Grenada
+8413,Guadeloupe,2017-18,10,Guadeloupe
+8414,Haiti,2017-18,20,Haiti
+8415,Jamaica,2017-18,60,Jamaica
+8416,Martinique,2017-18,0,Martinique
+8417,Montserrat,2017-18,0,Montserrat
+8421,Puerto Rico,2017-18,30,Puerto Rico
+8422,St Kitts/Nevis,2017-18,0,St Kitts/Nevis
+8423,St Lucia,2017-18,10,St Lucia
+8424,St Vinc/Grenad,2017-18,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2017-18,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2017-18,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2017-18,0,"Virgin Is, US"
+8434,Curacao,2017-18,10,Curacao
+8435,Sint Maarten Dp,2017-18,10,Sint Maarten Dp
+9101,Benin,2017-18,10,Benin
+9102,Burkina Faso,2017-18,0,Burkina Faso
+9103,Cameroon,2017-18,60,Cameroon
+9104,Cabo Verde,2017-18,0,Cabo Verde
+9105,Cent Africa Rep,2017-18,0,Cent Africa Rep
+9106,Chad,2017-18,0,Chad
+9107,"Congo, Rep",2017-18,50,"Congo, Rep"
+9108,"Congo, Dem Rep",2017-18,650,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2017-18,20,Cote d'Ivoire
+9113,Gabon,2017-18,0,Gabon
+9114,Gambia,2017-18,10,Gambia
+9115,Ghana,2017-18,500,Ghana
+9116,Guinea,2017-18,40,Guinea
+9118,Liberia,2017-18,80,Liberia
+9121,Mali,2017-18,0,Mali
+9122,Mauritania,2017-18,0,Mauritania
+9123,Niger,2017-18,0,Niger
+9124,Nigeria,2017-18,1310,Nigeria
+9126,Senegal,2017-18,30,Senegal
+9127,Sierra Leone,2017-18,190,Sierra Leone
+9128,Togo,2017-18,10,Togo
+9201,Angola,2017-18,20,Angola
+9202,Botswana,2017-18,110,Botswana
+9203,Burundi,2017-18,200,Burundi
+9205,Djibouti,2017-18,10,Djibouti
+9206,Eritrea,2017-18,410,Eritrea
+9207,Ethiopia,2017-18,760,Ethiopia
+9208,Kenya,2017-18,1710,Kenya
+9211,Lesotho,2017-18,10,Lesotho
+9212,Madagascar,2017-18,30,Madagascar
+9213,Malawi,2017-18,70,Malawi
+9214,Mauritius,2017-18,730,Mauritius
+9215,Mayotte,2017-18,0,Mayotte
+9216,Mozambique,2017-18,50,Mozambique
+9217,Namibia,2017-18,70,Namibia
+9218,Reunion,2017-18,20,Reunion
+9221,Rwanda,2017-18,60,Rwanda
+9223,Seychelles,2017-18,20,Seychelles
+9224,Somalia,2017-18,360,Somalia
+9225,South Africa,2017-18,6930,South Africa
+9226,Eswatini,2017-18,30,Eswatini
+9227,Tanzania,2017-18,140,Tanzania
+9228,Uganda,2017-18,260,Uganda
+9231,Zambia,2017-18,190,Zambia
+9232,Zimbabwe,2017-18,1370,Zimbabwe
+1102,Norfolk Island,2018-19,10,Norfolk Island
+1201,New Zealand,2018-19,20960,New Zealand
+1301,New Caledonia,2018-19,130,New Caledonia
+1302,PNG,2018-19,1220,PNG
+1303,Solomon Islands,2018-19,190,Solomon Islands
+1304,Vanuatu,2018-19,300,Vanuatu
+1401,Guam,2018-19,10,Guam
+1402,Kiribati,2018-19,90,Kiribati
+1403,Marshall Is,2018-19,10,Marshall Is
+1404,"Micronesia, F S",2018-19,0,"Micronesia, F S"
+1405,Nauru,2018-19,100,Nauru
+1406,N Mariana Is,2018-19,0,N Mariana Is
+1407,Palau,2018-19,0,Palau
+1501,Cook Islands,2018-19,320,Cook Islands
+1502,Fiji,2018-19,3160,Fiji
+1503,French Poly,2018-19,50,French Poly
+1504,Niue,2018-19,30,Niue
+1505,Samoa,2018-19,2190,Samoa
+1506,Samoa American,2018-19,60,Samoa American
+1507,Tokelau,2018-19,50,Tokelau
+1508,Tonga,2018-19,1080,Tonga
+1511,Tuvalu,2018-19,50,Tuvalu
+1512,Wallis/Futuna,2018-19,0,Wallis/Futuna
+1513,Pitcairn Is,2018-19,0,Pitcairn Is
+1599,"Polynesia, nec",2018-19,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2018-19,29300,UK
+2201,Ireland,2018-19,4850,Ireland
+2301,Austria,2018-19,280,Austria
+2302,Belgium,2018-19,740,Belgium
+2303,France,2018-19,6110,France
+2304,Germany,2018-19,4360,Germany
+2305,Liechtenstein,2018-19,0,Liechtenstein
+2306,Luxembourg,2018-19,30,Luxembourg
+2307,Monaco,2018-19,10,Monaco
+2308,Netherlands,2018-19,1630,Netherlands
+2311,Switzerland,2018-19,650,Switzerland
+2401,Denmark,2018-19,410,Denmark
+2402,Faroe Islands,2018-19,10,Faroe Islands
+2403,Finland,2018-19,410,Finland
+2404,Greenland,2018-19,0,Greenland
+2405,Iceland,2018-19,30,Iceland
+2406,Norway,2018-19,380,Norway
+2407,Sweden,2018-19,1050,Sweden
+3101,Andorra,2018-19,10,Andorra
+3102,Gibraltar,2018-19,10,Gibraltar
+3104,Italy,2018-19,3600,Italy
+3105,Malta,2018-19,130,Malta
+3106,Portugal,2018-19,320,Portugal
+3107,San Marino,2018-19,0,San Marino
+3108,Spain,2018-19,2050,Spain
+3201,Albania,2018-19,220,Albania
+3202,Bosnia/Herzegov,2018-19,260,Bosnia/Herzegov
+3203,Bulgaria,2018-19,170,Bulgaria
+3204,Croatia,2018-19,290,Croatia
+3205,Cyprus,2018-19,130,Cyprus
+3206,North Macedonia,2018-19,470,North Macedonia
+3207,Greece,2018-19,700,Greece
+3208,Moldova,2018-19,70,Moldova
+3211,Romania,2018-19,380,Romania
+3212,Slovenia,2018-19,110,Slovenia
+3214,Montenegro,2018-19,30,Montenegro
+3215,Serbia,2018-19,320,Serbia
+3216,Kosovo,2018-19,20,Kosovo
+3301,Belarus,2018-19,100,Belarus
+3302,Czechia,2018-19,480,Czechia
+3303,Estonia,2018-19,690,Estonia
+3304,Hungary,2018-19,350,Hungary
+3305,Latvia,2018-19,110,Latvia
+3306,Lithuania,2018-19,280,Lithuania
+3307,Poland,2018-19,1170,Poland
+3308,Russia,2018-19,1270,Russia
+3311,Slovakia,2018-19,280,Slovakia
+3312,Ukraine,2018-19,690,Ukraine
+4101,Algeria,2018-19,100,Algeria
+4102,Egypt,2018-19,1540,Egypt
+4103,Libya,2018-19,80,Libya
+4104,Morocco,2018-19,170,Morocco
+4105,Sudan,2018-19,390,Sudan
+4106,Tunisia,2018-19,40,Tunisia
+4111,South Sudan,2018-19,110,South Sudan
+4201,Bahrain,2018-19,150,Bahrain
+4202,Palestine,2018-19,10,Palestine
+4203,Iran,2018-19,4220,Iran
+4204,Iraq,2018-19,6860,Iraq
+4205,Israel,2018-19,690,Israel
+4206,Jordan,2018-19,550,Jordan
+4207,Kuwait,2018-19,460,Kuwait
+4208,Lebanon,2018-19,2030,Lebanon
+4211,Oman,2018-19,220,Oman
+4212,Qatar,2018-19,270,Qatar
+4213,Saudi Arabia,2018-19,3910,Saudi Arabia
+4214,Syria,2018-19,2350,Syria
+4215,Türkiye,2018-19,1710,Türkiye
+4216,Unit Arab Emir,2018-19,1550,Unit Arab Emir
+4217,Yemen,2018-19,110,Yemen
+5101,Myanmar,2018-19,2900,Myanmar
+5102,Cambodia,2018-19,1980,Cambodia
+5103,Laos,2018-19,340,Laos
+5104,Thailand,2018-19,7370,Thailand
+5105,Vietnam,2018-19,12360,Vietnam
+5201,Brunei,2018-19,200,Brunei
+5202,Indonesia,2018-19,8720,Indonesia
+5203,Malaysia,2018-19,14020,Malaysia
+5204,Philippines,2018-19,22780,Philippines
+5205,Singapore,2018-19,4740,Singapore
+5206,Timor-Leste,2018-19,160,Timor-Leste
+6101,China,2018-19,71810,China
+6102,Hong Kong,2018-19,5540,Hong Kong
+6103,Macau,2018-19,250,Macau
+6104,Mongolia,2018-19,2050,Mongolia
+6105,Taiwan,2018-19,8340,Taiwan
+6201,Japan,2018-19,5950,Japan
+6202,"Korea, North",2018-19,70,"Korea, North"
+6203,"Korea, South",2018-19,10030,Korea South
+7101,Bangladesh,2018-19,3740,Bangladesh
+7102,Bhutan,2018-19,2210,Bhutan
+7103,India,2018-19,86350,India
+7104,Maldives,2018-19,70,Maldives
+7105,Nepal,2018-19,25470,Nepal
+7106,Pakistan,2018-19,9430,Pakistan
+7107,Sri Lanka,2018-19,9070,Sri Lanka
+7201,Afghanistan,2018-19,3300,Afghanistan
+7202,Armenia,2018-19,40,Armenia
+7203,Azerbaijan,2018-19,50,Azerbaijan
+7204,Georgia,2018-19,60,Georgia
+7205,Kazakhstan,2018-19,190,Kazakhstan
+7206,Kyrgyzstan,2018-19,60,Kyrgyzstan
+7207,Tajikistan,2018-19,20,Tajikistan
+7208,Turkmenistan,2018-19,10,Turkmenistan
+7211,Uzbekistan,2018-19,140,Uzbekistan
+8101,Bermuda,2018-19,10,Bermuda
+8102,Canada,2018-19,4460,Canada
+8104,USA,2018-19,10670,USA
+8201,Argentina,2018-19,2460,Argentina
+8202,Bolivia,2018-19,70,Bolivia
+8203,Brazil,2018-19,8180,Brazil
+8204,Chile,2018-19,2530,Chile
+8205,Colombia,2018-19,6910,Colombia
+8206,Ecuador,2018-19,200,Ecuador
+8207,Falkland Is,2018-19,0,Falkland Is
+8208,French Guiana,2018-19,10,French Guiana
+8211,Guyana,2018-19,20,Guyana
+8212,Paraguay,2018-19,50,Paraguay
+8213,Peru,2018-19,750,Peru
+8214,Suriname,2018-19,0,Suriname
+8215,Uruguay,2018-19,340,Uruguay
+8216,Venezuela,2018-19,340,Venezuela
+8301,Belize,2018-19,0,Belize
+8302,Costa Rica,2018-19,60,Costa Rica
+8303,El Salvador,2018-19,130,El Salvador
+8304,Guatemala,2018-19,70,Guatemala
+8305,Honduras,2018-19,30,Honduras
+8306,Mexico,2018-19,980,Mexico
+8307,Nicaragua,2018-19,30,Nicaragua
+8308,Panama,2018-19,30,Panama
+8402,Antigua/Barbuda,2018-19,0,Antigua/Barbuda
+8403,Aruba,2018-19,0,Aruba
+8404,Bahamas,2018-19,10,Bahamas
+8405,Barbados,2018-19,10,Barbados
+8406,Cayman Islands,2018-19,10,Cayman Islands
+8407,Cuba,2018-19,60,Cuba
+8408,Dominica,2018-19,0,Dominica
+8411,Dominican Rep,2018-19,30,Dominican Rep
+8412,Grenada,2018-19,0,Grenada
+8413,Guadeloupe,2018-19,10,Guadeloupe
+8414,Haiti,2018-19,10,Haiti
+8415,Jamaica,2018-19,60,Jamaica
+8416,Martinique,2018-19,10,Martinique
+8417,Montserrat,2018-19,0,Montserrat
+8421,Puerto Rico,2018-19,20,Puerto Rico
+8422,St Kitts/Nevis,2018-19,0,St Kitts/Nevis
+8423,St Lucia,2018-19,0,St Lucia
+8424,St Vinc/Grenad,2018-19,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2018-19,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2018-19,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2018-19,10,"Virgin Is, US"
+8434,Curacao,2018-19,10,Curacao
+8435,Sint Maarten Dp,2018-19,0,Sint Maarten Dp
+9101,Benin,2018-19,10,Benin
+9102,Burkina Faso,2018-19,0,Burkina Faso
+9103,Cameroon,2018-19,50,Cameroon
+9104,Cabo Verde,2018-19,0,Cabo Verde
+9105,Cent Africa Rep,2018-19,60,Cent Africa Rep
+9106,Chad,2018-19,20,Chad
+9107,"Congo, Rep",2018-19,50,"Congo, Rep"
+9108,"Congo, Dem Rep",2018-19,1500,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2018-19,30,Cote d'Ivoire
+9113,Gabon,2018-19,10,Gabon
+9114,Gambia,2018-19,10,Gambia
+9115,Ghana,2018-19,460,Ghana
+9116,Guinea,2018-19,40,Guinea
+9118,Liberia,2018-19,50,Liberia
+9121,Mali,2018-19,0,Mali
+9122,Mauritania,2018-19,0,Mauritania
+9123,Niger,2018-19,10,Niger
+9124,Nigeria,2018-19,1260,Nigeria
+9126,Senegal,2018-19,20,Senegal
+9127,Sierra Leone,2018-19,60,Sierra Leone
+9128,Togo,2018-19,10,Togo
+9201,Angola,2018-19,10,Angola
+9202,Botswana,2018-19,110,Botswana
+9203,Burundi,2018-19,330,Burundi
+9205,Djibouti,2018-19,0,Djibouti
+9206,Eritrea,2018-19,340,Eritrea
+9207,Ethiopia,2018-19,760,Ethiopia
+9208,Kenya,2018-19,1730,Kenya
+9211,Lesotho,2018-19,10,Lesotho
+9212,Madagascar,2018-19,40,Madagascar
+9213,Malawi,2018-19,180,Malawi
+9214,Mauritius,2018-19,880,Mauritius
+9215,Mayotte,2018-19,0,Mayotte
+9216,Mozambique,2018-19,60,Mozambique
+9217,Namibia,2018-19,90,Namibia
+9218,Reunion,2018-19,40,Reunion
+9221,Rwanda,2018-19,110,Rwanda
+9223,Seychelles,2018-19,40,Seychelles
+9224,Somalia,2018-19,330,Somalia
+9225,South Africa,2018-19,8070,South Africa
+9226,Eswatini,2018-19,10,Eswatini
+9227,Tanzania,2018-19,340,Tanzania
+9228,Uganda,2018-19,230,Uganda
+9231,Zambia,2018-19,220,Zambia
+9232,Zimbabwe,2018-19,1570,Zimbabwe
+1102,Norfolk Island,2019-20,0,Norfolk Island
+1201,New Zealand,2019-20,15640,New Zealand
+1301,New Caledonia,2019-20,100,New Caledonia
+1302,PNG,2019-20,1400,PNG
+1303,Solomon Islands,2019-20,400,Solomon Islands
+1304,Vanuatu,2019-20,2580,Vanuatu
+1401,Guam,2019-20,10,Guam
+1402,Kiribati,2019-20,180,Kiribati
+1403,Marshall Is,2019-20,0,Marshall Is
+1404,"Micronesia, F S",2019-20,0,"Micronesia, F S"
+1405,Nauru,2019-20,90,Nauru
+1406,N Mariana Is,2019-20,10,N Mariana Is
+1407,Palau,2019-20,0,Palau
+1501,Cook Islands,2019-20,280,Cook Islands
+1502,Fiji,2019-20,3090,Fiji
+1503,French Poly,2019-20,40,French Poly
+1504,Niue,2019-20,30,Niue
+1505,Samoa,2019-20,2280,Samoa
+1506,Samoa American,2019-20,30,Samoa American
+1507,Tokelau,2019-20,30,Tokelau
+1508,Tonga,2019-20,2800,Tonga
+1511,Tuvalu,2019-20,60,Tuvalu
+1512,Wallis/Futuna,2019-20,0,Wallis/Futuna
+1513,Pitcairn Is,2019-20,0,Pitcairn Is
+1599,"Polynesia, nec",2019-20,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2019-20,27670,UK
+2201,Ireland,2019-20,4620,Ireland
+2301,Austria,2019-20,280,Austria
+2302,Belgium,2019-20,840,Belgium
+2303,France,2019-20,6580,France
+2304,Germany,2019-20,4730,Germany
+2305,Liechtenstein,2019-20,0,Liechtenstein
+2306,Luxembourg,2019-20,30,Luxembourg
+2307,Monaco,2019-20,10,Monaco
+2308,Netherlands,2019-20,1750,Netherlands
+2311,Switzerland,2019-20,650,Switzerland
+2401,Denmark,2019-20,420,Denmark
+2402,Faroe Islands,2019-20,0,Faroe Islands
+2403,Finland,2019-20,370,Finland
+2404,Greenland,2019-20,0,Greenland
+2405,Iceland,2019-20,40,Iceland
+2406,Norway,2019-20,330,Norway
+2407,Sweden,2019-20,910,Sweden
+3101,Andorra,2019-20,0,Andorra
+3102,Gibraltar,2019-20,10,Gibraltar
+3104,Italy,2019-20,3750,Italy
+3105,Malta,2019-20,130,Malta
+3106,Portugal,2019-20,390,Portugal
+3107,San Marino,2019-20,0,San Marino
+3108,Spain,2019-20,2330,Spain
+3201,Albania,2019-20,200,Albania
+3202,Bosnia/Herzegov,2019-20,270,Bosnia/Herzegov
+3203,Bulgaria,2019-20,170,Bulgaria
+3204,Croatia,2019-20,330,Croatia
+3205,Cyprus,2019-20,150,Cyprus
+3206,North Macedonia,2019-20,440,North Macedonia
+3207,Greece,2019-20,850,Greece
+3208,Moldova,2019-20,60,Moldova
+3211,Romania,2019-20,420,Romania
+3212,Slovenia,2019-20,100,Slovenia
+3214,Montenegro,2019-20,30,Montenegro
+3215,Serbia,2019-20,320,Serbia
+3216,Kosovo,2019-20,30,Kosovo
+3301,Belarus,2019-20,120,Belarus
+3302,Czechia,2019-20,460,Czechia
+3303,Estonia,2019-20,570,Estonia
+3304,Hungary,2019-20,340,Hungary
+3305,Latvia,2019-20,110,Latvia
+3306,Lithuania,2019-20,210,Lithuania
+3307,Poland,2019-20,1090,Poland
+3308,Russia,2019-20,1390,Russia
+3311,Slovakia,2019-20,250,Slovakia
+3312,Ukraine,2019-20,580,Ukraine
+4101,Algeria,2019-20,100,Algeria
+4102,Egypt,2019-20,1480,Egypt
+4103,Libya,2019-20,50,Libya
+4104,Morocco,2019-20,200,Morocco
+4105,Sudan,2019-20,480,Sudan
+4106,Tunisia,2019-20,60,Tunisia
+4111,South Sudan,2019-20,60,South Sudan
+4201,Bahrain,2019-20,130,Bahrain
+4202,Palestine,2019-20,0,Palestine
+4203,Iran,2019-20,3840,Iran
+4204,Iraq,2019-20,6990,Iraq
+4205,Israel,2019-20,850,Israel
+4206,Jordan,2019-20,560,Jordan
+4207,Kuwait,2019-20,450,Kuwait
+4208,Lebanon,2019-20,2240,Lebanon
+4211,Oman,2019-20,160,Oman
+4212,Qatar,2019-20,200,Qatar
+4213,Saudi Arabia,2019-20,2250,Saudi Arabia
+4214,Syria,2019-20,1060,Syria
+4215,Türkiye,2019-20,1770,Türkiye
+4216,Unit Arab Emir,2019-20,1220,Unit Arab Emir
+4217,Yemen,2019-20,60,Yemen
+5101,Myanmar,2019-20,2200,Myanmar
+5102,Cambodia,2019-20,1810,Cambodia
+5103,Laos,2019-20,430,Laos
+5104,Thailand,2019-20,6030,Thailand
+5105,Vietnam,2019-20,13180,Vietnam
+5201,Brunei,2019-20,160,Brunei
+5202,Indonesia,2019-20,8670,Indonesia
+5203,Malaysia,2019-20,10550,Malaysia
+5204,Philippines,2019-20,19460,Philippines
+5205,Singapore,2019-20,3660,Singapore
+5206,Timor-Leste,2019-20,1310,Timor-Leste
+6101,China,2019-20,60150,China
+6102,Hong Kong,2019-20,6120,Hong Kong
+6103,Macau,2019-20,160,Macau
+6104,Mongolia,2019-20,990,Mongolia
+6105,Taiwan,2019-20,5180,Taiwan
+6201,Japan,2019-20,4410,Japan
+6202,"Korea, North",2019-20,80,"Korea, North"
+6203,"Korea, South",2019-20,6590,Korea South
+7101,Bangladesh,2019-20,3900,Bangladesh
+7102,Bhutan,2019-20,2260,Bhutan
+7103,India,2019-20,78830,India
+7104,Maldives,2019-20,110,Maldives
+7105,Nepal,2019-20,15910,Nepal
+7106,Pakistan,2019-20,8900,Pakistan
+7107,Sri Lanka,2019-20,9370,Sri Lanka
+7201,Afghanistan,2019-20,3340,Afghanistan
+7202,Armenia,2019-20,50,Armenia
+7203,Azerbaijan,2019-20,30,Azerbaijan
+7204,Georgia,2019-20,40,Georgia
+7205,Kazakhstan,2019-20,220,Kazakhstan
+7206,Kyrgyzstan,2019-20,40,Kyrgyzstan
+7207,Tajikistan,2019-20,10,Tajikistan
+7208,Turkmenistan,2019-20,10,Turkmenistan
+7211,Uzbekistan,2019-20,140,Uzbekistan
+8101,Bermuda,2019-20,30,Bermuda
+8102,Canada,2019-20,3930,Canada
+8104,USA,2019-20,10360,USA
+8201,Argentina,2019-20,3440,Argentina
+8202,Bolivia,2019-20,80,Bolivia
+8203,Brazil,2019-20,6170,Brazil
+8204,Chile,2019-20,2770,Chile
+8205,Colombia,2019-20,6630,Colombia
+8206,Ecuador,2019-20,270,Ecuador
+8207,Falkland Is,2019-20,0,Falkland Is
+8208,French Guiana,2019-20,0,French Guiana
+8211,Guyana,2019-20,10,Guyana
+8212,Paraguay,2019-20,60,Paraguay
+8213,Peru,2019-20,890,Peru
+8214,Suriname,2019-20,10,Suriname
+8215,Uruguay,2019-20,260,Uruguay
+8216,Venezuela,2019-20,460,Venezuela
+8301,Belize,2019-20,0,Belize
+8302,Costa Rica,2019-20,50,Costa Rica
+8303,El Salvador,2019-20,140,El Salvador
+8304,Guatemala,2019-20,50,Guatemala
+8305,Honduras,2019-20,50,Honduras
+8306,Mexico,2019-20,900,Mexico
+8307,Nicaragua,2019-20,20,Nicaragua
+8308,Panama,2019-20,40,Panama
+8402,Antigua/Barbuda,2019-20,0,Antigua/Barbuda
+8403,Aruba,2019-20,0,Aruba
+8404,Bahamas,2019-20,10,Bahamas
+8405,Barbados,2019-20,20,Barbados
+8406,Cayman Islands,2019-20,10,Cayman Islands
+8407,Cuba,2019-20,70,Cuba
+8408,Dominica,2019-20,0,Dominica
+8411,Dominican Rep,2019-20,30,Dominican Rep
+8412,Grenada,2019-20,0,Grenada
+8413,Guadeloupe,2019-20,10,Guadeloupe
+8414,Haiti,2019-20,10,Haiti
+8415,Jamaica,2019-20,60,Jamaica
+8416,Martinique,2019-20,10,Martinique
+8417,Montserrat,2019-20,0,Montserrat
+8421,Puerto Rico,2019-20,30,Puerto Rico
+8422,St Kitts/Nevis,2019-20,10,St Kitts/Nevis
+8423,St Lucia,2019-20,0,St Lucia
+8424,St Vinc/Grenad,2019-20,10,St Vinc/Grenad
+8425,Trinidad/Tobago,2019-20,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2019-20,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2019-20,10,"Virgin Is, US"
+8434,Curacao,2019-20,10,Curacao
+8435,Sint Maarten Dp,2019-20,10,Sint Maarten Dp
+9101,Benin,2019-20,10,Benin
+9102,Burkina Faso,2019-20,10,Burkina Faso
+9103,Cameroon,2019-20,60,Cameroon
+9104,Cabo Verde,2019-20,10,Cabo Verde
+9105,Cent Africa Rep,2019-20,80,Cent Africa Rep
+9106,Chad,2019-20,30,Chad
+9107,"Congo, Rep",2019-20,60,"Congo, Rep"
+9108,"Congo, Dem Rep",2019-20,710,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2019-20,40,Cote d'Ivoire
+9113,Gabon,2019-20,0,Gabon
+9114,Gambia,2019-20,10,Gambia
+9115,Ghana,2019-20,400,Ghana
+9116,Guinea,2019-20,20,Guinea
+9118,Liberia,2019-20,40,Liberia
+9121,Mali,2019-20,10,Mali
+9122,Mauritania,2019-20,0,Mauritania
+9123,Niger,2019-20,10,Niger
+9124,Nigeria,2019-20,1130,Nigeria
+9126,Senegal,2019-20,30,Senegal
+9127,Sierra Leone,2019-20,70,Sierra Leone
+9128,Togo,2019-20,10,Togo
+9201,Angola,2019-20,20,Angola
+9202,Botswana,2019-20,100,Botswana
+9203,Burundi,2019-20,220,Burundi
+9205,Djibouti,2019-20,10,Djibouti
+9206,Eritrea,2019-20,500,Eritrea
+9207,Ethiopia,2019-20,830,Ethiopia
+9208,Kenya,2019-20,1370,Kenya
+9211,Lesotho,2019-20,10,Lesotho
+9212,Madagascar,2019-20,30,Madagascar
+9213,Malawi,2019-20,80,Malawi
+9214,Mauritius,2019-20,760,Mauritius
+9215,Mayotte,2019-20,0,Mayotte
+9216,Mozambique,2019-20,50,Mozambique
+9217,Namibia,2019-20,100,Namibia
+9218,Reunion,2019-20,20,Reunion
+9221,Rwanda,2019-20,60,Rwanda
+9223,Seychelles,2019-20,30,Seychelles
+9224,Somalia,2019-20,250,Somalia
+9225,South Africa,2019-20,7890,South Africa
+9226,Eswatini,2019-20,20,Eswatini
+9227,Tanzania,2019-20,230,Tanzania
+9228,Uganda,2019-20,250,Uganda
+9231,Zambia,2019-20,280,Zambia
+9232,Zimbabwe,2019-20,1470,Zimbabwe
+1102,Norfolk Island,2020-21,0,Norfolk Island
+1201,New Zealand,2020-21,12000,New Zealand
+1301,New Caledonia,2020-21,40,New Caledonia
+1302,PNG,2020-21,350,PNG
+1303,Solomon Islands,2020-21,1070,Solomon Islands
+1304,Vanuatu,2020-21,2810,Vanuatu
+1401,Guam,2020-21,0,Guam
+1402,Kiribati,2020-21,220,Kiribati
+1403,Marshall Is,2020-21,0,Marshall Is
+1404,"Micronesia, F S",2020-21,0,"Micronesia, F S"
+1405,Nauru,2020-21,10,Nauru
+1406,N Mariana Is,2020-21,0,N Mariana Is
+1407,Palau,2020-21,0,Palau
+1501,Cook Islands,2020-21,140,Cook Islands
+1502,Fiji,2020-21,1350,Fiji
+1503,French Poly,2020-21,0,French Poly
+1504,Niue,2020-21,30,Niue
+1505,Samoa,2020-21,1690,Samoa
+1506,Samoa American,2020-21,20,Samoa American
+1507,Tokelau,2020-21,10,Tokelau
+1508,Tonga,2020-21,2190,Tonga
+1511,Tuvalu,2020-21,0,Tuvalu
+1512,Wallis/Futuna,2020-21,0,Wallis/Futuna
+1513,Pitcairn Is,2020-21,0,Pitcairn Is
+1599,"Polynesia, nec",2020-21,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2020-21,9850,UK
+2201,Ireland,2020-21,980,Ireland
+2301,Austria,2020-21,110,Austria
+2302,Belgium,2020-21,110,Belgium
+2303,France,2020-21,930,France
+2304,Germany,2020-21,1010,Germany
+2305,Liechtenstein,2020-21,0,Liechtenstein
+2306,Luxembourg,2020-21,20,Luxembourg
+2307,Monaco,2020-21,10,Monaco
+2308,Netherlands,2020-21,460,Netherlands
+2311,Switzerland,2020-21,280,Switzerland
+2401,Denmark,2020-21,130,Denmark
+2402,Faroe Islands,2020-21,0,Faroe Islands
+2403,Finland,2020-21,90,Finland
+2404,Greenland,2020-21,0,Greenland
+2405,Iceland,2020-21,10,Iceland
+2406,Norway,2020-21,90,Norway
+2407,Sweden,2020-21,290,Sweden
+3101,Andorra,2020-21,0,Andorra
+3102,Gibraltar,2020-21,0,Gibraltar
+3104,Italy,2020-21,480,Italy
+3105,Malta,2020-21,40,Malta
+3106,Portugal,2020-21,120,Portugal
+3107,San Marino,2020-21,0,San Marino
+3108,Spain,2020-21,340,Spain
+3201,Albania,2020-21,30,Albania
+3202,Bosnia/Herzegov,2020-21,130,Bosnia/Herzegov
+3203,Bulgaria,2020-21,50,Bulgaria
+3204,Croatia,2020-21,160,Croatia
+3205,Cyprus,2020-21,60,Cyprus
+3206,North Macedonia,2020-21,170,North Macedonia
+3207,Greece,2020-21,230,Greece
+3208,Moldova,2020-21,20,Moldova
+3211,Romania,2020-21,130,Romania
+3212,Slovenia,2020-21,30,Slovenia
+3214,Montenegro,2020-21,20,Montenegro
+3215,Serbia,2020-21,120,Serbia
+3216,Kosovo,2020-21,10,Kosovo
+3301,Belarus,2020-21,40,Belarus
+3302,Czechia,2020-21,120,Czechia
+3303,Estonia,2020-21,40,Estonia
+3304,Hungary,2020-21,100,Hungary
+3305,Latvia,2020-21,20,Latvia
+3306,Lithuania,2020-21,50,Lithuania
+3307,Poland,2020-21,340,Poland
+3308,Russia,2020-21,430,Russia
+3311,Slovakia,2020-21,40,Slovakia
+3312,Ukraine,2020-21,240,Ukraine
+4101,Algeria,2020-21,30,Algeria
+4102,Egypt,2020-21,600,Egypt
+4103,Libya,2020-21,20,Libya
+4104,Morocco,2020-21,60,Morocco
+4105,Sudan,2020-21,270,Sudan
+4106,Tunisia,2020-21,20,Tunisia
+4111,South Sudan,2020-21,50,South Sudan
+4201,Bahrain,2020-21,70,Bahrain
+4202,Palestine,2020-21,0,Palestine
+4203,Iran,2020-21,1320,Iran
+4204,Iraq,2020-21,590,Iraq
+4205,Israel,2020-21,270,Israel
+4206,Jordan,2020-21,210,Jordan
+4207,Kuwait,2020-21,200,Kuwait
+4208,Lebanon,2020-21,1250,Lebanon
+4211,Oman,2020-21,80,Oman
+4212,Qatar,2020-21,110,Qatar
+4213,Saudi Arabia,2020-21,370,Saudi Arabia
+4214,Syria,2020-21,250,Syria
+4215,Türkiye,2020-21,530,Türkiye
+4216,Unit Arab Emir,2020-21,710,Unit Arab Emir
+4217,Yemen,2020-21,30,Yemen
+5101,Myanmar,2020-21,370,Myanmar
+5102,Cambodia,2020-21,410,Cambodia
+5103,Laos,2020-21,40,Laos
+5104,Thailand,2020-21,1300,Thailand
+5105,Vietnam,2020-21,2700,Vietnam
+5201,Brunei,2020-21,50,Brunei
+5202,Indonesia,2020-21,1520,Indonesia
+5203,Malaysia,2020-21,1970,Malaysia
+5204,Philippines,2020-21,3910,Philippines
+5205,Singapore,2020-21,1580,Singapore
+5206,Timor-Leste,2020-21,200,Timor-Leste
+6101,China,2020-21,9260,China
+6102,Hong Kong,2020-21,2890,Hong Kong
+6103,Macau,2020-21,20,Macau
+6104,Mongolia,2020-21,50,Mongolia
+6105,Taiwan,2020-21,710,Taiwan
+6201,Japan,2020-21,1480,Japan
+6202,"Korea, North",2020-21,20,"Korea, North"
+6203,"Korea, South",2020-21,1120,Korea South
+7101,Bangladesh,2020-21,820,Bangladesh
+7102,Bhutan,2020-21,20,Bhutan
+7103,India,2020-21,11190,India
+7104,Maldives,2020-21,10,Maldives
+7105,Nepal,2020-21,540,Nepal
+7106,Pakistan,2020-21,2210,Pakistan
+7107,Sri Lanka,2020-21,1580,Sri Lanka
+7201,Afghanistan,2020-21,1680,Afghanistan
+7202,Armenia,2020-21,20,Armenia
+7203,Azerbaijan,2020-21,10,Azerbaijan
+7204,Georgia,2020-21,40,Georgia
+7205,Kazakhstan,2020-21,60,Kazakhstan
+7206,Kyrgyzstan,2020-21,10,Kyrgyzstan
+7207,Tajikistan,2020-21,0,Tajikistan
+7208,Turkmenistan,2020-21,0,Turkmenistan
+7211,Uzbekistan,2020-21,20,Uzbekistan
+8101,Bermuda,2020-21,10,Bermuda
+8102,Canada,2020-21,1400,Canada
+8104,USA,2020-21,4650,USA
+8201,Argentina,2020-21,260,Argentina
+8202,Bolivia,2020-21,20,Bolivia
+8203,Brazil,2020-21,510,Brazil
+8204,Chile,2020-21,200,Chile
+8205,Colombia,2020-21,240,Colombia
+8206,Ecuador,2020-21,40,Ecuador
+8207,Falkland Is,2020-21,0,Falkland Is
+8208,French Guiana,2020-21,0,French Guiana
+8211,Guyana,2020-21,0,Guyana
+8212,Paraguay,2020-21,10,Paraguay
+8213,Peru,2020-21,110,Peru
+8214,Suriname,2020-21,0,Suriname
+8215,Uruguay,2020-21,40,Uruguay
+8216,Venezuela,2020-21,110,Venezuela
+8301,Belize,2020-21,0,Belize
+8302,Costa Rica,2020-21,10,Costa Rica
+8303,El Salvador,2020-21,50,El Salvador
+8304,Guatemala,2020-21,30,Guatemala
+8305,Honduras,2020-21,30,Honduras
+8306,Mexico,2020-21,160,Mexico
+8307,Nicaragua,2020-21,10,Nicaragua
+8308,Panama,2020-21,10,Panama
+8402,Antigua/Barbuda,2020-21,0,Antigua/Barbuda
+8403,Aruba,2020-21,0,Aruba
+8404,Bahamas,2020-21,0,Bahamas
+8405,Barbados,2020-21,10,Barbados
+8406,Cayman Islands,2020-21,0,Cayman Islands
+8407,Cuba,2020-21,10,Cuba
+8408,Dominica,2020-21,0,Dominica
+8411,Dominican Rep,2020-21,20,Dominican Rep
+8412,Grenada,2020-21,0,Grenada
+8413,Guadeloupe,2020-21,0,Guadeloupe
+8414,Haiti,2020-21,0,Haiti
+8415,Jamaica,2020-21,30,Jamaica
+8416,Martinique,2020-21,0,Martinique
+8417,Montserrat,2020-21,0,Montserrat
+8421,Puerto Rico,2020-21,0,Puerto Rico
+8422,St Kitts/Nevis,2020-21,0,St Kitts/Nevis
+8423,St Lucia,2020-21,0,St Lucia
+8424,St Vinc/Grenad,2020-21,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2020-21,20,Trinidad/Tobago
+8427,"Virgin Is, Brit",2020-21,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2020-21,0,"Virgin Is, US"
+8434,Curacao,2020-21,0,Curacao
+8435,Sint Maarten Dp,2020-21,0,Sint Maarten Dp
+9101,Benin,2020-21,0,Benin
+9102,Burkina Faso,2020-21,0,Burkina Faso
+9103,Cameroon,2020-21,20,Cameroon
+9104,Cabo Verde,2020-21,0,Cabo Verde
+9105,Cent Africa Rep,2020-21,0,Cent Africa Rep
+9106,Chad,2020-21,0,Chad
+9107,"Congo, Rep",2020-21,30,"Congo, Rep"
+9108,"Congo, Dem Rep",2020-21,50,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2020-21,10,Cote d'Ivoire
+9113,Gabon,2020-21,0,Gabon
+9114,Gambia,2020-21,0,Gambia
+9115,Ghana,2020-21,130,Ghana
+9116,Guinea,2020-21,20,Guinea
+9118,Liberia,2020-21,40,Liberia
+9121,Mali,2020-21,0,Mali
+9122,Mauritania,2020-21,0,Mauritania
+9123,Niger,2020-21,10,Niger
+9124,Nigeria,2020-21,330,Nigeria
+9126,Senegal,2020-21,10,Senegal
+9127,Sierra Leone,2020-21,50,Sierra Leone
+9128,Togo,2020-21,0,Togo
+9201,Angola,2020-21,10,Angola
+9202,Botswana,2020-21,30,Botswana
+9203,Burundi,2020-21,30,Burundi
+9205,Djibouti,2020-21,10,Djibouti
+9206,Eritrea,2020-21,40,Eritrea
+9207,Ethiopia,2020-21,270,Ethiopia
+9208,Kenya,2020-21,270,Kenya
+9211,Lesotho,2020-21,0,Lesotho
+9212,Madagascar,2020-21,10,Madagascar
+9213,Malawi,2020-21,20,Malawi
+9214,Mauritius,2020-21,80,Mauritius
+9215,Mayotte,2020-21,0,Mayotte
+9216,Mozambique,2020-21,10,Mozambique
+9217,Namibia,2020-21,30,Namibia
+9218,Reunion,2020-21,0,Reunion
+9221,Rwanda,2020-21,10,Rwanda
+9223,Seychelles,2020-21,20,Seychelles
+9224,Somalia,2020-21,200,Somalia
+9225,South Africa,2020-21,3780,South Africa
+9226,Eswatini,2020-21,10,Eswatini
+9227,Tanzania,2020-21,50,Tanzania
+9228,Uganda,2020-21,50,Uganda
+9231,Zambia,2020-21,120,Zambia
+9232,Zimbabwe,2020-21,580,Zimbabwe
+1102,Norfolk Island,2021-22,0,Norfolk Island
+1201,New Zealand,2021-22,16270,New Zealand
+1301,New Caledonia,2021-22,100,New Caledonia
+1302,PNG,2021-22,1300,PNG
+1303,Solomon Islands,2021-22,2300,Solomon Islands
+1304,Vanuatu,2021-22,2620,Vanuatu
+1401,Guam,2021-22,10,Guam
+1402,Kiribati,2021-22,240,Kiribati
+1403,Marshall Is,2021-22,0,Marshall Is
+1404,"Micronesia, F S",2021-22,0,"Micronesia, F S"
+1405,Nauru,2021-22,70,Nauru
+1406,N Mariana Is,2021-22,0,N Mariana Is
+1407,Palau,2021-22,0,Palau
+1501,Cook Islands,2021-22,170,Cook Islands
+1502,Fiji,2021-22,4150,Fiji
+1503,French Poly,2021-22,30,French Poly
+1504,Niue,2021-22,30,Niue
+1505,Samoa,2021-22,3440,Samoa
+1506,Samoa American,2021-22,20,Samoa American
+1507,Tokelau,2021-22,20,Tokelau
+1508,Tonga,2021-22,1780,Tonga
+1511,Tuvalu,2021-22,30,Tuvalu
+1512,Wallis/Futuna,2021-22,0,Wallis/Futuna
+1513,Pitcairn Is,2021-22,0,Pitcairn Is
+1599,"Polynesia, nec",2021-22,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2021-22,17360,UK
+2201,Ireland,2021-22,3250,Ireland
+2301,Austria,2021-22,180,Austria
+2302,Belgium,2021-22,380,Belgium
+2303,France,2021-22,2770,France
+2304,Germany,2021-22,2380,Germany
+2305,Liechtenstein,2021-22,0,Liechtenstein
+2306,Luxembourg,2021-22,10,Luxembourg
+2307,Monaco,2021-22,10,Monaco
+2308,Netherlands,2021-22,840,Netherlands
+2311,Switzerland,2021-22,440,Switzerland
+2401,Denmark,2021-22,250,Denmark
+2402,Faroe Islands,2021-22,0,Faroe Islands
+2403,Finland,2021-22,190,Finland
+2404,Greenland,2021-22,0,Greenland
+2405,Iceland,2021-22,20,Iceland
+2406,Norway,2021-22,310,Norway
+2407,Sweden,2021-22,510,Sweden
+3101,Andorra,2021-22,0,Andorra
+3102,Gibraltar,2021-22,10,Gibraltar
+3104,Italy,2021-22,1790,Italy
+3105,Malta,2021-22,60,Malta
+3106,Portugal,2021-22,240,Portugal
+3107,San Marino,2021-22,0,San Marino
+3108,Spain,2021-22,1020,Spain
+3201,Albania,2021-22,120,Albania
+3202,Bosnia/Herzegov,2021-22,200,Bosnia/Herzegov
+3203,Bulgaria,2021-22,70,Bulgaria
+3204,Croatia,2021-22,180,Croatia
+3205,Cyprus,2021-22,90,Cyprus
+3206,North Macedonia,2021-22,400,North Macedonia
+3207,Greece,2021-22,430,Greece
+3208,Moldova,2021-22,60,Moldova
+3211,Romania,2021-22,270,Romania
+3212,Slovenia,2021-22,50,Slovenia
+3214,Montenegro,2021-22,20,Montenegro
+3215,Serbia,2021-22,200,Serbia
+3216,Kosovo,2021-22,20,Kosovo
+3301,Belarus,2021-22,110,Belarus
+3302,Czechia,2021-22,200,Czechia
+3303,Estonia,2021-22,230,Estonia
+3304,Hungary,2021-22,240,Hungary
+3305,Latvia,2021-22,90,Latvia
+3306,Lithuania,2021-22,190,Lithuania
+3307,Poland,2021-22,690,Poland
+3308,Russia,2021-22,1300,Russia
+3311,Slovakia,2021-22,150,Slovakia
+3312,Ukraine,2021-22,3750,Ukraine
+4101,Algeria,2021-22,40,Algeria
+4102,Egypt,2021-22,1260,Egypt
+4103,Libya,2021-22,50,Libya
+4104,Morocco,2021-22,140,Morocco
+4105,Sudan,2021-22,360,Sudan
+4106,Tunisia,2021-22,40,Tunisia
+4111,South Sudan,2021-22,100,South Sudan
+4201,Bahrain,2021-22,110,Bahrain
+4202,Palestine,2021-22,0,Palestine
+4203,Iran,2021-22,4580,Iran
+4204,Iraq,2021-22,4250,Iraq
+4205,Israel,2021-22,400,Israel
+4206,Jordan,2021-22,450,Jordan
+4207,Kuwait,2021-22,490,Kuwait
+4208,Lebanon,2021-22,2210,Lebanon
+4211,Oman,2021-22,210,Oman
+4212,Qatar,2021-22,210,Qatar
+4213,Saudi Arabia,2021-22,1910,Saudi Arabia
+4214,Syria,2021-22,1360,Syria
+4215,Türkiye,2021-22,1260,Türkiye
+4216,Unit Arab Emir,2021-22,1260,Unit Arab Emir
+4217,Yemen,2021-22,70,Yemen
+5101,Myanmar,2021-22,1760,Myanmar
+5102,Cambodia,2021-22,1990,Cambodia
+5103,Laos,2021-22,370,Laos
+5104,Thailand,2021-22,9070,Thailand
+5105,Vietnam,2021-22,12640,Vietnam
+5201,Brunei,2021-22,230,Brunei
+5202,Indonesia,2021-22,7850,Indonesia
+5203,Malaysia,2021-22,7460,Malaysia
+5204,Philippines,2021-22,17330,Philippines
+5205,Singapore,2021-22,4580,Singapore
+5206,Timor-Leste,2021-22,830,Timor-Leste
+6101,China,2021-22,44280,China
+6102,Hong Kong,2021-22,10040,Hong Kong
+6103,Macau,2021-22,300,Macau
+6104,Mongolia,2021-22,910,Mongolia
+6105,Taiwan,2021-22,4670,Taiwan
+6201,Japan,2021-22,4800,Japan
+6202,"Korea, North",2021-22,40,"Korea, North"
+6203,"Korea, South",2021-22,6350,Korea South
+7101,Bangladesh,2021-22,4180,Bangladesh
+7102,Bhutan,2021-22,1860,Bhutan
+7103,India,2021-22,64290,India
+7104,Maldives,2021-22,70,Maldives
+7105,Nepal,2021-22,23610,Nepal
+7106,Pakistan,2021-22,9500,Pakistan
+7107,Sri Lanka,2021-22,8150,Sri Lanka
+7201,Afghanistan,2021-22,7470,Afghanistan
+7202,Armenia,2021-22,60,Armenia
+7203,Azerbaijan,2021-22,50,Azerbaijan
+7204,Georgia,2021-22,60,Georgia
+7205,Kazakhstan,2021-22,210,Kazakhstan
+7206,Kyrgyzstan,2021-22,50,Kyrgyzstan
+7207,Tajikistan,2021-22,10,Tajikistan
+7208,Turkmenistan,2021-22,10,Turkmenistan
+7211,Uzbekistan,2021-22,140,Uzbekistan
+8101,Bermuda,2021-22,20,Bermuda
+8102,Canada,2021-22,2980,Canada
+8104,USA,2021-22,5930,USA
+8201,Argentina,2021-22,2260,Argentina
+8202,Bolivia,2021-22,50,Bolivia
+8203,Brazil,2021-22,4920,Brazil
+8204,Chile,2021-22,1750,Chile
+8205,Colombia,2021-22,2790,Colombia
+8206,Ecuador,2021-22,170,Ecuador
+8207,Falkland Is,2021-22,0,Falkland Is
+8208,French Guiana,2021-22,0,French Guiana
+8211,Guyana,2021-22,10,Guyana
+8212,Paraguay,2021-22,60,Paraguay
+8213,Peru,2021-22,590,Peru
+8214,Suriname,2021-22,0,Suriname
+8215,Uruguay,2021-22,240,Uruguay
+8216,Venezuela,2021-22,250,Venezuela
+8301,Belize,2021-22,0,Belize
+8302,Costa Rica,2021-22,50,Costa Rica
+8303,El Salvador,2021-22,80,El Salvador
+8304,Guatemala,2021-22,70,Guatemala
+8305,Honduras,2021-22,30,Honduras
+8306,Mexico,2021-22,640,Mexico
+8307,Nicaragua,2021-22,20,Nicaragua
+8308,Panama,2021-22,30,Panama
+8402,Antigua/Barbuda,2021-22,0,Antigua/Barbuda
+8403,Aruba,2021-22,0,Aruba
+8404,Bahamas,2021-22,10,Bahamas
+8405,Barbados,2021-22,10,Barbados
+8406,Cayman Islands,2021-22,10,Cayman Islands
+8407,Cuba,2021-22,40,Cuba
+8408,Dominica,2021-22,0,Dominica
+8411,Dominican Rep,2021-22,30,Dominican Rep
+8412,Grenada,2021-22,0,Grenada
+8413,Guadeloupe,2021-22,0,Guadeloupe
+8414,Haiti,2021-22,10,Haiti
+8415,Jamaica,2021-22,40,Jamaica
+8416,Martinique,2021-22,0,Martinique
+8417,Montserrat,2021-22,0,Montserrat
+8421,Puerto Rico,2021-22,10,Puerto Rico
+8422,St Kitts/Nevis,2021-22,0,St Kitts/Nevis
+8423,St Lucia,2021-22,0,St Lucia
+8424,St Vinc/Grenad,2021-22,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2021-22,50,Trinidad/Tobago
+8427,"Virgin Is, Brit",2021-22,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2021-22,0,"Virgin Is, US"
+8434,Curacao,2021-22,0,Curacao
+8435,Sint Maarten Dp,2021-22,0,Sint Maarten Dp
+9101,Benin,2021-22,0,Benin
+9102,Burkina Faso,2021-22,0,Burkina Faso
+9103,Cameroon,2021-22,50,Cameroon
+9104,Cabo Verde,2021-22,0,Cabo Verde
+9105,Cent Africa Rep,2021-22,0,Cent Africa Rep
+9106,Chad,2021-22,0,Chad
+9107,"Congo, Rep",2021-22,50,"Congo, Rep"
+9108,"Congo, Dem Rep",2021-22,220,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2021-22,20,Cote d'Ivoire
+9113,Gabon,2021-22,0,Gabon
+9114,Gambia,2021-22,10,Gambia
+9115,Ghana,2021-22,530,Ghana
+9116,Guinea,2021-22,70,Guinea
+9118,Liberia,2021-22,80,Liberia
+9121,Mali,2021-22,0,Mali
+9122,Mauritania,2021-22,0,Mauritania
+9123,Niger,2021-22,0,Niger
+9124,Nigeria,2021-22,1850,Nigeria
+9126,Senegal,2021-22,20,Senegal
+9127,Sierra Leone,2021-22,140,Sierra Leone
+9128,Togo,2021-22,10,Togo
+9201,Angola,2021-22,0,Angola
+9202,Botswana,2021-22,80,Botswana
+9203,Burundi,2021-22,90,Burundi
+9205,Djibouti,2021-22,0,Djibouti
+9206,Eritrea,2021-22,160,Eritrea
+9207,Ethiopia,2021-22,630,Ethiopia
+9208,Kenya,2021-22,2110,Kenya
+9211,Lesotho,2021-22,10,Lesotho
+9212,Madagascar,2021-22,10,Madagascar
+9213,Malawi,2021-22,110,Malawi
+9214,Mauritius,2021-22,720,Mauritius
+9215,Mayotte,2021-22,0,Mayotte
+9216,Mozambique,2021-22,30,Mozambique
+9217,Namibia,2021-22,80,Namibia
+9218,Reunion,2021-22,20,Reunion
+9221,Rwanda,2021-22,50,Rwanda
+9223,Seychelles,2021-22,30,Seychelles
+9224,Somalia,2021-22,320,Somalia
+9225,South Africa,2021-22,6730,South Africa
+9226,Eswatini,2021-22,10,Eswatini
+9227,Tanzania,2021-22,100,Tanzania
+9228,Uganda,2021-22,220,Uganda
+9231,Zambia,2021-22,320,Zambia
+9232,Zimbabwe,2021-22,1500,Zimbabwe
+1102,Norfolk Island,2022-23,10,Norfolk Island
+1201,New Zealand,2022-23,27880,New Zealand
+1301,New Caledonia,2022-23,150,New Caledonia
+1302,PNG,2022-23,2270,PNG
+1303,Solomon Islands,2022-23,1560,Solomon Islands
+1304,Vanuatu,2022-23,1910,Vanuatu
+1401,Guam,2022-23,10,Guam
+1402,Kiribati,2022-23,620,Kiribati
+1403,Marshall Is,2022-23,10,Marshall Is
+1404,"Micronesia, F S",2022-23,0,"Micronesia, F S"
+1405,Nauru,2022-23,140,Nauru
+1406,N Mariana Is,2022-23,0,N Mariana Is
+1407,Palau,2022-23,0,Palau
+1501,Cook Islands,2022-23,340,Cook Islands
+1502,Fiji,2022-23,9130,Fiji
+1503,French Poly,2022-23,50,French Poly
+1504,Niue,2022-23,40,Niue
+1505,Samoa,2022-23,2950,Samoa
+1506,Samoa American,2022-23,40,Samoa American
+1507,Tokelau,2022-23,50,Tokelau
+1508,Tonga,2022-23,1960,Tonga
+1511,Tuvalu,2022-23,80,Tuvalu
+1512,Wallis/Futuna,2022-23,0,Wallis/Futuna
+1513,Pitcairn Is,2022-23,0,Pitcairn Is
+1599,"Polynesia, nec",2022-23,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2022-23,31630,UK
+2201,Ireland,2022-23,11850,Ireland
+2301,Austria,2022-23,260,Austria
+2302,Belgium,2022-23,750,Belgium
+2303,France,2022-23,7230,France
+2304,Germany,2022-23,4140,Germany
+2305,Liechtenstein,2022-23,0,Liechtenstein
+2306,Luxembourg,2022-23,30,Luxembourg
+2307,Monaco,2022-23,20,Monaco
+2308,Netherlands,2022-23,1580,Netherlands
+2311,Switzerland,2022-23,560,Switzerland
+2401,Denmark,2022-23,460,Denmark
+2402,Faroe Islands,2022-23,0,Faroe Islands
+2403,Finland,2022-23,340,Finland
+2404,Greenland,2022-23,0,Greenland
+2405,Iceland,2022-23,30,Iceland
+2406,Norway,2022-23,380,Norway
+2407,Sweden,2022-23,860,Sweden
+3101,Andorra,2022-23,10,Andorra
+3102,Gibraltar,2022-23,10,Gibraltar
+3104,Italy,2022-23,4460,Italy
+3105,Malta,2022-23,120,Malta
+3106,Portugal,2022-23,440,Portugal
+3107,San Marino,2022-23,0,San Marino
+3108,Spain,2022-23,2980,Spain
+3201,Albania,2022-23,250,Albania
+3202,Bosnia/Herzegov,2022-23,240,Bosnia/Herzegov
+3203,Bulgaria,2022-23,130,Bulgaria
+3204,Croatia,2022-23,230,Croatia
+3205,Cyprus,2022-23,130,Cyprus
+3206,North Macedonia,2022-23,620,North Macedonia
+3207,Greece,2022-23,600,Greece
+3208,Moldova,2022-23,120,Moldova
+3211,Romania,2022-23,370,Romania
+3212,Slovenia,2022-23,70,Slovenia
+3214,Montenegro,2022-23,30,Montenegro
+3215,Serbia,2022-23,260,Serbia
+3216,Kosovo,2022-23,30,Kosovo
+3301,Belarus,2022-23,160,Belarus
+3302,Czechia,2022-23,430,Czechia
+3303,Estonia,2022-23,740,Estonia
+3304,Hungary,2022-23,340,Hungary
+3305,Latvia,2022-23,90,Latvia
+3306,Lithuania,2022-23,310,Lithuania
+3307,Poland,2022-23,1070,Poland
+3308,Russia,2022-23,2430,Russia
+3311,Slovakia,2022-23,270,Slovakia
+3312,Ukraine,2022-23,1740,Ukraine
+4101,Algeria,2022-23,110,Algeria
+4102,Egypt,2022-23,1810,Egypt
+4103,Libya,2022-23,100,Libya
+4104,Morocco,2022-23,210,Morocco
+4105,Sudan,2022-23,670,Sudan
+4106,Tunisia,2022-23,60,Tunisia
+4111,South Sudan,2022-23,130,South Sudan
+4201,Bahrain,2022-23,150,Bahrain
+4202,Palestine,2022-23,0,Palestine
+4203,Iran,2022-23,6660,Iran
+4204,Iraq,2022-23,3660,Iraq
+4205,Israel,2022-23,720,Israel
+4206,Jordan,2022-23,610,Jordan
+4207,Kuwait,2022-23,540,Kuwait
+4208,Lebanon,2022-23,2100,Lebanon
+4211,Oman,2022-23,230,Oman
+4212,Qatar,2022-23,400,Qatar
+4213,Saudi Arabia,2022-23,2650,Saudi Arabia
+4214,Syria,2022-23,2260,Syria
+4215,Türkiye,2022-23,3380,Türkiye
+4216,Unit Arab Emir,2022-23,1690,Unit Arab Emir
+4217,Yemen,2022-23,150,Yemen
+5101,Myanmar,2022-23,2480,Myanmar
+5102,Cambodia,2022-23,2280,Cambodia
+5103,Laos,2022-23,680,Laos
+5104,Thailand,2022-23,16340,Thailand
+5105,Vietnam,2022-23,22210,Vietnam
+5201,Brunei,2022-23,200,Brunei
+5202,Indonesia,2022-23,15960,Indonesia
+5203,Malaysia,2022-23,9480,Malaysia
+5204,Philippines,2022-23,47120,Philippines
+5205,Singapore,2022-23,4280,Singapore
+5206,Timor-Leste,2022-23,1980,Timor-Leste
+6101,China,2022-23,82220,China
+6102,Hong Kong,2022-23,9740,Hong Kong
+6103,Macau,2022-23,250,Macau
+6104,Mongolia,2022-23,6440,Mongolia
+6105,Taiwan,2022-23,10390,Taiwan
+6201,Japan,2022-23,8420,Japan
+6202,"Korea, North",2022-23,50,"Korea, North"
+6203,"Korea, South",2022-23,10470,Korea South
+7101,Bangladesh,2022-23,7310,Bangladesh
+7102,Bhutan,2022-23,13570,Bhutan
+7103,India,2022-23,108100,India
+7104,Maldives,2022-23,120,Maldives
+7105,Nepal,2022-23,29660,Nepal
+7106,Pakistan,2022-23,19150,Pakistan
+7107,Sri Lanka,2022-23,15430,Sri Lanka
+7201,Afghanistan,2022-23,6980,Afghanistan
+7202,Armenia,2022-23,60,Armenia
+7203,Azerbaijan,2022-23,80,Azerbaijan
+7204,Georgia,2022-23,70,Georgia
+7205,Kazakhstan,2022-23,280,Kazakhstan
+7206,Kyrgyzstan,2022-23,90,Kyrgyzstan
+7207,Tajikistan,2022-23,20,Tajikistan
+7208,Turkmenistan,2022-23,10,Turkmenistan
+7211,Uzbekistan,2022-23,230,Uzbekistan
+8101,Bermuda,2022-23,20,Bermuda
+8102,Canada,2022-23,3900,Canada
+8104,USA,2022-23,7950,USA
+8201,Argentina,2022-23,6800,Argentina
+8202,Bolivia,2022-23,140,Bolivia
+8203,Brazil,2022-23,13710,Brazil
+8204,Chile,2022-23,5010,Chile
+8205,Colombia,2022-23,23930,Colombia
+8206,Ecuador,2022-23,1250,Ecuador
+8207,Falkland Is,2022-23,10,Falkland Is
+8208,French Guiana,2022-23,0,French Guiana
+8211,Guyana,2022-23,10,Guyana
+8212,Paraguay,2022-23,100,Paraguay
+8213,Peru,2022-23,2370,Peru
+8214,Suriname,2022-23,10,Suriname
+8215,Uruguay,2022-23,460,Uruguay
+8216,Venezuela,2022-23,780,Venezuela
+8301,Belize,2022-23,0,Belize
+8302,Costa Rica,2022-23,60,Costa Rica
+8303,El Salvador,2022-23,170,El Salvador
+8304,Guatemala,2022-23,140,Guatemala
+8305,Honduras,2022-23,80,Honduras
+8306,Mexico,2022-23,1600,Mexico
+8307,Nicaragua,2022-23,20,Nicaragua
+8308,Panama,2022-23,30,Panama
+8402,Antigua/Barbuda,2022-23,0,Antigua/Barbuda
+8403,Aruba,2022-23,0,Aruba
+8404,Bahamas,2022-23,10,Bahamas
+8405,Barbados,2022-23,10,Barbados
+8406,Cayman Islands,2022-23,10,Cayman Islands
+8407,Cuba,2022-23,80,Cuba
+8408,Dominica,2022-23,0,Dominica
+8411,Dominican Rep,2022-23,60,Dominican Rep
+8412,Grenada,2022-23,0,Grenada
+8413,Guadeloupe,2022-23,10,Guadeloupe
+8414,Haiti,2022-23,20,Haiti
+8415,Jamaica,2022-23,70,Jamaica
+8416,Martinique,2022-23,10,Martinique
+8417,Montserrat,2022-23,0,Montserrat
+8421,Puerto Rico,2022-23,20,Puerto Rico
+8422,St Kitts/Nevis,2022-23,0,St Kitts/Nevis
+8423,St Lucia,2022-23,0,St Lucia
+8424,St Vinc/Grenad,2022-23,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2022-23,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2022-23,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2022-23,0,"Virgin Is, US"
+8434,Curacao,2022-23,10,Curacao
+8435,Sint Maarten Dp,2022-23,0,Sint Maarten Dp
+9101,Benin,2022-23,10,Benin
+9102,Burkina Faso,2022-23,10,Burkina Faso
+9103,Cameroon,2022-23,70,Cameroon
+9104,Cabo Verde,2022-23,10,Cabo Verde
+9105,Cent Africa Rep,2022-23,20,Cent Africa Rep
+9106,Chad,2022-23,10,Chad
+9107,"Congo, Rep",2022-23,50,"Congo, Rep"
+9108,"Congo, Dem Rep",2022-23,260,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2022-23,20,Cote d'Ivoire
+9113,Gabon,2022-23,10,Gabon
+9114,Gambia,2022-23,10,Gambia
+9115,Ghana,2022-23,990,Ghana
+9116,Guinea,2022-23,30,Guinea
+9118,Liberia,2022-23,100,Liberia
+9121,Mali,2022-23,10,Mali
+9122,Mauritania,2022-23,0,Mauritania
+9123,Niger,2022-23,0,Niger
+9124,Nigeria,2022-23,2720,Nigeria
+9126,Senegal,2022-23,30,Senegal
+9127,Sierra Leone,2022-23,100,Sierra Leone
+9128,Togo,2022-23,10,Togo
+9201,Angola,2022-23,30,Angola
+9202,Botswana,2022-23,170,Botswana
+9203,Burundi,2022-23,120,Burundi
+9205,Djibouti,2022-23,10,Djibouti
+9206,Eritrea,2022-23,310,Eritrea
+9207,Ethiopia,2022-23,730,Ethiopia
+9208,Kenya,2022-23,4880,Kenya
+9211,Lesotho,2022-23,10,Lesotho
+9212,Madagascar,2022-23,20,Madagascar
+9213,Malawi,2022-23,100,Malawi
+9214,Mauritius,2022-23,1000,Mauritius
+9215,Mayotte,2022-23,10,Mayotte
+9216,Mozambique,2022-23,70,Mozambique
+9217,Namibia,2022-23,170,Namibia
+9218,Reunion,2022-23,20,Reunion
+9221,Rwanda,2022-23,60,Rwanda
+9223,Seychelles,2022-23,30,Seychelles
+9224,Somalia,2022-23,350,Somalia
+9225,South Africa,2022-23,10910,South Africa
+9226,Eswatini,2022-23,10,Eswatini
+9227,Tanzania,2022-23,160,Tanzania
+9228,Uganda,2022-23,310,Uganda
+9231,Zambia,2022-23,510,Zambia
+9232,Zimbabwe,2022-23,3050,Zimbabwe
+1102,Norfolk Island,2023-24,0,Norfolk Island
+1201,New Zealand,2023-24,33590,New Zealand
+1301,New Caledonia,2023-24,220,New Caledonia
+1302,PNG,2023-24,2410,PNG
+1303,Solomon Islands,2023-24,1380,Solomon Islands
+1304,Vanuatu,2023-24,1240,Vanuatu
+1401,Guam,2023-24,10,Guam
+1402,Kiribati,2023-24,700,Kiribati
+1403,Marshall Is,2023-24,10,Marshall Is
+1404,"Micronesia, F S",2023-24,0,"Micronesia, F S"
+1405,Nauru,2023-24,120,Nauru
+1406,N Mariana Is,2023-24,0,N Mariana Is
+1407,Palau,2023-24,0,Palau
+1501,Cook Islands,2023-24,360,Cook Islands
+1502,Fiji,2023-24,7150,Fiji
+1503,French Poly,2023-24,40,French Poly
+1504,Niue,2023-24,50,Niue
+1505,Samoa,2023-24,2600,Samoa
+1506,Samoa American,2023-24,50,Samoa American
+1507,Tokelau,2023-24,40,Tokelau
+1508,Tonga,2023-24,1640,Tonga
+1511,Tuvalu,2023-24,180,Tuvalu
+1512,Wallis/Futuna,2023-24,0,Wallis/Futuna
+1513,Pitcairn Is,2023-24,0,Pitcairn Is
+1599,"Polynesia, nec",2023-24,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2023-24,37540,UK
+2201,Ireland,2023-24,12560,Ireland
+2301,Austria,2023-24,250,Austria
+2302,Belgium,2023-24,730,Belgium
+2303,France,2023-24,7920,France
+2304,Germany,2023-24,3830,Germany
+2305,Liechtenstein,2023-24,0,Liechtenstein
+2306,Luxembourg,2023-24,30,Luxembourg
+2307,Monaco,2023-24,20,Monaco
+2308,Netherlands,2023-24,1420,Netherlands
+2311,Switzerland,2023-24,520,Switzerland
+2401,Denmark,2023-24,420,Denmark
+2402,Faroe Islands,2023-24,0,Faroe Islands
+2403,Finland,2023-24,300,Finland
+2404,Greenland,2023-24,0,Greenland
+2405,Iceland,2023-24,10,Iceland
+2406,Norway,2023-24,390,Norway
+2407,Sweden,2023-24,730,Sweden
+3101,Andorra,2023-24,0,Andorra
+3102,Gibraltar,2023-24,10,Gibraltar
+3104,Italy,2023-24,4270,Italy
+3105,Malta,2023-24,120,Malta
+3106,Portugal,2023-24,500,Portugal
+3107,San Marino,2023-24,0,San Marino
+3108,Spain,2023-24,2520,Spain
+3201,Albania,2023-24,180,Albania
+3202,Bosnia/Herzegov,2023-24,220,Bosnia/Herzegov
+3203,Bulgaria,2023-24,120,Bulgaria
+3204,Croatia,2023-24,200,Croatia
+3205,Cyprus,2023-24,120,Cyprus
+3206,North Macedonia,2023-24,370,North Macedonia
+3207,Greece,2023-24,510,Greece
+3208,Moldova,2023-24,70,Moldova
+3211,Romania,2023-24,360,Romania
+3212,Slovenia,2023-24,70,Slovenia
+3214,Montenegro,2023-24,10,Montenegro
+3215,Serbia,2023-24,240,Serbia
+3216,Kosovo,2023-24,20,Kosovo
+3301,Belarus,2023-24,80,Belarus
+3302,Czechia,2023-24,300,Czechia
+3303,Estonia,2023-24,630,Estonia
+3304,Hungary,2023-24,330,Hungary
+3305,Latvia,2023-24,90,Latvia
+3306,Lithuania,2023-24,240,Lithuania
+3307,Poland,2023-24,870,Poland
+3308,Russia,2023-24,1500,Russia
+3311,Slovakia,2023-24,190,Slovakia
+3312,Ukraine,2023-24,730,Ukraine
+4101,Algeria,2023-24,110,Algeria
+4102,Egypt,2023-24,1720,Egypt
+4103,Libya,2023-24,70,Libya
+4104,Morocco,2023-24,250,Morocco
+4105,Sudan,2023-24,470,Sudan
+4106,Tunisia,2023-24,70,Tunisia
+4111,South Sudan,2023-24,110,South Sudan
+4201,Bahrain,2023-24,190,Bahrain
+4202,Palestine,2023-24,10,Palestine
+4203,Iran,2023-24,6870,Iran
+4204,Iraq,2023-24,3780,Iraq
+4205,Israel,2023-24,1050,Israel
+4206,Jordan,2023-24,590,Jordan
+4207,Kuwait,2023-24,840,Kuwait
+4208,Lebanon,2023-24,2820,Lebanon
+4211,Oman,2023-24,370,Oman
+4212,Qatar,2023-24,510,Qatar
+4213,Saudi Arabia,2023-24,3030,Saudi Arabia
+4214,Syria,2023-24,2370,Syria
+4215,Türkiye,2023-24,2980,Türkiye
+4216,Unit Arab Emir,2023-24,2110,Unit Arab Emir
+4217,Yemen,2023-24,220,Yemen
+5101,Myanmar,2023-24,2430,Myanmar
+5102,Cambodia,2023-24,2300,Cambodia
+5103,Laos,2023-24,600,Laos
+5104,Thailand,2023-24,7820,Thailand
+5105,Vietnam,2023-24,23840,Vietnam
+5201,Brunei,2023-24,220,Brunei
+5202,Indonesia,2023-24,14510,Indonesia
+5203,Malaysia,2023-24,7630,Malaysia
+5204,Philippines,2023-24,36120,Philippines
+5205,Singapore,2023-24,4090,Singapore
+5206,Timor-Leste,2023-24,1550,Timor-Leste
+6101,China,2023-24,74400,China
+6102,Hong Kong,2023-24,6850,Hong Kong
+6103,Macau,2023-24,220,Macau
+6104,Mongolia,2023-24,3550,Mongolia
+6105,Taiwan,2023-24,8800,Taiwan
+6201,Japan,2023-24,8590,Japan
+6202,"Korea, North",2023-24,50,"Korea, North"
+6203,"Korea, South",2023-24,9180,Korea South
+7101,Bangladesh,2023-24,10660,Bangladesh
+7102,Bhutan,2023-24,9890,Bhutan
+7103,India,2023-24,85920,India
+7104,Maldives,2023-24,120,Maldives
+7105,Nepal,2023-24,20070,Nepal
+7106,Pakistan,2023-24,16060,Pakistan
+7107,Sri Lanka,2023-24,16580,Sri Lanka
+7201,Afghanistan,2023-24,10670,Afghanistan
+7202,Armenia,2023-24,50,Armenia
+7203,Azerbaijan,2023-24,50,Azerbaijan
+7204,Georgia,2023-24,90,Georgia
+7205,Kazakhstan,2023-24,240,Kazakhstan
+7206,Kyrgyzstan,2023-24,70,Kyrgyzstan
+7207,Tajikistan,2023-24,20,Tajikistan
+7208,Turkmenistan,2023-24,20,Turkmenistan
+7211,Uzbekistan,2023-24,240,Uzbekistan
+8101,Bermuda,2023-24,30,Bermuda
+8102,Canada,2023-24,3730,Canada
+8104,USA,2023-24,7800,USA
+8201,Argentina,2023-24,4720,Argentina
+8202,Bolivia,2023-24,100,Bolivia
+8203,Brazil,2023-24,9230,Brazil
+8204,Chile,2023-24,3510,Chile
+8205,Colombia,2023-24,10360,Colombia
+8206,Ecuador,2023-24,1510,Ecuador
+8207,Falkland Is,2023-24,0,Falkland Is
+8208,French Guiana,2023-24,10,French Guiana
+8211,Guyana,2023-24,10,Guyana
+8212,Paraguay,2023-24,90,Paraguay
+8213,Peru,2023-24,1800,Peru
+8214,Suriname,2023-24,10,Suriname
+8215,Uruguay,2023-24,360,Uruguay
+8216,Venezuela,2023-24,610,Venezuela
+8301,Belize,2023-24,0,Belize
+8302,Costa Rica,2023-24,50,Costa Rica
+8303,El Salvador,2023-24,100,El Salvador
+8304,Guatemala,2023-24,90,Guatemala
+8305,Honduras,2023-24,40,Honduras
+8306,Mexico,2023-24,1260,Mexico
+8307,Nicaragua,2023-24,30,Nicaragua
+8308,Panama,2023-24,30,Panama
+8402,Antigua/Barbuda,2023-24,0,Antigua/Barbuda
+8403,Aruba,2023-24,0,Aruba
+8404,Bahamas,2023-24,10,Bahamas
+8405,Barbados,2023-24,20,Barbados
+8406,Cayman Islands,2023-24,10,Cayman Islands
+8407,Cuba,2023-24,60,Cuba
+8408,Dominica,2023-24,0,Dominica
+8411,Dominican Rep,2023-24,40,Dominican Rep
+8412,Grenada,2023-24,10,Grenada
+8413,Guadeloupe,2023-24,10,Guadeloupe
+8414,Haiti,2023-24,20,Haiti
+8415,Jamaica,2023-24,30,Jamaica
+8416,Martinique,2023-24,10,Martinique
+8417,Montserrat,2023-24,0,Montserrat
+8421,Puerto Rico,2023-24,20,Puerto Rico
+8422,St Kitts/Nevis,2023-24,0,St Kitts/Nevis
+8423,St Lucia,2023-24,0,St Lucia
+8424,St Vinc/Grenad,2023-24,10,St Vinc/Grenad
+8425,Trinidad/Tobago,2023-24,60,Trinidad/Tobago
+8427,"Virgin Is, Brit",2023-24,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2023-24,0,"Virgin Is, US"
+8434,Curacao,2023-24,10,Curacao
+8435,Sint Maarten Dp,2023-24,0,Sint Maarten Dp
+9101,Benin,2023-24,0,Benin
+9102,Burkina Faso,2023-24,0,Burkina Faso
+9103,Cameroon,2023-24,100,Cameroon
+9104,Cabo Verde,2023-24,10,Cabo Verde
+9105,Cent Africa Rep,2023-24,100,Cent Africa Rep
+9106,Chad,2023-24,30,Chad
+9107,"Congo, Rep",2023-24,80,"Congo, Rep"
+9108,"Congo, Dem Rep",2023-24,1370,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2023-24,30,Cote d'Ivoire
+9113,Gabon,2023-24,10,Gabon
+9114,Gambia,2023-24,10,Gambia
+9115,Ghana,2023-24,1080,Ghana
+9116,Guinea,2023-24,30,Guinea
+9118,Liberia,2023-24,80,Liberia
+9121,Mali,2023-24,0,Mali
+9122,Mauritania,2023-24,0,Mauritania
+9123,Niger,2023-24,0,Niger
+9124,Nigeria,2023-24,2480,Nigeria
+9126,Senegal,2023-24,20,Senegal
+9127,Sierra Leone,2023-24,90,Sierra Leone
+9128,Togo,2023-24,10,Togo
+9201,Angola,2023-24,20,Angola
+9202,Botswana,2023-24,180,Botswana
+9203,Burundi,2023-24,280,Burundi
+9205,Djibouti,2023-24,10,Djibouti
+9206,Eritrea,2023-24,280,Eritrea
+9207,Ethiopia,2023-24,1190,Ethiopia
+9208,Kenya,2023-24,5260,Kenya
+9211,Lesotho,2023-24,20,Lesotho
+9212,Madagascar,2023-24,50,Madagascar
+9213,Malawi,2023-24,250,Malawi
+9214,Mauritius,2023-24,970,Mauritius
+9215,Mayotte,2023-24,0,Mayotte
+9216,Mozambique,2023-24,60,Mozambique
+9217,Namibia,2023-24,120,Namibia
+9218,Reunion,2023-24,20,Reunion
+9221,Rwanda,2023-24,240,Rwanda
+9223,Seychelles,2023-24,40,Seychelles
+9224,Somalia,2023-24,470,Somalia
+9225,South Africa,2023-24,11860,South Africa
+9226,Eswatini,2023-24,20,Eswatini
+9227,Tanzania,2023-24,190,Tanzania
+9228,Uganda,2023-24,440,Uganda
+9231,Zambia,2023-24,650,Zambia
+9232,Zimbabwe,2023-24,3340,Zimbabwe
+1102,Norfolk Island,2024-25,0,Norfolk Island
+1201,New Zealand,2024-25,35050,New Zealand
+1301,New Caledonia,2024-25,320,New Caledonia
+1302,PNG,2024-25,2130,PNG
+1303,Solomon Islands,2024-25,940,Solomon Islands
+1304,Vanuatu,2024-25,1700,Vanuatu
+1401,Guam,2024-25,10,Guam
+1402,Kiribati,2024-25,370,Kiribati
+1403,Marshall Is,2024-25,10,Marshall Is
+1404,"Micronesia, F S",2024-25,0,"Micronesia, F S"
+1405,Nauru,2024-25,110,Nauru
+1406,N Mariana Is,2024-25,0,N Mariana Is
+1407,Palau,2024-25,0,Palau
+1501,Cook Islands,2024-25,370,Cook Islands
+1502,Fiji,2024-25,4430,Fiji
+1503,French Poly,2024-25,50,French Poly
+1504,Niue,2024-25,40,Niue
+1505,Samoa,2024-25,2810,Samoa
+1506,Samoa American,2024-25,50,Samoa American
+1507,Tokelau,2024-25,30,Tokelau
+1508,Tonga,2024-25,1530,Tonga
+1511,Tuvalu,2024-25,150,Tuvalu
+1512,Wallis/Futuna,2024-25,0,Wallis/Futuna
+1513,Pitcairn Is,2024-25,0,Pitcairn Is
+1599,"Polynesia, nec",2024-25,0,"Polynesia, nec"
+2100,"UK, CIs & IOM",2024-25,40180,UK
+2201,Ireland,2024-25,8890,Ireland
+2301,Austria,2024-25,290,Austria
+2302,Belgium,2024-25,700,Belgium
+2303,France,2024-25,8670,France
+2304,Germany,2024-25,3990,Germany
+2305,Liechtenstein,2024-25,0,Liechtenstein
+2306,Luxembourg,2024-25,30,Luxembourg
+2307,Monaco,2024-25,20,Monaco
+2308,Netherlands,2024-25,1370,Netherlands
+2311,Switzerland,2024-25,580,Switzerland
+2401,Denmark,2024-25,420,Denmark
+2402,Faroe Islands,2024-25,10,Faroe Islands
+2403,Finland,2024-25,300,Finland
+2404,Greenland,2024-25,0,Greenland
+2405,Iceland,2024-25,20,Iceland
+2406,Norway,2024-25,320,Norway
+2407,Sweden,2024-25,750,Sweden
+3101,Andorra,2024-25,10,Andorra
+3102,Gibraltar,2024-25,10,Gibraltar
+3104,Italy,2024-25,4780,Italy
+3105,Malta,2024-25,90,Malta
+3106,Portugal,2024-25,410,Portugal
+3107,San Marino,2024-25,0,San Marino
+3108,Spain,2024-25,2280,Spain
+3201,Albania,2024-25,130,Albania
+3202,Bosnia/Herzegov,2024-25,180,Bosnia/Herzegov
+3203,Bulgaria,2024-25,110,Bulgaria
+3204,Croatia,2024-25,190,Croatia
+3205,Cyprus,2024-25,110,Cyprus
+3206,North Macedonia,2024-25,320,North Macedonia
+3207,Greece,2024-25,440,Greece
+3208,Moldova,2024-25,70,Moldova
+3211,Romania,2024-25,330,Romania
+3212,Slovenia,2024-25,70,Slovenia
+3214,Montenegro,2024-25,20,Montenegro
+3215,Serbia,2024-25,190,Serbia
+3216,Kosovo,2024-25,10,Kosovo
+3301,Belarus,2024-25,80,Belarus
+3302,Czechia,2024-25,340,Czechia
+3303,Estonia,2024-25,590,Estonia
+3304,Hungary,2024-25,300,Hungary
+3305,Latvia,2024-25,90,Latvia
+3306,Lithuania,2024-25,180,Lithuania
+3307,Poland,2024-25,770,Poland
+3308,Russia,2024-25,1040,Russia
+3311,Slovakia,2024-25,160,Slovakia
+3312,Ukraine,2024-25,600,Ukraine
+4101,Algeria,2024-25,110,Algeria
+4102,Egypt,2024-25,1480,Egypt
+4103,Libya,2024-25,80,Libya
+4104,Morocco,2024-25,220,Morocco
+4105,Sudan,2024-25,580,Sudan
+4106,Tunisia,2024-25,70,Tunisia
+4111,South Sudan,2024-25,200,South Sudan
+4201,Bahrain,2024-25,200,Bahrain
+4202,Palestine,2024-25,10,Palestine
+4203,Iran,2024-25,5130,Iran
+4204,Iraq,2024-25,3230,Iraq
+4205,Israel,2024-25,910,Israel
+4206,Jordan,2024-25,580,Jordan
+4207,Kuwait,2024-25,1080,Kuwait
+4208,Lebanon,2024-25,2590,Lebanon
+4211,Oman,2024-25,310,Oman
+4212,Qatar,2024-25,430,Qatar
+4213,Saudi Arabia,2024-25,2430,Saudi Arabia
+4214,Syria,2024-25,2460,Syria
+4215,Türkiye,2024-25,1920,Türkiye
+4216,Unit Arab Emir,2024-25,2200,Unit Arab Emir
+4217,Yemen,2024-25,130,Yemen
+5101,Myanmar,2024-25,2000,Myanmar
+5102,Cambodia,2024-25,2160,Cambodia
+5103,Laos,2024-25,360,Laos
+5104,Thailand,2024-25,5870,Thailand
+5105,Vietnam,2024-25,13950,Vietnam
+5201,Brunei,2024-25,260,Brunei
+5202,Indonesia,2024-25,13340,Indonesia
+5203,Malaysia,2024-25,6490,Malaysia
+5204,Philippines,2024-25,25560,Philippines
+5205,Singapore,2024-25,3780,Singapore
+5206,Timor-Leste,2024-25,1450,Timor-Leste
+6101,China,2024-25,69860,China
+6102,Hong Kong,2024-25,5390,Hong Kong
+6103,Macau,2024-25,220,Macau
+6104,Mongolia,2024-25,1040,Mongolia
+6105,Taiwan,2024-25,7870,Taiwan
+6201,Japan,2024-25,7350,Japan
+6202,"Korea, North",2024-25,50,"Korea, North"
+6203,"Korea, South",2024-25,8450,Korea South
+7101,Bangladesh,2024-25,12330,Bangladesh
+7102,Bhutan,2024-25,4100,Bhutan
+7103,India,2024-25,74540,India
+7104,Maldives,2024-25,90,Maldives
+7105,Nepal,2024-25,18480,Nepal
+7106,Pakistan,2024-25,11440,Pakistan
+7107,Sri Lanka,2024-25,14710,Sri Lanka
+7201,Afghanistan,2024-25,8920,Afghanistan
+7202,Armenia,2024-25,50,Armenia
+7203,Azerbaijan,2024-25,40,Azerbaijan
+7204,Georgia,2024-25,80,Georgia
+7205,Kazakhstan,2024-25,230,Kazakhstan
+7206,Kyrgyzstan,2024-25,50,Kyrgyzstan
+7207,Tajikistan,2024-25,20,Tajikistan
+7208,Turkmenistan,2024-25,30,Turkmenistan
+7211,Uzbekistan,2024-25,310,Uzbekistan
+8101,Bermuda,2024-25,20,Bermuda
+8102,Canada,2024-25,3460,Canada
+8104,USA,2024-25,7580,USA
+8201,Argentina,2024-25,3680,Argentina
+8202,Bolivia,2024-25,50,Bolivia
+8203,Brazil,2024-25,5240,Brazil
+8204,Chile,2024-25,2780,Chile
+8205,Colombia,2024-25,2250,Colombia
+8206,Ecuador,2024-25,590,Ecuador
+8207,Falkland Is,2024-25,0,Falkland Is
+8208,French Guiana,2024-25,10,French Guiana
+8211,Guyana,2024-25,10,Guyana
+8212,Paraguay,2024-25,70,Paraguay
+8213,Peru,2024-25,1210,Peru
+8214,Suriname,2024-25,0,Suriname
+8215,Uruguay,2024-25,310,Uruguay
+8216,Venezuela,2024-25,330,Venezuela
+8301,Belize,2024-25,10,Belize
+8302,Costa Rica,2024-25,30,Costa Rica
+8303,El Salvador,2024-25,60,El Salvador
+8304,Guatemala,2024-25,50,Guatemala
+8305,Honduras,2024-25,20,Honduras
+8306,Mexico,2024-25,930,Mexico
+8307,Nicaragua,2024-25,10,Nicaragua
+8308,Panama,2024-25,20,Panama
+8402,Antigua/Barbuda,2024-25,0,Antigua/Barbuda
+8403,Aruba,2024-25,0,Aruba
+8404,Bahamas,2024-25,10,Bahamas
+8405,Barbados,2024-25,10,Barbados
+8406,Cayman Islands,2024-25,10,Cayman Islands
+8407,Cuba,2024-25,40,Cuba
+8408,Dominica,2024-25,0,Dominica
+8411,Dominican Rep,2024-25,30,Dominican Rep
+8412,Grenada,2024-25,0,Grenada
+8413,Guadeloupe,2024-25,10,Guadeloupe
+8414,Haiti,2024-25,10,Haiti
+8415,Jamaica,2024-25,50,Jamaica
+8416,Martinique,2024-25,10,Martinique
+8417,Montserrat,2024-25,0,Montserrat
+8421,Puerto Rico,2024-25,10,Puerto Rico
+8422,St Kitts/Nevis,2024-25,0,St Kitts/Nevis
+8423,St Lucia,2024-25,0,St Lucia
+8424,St Vinc/Grenad,2024-25,0,St Vinc/Grenad
+8425,Trinidad/Tobago,2024-25,70,Trinidad/Tobago
+8427,"Virgin Is, Brit",2024-25,0,"Virgin Is, Brit"
+8428,"Virgin Is, US",2024-25,0,"Virgin Is, US"
+8434,Curacao,2024-25,0,Curacao
+8435,Sint Maarten Dp,2024-25,0,Sint Maarten Dp
+9101,Benin,2024-25,10,Benin
+9102,Burkina Faso,2024-25,10,Burkina Faso
+9103,Cameroon,2024-25,60,Cameroon
+9104,Cabo Verde,2024-25,0,Cabo Verde
+9105,Cent Africa Rep,2024-25,20,Cent Africa Rep
+9106,Chad,2024-25,10,Chad
+9107,"Congo, Rep",2024-25,40,"Congo, Rep"
+9108,"Congo, Dem Rep",2024-25,740,"Congo, Dem Rep"
+9111,Cote d'Ivoire,2024-25,30,Cote d'Ivoire
+9113,Gabon,2024-25,10,Gabon
+9114,Gambia,2024-25,10,Gambia
+9115,Ghana,2024-25,840,Ghana
+9116,Guinea,2024-25,40,Guinea
+9118,Liberia,2024-25,80,Liberia
+9121,Mali,2024-25,10,Mali
+9122,Mauritania,2024-25,0,Mauritania
+9123,Niger,2024-25,10,Niger
+9124,Nigeria,2024-25,1690,Nigeria
+9126,Senegal,2024-25,30,Senegal
+9127,Sierra Leone,2024-25,70,Sierra Leone
+9128,Togo,2024-25,10,Togo
+9201,Angola,2024-25,10,Angola
+9202,Botswana,2024-25,150,Botswana
+9203,Burundi,2024-25,240,Burundi
+9205,Djibouti,2024-25,0,Djibouti
+9206,Eritrea,2024-25,420,Eritrea
+9207,Ethiopia,2024-25,1050,Ethiopia
+9208,Kenya,2024-25,2590,Kenya
+9211,Lesotho,2024-25,10,Lesotho
+9212,Madagascar,2024-25,40,Madagascar
+9213,Malawi,2024-25,150,Malawi
+9214,Mauritius,2024-25,700,Mauritius
+9215,Mayotte,2024-25,0,Mayotte
+9216,Mozambique,2024-25,50,Mozambique
+9217,Namibia,2024-25,80,Namibia
+9218,Reunion,2024-25,30,Reunion
+9221,Rwanda,2024-25,160,Rwanda
+9223,Seychelles,2024-25,20,Seychelles
+9224,Somalia,2024-25,440,Somalia
+9225,South Africa,2024-25,8620,South Africa
+9226,Eswatini,2024-25,10,Eswatini
+9227,Tanzania,2024-25,130,Tanzania
+9228,Uganda,2024-25,300,Uganda
+9231,Zambia,2024-25,510,Zambia
+9232,Zimbabwe,2024-25,3030,Zimbabwe

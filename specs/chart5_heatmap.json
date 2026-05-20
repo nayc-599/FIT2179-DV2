@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Departures heatmap by country and year",
+    "subtitle": "Use the slider to highlight a financial year. The COVID-19 dip is visible in 2020–21.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 360,
+  "data": {"url": "data/chart5_heatmap.csv"},
+  "params": [
+    {
+      "name": "yearHighlight",
+      "value": "2020-21",
+      "bind": {
+        "input": "select",
+        "name": "Highlight year: ",
+        "options": [
+          "2004-05", "2005-06", "2006-07", "2007-08", "2008-09", "2009-10",
+          "2010-11", "2011-12", "2012-13", "2013-14", "2014-15", "2015-16",
+          "2016-17", "2017-18", "2018-19", "2019-20", "2020-21", "2021-22",
+          "2022-23", "2023-24", "2024-25"
+        ]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rect", "stroke": "#f0f0f0", "strokeWidth": 0.5},
+      "encoding": {
+        "y": {
+          "field": "display_country",
+          "type": "nominal",
+          "title": null,
+          "sort": {"field": "departures", "op": "sum", "order": "descending"}
+        },
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": null,
+          "axis": {"labelAngle": -90, "labelFontSize": 9}
+        },
+        "color": {
+          "field": "departures",
+          "type": "quantitative",
+          "title": "Departures",
+          "scale": {"scheme": "blues"},
+          "legend": {"format": ",.0f"}
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "year", "title": "Year"},
+          {"field": "departures", "title": "Departures", "format": ","}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": {"equal": {"field": "year"}, "param": "yearHighlight"}}],
+      "mark": {"type": "rect", "fill": null, "stroke": "#e74c3c", "strokeWidth": 2.5},
+      "encoding": {
+        "y": {"field": "display_country", "type": "nominal"},
+        "x": {"field": "year", "type": "ordinal"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Share of departures by continent",
+    "subtitle": "Each square = 1% of total overseas-born departures (2004–05 to 2024–25)",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {"url": "data/chart3_waffle.csv"},
+  "mark": {"type": "rect", "stroke": "#fff", "strokeWidth": 1},
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null,
+      "scale": {"paddingInner": 0.05, "paddingOuter": 0.05}
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null,
+      "sort": "descending",
+      "scale": {"paddingInner": 0.05, "paddingOuter": 0.05}
+    },
+    "color": {
+      "field": "continent",
+      "type": "nominal",
+      "title": "Continent",
+      "legend": {"orient": "bottom", "columns": 3},
+      "scale": {
+        "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
+        "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+      }
+    },
+    "tooltip": [
+      {"field": "continent", "title": "Continent"},
+      {"field": "pct", "title": "Share (%)", "format": ".1f"}
+    ]
+  },
+  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+}

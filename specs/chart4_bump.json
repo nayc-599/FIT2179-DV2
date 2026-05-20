@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Ranking of top departure countries, 2014–15 to 2024–25",
+    "subtitle": "Rank 1 = most departures. Hover a country to highlight its path.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 400,
+  "data": {"url": "data/chart4_bump.csv"},
+  "params": [
+    {
+      "name": "countryHighlight",
+      "select": {"type": "point", "fields": ["display_country"], "on": "mouseover", "clear": "mouseout"}
+    }
+  ],
+  "mark": {"type": "line", "point": {"filled": true, "size": 60}},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Financial year",
+      "sort": null,
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "rank",
+      "type": "ordinal",
+      "title": "Rank",
+      "sort": "ascending",
+      "scale": {"reverse": true}
+    },
+    "color": {
+      "field": "display_country",
+      "type": "nominal",
+      "legend": {"orient": "right", "columns": 1},
+      "scale": {
+        "scheme": "tableau10",
+        "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"]
+      }
+    },
+    "opacity": {
+      "condition": {"param": "countryHighlight", "value": 1},
+      "value": 0.25
+    },
+    "strokeWidth": {
+      "condition": {"param": "countryHighlight", "value": 3.5},
+      "value": 1.5
+    },
+    "tooltip": [
+      {"field": "display_country", "title": "Country"},
+      {"field": "year", "title": "Year"},
+      {"field": "rank", "title": "Rank"},
+      {"field": "departures", "title": "Departures", "format": ","}
+    ]
+  },
+  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+}
