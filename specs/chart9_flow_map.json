@@ -7,8 +7,8 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": 700,
-  "height": 400,
+  "width": 900,
+  "height": 500,
   "projection": {"type": "naturalEarth1"},
   "layer": [
     {
@@ -17,9 +17,7 @@
         "format": {"type": "topojson", "feature": "countries"}
       },
       "mark": {"type": "geoshape", "fill": "#e8ecef", "stroke": "#ccc", "strokeWidth": 0.3},
-      "encoding": {
-        "tooltip": null
-      }
+      "encoding": {"tooltip": null}
     },
     {
       "data": {"url": "data/chart9_flow.csv"},
@@ -34,12 +32,18 @@
           }
         }
       ],
-      "mark": {"type": "rule", "strokeCap": "round"},
+      "mark": {
+        "type": "line",
+        "interpolate": "cardinal",
+        "tension": 0.5,
+        "strokeLinecap": "round",
+        "strokeLinejoin": "round"
+      },
       "encoding": {
-        "latitude": {"field": "lat"},
-        "longitude": {"field": "lon"},
-        "latitude2": {"field": "dest_lat"},
-        "longitude2": {"field": "dest_lon"},
+        "latitude": {"field": "plot_lat"},
+        "longitude": {"field": "plot_lon"},
+        "detail": {"field": "display_country"},
+        "order": {"field": "point_order", "type": "quantitative"},
         "strokeWidth": {
           "field": "departures",
           "type": "quantitative",
@@ -71,10 +75,11 @@
     },
     {
       "data": {"url": "data/chart9_flow.csv"},
+      "transform": [{"filter": "datum.point_order === 1"}],
       "mark": {"type": "circle", "filled": true, "size": 80},
       "encoding": {
-        "latitude": {"field": "lat"},
-        "longitude": {"field": "lon"},
+        "latitude": {"field": "plot_lat"},
+        "longitude": {"field": "plot_lon"},
         "color": {
           "field": "continent",
           "type": "nominal",
@@ -91,11 +96,15 @@
           ],
           "value": 0.15
         },
-        "tooltip": [{"field": "display_country", "title": "Origin"}]
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Total departures", "format": ","},
+          {"field": "continent", "title": "Continent"}
+        ]
       }
     },
     {
-      "data": {"values": [{"lat": -35.2809, "lon": 149.13, "label": "Australia"}]},
+      "data": {"values": [{"lat": -25.0, "lon": 133.0, "label": "Australia"}]},
       "mark": {"type": "circle", "filled": true, "color": "#1a5276", "size": 120},
       "encoding": {
         "latitude": {"field": "lat"},
