@@ -1,270 +1,233 @@
-/**
- * Full-page animated migration background — no external libraries.
- * Layers: continent outlines → bezier arcs with travelling dots → ambient particles.
- */
-(function () {
-  const canvas = document.getElementById("migration-canvas");
+/* canvas-bg.js — animated world map with migration arcs flowing into Australia */
+(async () => {
+  const canvas = document.getElementById('migration-canvas');
   if (!canvas) return;
 
-  const ctx = canvas.getContext("2d");
-  let width = 0;
-  let height = 0;
-  let running = true;
-  let rafId = null;
-  let lastTime = 0;
-
-  /* Simplified continent outlines (SVG path strings, viewBox 0 0 1000 500) */
-  const CONTINENTS = [
-    {
-      id: "northAmerica",
-      d: "M 95,72 L 165,58 L 248,68 L 298,98 L 285,142 L 232,168 L 168,158 L 118,128 L 88,102 Z"
-    },
-    {
-      id: "southAmerica",
-      d: "M 268,198 L 302,188 L 318,228 L 312,298 L 288,358 L 262,378 L 248,328 L 252,248 Z"
-    },
-    {
-      id: "europe",
-      d: "M 468,78 L 518,68 L 548,88 L 542,118 L 512,132 L 478,122 L 458,98 Z"
-    },
-    {
-      id: "africa",
-      d: "M 488,142 L 538,128 L 568,168 L 562,248 L 542,328 L 512,368 L 488,348 L 478,268 L 482,188 Z"
-    },
-    {
-      id: "asia",
-      d: "M 548,62 L 648,52 L 748,72 L 812,108 L 848,148 L 832,188 L 768,208 L 688,198 L 612,168 L 558,128 L 532,88 Z"
-    },
-    {
-      id: "antarctica",
-      d: "M 120,438 L 880,438 L 860,468 L 140,468 Z"
-    },
-    {
-      id: "australia",
-      d: "M 768,318 L 812,298 L 868,308 L 912,338 L 898,378 L 852,398 L 798,392 L 758,362 L 752,332 Z",
-      bright: true
-    },
-    {
-      id: "greenland",
-      d: "M 318,42 L 358,36 L 372,58 L 348,72 L 312,68 Z"
-    },
-    {
-      id: "japan",
-      d: "M 858,128 L 872,118 L 878,142 L 864,152 Z"
-    },
-    {
-      id: "britishIsles",
-      d: "M 448,88 L 468,82 L 474,98 L 458,106 L 444,98 Z"
-    }
-  ];
-
-  const AU_PCT = { x: 0.85, y: 0.72 };
-
-  /* 12 migration arc origins (% of canvas) */
-  const ARC_ORIGINS = [
-    { name: "China", x: 0.78, y: 0.35 },
-    { name: "India", x: 0.68, y: 0.40 },
-    { name: "UK", x: 0.48, y: 0.25 },
-    { name: "New Zealand", x: 0.90, y: 0.78 },
-    { name: "Malaysia", x: 0.74, y: 0.48 },
-    { name: "Korea", x: 0.80, y: 0.30 },
-    { name: "Indonesia", x: 0.76, y: 0.55 },
-    { name: "USA", x: 0.18, y: 0.35 },
-    { name: "Philippines", x: 0.80, y: 0.42 },
-    { name: "Japan", x: 0.83, y: 0.32 },
-    { name: "Singapore", x: 0.75, y: 0.50 },
-    { name: "Vietnam", x: 0.77, y: 0.46 }
-  ];
-
-  let mapScale = 1;
-  let mapOffsetX = 0;
-  let mapOffsetY = 0;
-  let arcs = [];
-  let particles = [];
-
   function resize() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    width = window.innerWidth;
-    height = window.innerHeight;
-    canvas.width = Math.floor(width * dpr);
-    canvas.height = Math.floor(height * dpr);
-    canvas.style.width = width + "px";
-    canvas.style.height = height + "px";
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-    const mapW = 1000;
-    const mapH = 500;
-    mapScale = Math.min(width / mapW, height / mapH) * 0.92;
-    mapOffsetX = (width - mapW * mapScale) / 2;
-    mapOffsetY = (height - mapH * mapScale) / 2;
-
-    buildArcs();
-    if (particles.length === 0) initParticles();
+    canvas.width  = window.innerWidth  * devicePixelRatio;
+    canvas.height = window.innerHeight * devicePixelRatio;
+    canvas.style.width  = window.innerWidth  + 'px';
+    canvas.style.height = window.innerHeight + 'px';
   }
+  resize();
 
-  function pctToPx(px, py) {
-    return { x: px * width, y: py * height };
+  const ctx = canvas.getContext('2d');
+
+  /* ── Load dependencies from CDN (full d3 bundle avoids module conflicts) ── */
+  const loadScript = src => new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src = src; s.onload = res; s.onerror = rej;
+    document.head.appendChild(s);
+  });
+
+  await loadScript('https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js');
+  await loadScript('https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js');
+
+  const world    = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
+  const countries = topojson.feature(world, world.objects.countries);
+  const borders   = topojson.mesh(world,   world.objects.countries, (a, b) => a !== b);
+
+  let W, H, projection, path, AUS_X, AUS_Y;
+
+  function buildProjection() {
+    W = window.innerWidth;
+    H = window.innerHeight;
+    projection = d3.geoNaturalEarth1()
+      .scale(W / 6.5)
+      .translate([W / 2, H / 2]);
+    path = d3.geoPath(projection, ctx);
+    const ap = projection([133.7751, -25.2744]);
+    AUS_X = ap[0];
+    AUS_Y = ap[1];
   }
+  buildProjection();
 
-  function buildArcs() {
-    const dest = pctToPx(AU_PCT.x, AU_PCT.y);
-    arcs = ARC_ORIGINS.map((origin, i) => {
-      const start = pctToPx(origin.x, origin.y);
-      const midX = (start.x + dest.x) / 2;
-      const midY = (start.y + dest.y) / 2;
-      const dx = dest.x - start.x;
-      const dy = dest.y - start.y;
-      const len = Math.hypot(dx, dy) || 1;
-      const perpX = (-dy / len) * 80;
-      const perpY = (dx / len) * 80;
-      const side = i % 2 === 0 ? 1 : -1;
+  window.addEventListener('resize', () => {
+    resize();
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+    buildProjection();
+  });
 
-      return {
-        p0: start,
-        p1: { x: start.x + dx * 0.25 + perpX * side * 0.6, y: start.y + dy * 0.25 + perpY * side * 0.6 },
-        p2: { x: start.x + dx * 0.75 + perpX * side * 0.4, y: start.y + dy * 0.75 + perpY * side * 0.4 },
-        p3: dest,
-        phase: Math.random(),
-        duration: 5000 + Math.random() * 3000
-      };
-    });
-  }
+  ctx.scale(devicePixelRatio, devicePixelRatio);
 
-  function initParticles() {
-    particles = [];
-    for (let i = 0; i < 50; i++) {
-      particles.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.2,
-        vy: (Math.random() - 0.5) * 0.2,
-        opacity: 0.04 + Math.random() * 0.03,
-        radius: 1
-      });
+  /* ── Origin cities (top departure countries from ABS data) ── */
+  const ORIGINS = [
+    { lon: 116.4,  lat: 39.9  },  /* Beijing       */
+    { lon: 72.9,   lat: 19.1  },  /* Mumbai        */
+    { lon: -0.1,   lat: 51.5  },  /* London        */
+    { lon: -87.6,  lat: 41.8  },  /* Chicago       */
+    { lon: 121.5,  lat: 25.0  },  /* Taipei        */
+    { lon: 126.9,  lat: 37.5  },  /* Seoul         */
+    { lon: 174.8,  lat: -41.3 },  /* Wellington    */
+    { lon: 139.7,  lat: 35.7  },  /* Tokyo         */
+    { lon: 101.7,  lat: 3.1   },  /* Kuala Lumpur  */
+    { lon: 106.8,  lat: -6.2  },  /* Jakarta       */
+    { lon: 18.4,   lat: -33.9 },  /* Cape Town     */
+    { lon: 13.4,   lat: 52.5  },  /* Berlin        */
+    { lon: 103.8,  lat: 1.35  },  /* Singapore     */
+    { lon: 120.9,  lat: 14.6  },  /* Manila        */
+    { lon: 77.6,   lat: 12.9  },  /* Bengaluru     */
+    { lon: -43.2,  lat: -22.9 },  /* Rio           */
+    { lon: 37.6,   lat: 55.8  },  /* Moscow        */
+  ];
+
+  const ARC_COLORS = [
+    '#4fc3f7','#81d4fa','#29b6f6','#0288d1',
+    '#80deea','#4dd0e1','#b3e5fc','#a5d6a7',
+    '#ce93d8','#90caf9',
+  ];
+
+  /* ── Arc class ── */
+  class Arc {
+    constructor() { this.reset(true); }
+
+    reset(instant = false) {
+      const o  = ORIGINS[Math.floor(Math.random() * ORIGINS.length)];
+      const pp = projection([o.lon, o.lat]);
+      this.sx = pp[0]; this.sy = pp[1];
+      this.ex = AUS_X + (Math.random() - 0.5) * 80;
+      this.ey = AUS_Y + (Math.random() - 0.5) * 50;
+
+      const mx = (this.sx + this.ex) / 2;
+      const my = (this.sy + this.ey) / 2;
+      const dx = this.ex - this.sx, dy = this.ey - this.sy;
+      const perp = [-dy, dx];
+      const plen = Math.sqrt(perp[0] ** 2 + perp[1] ** 2);
+      const lift  = (0.15 + Math.random() * 0.25) * (Math.random() < 0.5 ? 1 : -1);
+      const chord = Math.hypot(dx, dy);
+      this.cx = mx + (perp[0] / plen) * chord * lift;
+      this.cy = my + (perp[1] / plen) * chord * lift;
+
+      this.color    = ARC_COLORS[Math.floor(Math.random() * ARC_COLORS.length)];
+      this.speed    = 0.0008 + Math.random() * 0.0018;
+      this.t        = instant ? Math.random() : 0;
+      this.trailLen = 0.10 + Math.random() * 0.12;
+      this.width    = 0.7 + Math.random() * 1.3;
+      this.opacity  = 0.5 + Math.random() * 0.5;
     }
-  }
 
-  function cubicPoint(t, p0, p1, p2, p3) {
-    const u = 1 - t;
-    const tt = t * t;
-    const uu = u * u;
-    const uuu = uu * u;
-    const ttt = tt * t;
-    return {
-      x: uuu * p0.x + 3 * uu * t * p1.x + 3 * u * tt * p2.x + ttt * p3.x,
-      y: uuu * p0.y + 3 * uu * t * p1.y + 3 * u * tt * p2.y + ttt * p3.y
-    };
-  }
+    bez(t) {
+      const mt = 1 - t;
+      return [
+        mt * mt * this.sx + 2 * mt * t * this.cx + t * t * this.ex,
+        mt * mt * this.sy + 2 * mt * t * this.cy + t * t * this.ey,
+      ];
+    }
 
-  function drawContinents() {
-    ctx.save();
-    ctx.translate(mapOffsetX, mapOffsetY);
-    ctx.scale(mapScale, mapScale);
+    update() {
+      this.t += this.speed;
+      if (this.t > 1 + this.trailLen) this.reset();
+    }
 
-    CONTINENTS.forEach((c) => {
-      const path = new Path2D(c.d);
-      ctx.strokeStyle = c.bright
-        ? "rgba(255,255,255,0.10)"
-        : "rgba(255,255,255,0.04)";
-      ctx.lineWidth = 1.2 / mapScale;
-      ctx.lineJoin = "round";
-      ctx.lineCap = "round";
-      ctx.stroke(path);
-    });
+    draw(ctx) {
+      const head = Math.min(this.t, 1);
+      const tail = Math.max(0, this.t - this.trailLen);
+      if (head <= tail) return;
 
-    ctx.restore();
-  }
-
-  function drawArcs(time) {
-    arcs.forEach((arc) => {
-      const t = ((time / arc.duration + arc.phase) % 1 + 1) % 1;
+      const steps = 50;
+      const [tx0, ty0] = this.bez(tail);
+      const [tx1, ty1] = this.bez(head);
+      const grad = ctx.createLinearGradient(tx0, ty0, tx1, ty1);
+      grad.addColorStop(0,   'rgba(0,0,0,0)');
+      grad.addColorStop(0.5, this.color + '88');
+      grad.addColorStop(1,   this.color + 'ee');
 
       ctx.beginPath();
-      ctx.moveTo(arc.p0.x, arc.p0.y);
-      ctx.bezierCurveTo(arc.p1.x, arc.p1.y, arc.p2.x, arc.p2.y, arc.p3.x, arc.p3.y);
-      ctx.strokeStyle = "rgba(100,200,255,0.12)";
-      ctx.lineWidth = 1;
+      for (let i = 0; i <= steps; i++) {
+        const tt = tail + (head - tail) * (i / steps);
+        const [px, py] = this.bez(tt);
+        i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+      }
+      ctx.strokeStyle = grad;
+      ctx.lineWidth   = this.width;
+      ctx.shadowColor = this.color;
+      ctx.shadowBlur  = 8;
+      ctx.globalAlpha = this.opacity;
       ctx.stroke();
 
-      const pt = cubicPoint(t, arc.p0, arc.p1, arc.p2, arc.p3);
+      /* glowing dot at head */
+      if (this.t <= 1) {
+        const [hx, hy] = this.bez(head);
+        ctx.beginPath();
+        ctx.arc(hx, hy, 1.8, 0, Math.PI * 2);
+        ctx.fillStyle   = '#ffffff';
+        ctx.shadowColor = this.color;
+        ctx.shadowBlur  = 14;
+        ctx.fill();
+      }
 
-      const glow = ctx.createRadialGradient(pt.x, pt.y, 0, pt.x, pt.y, 8);
-      glow.addColorStop(0, "rgba(150,220,255,0.9)");
-      glow.addColorStop(0.35, "rgba(100,200,255,0.35)");
-      glow.addColorStop(1, "rgba(100,200,255,0)");
-
-      ctx.beginPath();
-      ctx.fillStyle = glow;
-      ctx.arc(pt.x, pt.y, 8, 0, Math.PI * 2);
-      ctx.fill();
-
-      ctx.beginPath();
-      ctx.fillStyle = "rgba(150,220,255,0.9)";
-      ctx.arc(pt.x, pt.y, 2.5, 0, Math.PI * 2);
-      ctx.fill();
-    });
+      ctx.shadowBlur  = 0;
+      ctx.globalAlpha = 1;
+    }
   }
 
-  function drawParticles() {
-    particles.forEach((p) => {
-      p.x += p.vx;
-      p.y += p.vy;
+  const arcs = Array.from({ length: 28 }, () => new Arc());
+  let tick = 0;
 
-      if (p.x < 0) p.x = width;
-      if (p.x > width) p.x = 0;
-      if (p.y < 0) p.y = height;
-      if (p.y > height) p.y = 0;
-
+  function drawOriginDots() {
+    ORIGINS.forEach(o => {
+      const pp = projection([o.lon, o.lat]);
+      if (!pp) return;
       ctx.beginPath();
-      ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
-      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.arc(pp[0], pp[1], 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(144,202,249,0.35)';
       ctx.fill();
     });
   }
 
-  function drawFrame(time) {
-    ctx.fillStyle = "#0d1b2a";
-    ctx.fillRect(0, 0, width, height);
+  function drawAustraliaPulse() {
+    const pulse = 0.55 + 0.45 * Math.sin(tick * 0.04);
 
-    drawContinents();
-    drawArcs(time);
-    drawParticles();
+    const g1 = ctx.createRadialGradient(AUS_X, AUS_Y, 0, AUS_X, AUS_Y, 55);
+    g1.addColorStop(0, `rgba(41,182,246,${0.22 * pulse})`);
+    g1.addColorStop(1,  'rgba(41,182,246,0)');
+    ctx.beginPath();
+    ctx.arc(AUS_X, AUS_Y, 55, 0, Math.PI * 2);
+    ctx.fillStyle = g1;
+    ctx.fill();
+
+    const g2 = ctx.createRadialGradient(AUS_X, AUS_Y, 0, AUS_X, AUS_Y, 110);
+    g2.addColorStop(0, `rgba(41,182,246,${0.08 * pulse})`);
+    g2.addColorStop(1,  'rgba(41,182,246,0)');
+    ctx.beginPath();
+    ctx.arc(AUS_X, AUS_Y, 110, 0, Math.PI * 2);
+    ctx.fillStyle = g2;
+    ctx.fill();
   }
 
-  function loop(time) {
-    if (!running) return;
-    rafId = requestAnimationFrame(loop);
-    drawFrame(time);
-    lastTime = time;
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+
+    /* country fills */
+    ctx.beginPath();
+    path(countries);
+    ctx.fillStyle = 'rgba(255,255,255,0.032)';
+    ctx.fill();
+
+    /* glowing country outlines */
+    ctx.beginPath();
+    path(countries);
+    ctx.strokeStyle = 'rgba(100,180,230,0.22)';
+    ctx.lineWidth   = 0.6;
+    ctx.shadowColor = 'rgba(100,180,255,0.5)';
+    ctx.shadowBlur  = 3;
+    ctx.stroke();
+    ctx.shadowBlur  = 0;
+
+    /* internal borders — dimmer */
+    ctx.beginPath();
+    path(borders);
+    ctx.strokeStyle = 'rgba(100,160,220,0.07)';
+    ctx.lineWidth   = 0.3;
+    ctx.stroke();
+
+    drawAustraliaPulse();
+    drawOriginDots();
+    arcs.forEach(a => { a.update(); a.draw(ctx); });
+
+    tick++;
+    requestAnimationFrame(frame);
   }
 
-  function start() {
-    if (!running) {
-      running = true;
-      rafId = requestAnimationFrame(loop);
-    }
-  }
-
-  function stop() {
-    running = false;
-    if (rafId !== null) {
-      cancelAnimationFrame(rafId);
-      rafId = null;
-    }
-  }
-
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      stop();
-    } else {
-      start();
-    }
-  });
-
-  window.addEventListener("resize", () => {
-    resize();
-  });
-
-  resize();
-  start();
+  frame();
 })();
