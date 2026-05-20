@@ -1,101 +1,101 @@
-cell,continent,pct,row,col
-0,Africa,3.4680514903227766,0,0
-1,Africa,3.4680514903227766,0,1
-2,Africa,3.4680514903227766,0,2
-3,Americas,9.3498384597466,0,3
-4,Americas,9.3498384597466,0,4
-5,Americas,9.3498384597466,0,5
-6,Americas,9.3498384597466,0,6
-7,Americas,9.3498384597466,0,7
-8,Americas,9.3498384597466,0,8
-9,Americas,9.3498384597466,0,9
-10,Americas,9.3498384597466,1,0
-11,Americas,9.3498384597466,1,1
-12,Asia,50.91303158896867,1,2
-13,Asia,50.91303158896867,1,3
-14,Asia,50.91303158896867,1,4
-15,Asia,50.91303158896867,1,5
-16,Asia,50.91303158896867,1,6
-17,Asia,50.91303158896867,1,7
-18,Asia,50.91303158896867,1,8
-19,Asia,50.91303158896867,1,9
-20,Asia,50.91303158896867,2,0
-21,Asia,50.91303158896867,2,1
-22,Asia,50.91303158896867,2,2
-23,Asia,50.91303158896867,2,3
-24,Asia,50.91303158896867,2,4
-25,Asia,50.91303158896867,2,5
-26,Asia,50.91303158896867,2,6
-27,Asia,50.91303158896867,2,7
-28,Asia,50.91303158896867,2,8
-29,Asia,50.91303158896867,2,9
-30,Asia,50.91303158896867,3,0
-31,Asia,50.91303158896867,3,1
-32,Asia,50.91303158896867,3,2
-33,Asia,50.91303158896867,3,3
-34,Asia,50.91303158896867,3,4
-35,Asia,50.91303158896867,3,5
-36,Asia,50.91303158896867,3,6
-37,Asia,50.91303158896867,3,7
-38,Asia,50.91303158896867,3,8
-39,Asia,50.91303158896867,3,9
-40,Asia,50.91303158896867,4,0
-41,Asia,50.91303158896867,4,1
-42,Asia,50.91303158896867,4,2
-43,Asia,50.91303158896867,4,3
-44,Asia,50.91303158896867,4,4
-45,Asia,50.91303158896867,4,5
-46,Asia,50.91303158896867,4,6
-47,Asia,50.91303158896867,4,7
-48,Asia,50.91303158896867,4,8
-49,Asia,50.91303158896867,4,9
-50,Asia,50.91303158896867,5,0
-51,Asia,50.91303158896867,5,1
-52,Asia,50.91303158896867,5,2
-53,Asia,50.91303158896867,5,3
-54,Asia,50.91303158896867,5,4
-55,Asia,50.91303158896867,5,5
-56,Asia,50.91303158896867,5,6
-57,Asia,50.91303158896867,5,7
-58,Asia,50.91303158896867,5,8
-59,Asia,50.91303158896867,5,9
-60,Asia,50.91303158896867,6,0
-61,Asia,50.91303158896867,6,1
-62,Asia,50.91303158896867,6,2
-63,Europe,22.10645452059512,6,3
-64,Europe,22.10645452059512,6,4
-65,Europe,22.10645452059512,6,5
-66,Europe,22.10645452059512,6,6
-67,Europe,22.10645452059512,6,7
-68,Europe,22.10645452059512,6,8
-69,Europe,22.10645452059512,6,9
-70,Europe,22.10645452059512,7,0
-71,Europe,22.10645452059512,7,1
-72,Europe,22.10645452059512,7,2
-73,Europe,22.10645452059512,7,3
-74,Europe,22.10645452059512,7,4
-75,Europe,22.10645452059512,7,5
-76,Europe,22.10645452059512,7,6
-77,Europe,22.10645452059512,7,7
-78,Europe,22.10645452059512,7,8
-79,Europe,22.10645452059512,7,9
-80,Europe,22.10645452059512,8,0
-81,Europe,22.10645452059512,8,1
-82,Europe,22.10645452059512,8,2
-83,Europe,22.10645452059512,8,3
-84,Europe,22.10645452059512,8,4
-85,Middle East,3.7842956541114274,8,5
-86,Middle East,3.7842956541114274,8,6
-87,Middle East,3.7842956541114274,8,7
-88,Middle East,3.7842956541114274,8,8
-89,Oceania,10.378328286255407,8,9
-90,Oceania,10.378328286255407,9,0
-91,Oceania,10.378328286255407,9,1
-92,Oceania,10.378328286255407,9,2
-93,Oceania,10.378328286255407,9,3
-94,Oceania,10.378328286255407,9,4
-95,Oceania,10.378328286255407,9,5
-96,Oceania,10.378328286255407,9,6
-97,Oceania,10.378328286255407,9,7
-98,Oceania,10.378328286255407,9,8
-99,Oceania,0.0,9,9
+cell,continent,pct,row,col,flag_url,flag_country,filled
+0,Africa,3.47,0,0,flags/southafrica.png,South Africa,1
+1,Africa,3.47,0,1,flags/southafrica.png,South Africa,1
+2,Africa,3.47,0,2,flags/southafrica.png,South Africa,1
+3,Americas,9.35,0,3,flags/usa.png,USA,1
+4,Americas,9.35,0,4,flags/usa.png,USA,1
+5,Americas,9.35,0,5,flags/usa.png,USA,1
+6,Americas,9.35,0,6,flags/usa.png,USA,1
+7,Americas,9.35,0,7,flags/usa.png,USA,1
+8,Americas,9.35,0,8,flags/usa.png,USA,1
+9,Americas,9.35,0,9,flags/usa.png,USA,1
+10,Americas,9.35,1,0,flags/usa.png,USA,1
+11,Americas,9.35,1,1,flags/usa.png,USA,1
+12,Asia,50.91,1,2,flags/china.png,China,1
+13,Asia,50.91,1,3,flags/china.png,China,1
+14,Asia,50.91,1,4,flags/china.png,China,1
+15,Asia,50.91,1,5,flags/china.png,China,1
+16,Asia,50.91,1,6,flags/china.png,China,1
+17,Asia,50.91,1,7,flags/china.png,China,1
+18,Asia,50.91,1,8,flags/china.png,China,1
+19,Asia,50.91,1,9,flags/china.png,China,1
+20,Asia,50.91,2,0,flags/china.png,China,1
+21,Asia,50.91,2,1,flags/china.png,China,1
+22,Asia,50.91,2,2,flags/china.png,China,1
+23,Asia,50.91,2,3,flags/china.png,China,1
+24,Asia,50.91,2,4,flags/china.png,China,1
+25,Asia,50.91,2,5,flags/china.png,China,1
+26,Asia,50.91,2,6,flags/china.png,China,1
+27,Asia,50.91,2,7,flags/china.png,China,1
+28,Asia,50.91,2,8,flags/china.png,China,1
+29,Asia,50.91,2,9,flags/china.png,China,1
+30,Asia,50.91,3,0,flags/china.png,China,1
+31,Asia,50.91,3,1,flags/china.png,China,1
+32,Asia,50.91,3,2,flags/china.png,China,1
+33,Asia,50.91,3,3,flags/china.png,China,1
+34,Asia,50.91,3,4,flags/china.png,China,1
+35,Asia,50.91,3,5,flags/china.png,China,1
+36,Asia,50.91,3,6,flags/china.png,China,1
+37,Asia,50.91,3,7,flags/china.png,China,1
+38,Asia,50.91,3,8,flags/china.png,China,1
+39,Asia,50.91,3,9,flags/china.png,China,1
+40,Asia,50.91,4,0,flags/china.png,China,1
+41,Asia,50.91,4,1,flags/china.png,China,1
+42,Asia,50.91,4,2,flags/china.png,China,1
+43,Asia,50.91,4,3,flags/china.png,China,1
+44,Asia,50.91,4,4,flags/china.png,China,1
+45,Asia,50.91,4,5,flags/china.png,China,1
+46,Asia,50.91,4,6,flags/china.png,China,1
+47,Asia,50.91,4,7,flags/china.png,China,1
+48,Asia,50.91,4,8,flags/china.png,China,1
+49,Asia,50.91,4,9,flags/china.png,China,1
+50,Asia,50.91,5,0,flags/china.png,China,1
+51,Asia,50.91,5,1,flags/china.png,China,1
+52,Asia,50.91,5,2,flags/china.png,China,1
+53,Asia,50.91,5,3,flags/china.png,China,1
+54,Asia,50.91,5,4,flags/china.png,China,1
+55,Asia,50.91,5,5,flags/china.png,China,1
+56,Asia,50.91,5,6,flags/china.png,China,1
+57,Asia,50.91,5,7,flags/china.png,China,1
+58,Asia,50.91,5,8,flags/china.png,China,1
+59,Asia,50.91,5,9,flags/china.png,China,1
+60,Asia,50.91,6,0,flags/china.png,China,1
+61,Asia,50.91,6,1,flags/china.png,China,1
+62,Asia,50.91,6,2,flags/china.png,China,1
+63,Europe,22.11,6,3,flags/uk.png,United Kingdom,1
+64,Europe,22.11,6,4,flags/uk.png,United Kingdom,1
+65,Europe,22.11,6,5,flags/uk.png,United Kingdom,1
+66,Europe,22.11,6,6,flags/uk.png,United Kingdom,1
+67,Europe,22.11,6,7,flags/uk.png,United Kingdom,1
+68,Europe,22.11,6,8,flags/uk.png,United Kingdom,1
+69,Europe,22.11,6,9,flags/uk.png,United Kingdom,1
+70,Europe,22.11,7,0,flags/uk.png,United Kingdom,1
+71,Europe,22.11,7,1,flags/uk.png,United Kingdom,1
+72,Europe,22.11,7,2,flags/uk.png,United Kingdom,1
+73,Europe,22.11,7,3,flags/uk.png,United Kingdom,1
+74,Europe,22.11,7,4,flags/uk.png,United Kingdom,1
+75,Europe,22.11,7,5,flags/uk.png,United Kingdom,1
+76,Europe,22.11,7,6,flags/uk.png,United Kingdom,1
+77,Europe,22.11,7,7,flags/uk.png,United Kingdom,1
+78,Europe,22.11,7,8,flags/uk.png,United Kingdom,1
+79,Europe,22.11,7,9,flags/uk.png,United Kingdom,1
+80,Europe,22.11,8,0,flags/uk.png,United Kingdom,1
+81,Europe,22.11,8,1,flags/uk.png,United Kingdom,1
+82,Europe,22.11,8,2,flags/uk.png,United Kingdom,1
+83,Europe,22.11,8,3,flags/uk.png,United Kingdom,1
+84,Europe,22.11,8,4,flags/uk.png,United Kingdom,1
+85,Middle East,3.78,8,5,flags/saudi_arabia.png,Saudi Arabia,1
+86,Middle East,3.78,8,6,flags/saudi_arabia.png,Saudi Arabia,1
+87,Middle East,3.78,8,7,flags/saudi_arabia.png,Saudi Arabia,1
+88,Middle East,3.78,8,8,flags/saudi_arabia.png,Saudi Arabia,1
+89,Oceania,10.38,8,9,flags/newzealand.png,New Zealand,1
+90,Oceania,10.38,9,0,flags/newzealand.png,New Zealand,1
+91,Oceania,10.38,9,1,flags/newzealand.png,New Zealand,1
+92,Oceania,10.38,9,2,flags/newzealand.png,New Zealand,1
+93,Oceania,10.38,9,3,flags/newzealand.png,New Zealand,1
+94,Oceania,10.38,9,4,flags/newzealand.png,New Zealand,1
+95,Oceania,10.38,9,5,flags/newzealand.png,New Zealand,1
+96,Oceania,10.38,9,6,flags/newzealand.png,New Zealand,1
+97,Oceania,10.38,9,7,flags/newzealand.png,New Zealand,1
+98,Oceania,10.38,9,8,flags/newzealand.png,New Zealand,1
+99,Oceania,10.38,9,9,flags/newzealand.png,New Zealand,1

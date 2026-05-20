@@ -1,4 +1,4 @@
-/* canvas-bg.js — animated world map with migration arcs flowing into Australia */
+/* canvas-bg.js — animated world map with migration arcs flowing OUT of Australia */
 (async () => {
   const canvas = document.getElementById('migration-canvas');
   if (!canvas) return;
@@ -13,7 +13,6 @@
 
   const ctx = canvas.getContext('2d');
 
-  /* ── Load dependencies from CDN (full d3 bundle avoids module conflicts) ── */
   const loadScript = src => new Promise((res, rej) => {
     const s = document.createElement('script');
     s.src = src; s.onload = res; s.onerror = rej;
@@ -23,7 +22,7 @@
   await loadScript('https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js');
   await loadScript('https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js');
 
-  const world    = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
+  const world     = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
   const countries = topojson.feature(world, world.objects.countries);
   const borders   = topojson.mesh(world,   world.objects.countries, (a, b) => a !== b);
 
@@ -50,8 +49,8 @@
 
   ctx.scale(devicePixelRatio, devicePixelRatio);
 
-  /* ── Origin cities (top departure countries from ABS data) ── */
-  const ORIGINS = [
+  /* ── Destination cities (top departure countries — arcs flow FROM aus TO these) ── */
+  const DESTINATIONS = [
     { lon: 116.4,  lat: 39.9  },  /* Beijing       */
     { lon: 72.9,   lat: 19.1  },  /* Mumbai        */
     { lon: -0.1,   lat: 51.5  },  /* London        */
@@ -77,16 +76,21 @@
     '#ce93d8','#90caf9',
   ];
 
-  /* ── Arc class ── */
+  /* ── Arc class — starts at Australia, ends at destination country ── */
   class Arc {
     constructor() { this.reset(true); }
 
     reset(instant = false) {
-      const o  = ORIGINS[Math.floor(Math.random() * ORIGINS.length)];
-      const pp = projection([o.lon, o.lat]);
-      this.sx = pp[0]; this.sy = pp[1];
-      this.ex = AUS_X + (Math.random() - 0.5) * 80;
-      this.ey = AUS_Y + (Math.random() - 0.5) * 50;
+      const d  = DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
+      const pp = projection([d.lon, d.lat]);
+
+      /* START: Australia (with small random offset so arcs don't all overlap) */
+      this.sx = AUS_X + (Math.random() - 0.5) * 80;
+      this.sy = AUS_Y + (Math.random() - 0.5) * 50;
+
+      /* END: destination country */
+      this.ex = pp[0];
+      this.ey = pp[1];
 
       const mx = (this.sx + this.ex) / 2;
       const my = (this.sy + this.ey) / 2;
@@ -124,14 +128,16 @@
       const tail = Math.max(0, this.t - this.trailLen);
       if (head <= tail) return;
 
-      const steps = 50;
       const [tx0, ty0] = this.bez(tail);
       const [tx1, ty1] = this.bez(head);
-      const grad = ctx.createLinearGradient(tx0, ty0, tx1, ty1);
-      grad.addColorStop(0,   'rgba(0,0,0,0)');
-      grad.addColorStop(0.5, this.color + '88');
-      grad.addColorStop(1,   this.color + 'ee');
 
+      /* gradient: bright at Australia end (start), fades toward destination */
+      const grad = ctx.createLinearGradient(tx0, ty0, tx1, ty1);
+      grad.addColorStop(0,   this.color + 'ee');  // bright at Australia
+      grad.addColorStop(0.5, this.color + '88');
+      grad.addColorStop(1,   'rgba(0,0,0,0)');    // fades toward destination
+
+      const steps = 50;
       ctx.beginPath();
       for (let i = 0; i <= steps; i++) {
         const tt = tail + (head - tail) * (i / steps);
@@ -145,7 +151,7 @@
       ctx.globalAlpha = this.opacity;
       ctx.stroke();
 
-      /* glowing dot at head */
+      /* glowing dot at head (the moving end toward destination) */
       if (this.t <= 1) {
         const [hx, hy] = this.bez(head);
         ctx.beginPath();
@@ -164,9 +170,9 @@
   const arcs = Array.from({ length: 28 }, () => new Arc());
   let tick = 0;
 
-  function drawOriginDots() {
-    ORIGINS.forEach(o => {
-      const pp = projection([o.lon, o.lat]);
+  function drawDestinationDots() {
+    DESTINATIONS.forEach(d => {
+      const pp = projection([d.lon, d.lat]);
       if (!pp) return;
       ctx.beginPath();
       ctx.arc(pp[0], pp[1], 1.5, 0, Math.PI * 2);
@@ -176,23 +182,33 @@
   }
 
   function drawAustraliaPulse() {
+    /* larger pulse radiating outward from Australia */
     const pulse = 0.55 + 0.45 * Math.sin(tick * 0.04);
 
-    const g1 = ctx.createRadialGradient(AUS_X, AUS_Y, 0, AUS_X, AUS_Y, 55);
-    g1.addColorStop(0, `rgba(41,182,246,${0.22 * pulse})`);
+    const g1 = ctx.createRadialGradient(AUS_X, AUS_Y, 0, AUS_X, AUS_Y, 70);
+    g1.addColorStop(0, `rgba(41,182,246,${0.28 * pulse})`);
     g1.addColorStop(1,  'rgba(41,182,246,0)');
     ctx.beginPath();
-    ctx.arc(AUS_X, AUS_Y, 55, 0, Math.PI * 2);
+    ctx.arc(AUS_X, AUS_Y, 70, 0, Math.PI * 2);
     ctx.fillStyle = g1;
     ctx.fill();
 
-    const g2 = ctx.createRadialGradient(AUS_X, AUS_Y, 0, AUS_X, AUS_Y, 110);
-    g2.addColorStop(0, `rgba(41,182,246,${0.08 * pulse})`);
+    const g2 = ctx.createRadialGradient(AUS_X, AUS_Y, 0, AUS_X, AUS_Y, 140);
+    g2.addColorStop(0, `rgba(41,182,246,${0.12 * pulse})`);
     g2.addColorStop(1,  'rgba(41,182,246,0)');
     ctx.beginPath();
-    ctx.arc(AUS_X, AUS_Y, 110, 0, Math.PI * 2);
+    ctx.arc(AUS_X, AUS_Y, 140, 0, Math.PI * 2);
     ctx.fillStyle = g2;
     ctx.fill();
+
+    /* hard bright dot at Australia centre */
+    ctx.beginPath();
+    ctx.arc(AUS_X, AUS_Y, 4, 0, Math.PI * 2);
+    ctx.fillStyle   = 'rgba(41,182,246,0.9)';
+    ctx.shadowColor = '#29b6f6';
+    ctx.shadowBlur  = 16;
+    ctx.fill();
+    ctx.shadowBlur  = 0;
   }
 
   function frame() {
@@ -222,12 +238,17 @@
     ctx.stroke();
 
     drawAustraliaPulse();
-    drawOriginDots();
+    drawDestinationDots();
     arcs.forEach(a => { a.update(); a.draw(ctx); });
 
     tick++;
     requestAnimationFrame(frame);
   }
+
+  /* pause animation when tab not visible */
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') requestAnimationFrame(frame);
+  });
 
   frame();
 })();
