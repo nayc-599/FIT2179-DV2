@@ -48,5 +48,6 @@
       {"field": "pct", "title": "Share (%)", "format": ".1f"}
     ]
   },
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {    "background": "transparent",
+"view": {"stroke": null}, "font": "DM Sans"}
 }

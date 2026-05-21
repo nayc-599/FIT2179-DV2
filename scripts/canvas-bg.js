@@ -32,7 +32,7 @@
     W = window.innerWidth;
     H = window.innerHeight;
     projection = d3.geoNaturalEarth1()
-      .scale(W / 6.5)
+      .scale(W / 6.4)
       .translate([W / 2, H / 2]);
     path = d3.geoPath(projection, ctx);
     const ap = projection([133.7751, -25.2744]);

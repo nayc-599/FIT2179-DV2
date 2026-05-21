@@ -78,7 +78,7 @@
       }
     }
   ],
-  "config": {
+  "config": {"background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans"
   }

@@ -10,6 +10,12 @@
   "width": "container",
   "height": 380,
   "data": {"url": "data/chart1_totals.csv"},
+  "transform": [
+    {
+      "calculate": "'20' + split(datum.year, '-')[1]",
+      "as": "year_label"
+    }
+  ],
   "layer": [
     {
       "mark": {"type": "line", "point": true, "strokeWidth": 2.5},
@@ -19,7 +25,10 @@
           "type": "ordinal",
           "title": "Financial year",
           "sort": null,
-          "axis": {"labelAngle": -45}
+          "axis": {
+            "labelAngle": 0,
+            "labelExpr": "'20' + split(datum.label, '-')[1]"
+          }
         },
         "y": {
           "field": "departures",
@@ -30,7 +39,7 @@
         },
         "color": {"value": "#1a5276"},
         "tooltip": [
-          {"field": "year", "title": "Year"},
+          {"field": "year_label", "title": "Year"},
           {"field": "departures", "title": "Departures", "format": ","}
         ]
       }
@@ -48,7 +57,7 @@
         },
         "color": {"value": "#c0392b"},
         "tooltip": [
-          {"field": "year", "title": "Year"},
+          {"field": "year_label", "title": "Year"},
           {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
         ]
       }
@@ -68,6 +77,7 @@
   ],
   "resolve": {"scale": {"y": "independent"}},
   "config": {
+    "background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {"labelFontSize": 11, "titleFontSize": 12}

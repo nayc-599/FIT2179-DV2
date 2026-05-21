@@ -16,7 +16,7 @@
         "url": "data/world-countries-110m.json",
         "format": {"type": "topojson", "feature": "countries"}
       },
-      "mark": {"type": "geoshape", "fill": "#e8ecef", "stroke": "#ccc", "strokeWidth": 0.3},
+      "mark": {"type": "geoshape", "fill": "#b8c4d0", "stroke": "#8a9bb0", "strokeWidth": 0.3},
       "encoding": {"tooltip": null}
     },
     {
@@ -113,5 +113,5 @@
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {"background": "transparent","view": {"stroke": null}, "font": "DM Sans"}
 }

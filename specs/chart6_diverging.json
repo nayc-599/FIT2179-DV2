@@ -45,5 +45,5 @@
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {"background": "transparent","view": {"stroke": null}, "font": "DM Sans"}
 }

@@ -12,26 +12,42 @@
     "url": "data/chart8_state_timeseries.csv",
     "format": {"type": "csv"}
   },
-  "transform": [{"filter": {"field": "state", "oneOf": ["NSW", "VIC", "QLD"]}}],
+  "transform": [
+    {"filter": {"field": "state", "oneOf": ["NSW", "VIC", "QLD"]}},
+    {"filter": "datum.year >= '2015-16'"}
+  ],
   "facet": {
     "field": "state",
     "type": "ordinal",
     "columns": 3,
     "title": null,
+    "sort": ["NSW", "VIC", "QLD"],
     "header": {"labelFontSize": 13, "labelFontWeight": "bold", "labelColor": "#1a5276"}
   },
   "spec": {
     "width": 320,
     "layer": [
       {
-        "mark": {"type": "line", "point": true, "color": "#1a5276", "strokeWidth": 2},
+        "mark": {
+          "type": "area",
+          "interpolate": "monotone",
+          "line": true,
+          "point": true,
+          "color": "#1a5276",
+          "strokeWidth": 2,
+          "fillOpacity": 0.15
+        },
         "encoding": {
           "x": {
             "field": "year",
             "type": "ordinal",
             "title": "Financial year",
             "sort": null,
-            "axis": {"labelAngle": -45, "labelFontSize": 9}
+            "axis": {
+              "labelAngle": 0,
+              "labelFontSize": 9,
+              "labelExpr": "'20' + split(datum.label, '-')[1]"
+            }
           },
           "y": {
             "field": "departures",
@@ -62,5 +78,5 @@
     ]
   },
   "resolve": {"scale": {"y": "shared"}},
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {"background": "transparent","view": {"stroke": null}, "font": "DM Sans"}
 }

@@ -7,7 +7,7 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
+  "width": 380,
   "height": 360,
   "data": {"url": "data/chart2_top10_totals.csv"},
   "layer": [
@@ -73,5 +73,6 @@
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {    "background": "transparent",
+"view": {"stroke": null}, "font": "DM Sans"}
 }
