@@ -48,8 +48,7 @@
         "width": 24,
         "height": 16,
         "align": "left",
-        "baseline": "middle",
-        "dx": 6
+        "baseline": "middle"
       },
       "encoding": {
         "y": {

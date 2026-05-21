@@ -7,8 +7,8 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": 300,
-  "height": 300,
+  "width": 450,
+  "height": 338,
   "data": {"url": "data/chart3_waffle.csv"},
   "mark": {"type": "rect", "stroke": "#fff", "strokeWidth": 1.5},
   "encoding": {
@@ -16,22 +16,14 @@
       "field": "col",
       "type": "ordinal",
       "axis": null,
-      "scale": {
-        "domain": [0,1,2,3,4,5,6,7,8,9],
-        "paddingInner": 0.08,
-        "paddingOuter": 0.08
-      }
+      "scale": {"paddingInner": 0.08, "paddingOuter": 0.08}
     },
     "y": {
       "field": "row",
       "type": "ordinal",
       "axis": null,
       "sort": "descending",
-      "scale": {
-        "domain": [0,1,2,3,4,5,6,7,8,9],
-        "paddingInner": 0.08,
-        "paddingOuter": 0.08
-      }
+      "scale": {"paddingInner": 0.08, "paddingOuter": 0.08}
     },
     "color": {
       "field": "continent",
@@ -48,6 +40,9 @@
       {"field": "pct", "title": "Share (%)", "format": ".1f"}
     ]
   },
-  "config": {    "background": "transparent",
-"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans"
+  }
 }
