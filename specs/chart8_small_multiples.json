@@ -21,7 +21,7 @@
     "header": {"labelFontSize": 13, "labelFontWeight": "bold", "labelColor": "#1a5276"}
   },
   "spec": {
-    "width": 220,
+    "width": 320,
     "layer": [
       {
         "mark": {"type": "line", "point": true, "color": "#1a5276", "strokeWidth": 2},

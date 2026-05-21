@@ -44,12 +44,21 @@
       position: relative;
     }
 
+    /* ── Shared container constraints ── */
     header, main, footer {
       max-width: 72rem;
       margin: 0 auto;
-      padding: 0 1.5rem;
       position: relative;
       z-index: 1;
+    }
+
+    /* header and footer get side padding, main does not */
+    header, footer {
+      padding: 0 1.5rem;
+    }
+
+    main {
+      padding: 0;
     }
 
     header {
@@ -60,8 +69,6 @@
       border-radius: 12px;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
       margin-top: 2rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
     }
 
     header h1 {
@@ -89,7 +96,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
       padding: 2rem;
-      margin: 2rem auto;
+      margin: 2rem 0;
       border-bottom: none;
     }
 
@@ -134,11 +141,14 @@
       margin-right: auto;
     }
 
-    /* centre the waffle chart inside its container */
     #chart3 {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    #chart8 {
+      display: flex;
+      justify-content: center;
     }
 
     .chart-caption {
@@ -182,13 +192,15 @@
     @media (max-width: 700px) {
       .two-col { grid-template-columns: 1fr; }
     }
+    
 
     footer {
-      padding: 2rem;
-      margin: 2rem auto 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
       font-size: 0.9rem;
       color: var(--muted);
-      max-width: 72rem;
       background: rgba(255, 255, 255, 0.75);
       border-radius: 12px;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
@@ -291,7 +303,7 @@
 
   <script src="scripts/canvas-bg.js"></script>
   <script>
-    /* Use canvas renderer — required for image marks (waffle chart flags) */
+    /* Use canvas renderer — required for image marks (flag icons in charts) */
     const embedOpts = { actions: false, renderer: "canvas" };
 
     const charts = [
