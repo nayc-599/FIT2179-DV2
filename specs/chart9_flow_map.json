@@ -75,6 +75,42 @@
     },
     {
       "data": {"url": "data/chart9_flow.csv"},
+      "transform": [{"filter": "datum.point_order === 3"}],
+      "mark": {
+        "type": "point",
+        "shape": "triangle",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "latitude": {"field": "plot_lat"},
+        "longitude": {"field": "plot_lon"},
+        "angle": {"field": "angle", "type": "quantitative"},
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
+            "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+          }
+        },
+        "opacity": {
+          "condition": [
+            {"param": "chart9_flowHoverUnique", "empty": false, "value": 1},
+            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.45}
+          ],
+          "value": 0.15
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Total departures", "format": ","},
+          {"field": "continent", "title": "Continent"}
+        ]
+      }
+    },
+    {
+      "data": {"url": "data/chart9_flow.csv"},
       "transform": [{"filter": "datum.point_order === 1"}],
       "mark": {"type": "circle", "filled": true, "size": 80},
       "encoding": {
