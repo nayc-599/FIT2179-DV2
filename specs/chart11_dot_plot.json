@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "COVID-19 recovery: 2024–25 vs 2018–19 departures",
+    "subtitle": "Positive = exceeded pre-COVID levels. Negative = still below pre-COVID levels.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": 950,
+  "height": 360,
+  "data": {"url": "data/chart11_dot_plot.csv"},
+  "transform": [
+    {
+      "calculate": "datum.post_covid - datum.pre_covid",
+      "as": "gap"
+    },
+    {
+      "calculate": "datum.gap >= 0 ? 'Exceeded pre-COVID' : 'Below pre-COVID'",
+      "as": "status"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#ccc", "strokeWidth": 1},
+      "encoding": {"x": {"datum": 0}}
+    },
+    {
+      "mark": {"type": "bar", "height": 6},
+      "encoding": {
+        "y": {
+          "field": "display_country",
+          "type": "nominal",
+          "sort": {"field": "gap", "order": "descending"},
+          "title": null,
+          "axis": {"labelLimit": 120}
+        },
+        "x": {
+          "field": "gap",
+          "type": "quantitative",
+          "title": "Change in annual departures (2024–25 minus 2018–19)",
+          "axis": {"format": ",.0f"}
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Exceeded pre-COVID", "Below pre-COVID"],
+            "range": ["#16a085", "#c0392b"]
+          },
+          "legend": {"orient": "bottom", "title": null}
+        }
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "y": {
+          "field": "display_country",
+          "type": "nominal",
+          "sort": {"field": "gap", "order": "descending"},
+          "title": null
+        },
+        "x": {
+          "field": "gap",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Exceeded pre-COVID", "Below pre-COVID"],
+            "range": ["#16a085", "#c0392b"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "pre_covid", "title": "2018–19", "format": ","},
+          {"field": "post_covid", "title": "2024–25", "format": ","},
+          {"field": "gap", "title": "Change", "format": "+,"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

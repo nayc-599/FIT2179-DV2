@@ -1,0 +1,11 @@
+display_country,pre_covid,post_covid,continent,recovery_pct,status
+China,51640,34700,Asia,67.2,Not recovered
+UK,21860,14550,Europe,66.6,Not recovered
+New Zealand,17630,10730,Oceania,60.9,Not recovered
+India,13160,17130,Asia,130.2,Recovered
+Malaysia,10790,4620,Asia,42.8,Not recovered
+Korea South,10190,6110,Asia,60.0,Not recovered
+USA,10040,4350,Americas,43.3,Not recovered
+Japan,6270,6500,Asia,103.7,Recovered
+Indonesia,4870,4850,Asia,99.6,Not recovered
+Philippines,4380,6120,Asia,139.7,Recovered

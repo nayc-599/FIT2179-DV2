@@ -192,7 +192,6 @@
     @media (max-width: 700px) {
       .two-col { grid-template-columns: 1fr; }
     }
-    
 
     footer {
       padding-top: 2rem;
@@ -233,8 +232,8 @@
     <section id="section-1">
       <h2>1. The Big Picture</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-      <p class="narrative">From the mid-2000s, more people born overseas were leaving Australia each year — until the pandemic brought travel to a near standstill in 2020–21. At the same time, money sent home to Australia as personal remittances has grown sharply, showing that migration and global money flows do not always move in the same direction.</p>
-      <p class="insight">The COVID-19 year 2020–21 saw overseas-born departures fall by roughly a quarter in a single year — the steepest drop in this dataset.</p>
+        <p class="narrative">From the mid-2000s, more people born overseas were leaving Australia each year — until the pandemic brought travel to a near standstill in 2020–21. At the same time, money sent home to Australia as personal remittances has grown sharply, showing that migration and global money flows do not always move in the same direction.</p>
+        <p class="insight">The COVID-19 year 2020–21 saw overseas-born departures fall by roughly a quarter in a single year — the steepest drop in this dataset.</p>
       </div>
       <div class="chart-wrap chart-full" id="chart1"></div>
     </section>
@@ -242,8 +241,8 @@
     <section id="section-2">
       <h2>2. Who's Leaving Australia?</h2>
       <div class="two-col" style="grid-template-columns: 1fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-      <p class="narrative">People leave Australia for many reasons — to retire overseas, to reunite with family, or to pursue opportunities elsewhere. China, the United Kingdom, and New Zealand top the list when we add up departures across 21 years. Most leavers were born in Asia, reflecting Australia's close ties with the region.</p>
-      <p class="insight">Asia accounts for about half of all overseas-born departures — far more than Europe or Oceania.</p>
+        <p class="narrative">People leave Australia for many reasons — to retire overseas, to reunite with family, or to pursue opportunities elsewhere. China, the United Kingdom, and New Zealand top the list when we add up departures across 21 years. Most leavers were born in Asia, reflecting Australia's close ties with the region.</p>
+        <p class="insight">Asia accounts for about half of all overseas-born departures — far more than Europe or Oceania.</p>
       </div>
       <div class="row-2">
         <div class="chart-wrap" id="chart2"></div>
@@ -255,18 +254,11 @@
     <section id="section-3">
       <h2>3. How Have Patterns Changed Over Time?</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative" style="margin: 0;">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. The heatmap below shows every top country dipping together in 2020–21 — a fingerprint of the pandemic.</p>
+        <p class="narrative" style="margin: 0;">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. Then COVID-19 hit — and not every country recovered equally.</p>
         <p class="insight" style="margin: 0;">Follow the coloured bands — when they cross, countries swap rank. The COVID year (2020–21) pulled every band toward the bottom at once.</p>
       </div>
       <div class="chart-wrap chart-full" id="chart4"></div>
-      <div class="chart-wrap chart-full" id="chart5"></div>
-    </section>
-
-    <section id="section-4">
-      <h2>4. Who's Coming vs Who's Going?</h2>
-      <p class="narrative">Migration is a two-way street. In 2024–25, India and China contributed the largest net gains to Australia's population — more people arrived than left. Countries such as Japan saw more departures than arrivals, making them net losers in population terms for that year.</p>
-      <p class="insight">India's net migration in 2024–25 was larger than any other country in the top 10 — a strong pull factor for Australia's workforce and communities.</p>
-      <div class="chart-wrap chart-medium" id="chart6"></div>
+      <div class="chart-wrap chart-full" id="chart11"></div>
     </section>
 
     <section id="section-5">
@@ -285,10 +277,9 @@
 
     <section id="section-6">
       <h2>6. The Economic Angle</h2>
-      <p class="narrative">Countries that send more emigrants from Australia are not isolated from Australia's economy. Personal remittances received by Australia have climbed over two decades. The flow map shows where leavers were born; the bubble chart links departure volumes to an estimated share of remittances and recent net migration.</p>
-      <p class="insight">High-departure countries in Asia cluster with larger estimated remittance shares — suggesting that migration patterns and international money flows are intertwined, even when people are leaving rather than arriving.</p>
+      <p class="narrative">Countries that send more emigrants from Australia are not isolated from Australia's economy. Personal remittances received by Australia have climbed over two decades. The flow map below shows where leavers were born and the strength of each migration corridor.</p>
+      <p class="insight">High-departure countries in Asia dominate the flow map — suggesting that migration patterns and international money flows are intertwined, even when people are leaving rather than arriving.</p>
       <div class="chart-wrap chart-full" id="chart9"></div>
-      <div class="chart-wrap chart-medium" id="chart10"></div>
     </section>
   </main>
 
@@ -317,12 +308,10 @@
       ["#chart2", "specs/chart2_bar_top10.json"],
       ["#chart3", "specs/chart3_waffle.json"],
       ["#chart4", "specs/chart4_bump.json"],
-      ["#chart5", "specs/chart5_heatmap.json"],
-      ["#chart6", "specs/chart6_diverging.json"],
       ["#chart7", "specs/chart7_choropleth.json"],
       ["#chart8", "specs/chart8_small_multiples.json"],
       ["#chart9", "specs/chart9_flow_map.json"],
-      ["#chart10", "specs/chart10_bubble.json"]
+      ["#chart11", "specs/chart11_dot_plot.json"]
     ];
 
     charts.forEach(([sel, spec]) => {
