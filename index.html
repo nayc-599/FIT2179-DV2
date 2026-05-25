@@ -52,7 +52,6 @@
       z-index: 1;
     }
 
-    /* header and footer get side padding, main does not */
     header, footer {
       padding: 0 1.5rem;
     }
@@ -146,6 +145,7 @@
       justify-content: center;
       align-items: center;
     }
+
     #chart8 {
       display: flex;
       justify-content: center;
@@ -254,11 +254,17 @@
     <section id="section-3">
       <h2>3. How Have Patterns Changed Over Time?</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative" style="margin: 0;">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. Then COVID-19 hit — and not every country recovered equally.</p>
+        <p class="narrative" style="margin: 0;">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. Then COVID-19 hit — and not every country recovered equally. Press Play to watch the rankings unfold year by year.</p>
         <p class="insight" style="margin: 0;">Follow the coloured bands — when they cross, countries swap rank. The COVID year (2020–21) pulled every band toward the bottom at once.</p>
       </div>
       <div class="chart-wrap chart-full" id="chart4"></div>
       <div class="chart-wrap chart-full" id="chart11"></div>
+    </section>
+
+    <section id="section-4">
+      <h2>4. Who's Coming vs Who's Going?</h2>
+      <p class="narrative">Migration is a two-way street. In 2024–25, India and China contributed the largest net gains to Australia's population — more people arrived than left. Countries such as Japan saw more departures than arrivals, making them net losers in population terms for that year.</p>
+      <p class="insight">India's net migration in 2024–25 was larger than any other country in the top 10 — a strong pull factor for Australia's workforce and communities.</p>
     </section>
 
     <section id="section-5">
@@ -299,6 +305,7 @@
   </footer>
 
   <script src="scripts/canvas-bg.js"></script>
+  <script src="scripts/bump_player.js"></script>
   <script>
     /* Use canvas renderer — required for image marks (flag icons in charts) */
     const embedOpts = { actions: false, renderer: "canvas" };
@@ -311,11 +318,17 @@
       ["#chart7", "specs/chart7_choropleth.json"],
       ["#chart8", "specs/chart8_small_multiples.json"],
       ["#chart9", "specs/chart9_flow_map.json"],
-      ["#chart11", "specs/chart11_dot_plot.json"]
+      ["#chart11", "specs/chart11_lollipop.json"]
     ];
 
     charts.forEach(([sel, spec]) => {
-      vegaEmbed(sel, spec, embedOpts).catch(console.error);
+      if (sel === '#chart4') {
+        vegaEmbed(sel, spec, embedOpts).then(function(result) {
+          window.dispatchEvent(new CustomEvent('bumpChartReady', { detail: { view: result.view } }));
+        }).catch(console.error);
+      } else {
+        vegaEmbed(sel, spec, embedOpts).catch(console.error);
+      }
     });
   </script>
 </body>

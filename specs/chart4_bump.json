@@ -2,14 +2,34 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Ranking of top departure countries, 2014–15 to 2024–25",
-    "subtitle": "Rank 1 = most departures (top). Thick bands show how each country's rank shifted — hover to focus.",
+    "subtitle": "Rank 1 = most departures (top). Use the slider or press Play to animate.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
   "width": 900,
-  "height": 500,
+  "height": 480,
   "data": {"url": "data/chart4_bump.csv"},
+  "params": [
+    {
+      "name": "max_year_index",
+      "value": 11,
+      "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "name": "Years shown: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "indexof(['2014-15','2015-16','2016-17','2017-18','2018-19','2019-20','2020-21','2021-22','2022-23','2023-24','2024-25','2024-26'], datum.year)",
+      "as": "year_index"
+    },
+    {"filter": "datum.year_index < max_year_index"}
+  ],
   "layer": [
     {
       "params": [
@@ -56,11 +76,10 @@
           "title": "Financial year",
           "sort": null,
           "axis": {
-              "labelAngle": 0,
-              "labelFontSize": 9,
-              "labelAlign": "center",
-              "labelExpr": "'20' + split(datum.label, '-')[1]"
-            }
+            "labelAngle": 0,
+            "labelAlign": "center",
+            "labelExpr": "datum.label === '2024-26' ? '' : '20' + split(datum.label, '-')[1]"
+          }
         },
         "y": {
           "field": "rank",
@@ -75,18 +94,7 @@
           "legend": {"orient": "right", "columns": 1, "title": "Country"},
           "scale": {
             "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
-            "range": [
-              "#DE2910",
-              "#012169",
-              "#00247D",
-              "#FF9933",
-              "#B22234",
-              "#003478",
-              "#FFD700",
-              "#BC002D",
-              "#FF6B6B",
-              "#FCD116"
-            ]
+            "range": ["#DE2910","#012169","#00247D","#FF9933","#B22234","#003478","#FFD700","#BC002D","#FF6B6B","#FCD116"]
           }
         },
         "opacity": {
@@ -103,29 +111,36 @@
       }
     },
     {
-      "transform": [{"filter": {"field": "year", "equal": "2024-25"}}],
+      "transform": [
+        {
+          "calculate": "indexof(['2014-15','2015-16','2016-17','2017-18','2018-19','2019-20','2020-21','2021-22','2022-23','2023-24','2024-25','2024-26'], datum.year)",
+          "as": "year_index"
+        },
+        {"filter": "datum.year === '2024-26'"},
+        {
+          "calculate": "datum.display_country == 'China' ? 1 : datum.display_country == 'India' ? 2 : datum.display_country == 'UK' ? 3 : datum.display_country == 'New Zealand' ? 4 : datum.display_country == 'Japan' ? 4.8 : datum.display_country == 'Philippines' ? 6 : datum.display_country == 'Korea South' ? 7.2 : datum.display_country == 'Indonesia' ? 8 : datum.display_country == 'Malaysia' ? 9 : 10",
+          "as": "flag_rank"
+        }
+      ],
       "mark": {
         "type": "image",
         "width": 32,
         "height": 22,
         "align": "left",
-        "baseline": "middle"
+        "baseline": "middle",
+        "dx": 8
       },
       "encoding": {
-        "x": {"value": 870},
+        "x": {"field": "year", "type": "ordinal", "sort": null},
         "y": {
-          "field": "rank",
+          "field": "flag_rank",
           "type": "quantitative",
           "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false}
         },
-        "url": {
-          "field": "flag_url",
-          "type": "nominal"
-        },
+        "url": {"field": "flag_url", "type": "nominal"},
         "opacity": {"value": 1},
         "tooltip": [
           {"field": "display_country", "title": "Country"},
-          {"field": "year", "title": "Year"},
           {"field": "rank", "title": "Rank"},
           {"field": "departures", "title": "Departures", "format": ","}
         ]
@@ -134,10 +149,7 @@
   ],
   "config": {
     "background": "transparent",
-    "view": {
-      "stroke": null,
-      "padding": {"right": 80}
-    },
+    "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {"labelFontSize": 11, "titleFontSize": 12}
   }
