@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Remittances received by country, 2023",
+    "subtitle": "Same top 10 countries by emigrant departures from Australia.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 360,
+  "data": {"url": "data/chart_remittances_top10.csv"},
+  "transform": [
+    {"filter": "datum.year === '2023'"}
+  ],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "y": {
+      "field": "display_country",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": {"labelLimit": 120}
+    },
+    "x": {
+      "field": "remittances_usd",
+      "type": "quantitative",
+      "title": "Remittances received (US$)",
+      "axis": {"format": "~s"}
+    },
+    "color": {
+      "field": "display_country",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
+        "range": ["#DE2910","#012169","#00247D","#FF9933","#B22234","#003478","#FFD700","#BC002D","#FF6B6B","#FCD116"]
+      }
+    },
+    "tooltip": [
+      {"field": "display_country", "title": "Country"},
+      {"field": "remittances_usd", "title": "Remittances received (US$)", "format": "~s"},
+      {"field": "year", "title": "Year"}
+    ]
+  },
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

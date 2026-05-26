@@ -47,7 +47,7 @@
         "strokeWidth": {
           "field": "departures",
           "type": "quantitative",
-          "scale": {"range": [1, 12]},
+          "scale": {"range": [2, 18]},
           "legend": {"title": "Departures", "format": ",.0f"}
         },
         "color": {

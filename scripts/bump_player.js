@@ -4,10 +4,9 @@
   let timer = null;
   let vegaView = null;
   let currentIndex = 1;
-  const MAX_INDEX = 11;
-  const STEP_MS = 800; // ms per year step
+  const MAX_INDEX = 12; // includes dummy 2024-26 point
+  const STEP_MS = 800;
 
-  // Wait for vega embed to finish then grab the view
   window.addEventListener('bumpChartReady', function(e) {
     vegaView = e.detail.view;
   });
@@ -64,7 +63,7 @@
     `;
     label.textContent = 'Showing: 2015';
 
-    const years = ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
+    const years = ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025','2025'];
 
     btn.addEventListener('click', function() {
       if (playing) {
@@ -113,7 +112,6 @@
     }
   }
 
-  // Build controls once DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', buildControls);
   } else {

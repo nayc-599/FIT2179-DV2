@@ -13,7 +13,7 @@
   "params": [
     {
       "name": "max_year_index",
-      "value": 11,
+      "value": 12,
       "bind": {
         "input": "range",
         "min": 1,
@@ -112,14 +112,10 @@
     },
     {
       "transform": [
-        {
-          "calculate": "indexof(['2014-15','2015-16','2016-17','2017-18','2018-19','2019-20','2020-21','2021-22','2022-23','2023-24','2024-25','2024-26'], datum.year)",
-          "as": "year_index"
-        },
         {"filter": "datum.year === '2024-26'"},
         {
-          "calculate": "datum.display_country == 'China' ? 1 : datum.display_country == 'India' ? 2 : datum.display_country == 'UK' ? 3 : datum.display_country == 'New Zealand' ? 4 : datum.display_country == 'Japan' ? 4.8 : datum.display_country == 'Philippines' ? 6 : datum.display_country == 'Korea South' ? 7.2 : datum.display_country == 'Indonesia' ? 8 : datum.display_country == 'Malaysia' ? 9 : 10",
-          "as": "flag_rank"
+          "calculate": "datum.display_country == 'China' ? 24 : datum.display_country == 'India' ? 72 : datum.display_country == 'UK' ? 120 : datum.display_country == 'New Zealand' ? 168 : datum.display_country == 'Japan' ? 216 : datum.display_country == 'Philippines' ? 264 : datum.display_country == 'Korea South' ? 312 : datum.display_country == 'Indonesia' ? 360 : datum.display_country == 'Malaysia' ? 408 : 456",
+          "as": "flag_y"
         }
       ],
       "mark": {
@@ -127,16 +123,11 @@
         "width": 32,
         "height": 22,
         "align": "left",
-        "baseline": "middle",
-        "dx": 8
+        "baseline": "middle"
       },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal", "sort": null},
-        "y": {
-          "field": "flag_rank",
-          "type": "quantitative",
-          "scale": {"reverse": true, "domain": [0.5, 10.5], "nice": false}
-        },
+        "x": {"value": 870},
+        "y": {"field": "flag_y", "type": "quantitative", "scale": null},
         "url": {"field": "flag_url", "type": "nominal"},
         "opacity": {"value": 1},
         "tooltip": [

@@ -44,7 +44,6 @@
       position: relative;
     }
 
-    /* ── Shared container constraints ── */
     header, main, footer {
       max-width: 72rem;
       margin: 0 auto;
@@ -88,6 +87,51 @@
     header .intro {
       margin: 1rem 0 0;
       max-width: var(--max-text);
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      max-width: 72rem;
+      margin: 1.5rem auto 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+      padding: 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.4rem;
+      border-top: 3px solid var(--accent);
+    }
+
+    .stat-number {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    @media (max-width: 900px) {
+      .stats-bar { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
     }
 
     section {
@@ -138,12 +182,6 @@
       max-width: 36rem;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    #chart3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     #chart8 {
@@ -228,6 +266,30 @@
     <p class="intro">Every year, hundreds of thousands of people move in and out of Australia. This page follows two decades of movement — from steady growth to the sudden stop of COVID-19 — and asks what happens to money when people cross borders.</p>
   </header>
 
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <span class="stat-number">3.9M</span>
+      <span class="stat-label">People left Australia<br>2004–05 to 2024–25</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">🇨🇳 China</span>
+      <span class="stat-label">Largest source of<br>emigrants (592,460)</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">−26%</span>
+      <span class="stat-label">Drop in departures<br>during COVID-19</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">$1.8B</span>
+      <span class="stat-label">Remittances received<br>by Australia in 2024</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">3 / 10</span>
+      <span class="stat-label">Countries that exceeded<br>pre-COVID departure levels</span>
+    </div>
+  </div>
+
   <main>
     <section id="section-1">
       <h2>1. The Big Picture</h2>
@@ -241,14 +303,13 @@
     <section id="section-2">
       <h2>2. Who's Leaving Australia?</h2>
       <div class="two-col" style="grid-template-columns: 1fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative">People leave Australia for many reasons — to retire overseas, to reunite with family, or to pursue opportunities elsewhere. China, the United Kingdom, and New Zealand top the list when we add up departures across 21 years. Most leavers were born in Asia, reflecting Australia's close ties with the region.</p>
-        <p class="insight">Asia accounts for about half of all overseas-born departures — far more than Europe or Oceania.</p>
+        <p class="narrative">People leave Australia for many reasons — to retire overseas, to reunite with family, or to pursue opportunities elsewhere. China, the United Kingdom, and New Zealand top the list when we add up departures across 21 years. Strikingly, the same countries are also among the world's largest recipients of global remittances — showing how deeply migration and money flows are connected.</p>
+        <p class="insight">India receives over $119 billion in remittances globally yet ranks only fourth in Australian departures — suggesting strong economic ties that go beyond emigration alone.</p>
       </div>
       <div class="row-2">
         <div class="chart-wrap" id="chart2"></div>
-        <div class="chart-wrap" id="chart3"></div>
+        <div class="chart-wrap" id="chart13"></div>
       </div>
-      <p class="chart-caption">Each flag represents the country with the highest total departures within that continent, based on ABS data 2004–05 to 2024–25.</p>
     </section>
 
     <section id="section-3">
@@ -262,13 +323,7 @@
     </section>
 
     <section id="section-4">
-      <h2>4. Who's Coming vs Who's Going?</h2>
-      <p class="narrative">Migration is a two-way street. In 2024–25, India and China contributed the largest net gains to Australia's population — more people arrived than left. Countries such as Japan saw more departures than arrivals, making them net losers in population terms for that year.</p>
-      <p class="insight">India's net migration in 2024–25 was larger than any other country in the top 10 — a strong pull factor for Australia's workforce and communities.</p>
-    </section>
-
-    <section id="section-5">
-      <h2>5. Where in Australia Are They Leaving From?</h2>
+      <h2>4. Where in Australia Are They Leaving From?</h2>
       <div class="two-col">
         <div class="two-col-text">
           <p class="narrative">Most emigrant departures happen from the states where most people live. New South Wales, Victoria, and Queensland dominate the totals, but every state and territory contributes. The three largest states show the same COVID dip, then a partial recovery.</p>
@@ -281,8 +336,8 @@
       <div class="chart-wrap chart-full" id="chart8"></div>
     </section>
 
-    <section id="section-6">
-      <h2>6. The Economic Angle</h2>
+    <section id="section-5">
+      <h2>5. The Economic Angle</h2>
       <p class="narrative">Countries that send more emigrants from Australia are not isolated from Australia's economy. Personal remittances received by Australia have climbed over two decades. The flow map below shows where leavers were born and the strength of each migration corridor.</p>
       <p class="insight">High-departure countries in Asia dominate the flow map — suggesting that migration patterns and international money flows are intertwined, even when people are leaving rather than arriving.</p>
       <div class="chart-wrap chart-full" id="chart9"></div>
@@ -307,18 +362,17 @@
   <script src="scripts/canvas-bg.js"></script>
   <script src="scripts/bump_player.js"></script>
   <script>
-    /* Use canvas renderer — required for image marks (flag icons in charts) */
     const embedOpts = { actions: false, renderer: "canvas" };
 
     const charts = [
       ["#chart1", "specs/chart1_dual_axis.json"],
       ["#chart2", "specs/chart2_bar_top10.json"],
-      ["#chart3", "specs/chart3_waffle.json"],
       ["#chart4", "specs/chart4_bump.json"],
       ["#chart7", "specs/chart7_choropleth.json"],
       ["#chart8", "specs/chart8_small_multiples.json"],
       ["#chart9", "specs/chart9_flow_map.json"],
-      ["#chart11", "specs/chart11_lollipop.json"]
+      ["#chart11", "specs/chart11_lollipop.json"],
+      ["#chart13", "specs/chart13_remittances_bar.json"]
     ];
 
     charts.forEach(([sel, spec]) => {
