@@ -184,6 +184,12 @@
       margin-right: auto;
     }
 
+    #chart3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     #chart8 {
       display: flex;
       justify-content: center;
@@ -291,43 +297,45 @@
   </div>
 
   <main>
+
+    <!-- SECTION 1: Continental overview -->
     <section id="section-1">
-      <h2>1. The Big Picture</h2>
+      <h2>1. Where Do Emigrants Come From?</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative">From the mid-2000s, more people born overseas were leaving Australia each year — until the pandemic brought travel to a near standstill in 2020–21. At the same time, money sent home to Australia as personal remittances has grown sharply, showing that migration and global money flows do not always move in the same direction.</p>
-        <p class="insight">The COVID-19 year 2020–21 saw overseas-born departures fall by roughly a quarter in a single year — the steepest drop in this dataset.</p>
+        <p class="narrative">Australia's emigrants span every continent, but the pattern is far from even. Asia accounts for roughly half of all overseas-born departures over the past two decades — a reflection of Australia's deep demographic and economic ties with the Asia-Pacific region.</p>
+        <p class="insight">Asia alone contributes more departures than Europe, Oceania, the Americas, Africa and the Middle East combined.</p>
       </div>
-      <div class="chart-wrap chart-full" id="chart1"></div>
+      <div class="chart-wrap chart-full" id="chart3"></div>
     </section>
 
+    <!-- SECTION 2: Top 10 countries -->
     <section id="section-2">
-      <h2>2. Who's Leaving Australia?</h2>
-      <div class="two-col" style="grid-template-columns: 1fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative">People leave Australia for many reasons — to retire overseas, to reunite with family, or to pursue opportunities elsewhere. China, the United Kingdom, and New Zealand top the list when we add up departures across 21 years. Strikingly, the same countries are also among the world's largest recipients of global remittances — showing how deeply migration and money flows are connected.</p>
-        <p class="insight">India receives over $119 billion in remittances globally yet ranks only fourth in Australian departures — suggesting strong economic ties that go beyond emigration alone.</p>
+      <h2>2. Who's Leaving the Most?</h2>
+      <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
+        <p class="narrative">Zooming in from continents to countries, China, the United Kingdom and New Zealand top the list of emigrant sources over 21 years. Each country's story is different — some migrants retire abroad, others reunite with family, and many pursue opportunities in their country of birth.</p>
+        <p class="insight">China alone accounts for more than 590,000 departures — nearly double the next highest country, the United Kingdom.</p>
       </div>
-      <div class="row-2">
-        <div class="chart-wrap" id="chart2"></div>
-        <div class="chart-wrap" id="chart13"></div>
-      </div>
+      <div class="chart-wrap chart-full" id="chart2"></div>
     </section>
 
+    <!-- SECTION 3: Rankings over time + COVID -->
     <section id="section-3">
-      <h2>3. How Have Patterns Changed Over Time?</h2>
+      <h2>3. How Have Rankings Changed Over Time?</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative" style="margin: 0;">Country rankings are not fixed. China rose to the top of the departure league in the 2010s, while traditional sources such as the United Kingdom held strong positions for years. Then COVID-19 hit — and not every country recovered equally. Press Play to watch the rankings unfold year by year.</p>
+        <p class="narrative" style="margin: 0;">These rankings were not always fixed. China's rise to the top was dramatic — from second place in 2014 to a dominant first by 2019. Then COVID-19 arrived and reshuffled everything. Press Play to watch the story unfold year by year.</p>
         <p class="insight" style="margin: 0;">Follow the coloured bands — when they cross, countries swap rank. The COVID year (2020–21) pulled every band toward the bottom at once.</p>
       </div>
       <div class="chart-wrap chart-full" id="chart4"></div>
       <div class="chart-wrap chart-full" id="chart11"></div>
     </section>
 
+    <!-- SECTION 4: Australian geography -->
     <section id="section-4">
       <h2>4. Where in Australia Are They Leaving From?</h2>
       <div class="two-col">
         <div class="two-col-text">
-          <p class="narrative">Most emigrant departures happen from the states where most people live. New South Wales, Victoria, and Queensland dominate the totals, but every state and territory contributes. The three largest states show the same COVID dip, then a partial recovery.</p>
-          <p class="insight">New South Wales alone accounts for a large share of national departures — consistent with it being Australia's most populous state.</p>
+          <p class="narrative">Most emigrant departures happen from the states where most people live. New South Wales, Victoria and Queensland dominate the totals — but every state and territory contributes. The three largest states all show the same COVID dip, followed by a partial recovery.</p>
+          <p class="insight">New South Wales alone accounts for the largest share of national departures — consistent with it being Australia's most populous state.</p>
         </div>
         <div class="two-col-chart">
           <div class="chart-wrap" id="chart7"></div>
@@ -336,12 +344,29 @@
       <div class="chart-wrap chart-full" id="chart8"></div>
     </section>
 
+    <!-- SECTION 5: Economic angle — flow map + remittances -->
     <section id="section-5">
       <h2>5. The Economic Angle</h2>
-      <p class="narrative">Countries that send more emigrants from Australia are not isolated from Australia's economy. Personal remittances received by Australia have climbed over two decades. The flow map below shows where leavers were born and the strength of each migration corridor.</p>
-      <p class="insight">High-departure countries in Asia dominate the flow map — suggesting that migration patterns and international money flows are intertwined, even when people are leaving rather than arriving.</p>
+      <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
+        <p class="narrative">Migration does not happen in isolation from money. The countries sending the most emigrants from Australia are also among the world's largest recipients of global remittances. The flow map shows where leavers were born — hover over a line to highlight that country's corridor.</p>
+        <p class="insight">High-departure countries in Asia cluster with the largest remittance flows — suggesting that migration and money move together, even when people are leaving rather than arriving.</p>
+      </div>
       <div class="chart-wrap chart-full" id="chart9"></div>
     </section>
+
+    <!-- SECTION 6: Continent comparison — both strip plots -->
+    <section id="section-6">
+      <h2>6. Departures vs Remittances — A Continental View</h2>
+      <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
+        <p class="narrative">Comparing departures and remittances side by side reveals a striking divergence. Asia dominates on both measures — but within Asia, India's remittance footprint far outweighs its share of Australian departures. The two metrics tell different stories about how countries connect to Australia.</p>
+        <p class="insight">India receives over $119 billion in remittances globally yet ranks only fourth in Australian departures — the largest gap between migration volume and economic footprint of any country in this dataset.</p>
+      </div>
+      <div class="row-2">
+        <div class="chart-wrap" id="chart14"></div>
+        <div class="chart-wrap" id="chart13"></div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -362,26 +387,28 @@
   <script src="scripts/canvas-bg.js"></script>
   <script src="scripts/bump_player.js"></script>
   <script>
-    const embedOpts = { actions: false, renderer: "canvas" };
-
     const charts = [
-      ["#chart1", "specs/chart1_dual_axis.json"],
-      ["#chart2", "specs/chart2_bar_top10.json"],
-      ["#chart4", "specs/chart4_bump.json"],
-      ["#chart7", "specs/chart7_choropleth.json"],
-      ["#chart8", "specs/chart8_small_multiples.json"],
-      ["#chart9", "specs/chart9_flow_map.json"],
+      ["#chart2",  "specs/chart2_bar_top10.json"],
+      ["#chart3",  "specs/chart3_waffle.json"],
+      ["#chart4",  "specs/chart4_bump.json"],
+      ["#chart7",  "specs/chart7_choropleth.json"],
+      ["#chart8",  "specs/chart8_small_multiples.json"],
+      ["#chart9",  "specs/chart9_flow_map.json"],
       ["#chart11", "specs/chart11_lollipop.json"],
-      ["#chart13", "specs/chart13_remittances_bar.json"]
+      ["#chart13", "specs/chart13_strip_remittances.json"],
+      ["#chart14", "specs/chart14_strip_departures.json"]
     ];
 
     charts.forEach(([sel, spec]) => {
       if (sel === '#chart4') {
-        vegaEmbed(sel, spec, embedOpts).then(function(result) {
-          window.dispatchEvent(new CustomEvent('bumpChartReady', { detail: { view: result.view } }));
-        }).catch(console.error);
+        vegaEmbed(sel, spec, { actions: false, renderer: "canvas" })
+          .then(function(result) {
+            window.dispatchEvent(new CustomEvent('bumpChartReady', { detail: { view: result.view } }));
+          }).catch(console.error);
+      } else if (sel === '#chart9') {
+        vegaEmbed(sel, spec, { actions: false, renderer: "svg" }).catch(console.error);
       } else {
-        vegaEmbed(sel, spec, embedOpts).catch(console.error);
+        vegaEmbed(sel, spec, { actions: false, renderer: "canvas" }).catch(console.error);
       }
     });
   </script>
