@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Flows from top countries of birth to Australia",
-    "subtitle": "Line width = total departures (2004–05 to 2024–25). Colour = continent.",
+    "text": "Where do Australia's emigrants come from?",
+    "subtitle": "Shading shows total departures 2004–25. Line width = departure volume. Hover to highlight.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
@@ -16,8 +16,47 @@
         "url": "data/world-countries-110m.json",
         "format": {"type": "topojson", "feature": "countries"}
       },
-      "mark": {"type": "geoshape", "fill": "#b8c4d0", "stroke": "#8a9bb0", "strokeWidth": 0.3},
+      "mark": {"type": "geoshape", "fill": "#d0d8e0", "stroke": "#aab4be", "strokeWidth": 0.3},
       "encoding": {"tooltip": null}
+    },
+    {
+      "data": {
+        "url": "data/world-countries-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {"url": "data/chart9_top10_highlight.csv"},
+            "key": "numeric_id",
+            "fields": ["display_country", "continent", "departures"]
+          }
+        },
+        {"filter": "isValid(datum.departures)"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.8},
+      "encoding": {
+        "color": {
+          "field": "departures",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "scheme": "orangered",
+            "domainMin": 70000
+          },
+          "legend": {
+            "title": "Total departures",
+            "format": ",.0f",
+            "titleFontSize": 11,
+            "labelFontSize": 10
+          }
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Total departures", "format": ","}
+        ]
+      }
     },
     {
       "data": {"url": "data/chart9_flow.csv"},
@@ -48,7 +87,7 @@
           "field": "departures",
           "type": "quantitative",
           "scale": {"range": [2, 18]},
-          "legend": {"title": "Departures", "format": ",.0f"}
+          "legend": null
         },
         "color": {
           "field": "continent",
@@ -62,9 +101,45 @@
         "opacity": {
           "condition": [
             {"param": "chart9_flowHoverUnique", "empty": false, "value": 1},
-            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.45}
+            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.6}
           ],
           "value": 0.15
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "departures", "title": "Total departures", "format": ","},
+          {"field": "continent", "title": "Continent"}
+        ]
+      }
+    },
+    {
+      "data": {"url": "data/chart9_flow.csv"},
+      "transform": [{"filter": "datum.point_order === 1"}],
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "size": 60,
+        "stroke": "#fff",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "latitude": {"field": "plot_lat"},
+        "longitude": {"field": "plot_lon"},
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
+            "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+          }
+        },
+        "opacity": {
+          "condition": [
+            {"param": "chart9_flowHoverUnique", "empty": false, "value": 1},
+            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.8}
+          ],
+          "value": 0.8
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -104,5 +179,9 @@
       }
     }
   ],
-  "config": {"background": "transparent", "view": {"stroke": null}, "font": "DM Sans"}
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans"
+  }
 }
