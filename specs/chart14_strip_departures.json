@@ -19,7 +19,7 @@
           "type": "ordinal",
           "sort": ["Asia","Europe","Oceania","Americas","Africa","Middle East"]
         },
-        "y": {"field": "value", "type": "quantitative", "axis": null, "scale": {"type": "log"}}
+        "y": {"field": "value", "type": "quantitative", "axis": {"grid": false, "title": null}, "scale": {"type": "log"}}
       }
     },
     {
@@ -36,7 +36,7 @@
           "field": "value",
           "type": "quantitative",
           "title": "Total departures",
-          "axis": {"format": ",.0f"}
+          "axis": null
         },
         "color": {
           "field": "continent",

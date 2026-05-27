@@ -10,66 +10,128 @@
   "width": 890,
   "height": 380,
   "data": {"url": "data/chart_remittances_top10.csv"},
-  "params": [
-    {
-      "name": "rem_hover",
-      "select": {
-        "type": "point",
-        "fields": ["display_country"],
-        "on": "mouseover",
-        "clear": "mouseout"
-      }
-    }
-  ],
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone",
-    "line": true,
-    "opacity": 0.7
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Year",
-      "sort": null,
-      "axis": {"labelAngle": -45}
-    },
-    "y": {
-      "field": "remittances_usd",
-      "type": "quantitative",
-      "title": "Remittances received (US$)",
-      "axis": {"format": "~s"},
-      "stack": true
-    },
-    "color": {
-      "field": "display_country",
-      "type": "nominal",
-      "title": "Country",
-      "legend": {"orient": "right"},
-      "scale": {
-        "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
-        "range": ["#E63946","#1D3557","#9B72CF","#F4A261","#7B2D8B","#F4D03F","#E76F51","#E8A0BF","#8B4513","#00B4D8"]
-      }
-    },
-    "opacity": {
-      "condition": {
-        "param": "rem_hover",
-        "empty": false,
-        "value": 0.9
-      },
-      "value": 0.5
-    },
-    "tooltip": [
-      {"field": "display_country", "title": "Country"},
-      {"field": "year", "title": "Year"},
-      {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
-    ]
-  },
   "config": {
     "background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {"labelFontSize": 11, "titleFontSize": 12}
-  }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "rem_hover",
+          "select": {
+            "type": "point",
+            "fields": ["display_country"],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "transform": [
+        {
+          "joinaggregate": [
+            {"op": "sum", "field": "remittances_usd", "as": "total_remittances"}
+          ],
+          "groupby": ["display_country"]
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "line": true,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "sort": null,
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "remittances_usd",
+          "type": "quantitative",
+          "title": "Remittances received (US$)",
+          "axis": {"format": "~s"},
+          "stack": true
+        },
+        "order": {
+          "field": "total_remittances",
+          "sort": "descending"
+        },
+        "color": {
+          "field": "display_country",
+          "type": "nominal",
+          "title": "Country",
+          "legend": {"orient": "right"},
+          "scale": {
+            "domain": ["New Zealand","Malaysia","Japan","Korea South","UK","USA","Indonesia","China","Philippines","India"],
+            "range": ["#9B72CF","#E76F51","#E8A0BF","#F4D03F","#1D3557","#7B2D8B","#8B4513","#E63946","#00B4D8","#F4A261"]
+          }
+        },
+        "opacity": {
+          "condition": {"param": "rem_hover", "empty": false, "value": 0.9},
+          "value": 0.5
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "year", "title": "Year"},
+          {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
+        ]
+      }
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 20, "y": 15, "x2": 280, "y2": 95,
+            "fill": "#eaf4fb",
+            "stroke": "#1a5276",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "India towers above all"}
+        },
+        {
+          "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 10, "color": "#333", "text": "$19B in 2004 -> $120B in 2023"}
+        },
+        {
+          "mark": {"type": "text", "x": 150, "y": 78, "fontSize": 10, "color": "#333", "text": "a 6× increase in 20 years"}
+        }
+      ]
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 560, "y": 15, "x2": 820, "y2": 85,
+            "fill": "#fdedec",
+            "stroke": "#c0392b",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {"type": "text", "x": 690, "y": 38, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "2008 & 2015 peaks"}
+        },
+        {
+          "mark": {"type": "text", "x": 690, "y": 57, "fontSize": 10, "color": "#333", "text": "driven by China's surge"}
+        },
+        {
+          "mark": {"type": "text", "x": 690, "y": 74, "fontSize": 10, "color": "#333", "text": "then sharp decline post-2015"}
+        }
+      ]
+    }
+  ]
 }

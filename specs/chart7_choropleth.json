@@ -7,7 +7,7 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": 650,
+  "width": 550,
   "height": 420,
   "projection": {
     "type": "conicEqualArea",

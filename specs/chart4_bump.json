@@ -28,7 +28,8 @@
       "calculate": "indexof(['2014-15','2015-16','2016-17','2017-18','2018-19','2019-20','2020-21','2021-22','2022-23','2023-24','2024-25','2024-26'], datum.year)",
       "as": "year_index"
     },
-    {"filter": "datum.year_index < max_year_index"}
+    {"filter": "datum.year_index < max_year_index"},
+    {"calculate": "'20' + split(datum.year, '-')[1]", "as": "year_display"}
   ],
   "layer": [
     {
@@ -104,7 +105,7 @@
         "detail": {"field": "display_country"},
         "tooltip": [
           {"field": "display_country", "title": "Country"},
-          {"field": "year", "title": "Year"},
+          {"field": "year_display", "title": "Year"},
           {"field": "rank", "title": "Rank"},
           {"field": "departures", "title": "Departures", "format": ","}
         ]

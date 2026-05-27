@@ -11,18 +11,12 @@
   "height": 360,
   "data": {"url": "data/chart11_dot_plot.csv"},
   "transform": [
-    {
-      "calculate": "datum.post_covid - datum.pre_covid",
-      "as": "gap"
-    },
-    {
-      "calculate": "datum.gap >= 0 ? 'Exceeded pre-COVID' : 'Below pre-COVID'",
-      "as": "status"
-    }
+    {"calculate": "datum.post_covid - datum.pre_covid", "as": "gap"},
+    {"calculate": "datum.gap >= 0 ? 'Exceeded pre-COVID' : 'Below pre-COVID'", "as": "status"}
   ],
   "layer": [
     {
-      "mark": {"type": "rule", "color": "#ccc", "strokeWidth": 1},
+      "mark": {"type": "rule", "color": "#aaa", "strokeWidth": 1, "strokeDash": [4, 3]},
       "encoding": {"x": {"datum": 0}}
     },
     {
@@ -61,10 +55,7 @@
           "sort": {"field": "gap", "order": "descending"},
           "title": null
         },
-        "x": {
-          "field": "gap",
-          "type": "quantitative"
-        },
+        "x": {"field": "gap", "type": "quantitative"},
         "color": {
           "field": "status",
           "type": "nominal",
@@ -81,6 +72,96 @@
           {"field": "gap", "title": "Change", "format": "+,"}
         ]
       }
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 800, "y": 120,
+            "x2": 970, "y2": 205,
+            "fill": "#eafaf1",
+            "stroke": "#16a085",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 885, "y": 145,
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#16a085",
+            "text": "3 countries recovered"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 885, "y": 165,
+            "fontSize": 10,
+            "color": "#333",
+            "text": "India, Philippines & Japan"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 885, "y": 182,
+            "fontSize": 10,
+            "color": "#333",
+            "text": "exceeded pre-COVID levels"
+          }
+        }
+      ]
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 50, "y": 155,
+            "x2": 260, "y2": 240,
+            "fill": "#fdedec",
+            "stroke": "#c0392b",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 155, "y": 178,
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#c0392b",
+            "text": "China: largest gap"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 155, "y": 198,
+            "fontSize": 10,
+            "color": "#333",
+            "text": "Still 17,940 departures below"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 155, "y": 215,
+            "fontSize": 10,
+            "color": "#333",
+            "text": "its 2018–19 peak"
+          }
+        }
+      ]
     }
   ],
   "config": {

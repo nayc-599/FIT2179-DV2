@@ -14,7 +14,8 @@
   },
   "transform": [
     {"filter": {"field": "state", "oneOf": ["NSW", "VIC", "QLD"]}},
-    {"filter": "datum.year >= '2015-16'"}
+    {"filter": "datum.year >= '2015-16'"},
+    {"calculate": "'20' + split(datum.year, '-')[1]", "as": "year_display"}
   ],
   "facet": {
     "field": "state",
@@ -58,7 +59,7 @@
           },
           "tooltip": [
             {"field": "state", "title": "State"},
-            {"field": "year", "title": "Year"},
+            {"field": "year_display", "title": "Year"},
             {"field": "departures", "title": "Departures", "format": ","}
           ]
         }

@@ -8,7 +8,7 @@
     "subtitleColor": "#555"
   },
   "width": 580,
-  "height": 360,
+  "height": 280,
   "data": {"url": "data/chart2_top10_totals.csv"},
   "layer": [
     {
@@ -33,8 +33,7 @@
           "legend": null,
           "scale": {
             "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"],
-            "range": ["#E63946", "#1D3557", "#9B72CF", "#F4A261", "#7B2D8B", "#F4D03F", "#E76F51", "#E8A0BF", "#8B4513", "#00B4D8"]
-          }
+            "range": ["#E63946", "#1D3557", "#9B72CF", "#F4A261", "#7B2D8B", "#F4D03F", "#E76F51", "#E8A0BF", "#8B4513", "#00B4D8"]}
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -70,6 +69,49 @@
           {"field": "departures", "title": "Total departures", "format": ","}
         ]
       }
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 230, "y": 165, "x2": 470, "y2": 260,
+            "fill": "#eaf4fb",
+            "stroke": "#1a5276",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 350, "y": 190,
+            "fontSize": 12, "fontWeight": "bold",
+            "color": "#1a5276",
+            "text": "Asia dominates the top 10"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 350, "y": 215,
+            "fontSize": 10,
+            "color": "#333",
+            "text": "7 of the 10 largest emigrant sources"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "x": 350, "y": 230,
+            "fontSize": 10,
+            "color": "#333",
+            "text": "are in the Asia-Pacific region"
+          }
+        }
+      ]
     }
   ],
   "config": {    "background": "transparent",

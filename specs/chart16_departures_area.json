@@ -7,64 +7,106 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
+  "width": 875,
   "height": 340,
   "data": {"url": "data/chart_departures_top10_time.csv"},
-  "params": [
+  "transform": [
     {
-      "name": "dep_hover",
-      "select": {
-        "type": "point",
-        "fields": ["display_country"],
-        "on": "mouseover",
-        "clear": "mouseout"
+      "joinaggregate": [
+        {"op": "sum", "field": "departures", "as": "total_departures"}
+      ],
+      "groupby": ["display_country"]
+    },
+    {"calculate": "'20' + split(datum.year, '-')[1]", "as": "year_display"}
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "dep_hover",
+          "select": {
+            "type": "point",
+            "fields": ["display_country"],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "line": true,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": null,
+          "axis": {
+            "labelAngle": 0,
+            "labelExpr": "'20' + split(datum.label, '-')[1]"
+          }
+        },
+        "y": {
+          "field": "departures",
+          "type": "quantitative",
+          "title": "Annual departures",
+          "axis": {"format": ",.0f"},
+          "stack": true
+        },
+        "order": {"field": "total_departures", "sort": "descending"},
+        "color": {
+          "field": "display_country",
+          "type": "nominal",
+          "title": "Country",
+          "legend": {"orient": "right"},
+          "scale": {
+            "domain": ["Philippines","Indonesia","Japan","Malaysia","Korea South","USA","India","New Zealand","UK","China"],
+            "range": ["#00B4D8","#8B4513","#E8A0BF","#E76F51","#F4D03F","#7B2D8B","#F4A261","#9B72CF","#1D3557","#E63946"]
+          }
+        },
+        "opacity": {
+          "condition": {"param": "dep_hover", "empty": false, "value": 0.9},
+          "value": 0.6
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "year_display", "title": "Year"},
+          {"field": "departures", "title": "Departures", "format": ","}
+        ]
       }
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 620, "y": 20, "x2": 870, "y2": 130,
+            "fill": "#fdedec",
+            "stroke": "#c0392b",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {"type": "text", "x": 745, "y": 46, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "COVID-19 peak then collapse"}
+        },
+        {
+          "mark": {"type": "text", "x": 745, "y": 66, "fontSize": 10, "color": "#333", "text": "2019–20 saw the highest departures"}
+        },
+        {
+          "mark": {"type": "text", "x": 745, "y": 84, "fontSize": 10, "color": "#333", "text": "before COVID-19 cut them by 46%"}
+        },
+        {
+          "mark": {"type": "text", "x": 745, "y": 102, "fontSize": 10, "color": "#333", "text": "in a single year — 2020–21"}
+        }
+      ]
     }
   ],
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone",
-    "line": true,
-    "opacity": 0.7
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Financial year",
-      "sort": null,
-      "axis": {
-        "labelAngle": -45,
-        "labelExpr": "'20' + split(datum.label, '-')[1]"
-      }
-    },
-    "y": {
-      "field": "departures",
-      "type": "quantitative",
-      "title": "Annual departures",
-      "axis": {"format": ",.0f"},
-      "stack": true
-    },
-    "color": {
-      "field": "display_country",
-      "type": "nominal",
-      "title": "Country",
-      "legend": {"orient": "right"},
-      "scale": {
-        "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
-        "range": ["#E63946","#1D3557","#9B72CF","#F4A261","#7B2D8B","#F4D03F","#E76F51","#E8A0BF","#8B4513","#00B4D8"]
-      }
-    },
-    "opacity": {
-      "condition": {"param": "dep_hover", "empty": false, "value": 0.9},
-      "value": 0.6
-    },
-    "tooltip": [
-      {"field": "display_country", "title": "Country"},
-      {"field": "year", "title": "Year"},
-      {"field": "departures", "title": "Departures", "format": ","}
-    ]
-  },
   "config": {
     "background": "transparent",
     "view": {"stroke": null},

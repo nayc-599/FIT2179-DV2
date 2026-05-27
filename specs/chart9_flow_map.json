@@ -177,6 +177,31 @@
           {"field": "continent", "title": "Continent"}
         ]
       }
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 20, "y": 280, "x2": 260, "y2": 355,
+            "fill": "#eaf4fb",
+            "stroke": "#1a5276",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {
+          "mark": {"type": "text", "x": 140, "y": 300, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "3.9M total departures"}
+        },
+        {
+          "mark": {"type": "text", "x": 140, "y": 320, "fontSize": 10, "color": "#333", "text": "from 10 countries over 21 years"}
+        },
+        {
+          "mark": {"type": "text", "x": 140, "y": 335, "fontSize": 10, "color": "#333", "text": "Darker shading = more emigrants"}
+        }
+      ]
     }
   ],
   "config": {

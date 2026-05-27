@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Remittances received by country, 2022",
-    "subtitle": "Each dot = one country. Personal remittances received (current US$). Hover for details.",
+    "subtitle": "Each dot = one country. Personal remittances received (current AUD$). Hover for details.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
@@ -19,7 +19,7 @@
           "type": "ordinal",
           "sort": ["Asia","Europe","Oceania","Americas","Africa","Middle East"]
         },
-        "y": {"field": "value", "type": "quantitative", "axis": null}
+        "y": {"field": "value", "type": "quantitative", "axis": {"grid": false, "title": null}}
       }
     },
     {
@@ -35,9 +35,9 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "title": "Remittances received (US$)",
+          "title": "Remittances received (AUD$)",
           "scale": {"type": "log"},
-          "axis": {"format": "~s"}
+          "axis": null
         },
         "color": {
           "field": "continent",
@@ -51,7 +51,7 @@
         "tooltip": [
           {"field": "display_country", "title": "Country"},
           {"field": "continent", "title": "Continent"},
-          {"field": "value", "title": "Remittances (US$)", "format": "~s"}
+          {"field": "value", "title": "Remittances (AUD$)", "format": "~s"}
         ]
       }
     }
