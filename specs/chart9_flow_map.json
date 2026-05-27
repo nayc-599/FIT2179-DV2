@@ -8,7 +8,7 @@
     "subtitleColor": "#555"
   },
   "width": 900,
-  "height": 500,
+  "height": 450,
   "projection": {"type": "naturalEarth1"},
   "layer": [
     {

@@ -7,7 +7,7 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": 380,
+  "width": 580,
   "height": 360,
   "data": {"url": "data/chart2_top10_totals.csv"},
   "layer": [
@@ -32,8 +32,8 @@
           "type": "nominal",
           "legend": null,
           "scale": {
-            "scheme": "tableau10",
-            "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"]
+            "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"],
+            "range": ["#E63946", "#1D3557", "#9B72CF", "#F4A261", "#7B2D8B", "#F4D03F", "#E76F51", "#E8A0BF", "#8B4513", "#00B4D8"]
           }
         },
         "tooltip": [

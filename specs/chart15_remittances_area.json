@@ -7,7 +7,7 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
+  "width": 890,
   "height": 380,
   "data": {"url": "data/chart_remittances_top10.csv"},
   "params": [
@@ -49,7 +49,7 @@
       "legend": {"orient": "right"},
       "scale": {
         "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
-        "range": ["#DE2910","#012169","#00247D","#FF9933","#B22234","#003478","#FFD700","#BC002D","#FF6B6B","#FCD116"]
+        "range": ["#E63946","#1D3557","#9B72CF","#F4A261","#7B2D8B","#F4D03F","#E76F51","#E8A0BF","#8B4513","#00B4D8"]
       }
     },
     "opacity": {
