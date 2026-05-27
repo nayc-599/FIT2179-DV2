@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Departures from Australia over time — top 10 countries",
+    "subtitle": "Stacked annual departures by country of birth. Hover to highlight.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 340,
+  "data": {"url": "data/chart_departures_top10_time.csv"},
+  "params": [
+    {
+      "name": "dep_hover",
+      "select": {
+        "type": "point",
+        "fields": ["display_country"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone",
+    "line": true,
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Financial year",
+      "sort": null,
+      "axis": {
+        "labelAngle": -45,
+        "labelExpr": "'20' + split(datum.label, '-')[1]"
+      }
+    },
+    "y": {
+      "field": "departures",
+      "type": "quantitative",
+      "title": "Annual departures",
+      "axis": {"format": ",.0f"},
+      "stack": true
+    },
+    "color": {
+      "field": "display_country",
+      "type": "nominal",
+      "title": "Country",
+      "legend": {"orient": "right"},
+      "scale": {
+        "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
+        "range": ["#DE2910","#012169","#00247D","#FF9933","#B22234","#003478","#FFD700","#BC002D","#FF6B6B","#FCD116"]
+      }
+    },
+    "opacity": {
+      "condition": {"param": "dep_hover", "empty": false, "value": 0.9},
+      "value": 0.6
+    },
+    "tooltip": [
+      {"field": "display_country", "title": "Country"},
+      {"field": "year", "title": "Year"},
+      {"field": "departures", "title": "Departures", "format": ","}
+    ]
+  },
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

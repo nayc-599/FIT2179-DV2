@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Remittances received over time — top emigrant-source countries",
+    "subtitle": "Personal remittances received (current US$). Hover to highlight a country.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 380,
+  "data": {"url": "data/chart_remittances_top10.csv"},
+  "params": [
+    {
+      "name": "rem_hover",
+      "select": {
+        "type": "point",
+        "fields": ["display_country"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone",
+    "line": true,
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year",
+      "sort": null,
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "remittances_usd",
+      "type": "quantitative",
+      "title": "Remittances received (US$)",
+      "axis": {"format": "~s"},
+      "stack": true
+    },
+    "color": {
+      "field": "display_country",
+      "type": "nominal",
+      "title": "Country",
+      "legend": {"orient": "right"},
+      "scale": {
+        "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
+        "range": ["#DE2910","#012169","#00247D","#FF9933","#B22234","#003478","#FFD700","#BC002D","#FF6B6B","#FCD116"]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "rem_hover",
+        "empty": false,
+        "value": 0.9
+      },
+      "value": 0.5
+    },
+    "tooltip": [
+      {"field": "display_country", "title": "Country"},
+      {"field": "year", "title": "Year"},
+      {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
+    ]
+  },
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

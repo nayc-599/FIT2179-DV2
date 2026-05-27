@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total departures from Australia by country",
+    "subtitle": "Each dot = one country. Total 2004–05 to 2024–25. Hover for details.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": "container",
+  "height": 400,
+  "data": {"url": "data/chart_strip_departures_all.csv"},
+  "layer": [
+    {
+      "mark": {"type": "tick", "thickness": 1, "opacity": 0.12, "color": "#aaa"},
+      "encoding": {
+        "x": {
+          "field": "continent",
+          "type": "ordinal",
+          "sort": ["Asia","Europe","Oceania","Americas","Africa","Middle East"]
+        },
+        "y": {"field": "value", "type": "quantitative", "axis": null, "scale": {"type": "log"}}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 60, "opacity": 0.7},
+      "encoding": {
+        "x": {
+          "field": "continent",
+          "type": "ordinal",
+          "sort": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
+          "title": "Continent",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Total departures",
+          "axis": {"format": ",.0f"}
+        },
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "legend": {"orient": "bottom", "title": "Continent"},
+          "scale": {
+            "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
+            "range": ["#1a5276","#2980b9","#16a085","#8e44ad","#d35400","#c0392b"]
+          }
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "continent", "title": "Continent"},
+          {"field": "value", "title": "Total departures", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}
