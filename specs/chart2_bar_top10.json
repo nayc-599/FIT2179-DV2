@@ -2,13 +2,13 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Top 10 countries of birth for emigrant departures",
-    "subtitle": "Total departures from Australia, 2004–05 to 2024–25 (21 years)",
+    "subtitle": "Total departures from Australia, 2004\u201305 to 2024\u201325 (21 years)",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": 580,
-  "height": 280,
+  "height": 320,
   "data": {"url": "data/chart2_top10_totals.csv"},
   "layer": [
     {
@@ -33,7 +33,7 @@
           "legend": null,
           "scale": {
             "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"],
-            "range": ["#E63946", "#1D3557", "#9B72CF", "#E07020", "#7B2D8B", "#F4D03F", "#E76F51", "#E8A0BF", "#8B4513", "#00B4D8"]}
+            "range": ["#E63946", "#2e86de", "#9B72CF", "#E07020", "#a855f7", "#F4D03F", "#E76F51", "#E8A0BF", "#8B4513", "#00B4D8"]}
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -77,8 +77,8 @@
           "mark": {
             "type": "rect",
             "x": 230, "y": 165, "x2": 470, "y2": 260,
-            "fill": "#eaf4fb",
-            "stroke": "#1a5276",
+            "fill": "rgba(93,173,226,0.15)",
+            "stroke": "#2e86de",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
@@ -89,7 +89,7 @@
             "type": "text",
             "x": 350, "y": 190,
             "fontSize": 12, "fontWeight": "bold",
-            "color": "#1a5276",
+            "color": "#2e86de",
             "text": "Asia dominates the top 10"
           }
         },
@@ -98,7 +98,7 @@
             "type": "text",
             "x": 350, "y": 215,
             "fontSize": 10,
-            "color": "#333",
+            "color": "#e2eaf4",
             "text": "7 of the 10 largest emigrant sources"
           }
         },
@@ -107,13 +107,33 @@
             "type": "text",
             "x": 350, "y": 230,
             "fontSize": 10,
-            "color": "#333",
+            "color": "#e2eaf4",
             "text": "are in the Asia-Pacific region"
           }
         }
       ]
     }
   ],
-  "config": {    "background": "transparent",
-"view": {"stroke": null}, "font": "DM Sans"}
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#8aa4c0",
+      "titleColor": "#e2eaf4",
+      "gridColor": "rgba(255,255,255,0.08)",
+      "domainColor": "rgba(255,255,255,0.15)",
+      "tickColor": "rgba(255,255,255,0.15)"
+    },
+    "legend": {
+      "labelColor": "#e2eaf4",
+      "titleColor": "#e2eaf4"
+    },
+    "title": {
+      "color": "#e2eaf4",
+      "subtitleColor": "#8aa4c0"
+    }
+  }
 }

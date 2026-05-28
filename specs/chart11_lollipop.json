@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "COVID-19 recovery: 2024–25 vs 2018–19 departures",
+    "text": "COVID-19 recovery: 2024\u201325 vs 2018\u201319 departures",
     "subtitle": "Positive = exceeded pre-COVID levels. Negative = still below pre-COVID levels.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": 950,
   "height": 360,
@@ -16,7 +16,7 @@
   ],
   "layer": [
     {
-      "mark": {"type": "rule", "color": "#aaa", "strokeWidth": 1, "strokeDash": [4, 3]},
+      "mark": {"type": "rule", "color": "rgba(255,255,255,0.2)", "strokeWidth": 1, "strokeDash": [4, 3]},
       "encoding": {"x": {"datum": 0}}
     },
     {
@@ -32,7 +32,7 @@
         "x": {
           "field": "gap",
           "type": "quantitative",
-          "title": "Change in annual departures (2024–25 minus 2018–19)",
+          "title": "Change in annual departures (2024\u201325 minus 2018\u201319)",
           "axis": {"format": ",.0f"}
         },
         "color": {
@@ -40,7 +40,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["Exceeded pre-COVID", "Below pre-COVID"],
-            "range": ["#1D3557", "#c0392b"]
+            "range": ["#2e86de", "#c0392b"]
           },
           "legend": {"orient": "bottom", "title": null}
         }
@@ -61,14 +61,14 @@
           "type": "nominal",
           "scale": {
             "domain": ["Exceeded pre-COVID", "Below pre-COVID"],
-            "range": ["#1D3557", "#c0392b"]
+            "range": ["#2e86de", "#c0392b"]
           },
           "legend": null
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
-          {"field": "pre_covid", "title": "2018–19", "format": ","},
-          {"field": "post_covid", "title": "2024–25", "format": ","},
+          {"field": "pre_covid", "title": "2018\u201319", "format": ","},
+          {"field": "post_covid", "title": "2024\u201325", "format": ","},
           {"field": "gap", "title": "Change", "format": "+,"}
         ]
       }
@@ -81,21 +81,21 @@
             "type": "rect",
             "x": 800, "y": 120,
             "x2": 970, "y2": 205,
-            "fill": "#eaf0fb",
-            "stroke": "#1D3557",
+            "fill": "rgba(93,173,226,0.15)",
+            "stroke": "#2e86de",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 145, "fontSize": 12, "fontWeight": "bold", "color": "#1D3557", "text": "3 countries recovered"}
+          "mark": {"type": "text", "x": 885, "y": 145, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "3 countries recovered"}
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 165, "fontSize": 10, "color": "#333", "text": "India, Philippines & Japan"}
+          "mark": {"type": "text", "x": 885, "y": 165, "fontSize": 10, "color": "#e2eaf4", "text": "India, Philippines & Japan"}
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 182, "fontSize": 10, "color": "#333", "text": "exceeded pre-COVID levels"}
+          "mark": {"type": "text", "x": 885, "y": 182, "fontSize": 10, "color": "#e2eaf4", "text": "exceeded pre-COVID levels"}
         }
       ]
     },
@@ -107,21 +107,21 @@
             "type": "rect",
             "x": 50, "y": 155,
             "x2": 260, "y2": 240,
-            "fill": "#fdedec",
-            "stroke": "#c0392b",
+            "fill": "rgba(231,76,60,0.15)",
+            "stroke": "#e74c3c",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 178, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "China: largest gap"}
+          "mark": {"type": "text", "x": 155, "y": 178, "fontSize": 12, "fontWeight": "bold", "color": "#e74c3c", "text": "China: largest gap"}
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 198, "fontSize": 10, "color": "#333", "text": "Still 17,940 departures below"}
+          "mark": {"type": "text", "x": 155, "y": 198, "fontSize": 10, "color": "#e2eaf4", "text": "Still 17,940 departures below"}
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 215, "fontSize": 10, "color": "#333", "text": "its 2018–19 peak"}
+          "mark": {"type": "text", "x": 155, "y": 215, "fontSize": 10, "color": "#e2eaf4", "text": "its 2018\u201319 peak"}
         }
       ]
     },
@@ -133,7 +133,7 @@
             "type": "rect",
             "x": 450, "y": 35,
             "x2": 690, "y2": 115,
-            "fill": "#fef9e7",
+            "fill": "rgba(212,172,13,0.15)",
             "stroke": "#d4ac0d",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
@@ -144,10 +144,10 @@
           "mark": {"type": "text", "x": 570, "y": 58, "fontSize": 12, "fontWeight": "bold", "color": "#d4ac0d", "text": "Indonesia: almost recovered"}
         },
         {
-          "mark": {"type": "text", "x": 570, "y": 78, "fontSize": 10, "color": "#333", "text": "Just 20 departures below"}
+          "mark": {"type": "text", "x": 570, "y": 78, "fontSize": 10, "color": "#e2eaf4", "text": "Just 20 departures below"}
         },
         {
-          "mark": {"type": "text", "x": 570, "y": 95, "fontSize": 10, "color": "#333", "text": "its 2018–19 level"}
+          "mark": {"type": "text", "x": 570, "y": 95, "fontSize": 10, "color": "#e2eaf4", "text": "its 2018\u201319 level"}
         }
       ]
     }
@@ -156,6 +156,22 @@
     "background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans",
-    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#8aa4c0",
+      "titleColor": "#e2eaf4",
+      "gridColor": "rgba(255,255,255,0.08)",
+      "domainColor": "rgba(255,255,255,0.15)",
+      "tickColor": "rgba(255,255,255,0.15)"
+    },
+    "legend": {
+      "labelColor": "#e2eaf4",
+      "titleColor": "#e2eaf4"
+    },
+    "title": {
+      "color": "#e2eaf4",
+      "subtitleColor": "#8aa4c0"
+    }
   }
 }

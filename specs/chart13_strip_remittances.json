@@ -5,14 +5,14 @@
     "subtitle": "Each dot = one country. Personal remittances received (current AUD$). Hover for details.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": "container",
   "height": 400,
   "data": {"url": "data/chart_strip_remittances_all.csv"},
   "layer": [
     {
-      "mark": {"type": "tick", "thickness": 1, "opacity": 0.12, "color": "#aaa"},
+      "mark": {"type": "tick", "thickness": 1, "opacity": 0.12, "color": "rgba(255,255,255,0.2)"},
       "encoding": {
         "x": {
           "field": "continent",
@@ -45,7 +45,7 @@
           "legend": {"orient": "bottom", "title": "Continent"},
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#E91E8C","#2471a3","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#E91E8C","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
           }
         },
         "tooltip": [

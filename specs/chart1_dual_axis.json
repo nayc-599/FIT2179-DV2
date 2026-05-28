@@ -5,7 +5,7 @@
     "subtitle": "Overseas-born departures (left) and personal remittances received by Australia in AUD dollars (right)",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": 920,
   "height": 380,
@@ -24,10 +24,10 @@
         "y": {
           "field": "departures", "type": "quantitative",
           "title": "Total departures (overseas-born)",
-          "axis": {"format": ",.0f", "titleColor": "#1a5276"},
+          "axis": {"format": ",.0f", "titleColor": "#5dade2"},
           "scale": {"zero": false}
         },
-        "color": {"value": "#1a5276"},
+        "color": {"value": "#5dade2"},
         "tooltip": [
           {"field": "year_label", "title": "Year"},
           {"field": "departures", "title": "Departures", "format": ","}
@@ -41,10 +41,10 @@
         "y": {
           "field": "remittances_aud", "type": "quantitative",
           "title": "Remittances received (A$)",
-          "axis": {"format": "~s", "titleColor": "#c0392b"},
+          "axis": {"format": "~s", "titleColor": "#e74c3c"},
           "scale": {"zero": false}
         },
-        "color": {"value": "#c0392b"},
+        "color": {"value": "#e74c3c"},
         "tooltip": [
           {"field": "year_label", "title": "Year"},
           {"field": "remittances_aud", "title": "Remittances (A$)", "format": "~s"}
@@ -66,22 +66,22 @@
     {
       "data": {"values": [{}]},
       "layer": [
-        {"mark": {"type": "rect", "x": 20, "y": 20, "x2": 280, "y2": 105, "fill": "#fdedec", "stroke": "#c0392b", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
-        {"mark": {"type": "text", "x": 150, "y": 45, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "Remittances peaked 2012–14"}},
-        {"mark": {"type": "text", "x": 150, "y": 65, "fontSize": 10, "color": "#333", "text": "driven by strong commodity prices"}},
-        {"mark": {"type": "text", "x": 150, "y": 83, "fontSize": 10, "color": "#333", "text": "and a high AUD exchange rate"}},
+        {"mark": {"type": "rect", "x": 20, "y": 20, "x2": 280, "y2": 105, "fill": "rgba(231,76,60,0.15)", "stroke": "#e74c3c", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
+        {"mark": {"type": "text", "x": 150, "y": 45, "fontSize": 12, "fontWeight": "bold", "color": "#e74c3c", "text": "Remittances peaked 2012–14"}},
+        {"mark": {"type": "text", "x": 150, "y": 65, "fontSize": 10, "color": "#e2eaf4", "text": "driven by strong commodity prices"}},
+        {"mark": {"type": "text", "x": 150, "y": 83, "fontSize": 10, "color": "#e2eaf4", "text": "and a high AUD exchange rate"}},
 
-        {"mark": {"type": "rect", "x": 740, "y": 45, "x2": 900, "y2": 155, "fill": "#eaf0fb", "stroke": "#1a5276", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
-        {"mark": {"type": "text", "x": 820, "y": 68, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "Remittances resilient"}},
-        {"mark": {"type": "text", "x": 820, "y": 88, "fontSize": 10, "color": "#333", "text": "Departures fell sharply"}},
-        {"mark": {"type": "text", "x": 820, "y": 104, "fontSize": 10, "color": "#333", "text": "in 2021–22 but remittances"}},
-        {"mark": {"type": "text", "x": 820, "y": 120, "fontSize": 10, "color": "#333", "text": "recovered faster"}},
-        {"mark": {"type": "text", "x": 820, "y": 138, "fontSize": 10, "color": "#555", "fontStyle": "italic", "text": "money outlasts movement"}},
+        {"mark": {"type": "rect", "x": 740, "y": 45, "x2": 900, "y2": 155, "fill": "rgba(93,173,226,0.15)", "stroke": "#5dade2", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
+        {"mark": {"type": "text", "x": 820, "y": 68, "fontSize": 12, "fontWeight": "bold", "color": "#5dade2", "text": "Remittances resilient"}},
+        {"mark": {"type": "text", "x": 820, "y": 88, "fontSize": 10, "color": "#e2eaf4", "text": "Departures fell sharply"}},
+        {"mark": {"type": "text", "x": 820, "y": 104, "fontSize": 10, "color": "#e2eaf4", "text": "in 2021–22 but remittances"}},
+        {"mark": {"type": "text", "x": 820, "y": 120, "fontSize": 10, "color": "#e2eaf4", "text": "recovered faster"}},
+        {"mark": {"type": "text", "x": 820, "y": 138, "fontSize": 10, "color": "#8aa4c0", "fontStyle": "italic", "text": "money outlasts movement"}},
 
-        {"mark": {"type": "rect", "x": 430, "y": 235, "x2": 670, "y2": 320, "fill": "#eaf0fb", "stroke": "#1a5276", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
-        {"mark": {"type": "text", "x": 550, "y": 258, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "Departures plateaued"}},
-        {"mark": {"type": "text", "x": 550, "y": 278, "fontSize": 10, "color": "#333", "text": "2013–17 saw steady but slow"}},
-        {"mark": {"type": "text", "x": 550, "y": 295, "fontSize": 10, "color": "#333", "text": "growth before the 2020 surge"}}
+        {"mark": {"type": "rect", "x": 430, "y": 235, "x2": 670, "y2": 320, "fill": "rgba(93,173,226,0.15)", "stroke": "#5dade2", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
+        {"mark": {"type": "text", "x": 550, "y": 258, "fontSize": 12, "fontWeight": "bold", "color": "#5dade2", "text": "Departures plateaued"}},
+        {"mark": {"type": "text", "x": 550, "y": 278, "fontSize": 10, "color": "#e2eaf4", "text": "2013–17 saw steady but slow"}},
+        {"mark": {"type": "text", "x": 550, "y": 295, "fontSize": 10, "color": "#e2eaf4", "text": "growth before the 2020 surge"}}
       ]
     }
   ],
@@ -90,6 +90,16 @@
     "background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans",
-    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#8aa4c0",
+      "titleColor": "#e2eaf4",
+      "gridColor": "rgba(255,255,255,0.08)",
+      "domainColor": "rgba(255,255,255,0.15)",
+      "tickColor": "rgba(255,255,255,0.15)"
+    },
+    "legend": {"labelColor": "#e2eaf4", "titleColor": "#e2eaf4"},
+    "title": {"color": "#e2eaf4", "subtitleColor": "#8aa4c0"}
   }
 }

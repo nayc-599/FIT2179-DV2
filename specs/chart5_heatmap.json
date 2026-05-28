@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Departures heatmap by country and year",
-    "subtitle": "Use the dropdown to highlight a financial year. The COVID-19 dip is visible in 2020–21.",
+    "subtitle": "Use the dropdown to highlight a financial year. The COVID-19 dip is visible in 2020\u201321.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": "container",
   "height": 360,

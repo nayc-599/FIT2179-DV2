@@ -5,7 +5,7 @@
     "subtitle": "New South Wales, Victoria, and Queensland compared on the same scale",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "height": 280,
   "data": {
@@ -23,7 +23,7 @@
     "columns": 3,
     "title": null,
     "sort": ["NSW", "VIC", "QLD"],
-    "header": {"labelFontSize": 13, "labelFontWeight": "bold", "labelColor": "#1a5276"}
+    "header": {"labelFontSize": 13, "labelFontWeight": "bold", "labelColor": "#5dade2"}
   },
   "spec": {
     "width": 320,
@@ -34,9 +34,9 @@
           "interpolate": "monotone",
           "line": true,
           "point": true,
-          "color": "#1a5276",
+          "color": "#5dade2",
           "strokeWidth": 2,
-          "fillOpacity": 0.15
+          "fillOpacity": 0.25
         },
         "encoding": {
           "x": {
@@ -79,5 +79,26 @@
     ]
   },
   "resolve": {"scale": {"y": "shared"}},
-  "config": {"background": "transparent","view": {"stroke": null}, "font": "DM Sans"}
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#8aa4c0",
+      "titleColor": "#e2eaf4",
+      "gridColor": "rgba(255,255,255,0.08)",
+      "domainColor": "rgba(255,255,255,0.15)",
+      "tickColor": "rgba(255,255,255,0.15)"
+    },
+    "legend": {
+      "labelColor": "#e2eaf4",
+      "titleColor": "#e2eaf4"
+    },
+    "title": {
+      "color": "#e2eaf4",
+      "subtitleColor": "#8aa4c0"
+    }
+  }
 }

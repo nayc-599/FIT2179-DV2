@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Departures vs Remittances — by country",
+    "text": "Departures vs Remittances \u2014 by country",
     "subtitle": "Each bubble = one country. Size = population. Colour = continent. Hover for details.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": 900,
   "height": 430,
@@ -16,6 +16,14 @@
         {
           "name": "scatter_hover",
           "select": {"type": "point", "on": "mouseover", "clear": "mouseout"}
+        },
+        {
+          "name": "continent_filter",
+          "select": {
+            "type": "point",
+            "fields": ["continent"]
+          },
+          "bind": "legend"
         }
       ],
       "mark": {"type": "point", "filled": true, "stroke": "#fff", "strokeWidth": 0.8},
@@ -23,7 +31,7 @@
         "x": {
           "field": "departures",
           "type": "quantitative",
-          "title": "Total departures from Australia (2004–25)",
+          "title": "Total departures from Australia (2004\u201325)",
           "axis": {"format": "~s"},
           "scale": {"type": "log", "domain": [100, 800000]}
         },
@@ -47,12 +55,15 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#E91E8C","#2471a3","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#E91E8C","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
           }
         },
         "opacity": {
-          "condition": {"param": "scatter_hover", "empty": false, "value": 1},
-          "value": 0.7
+          "condition": [
+            {"param": "continent_filter", "empty": true, "value": 0.8},
+            {"param": "continent_filter", "empty": false, "value": 1}
+          ],
+          "value": 0.1
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -75,15 +86,19 @@
           "legend": null,
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#E91E8C","#2471a3","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#E91E8C","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
           }
         },
         "opacity": {
-          "condition": {
-            "test": "indexof(['Philippines','New Zealand','UK','Indonesia','USA','Mexico','Bangladesh','Pakistan','Japan','Malaysia','Ireland'], datum.display_country) >= 0",
-            "value": 1
-          },
-          "value": 0
+          "condition": [
+            {
+              "test": "indexof(['Philippines','New Zealand','UK','Indonesia','USA','Mexico','Bangladesh','Pakistan','Japan','Malaysia','Ireland'], datum.display_country) < 0",
+              "value": 0
+            },
+            {"param": "continent_filter", "empty": true, "value": 1},
+            {"param": "continent_filter", "empty": false, "value": 1}
+          ],
+          "value": 0.1
         }
       }
     },
@@ -111,17 +126,17 @@
           "mark": {
             "type": "rect",
             "x": 560, "y": 280, "x2": 870, "y2": 400,
-            "fill": "#eaf0fb",
-            "stroke": "#1a5276",
+            "fill": "rgba(93,173,226,0.15)",
+            "stroke": "#2e86de",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
-        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "High departures, low remittances"}},
-        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 10, "color": "#333", "text": "Countries like New Zealand, UK & Ireland"}},
-        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 10, "color": "#333", "text": "send many emigrants from Australia"}},
-        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 10, "color": "#333", "text": "but receive relatively little in remittances"}}
+        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "High departures, low remittances"}},
+        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 10, "color": "#e2eaf4", "text": "Countries like New Zealand, UK & Ireland"}},
+        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 10, "color": "#e2eaf4", "text": "send many emigrants from Australia"}},
+        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 10, "color": "#e2eaf4", "text": "but receive relatively little in remittances"}}
       ]
     }
   ],
@@ -129,6 +144,22 @@
     "background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans",
-    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#8aa4c0",
+      "titleColor": "#e2eaf4",
+      "gridColor": "rgba(255,255,255,0.08)",
+      "domainColor": "rgba(255,255,255,0.15)",
+      "tickColor": "rgba(255,255,255,0.15)"
+    },
+    "legend": {
+      "labelColor": "#e2eaf4",
+      "titleColor": "#e2eaf4"
+    },
+    "title": {
+      "color": "#e2eaf4",
+      "subtitleColor": "#8aa4c0"
+    }
   }
 }

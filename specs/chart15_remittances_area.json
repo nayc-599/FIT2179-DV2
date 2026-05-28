@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Remittances received over time — top emigrant-source countries",
+    "text": "Remittances received over time \u2014 top emigrant-source countries",
     "subtitle": "Personal remittances received (current US$). Hover to highlight a country.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#555"
+    "subtitleColor": "#8aa4c0"
   },
   "width": 890,
   "height": 380,
@@ -14,7 +14,23 @@
     "background": "transparent",
     "view": {"stroke": null},
     "font": "DM Sans",
-    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#8aa4c0",
+      "titleColor": "#e2eaf4",
+      "gridColor": "rgba(255,255,255,0.08)",
+      "domainColor": "rgba(255,255,255,0.15)",
+      "tickColor": "rgba(255,255,255,0.15)"
+    },
+    "legend": {
+      "labelColor": "#e2eaf4",
+      "titleColor": "#e2eaf4"
+    },
+    "title": {
+      "color": "#e2eaf4",
+      "subtitleColor": "#8aa4c0"
+    }
   },
   "layer": [
     {
@@ -27,6 +43,14 @@
             "on": "mouseover",
             "clear": "mouseout"
           }
+        },
+        {
+          "name": "rem_filter",
+          "select": {
+            "type": "point",
+            "fields": ["display_country"]
+          },
+          "bind": "legend"
         }
       ],
       "transform": [
@@ -49,7 +73,7 @@
           "type": "ordinal",
           "title": "Year",
           "sort": null,
-          "axis": {"labelAngle": -45}
+          "axis": {"labelAngle": 0}
         },
         "y": {
           "field": "remittances_usd",
@@ -69,11 +93,21 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["New Zealand","Malaysia","Japan","Korea South","UK","USA","Indonesia","China","Philippines","India"],
-            "range": ["#9B72CF","#E76F51","#E8A0BF","#F4D03F","#1D3557","#7B2D8B","#8B4513","#E63946","#00B4D8","#E07020"]
+            "range": ["#9B72CF","#E76F51","#E8A0BF","#F4D03F","#2e86de","#a855f7","#8B4513","#E63946","#00B4D8","#E07020"]
           }
         },
         "opacity": {
-          "condition": {"param": "rem_hover", "empty": false, "value": 0.9},
+          "condition": [
+            {"param": "rem_filter", "empty": true, "value": 0.8},
+            {"param": "rem_filter", "empty": false, "value": 1}
+          ],
+          "value": 0.1
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "rem_filter", "empty": true, "value": 1.5},
+            {"param": "rem_filter", "empty": false, "value": 2.5}
+          ],
           "value": 0.5
         },
         "tooltip": [
@@ -90,21 +124,21 @@
           "mark": {
             "type": "rect",
             "x": 20, "y": 15, "x2": 280, "y2": 95,
-            "fill": "#eaf4fb",
-            "stroke": "#1a5276",
+            "fill": "rgba(93,173,226,0.15)",
+            "stroke": "#2e86de",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "India towers above all"}
+          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "India towers above all"}
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 10, "color": "#333", "text": "$19B in 2004 -> $120B in 2023"}
+          "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 10, "color": "#e2eaf4", "text": "$19B in 2004 -> $120B in 2023"}
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 78, "fontSize": 10, "color": "#333", "text": "a 6× increase in 20 years"}
+          "mark": {"type": "text", "x": 150, "y": 78, "fontSize": 10, "color": "#e2eaf4", "text": "a 6× increase in 20 years"}
         }
       ]
     },
@@ -115,21 +149,21 @@
           "mark": {
             "type": "rect",
             "x": 560, "y": 15, "x2": 820, "y2": 85,
-            "fill": "#fdedec",
-            "stroke": "#c0392b",
+            "fill": "rgba(231,76,60,0.15)",
+            "stroke": "#e74c3c",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 690, "y": 38, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "2008 & 2015 peaks"}
+          "mark": {"type": "text", "x": 690, "y": 38, "fontSize": 12, "fontWeight": "bold", "color": "#e74c3c", "text": "2008 & 2015 peaks"}
         },
         {
-          "mark": {"type": "text", "x": 690, "y": 57, "fontSize": 10, "color": "#333", "text": "driven by China's surge"}
+          "mark": {"type": "text", "x": 690, "y": 57, "fontSize": 10, "color": "#e2eaf4", "text": "driven by China's surge"}
         },
         {
-          "mark": {"type": "text", "x": 690, "y": 74, "fontSize": 10, "color": "#333", "text": "then sharp decline post-2015"}
+          "mark": {"type": "text", "x": 690, "y": 74, "fontSize": 10, "color": "#e2eaf4", "text": "then sharp decline post-2015"}
         }
       ]
     }
