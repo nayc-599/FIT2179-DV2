@@ -4,7 +4,7 @@
   let timer = null;
   let vegaView = null;
   let currentIndex = 1;
-  const MAX_INDEX = 12; // includes dummy 2024-26 point
+  const MAX_INDEX = 12;
   const STEP_MS = 800;
 
   window.addEventListener('bumpChartReady', function(e) {
@@ -28,37 +28,17 @@
     const btn = document.createElement('button');
     btn.id = 'bump-play-btn';
     btn.textContent = '▶ Play';
-    btn.style.cssText = `
-      background: #1a5276;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      padding: 0.4rem 1rem;
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.95rem;
-      cursor: pointer;
-      font-weight: 600;
-    `;
+    btn.className = 'player-btn';
 
     const resetBtn = document.createElement('button');
     resetBtn.textContent = '↺ Reset';
-    resetBtn.style.cssText = `
-      background: transparent;
-      color: #1a5276;
-      border: 2px solid #1a5276;
-      border-radius: 6px;
-      padding: 0.4rem 1rem;
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.95rem;
-      cursor: pointer;
-      font-weight: 600;
-    `;
+    resetBtn.className = 'player-btn secondary';
 
     const label = document.createElement('span');
     label.id = 'bump-year-label';
     label.style.cssText = `
       font-size: 0.95rem;
-      color: #555;
+      color: #8aa4c0;
       font-family: "DM Sans", sans-serif;
     `;
     label.textContent = 'Showing: 2015';
@@ -66,11 +46,7 @@
     const years = ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025','2025'];
 
     btn.addEventListener('click', function() {
-      if (playing) {
-        pause();
-      } else {
-        play();
-      }
+      if (playing) { pause(); } else { play(); }
     });
 
     resetBtn.addEventListener('click', function() {
@@ -91,9 +67,7 @@
       timer = setInterval(function() {
         currentIndex++;
         updateChart();
-        if (currentIndex >= MAX_INDEX) {
-          pause();
-        }
+        if (currentIndex >= MAX_INDEX) { pause(); }
       }, STEP_MS);
     }
 

@@ -124,46 +124,21 @@
           "mark": {
             "type": "rect",
             "x": 20, "y": 15, "x2": 280, "y2": 95,
-            "fill": "rgba(93,173,226,0.15)",
-            "stroke": "#2e86de",
+            "fill": "rgba(93,173,226,0.12)",
+            "stroke": "#5dade2",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "India towers above all"}
+          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 12, "fontWeight": "bold", "color": "#5dade2", "text": "India towers above all"}
         },
         {
           "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 10, "color": "#e2eaf4", "text": "$19B in 2004 -> $120B in 2023"}
         },
         {
           "mark": {"type": "text", "x": 150, "y": 78, "fontSize": 10, "color": "#e2eaf4", "text": "a 6× increase in 20 years"}
-        }
-      ]
-    },
-    {
-      "data": {"values": [{}]},
-      "layer": [
-        {
-          "mark": {
-            "type": "rect",
-            "x": 560, "y": 15, "x2": 820, "y2": 85,
-            "fill": "rgba(231,76,60,0.15)",
-            "stroke": "#e74c3c",
-            "strokeWidth": 1.5,
-            "cornerRadius": 6,
-            "opacity": 0.95
-          }
-        },
-        {
-          "mark": {"type": "text", "x": 690, "y": 38, "fontSize": 12, "fontWeight": "bold", "color": "#e74c3c", "text": "2008 & 2015 peaks"}
-        },
-        {
-          "mark": {"type": "text", "x": 690, "y": 57, "fontSize": 10, "color": "#e2eaf4", "text": "driven by China's surge"}
-        },
-        {
-          "mark": {"type": "text", "x": 690, "y": 74, "fontSize": 10, "color": "#e2eaf4", "text": "then sharp decline post-2015"}
         }
       ]
     }

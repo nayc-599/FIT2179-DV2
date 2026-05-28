@@ -10,6 +10,9 @@
   "width": 900,
   "height": 430,
   "data": {"url": "data/chart17_scatter.csv"},
+  "params": [
+    {"name": "search_query", "value": ""}
+  ],
   "layer": [
     {
       "params": [
@@ -24,6 +27,11 @@
             "fields": ["continent"]
           },
           "bind": "legend"
+        },
+        {
+          "name": "grid",
+          "select": "interval",
+          "bind": "scales"
         }
       ],
       "mark": {"type": "point", "filled": true, "stroke": "#fff", "strokeWidth": 0.8},
@@ -60,10 +68,11 @@
         },
         "opacity": {
           "condition": [
+            {"test": "search_query !== '' && indexof(lower(datum.display_country), search_query) < 0", "value": 0.05},
             {"param": "continent_filter", "empty": true, "value": 0.8},
             {"param": "continent_filter", "empty": false, "value": 1}
           ],
-          "value": 0.1
+          "value": 0.8
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -91,14 +100,13 @@
         },
         "opacity": {
           "condition": [
-            {
-              "test": "indexof(['Philippines','New Zealand','UK','Indonesia','USA','Mexico','Bangladesh','Pakistan','Japan','Malaysia','Ireland'], datum.display_country) < 0",
-              "value": 0
-            },
+            {"test": "search_query !== '' && indexof(lower(datum.display_country), search_query) >= 0", "value": 1},
+            {"test": "search_query !== ''", "value": 0},
+            {"test": "indexof(['Philippines','New Zealand','UK','Indonesia','USA','Mexico','Bangladesh','Pakistan','Japan','Malaysia','Ireland'], datum.display_country) < 0", "value": 0},
             {"param": "continent_filter", "empty": true, "value": 1},
             {"param": "continent_filter", "empty": false, "value": 1}
           ],
-          "value": 0.1
+          "value": 0
         }
       }
     },
@@ -126,17 +134,17 @@
           "mark": {
             "type": "rect",
             "x": 560, "y": 280, "x2": 870, "y2": 400,
-            "fill": "rgba(93,173,226,0.15)",
-            "stroke": "#2e86de",
+            "fill": "rgba(46,134,222,0.15)",
+            "stroke": "#5dade2",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
-        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "High departures, low remittances"}},
-        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 10, "color": "#e2eaf4", "text": "Countries like New Zealand, UK & Ireland"}},
-        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 10, "color": "#e2eaf4", "text": "send many emigrants from Australia"}},
-        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 10, "color": "#e2eaf4", "text": "but receive relatively little in remittances"}}
+        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 12, "fontWeight": "bold", "color": "#5dade2", "text": "High departures, low remittances"}},
+        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 10, "color": "#c8d8e8", "text": "Countries like New Zealand, UK & Ireland"}},
+        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 10, "color": "#c8d8e8", "text": "send many emigrants from Australia"}},
+        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 10, "color": "#c8d8e8", "text": "but receive relatively little in remittances"}}
       ]
     }
   ],

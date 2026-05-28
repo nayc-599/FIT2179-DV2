@@ -10,6 +10,9 @@
   "width": 900,
   "height": 450,
   "projection": {"type": "naturalEarth1"},
+  "params": [
+    {"name": "continent_select", "value": null}
+  ],
   "layer": [
     {
       "data": {
@@ -99,10 +102,10 @@
           }
         },
         "opacity": {
-          "condition": [
-            {"param": "chart9_flowHoverUnique", "empty": false, "value": 1},
-            {"param": "chart9_flowHoverUnique", "empty": true, "value": 0.6}
-          ],
+          "condition": {
+            "test": "continent_select === null || datum.continent === continent_select",
+            "value": 1
+          },
           "value": 0.15
         },
         "tooltip": [
