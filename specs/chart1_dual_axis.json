@@ -2,37 +2,27 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Migration departures and remittances, 2004–05 to 2024–25",
-    "subtitle": "Overseas-born departures (left) and personal remittances received by Australia in US dollars (right)",
+    "subtitle": "Overseas-born departures (left) and personal remittances received by Australia in AUD dollars (right)",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#555"
   },
-  "width": "container",
+  "width": 920,
   "height": 380,
   "data": {"url": "data/chart1_totals.csv"},
   "transform": [
-    {
-      "calculate": "'20' + split(datum.year, '-')[1]",
-      "as": "year_label"
-    }
+    {"calculate": "'20' + split(datum.year, '-')[1]", "as": "year_label"}
   ],
   "layer": [
     {
       "mark": {"type": "line", "point": true, "strokeWidth": 2.5},
       "encoding": {
         "x": {
-          "field": "year",
-          "type": "ordinal",
-          "title": "Financial year",
-          "sort": null,
-          "axis": {
-            "labelAngle": 0,
-            "labelExpr": "'20' + split(datum.label, '-')[1]"
-          }
+          "field": "year", "type": "ordinal", "title": "Financial year", "sort": null,
+          "axis": {"labelAngle": 0, "labelExpr": "'20' + split(datum.label, '-')[1]"}
         },
         "y": {
-          "field": "departures",
-          "type": "quantitative",
+          "field": "departures", "type": "quantitative",
           "title": "Total departures (overseas-born)",
           "axis": {"format": ",.0f", "titleColor": "#1a5276"},
           "scale": {"zero": false}
@@ -49,16 +39,15 @@
       "encoding": {
         "x": {"field": "year", "type": "ordinal", "sort": null},
         "y": {
-          "field": "remittances_usd",
-          "type": "quantitative",
-          "title": "Remittances received (US$)",
+          "field": "remittances_aud", "type": "quantitative",
+          "title": "Remittances received (A$)",
           "axis": {"format": "~s", "titleColor": "#c0392b"},
           "scale": {"zero": false}
         },
         "color": {"value": "#c0392b"},
         "tooltip": [
           {"field": "year_label", "title": "Year"},
-          {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
+          {"field": "remittances_aud", "title": "Remittances (A$)", "format": "~s"}
         ]
       }
     },
@@ -73,6 +62,27 @@
         "y": {"value": 0},
         "text": {"value": "COVID-19"}
       }
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {"mark": {"type": "rect", "x": 20, "y": 20, "x2": 280, "y2": 105, "fill": "#fdedec", "stroke": "#c0392b", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
+        {"mark": {"type": "text", "x": 150, "y": 45, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "Remittances peaked 2012–14"}},
+        {"mark": {"type": "text", "x": 150, "y": 65, "fontSize": 10, "color": "#333", "text": "driven by strong commodity prices"}},
+        {"mark": {"type": "text", "x": 150, "y": 83, "fontSize": 10, "color": "#333", "text": "and a high AUD exchange rate"}},
+
+        {"mark": {"type": "rect", "x": 740, "y": 45, "x2": 900, "y2": 155, "fill": "#eaf0fb", "stroke": "#1a5276", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
+        {"mark": {"type": "text", "x": 820, "y": 68, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "Remittances resilient"}},
+        {"mark": {"type": "text", "x": 820, "y": 88, "fontSize": 10, "color": "#333", "text": "Departures fell sharply"}},
+        {"mark": {"type": "text", "x": 820, "y": 104, "fontSize": 10, "color": "#333", "text": "in 2021–22 but remittances"}},
+        {"mark": {"type": "text", "x": 820, "y": 120, "fontSize": 10, "color": "#333", "text": "recovered faster"}},
+        {"mark": {"type": "text", "x": 820, "y": 138, "fontSize": 10, "color": "#555", "fontStyle": "italic", "text": "money outlasts movement"}},
+
+        {"mark": {"type": "rect", "x": 430, "y": 235, "x2": 670, "y2": 320, "fill": "#eaf0fb", "stroke": "#1a5276", "strokeWidth": 1.5, "cornerRadius": 6, "opacity": 0.95}},
+        {"mark": {"type": "text", "x": 550, "y": 258, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "Departures plateaued"}},
+        {"mark": {"type": "text", "x": 550, "y": 278, "fontSize": 10, "color": "#333", "text": "2013–17 saw steady but slow"}},
+        {"mark": {"type": "text", "x": 550, "y": 295, "fontSize": 10, "color": "#333", "text": "growth before the 2020 surge"}}
+      ]
     }
   ],
   "resolve": {"scale": {"y": "independent"}},

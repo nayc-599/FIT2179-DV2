@@ -42,7 +42,7 @@
           "type": "quantitative",
           "scale": {
             "type": "log",
-            "scheme": "orangered",
+            "scheme": "yellowgreen",
             "domainMin": 70000
           },
           "legend": {
@@ -95,7 +95,7 @@
           "legend": {"orient": "bottom", "title": "Continent"},
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
-            "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+            "range": ["#E91E8C", "#2471a3", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
           }
         },
         "opacity": {
@@ -131,7 +131,7 @@
           "legend": null,
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
-            "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+            "range": ["#E91E8C", "#2471a3", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
           }
         },
         "opacity": {
@@ -167,7 +167,7 @@
           "legend": null,
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
-            "range": ["#1a5276", "#2980b9", "#16a085", "#8e44ad", "#d35400", "#c0392b"]
+            "range": ["#E91E8C", "#2471a3", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
           }
         },
         "opacity": {"value": 1},

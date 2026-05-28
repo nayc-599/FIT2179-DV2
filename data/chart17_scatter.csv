@@ -1,0 +1,131 @@
+display_country,continent,departures,remittances_aud,population_millions
+China,Asia,592460,46585193866,1409.7
+UK,Europe,396040,7088593288,67.7
+New Zealand,Oceania,331410,643384535,5.1
+India,Asia,260650,188851166913,1428.6
+USA,Americas,169720,13272000000,334.9
+Korea South,Asia,169190,11228270000,51.7
+Malaysia,Asia,139660,2693011351,34.3
+Japan,Asia,109180,7445412740,124.5
+Indonesia,Asia,99540,22857599632,277.5
+Ireland,Europe,82890,902069307,5.1
+Philippines,Asia,76000,61773086424,115.6
+France,Europe,74240,57987018508,68.0
+Germany,Europe,73790,33213529164,84.4
+Thailand,Asia,68530,15313390652,71.8
+Canada,Americas,60440,1338565286,38.8
+Brazil,Americas,47170,7005247506,215.3
+South Africa,Africa,42990,1269349256,60.4
+Italy,Europe,42640,19122584424,1.0
+Saudi Arabia,Middle East,39690,493506979,36.4
+Sri Lanka,Asia,36460,9515699362,22.2
+Pakistan,Asia,31210,41961640000,231.4
+Colombia,Americas,30970,15976317610,52.2
+Netherlands,Europe,25930,6751329041,17.9
+Nepal,Asia,23750,17007771794,30.0
+Spain,Europe,19000,8676523083,47.4
+Bangladesh,Asia,18830,34870664880,172.9
+Fiji,Oceania,18160,757373465,0.9
+Sweden,Europe,17940,6131542133,10.5
+Chile,Americas,17660,153366492,19.6
+Samoa,Oceania,16240,418595655,0.2
+Poland,Europe,15970,13493200000,37.6
+PNG,Oceania,15930,21339053,1.0
+Lebanon,Middle East,15720,10579955426,5.5
+Greece,Europe,15190,856266976,10.4
+Argentina,Americas,13790,1594198580,45.8
+Iraq,Middle East,12200,1835486000,42.1
+Switzerland,Europe,12070,5514765375,8.7
+Russia,Europe,10440,4133991000,144.3
+Norway,Europe,10340,1518915892,5.5
+Israel,Middle East,9520,1564358000,9.2
+Zimbabwe,Africa,9150,5216003067,16.3
+Cambodia,Asia,8560,4395378687,17.2
+Czechia,Europe,8470,6755897221,10.9
+Croatia,Europe,8280,9600066794,3.9
+Denmark,Europe,8140,2402076678,5.9
+Belgium,Europe,8110,23134166782,11.6
+Tonga,Oceania,7790,397981684,0.1
+Egypt,Africa,7680,30860718000,105.9
+Mauritius,Africa,7680,498302549,1.3
+North Macedonia,Europe,7530,730684931,2.1
+Kenya,Africa,7530,6679626337,55.1
+Mexico,Americas,7490,104655799208,128.5
+Mongolia,Asia,7120,719332143,3.4
+Estonia,Europe,7040,769866488,1.4
+Peru,Americas,5950,7025967471,33.4
+Vanuatu,Oceania,5920,312569047,0.3
+Finland,Europe,5900,1182257499,5.5
+Austria,Europe,5600,5154259792,9.1
+Romania,Europe,5470,15744738705,18.9
+Portugal,Europe,5380,2742059008,10.2
+Hungary,Europe,5350,8119224542,10.1
+Ukraine,Europe,5100,23647860000,37.0
+Kuwait,Middle East,4650,33628009,4.3
+Sudan,Africa,4610,2369100877,46.8
+Jordan,Middle East,4260,6888800000,10.4
+Serbia,Europe,4170,9120111713,7.1
+Nigeria,Africa,3730,30888287997,223.8
+Oman,Middle East,3720,61638492,4.6
+Timor-Leste,Asia,3160,304920337,1.3
+Solomon Islands,Oceania,3090,133592187,0.7
+Cyprus,Europe,3040,1000646210,1.3
+Zambia,Africa,2990,388187225,20.6
+Ethiopia,Africa,2650,852189415,126.5
+Ecuador,Americas,2580,8614843314,18.0
+Malta,Europe,2570,24612482,0.5
+Uruguay,Americas,2410,212681324,3.5
+Ghana,Africa,2270,3877850671,33.5
+Bulgaria,Europe,2220,3612543600,6.3
+Lithuania,Europe,2010,1543195850,2.8
+Botswana,Africa,1660,110639822,2.6
+Slovenia,Europe,1580,1460742395,2.1
+Tanzania,Africa,1490,1955881129,65.5
+Kazakhstan,Asia,1450,479884293,19.3
+Albania,Europe,1420,3217147467,2.8
+Morocco,Africa,1340,18564371874,37.5
+El Salvador,Americas,1330,13093292379,6.3
+Kiribati,Oceania,1300,18379077,0.1
+Latvia,Europe,1240,1950909623,1.8
+Uganda,Africa,1220,2391803140,48.6
+Algeria,Africa,1050,2950728782,45.6
+Qatar,Middle East,930,2270598901,2.7
+Uzbekistan,Asia,860,22386836409,35.3
+Seychelles,Africa,850,18038688,0.1
+Malawi,Africa,780,285642969,20.9
+Nauru,Oceania,740,1391357,0.01
+Mozambique,Africa,700,402320039,33.1
+Jamaica,Americas,690,5689263921,2.8
+Belarus,Europe,660,2665112964,9.4
+Sierra Leone,Africa,620,462942743,8.4
+Namibia,Africa,560,132508193,2.6
+Iceland,Europe,550,348975055,0.4
+Costa Rica,Americas,540,1046124859,5.2
+Bolivia,Americas,530,2288856229,12.1
+Moldova,Europe,480,3178804111,2.6
+Liberia,Africa,470,1501324034,5.4
+Armenia,Asia,430,2444238594,2.8
+Tunisia,Africa,410,4537967337,12.0
+Paraguay,Americas,390,1470732278,7.4
+Guatemala,Americas,390,31569922741,18.1
+Azerbaijan,Asia,380,3022246120,10.1
+Georgia,Asia,380,6638053692,3.7
+Tuvalu,Oceania,360,4096570,0.01
+South Sudan,Africa,360,1857183034,10.9
+Montenegro,Europe,330,1271838026,0.6
+Cameroon,Africa,320,1242765555,28.1
+Luxembourg,Europe,300,3983113945,0.7
+Nicaragua,Americas,300,7366434000,7.0
+Panama,Americas,290,814776102,4.4
+Cote d'Ivoire,Africa,270,2071526019,1.0
+Senegal,Africa,270,5162077030,17.8
+Guyana,Americas,260,862016365,0.8
+Madagascar,Africa,250,492098047,29.6
+Angola,Africa,240,19065176,36.7
+Rwanda,Africa,210,818535593,14.1
+Honduras,Americas,190,14169766219,10.6
+Burundi,Africa,190,309181374,13.2
+Haiti,Americas,160,5930138136,11.7
+Guinea,Africa,130,785007200,13.5
+Tajikistan,Asia,120,7321331671,10.0
+Lesotho,Africa,110,758011036,2.2

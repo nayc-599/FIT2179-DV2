@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Departures vs Remittances — by country",
+    "subtitle": "Each bubble = one country. Size = population. Colour = continent. Hover for details.",
+    "font": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+  "width": 900,
+  "height": 430,
+  "data": {"url": "data/chart17_scatter.csv"},
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "scatter_hover",
+          "select": {"type": "point", "on": "mouseover", "clear": "mouseout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "stroke": "#fff", "strokeWidth": 0.8},
+      "encoding": {
+        "x": {
+          "field": "departures",
+          "type": "quantitative",
+          "title": "Total departures from Australia (2004–25)",
+          "axis": {"format": "~s"},
+          "scale": {"type": "log", "domain": [100, 800000]}
+        },
+        "y": {
+          "field": "remittances_aud",
+          "type": "quantitative",
+          "title": "Remittances received (A$, latest year)",
+          "axis": {"format": "~s"},
+          "scale": {"type": "log", "domain": [500000, 1000000000000]}
+        },
+        "size": {
+          "field": "population_millions",
+          "type": "quantitative",
+          "scale": {"range": [100, 3000]},
+          "legend": null
+        },
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "title": "Continent",
+          "legend": {"orient": "right"},
+          "scale": {
+            "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
+            "range": ["#E91E8C","#2471a3","#16a085","#7d3c98","#d35400","#d4ac0d"]
+          }
+        },
+        "opacity": {
+          "condition": {"param": "scatter_hover", "empty": false, "value": 1},
+          "value": 0.7
+        },
+        "tooltip": [
+          {"field": "display_country", "title": "Country"},
+          {"field": "continent", "title": "Continent"},
+          {"field": "departures", "title": "Total departures", "format": ","},
+          {"field": "remittances_aud", "title": "Remittances (A$)", "format": "~s"},
+          {"field": "population_millions", "title": "Population (M)", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -14, "fontSize": 10, "fontWeight": "bold"},
+      "encoding": {
+        "x": {"field": "departures", "type": "quantitative", "scale": {"type": "log"}},
+        "y": {"field": "remittances_aud", "type": "quantitative", "scale": {"type": "log"}},
+        "text": {"field": "display_country"},
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
+            "range": ["#E91E8C","#2471a3","#16a085","#7d3c98","#d35400","#d4ac0d"]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": "indexof(['Philippines','New Zealand','UK','Indonesia','USA','Mexico','Bangladesh','Pakistan','Japan','Malaysia','Ireland'], datum.display_country) >= 0",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": {"values": [
+        {"label": "India", "x": 770, "y": 10, "color": "#E91E8C"},
+        {"label": "China", "x": 850, "y": 50, "color": "#E91E8C"}
+      ]},
+      "layer": [
+        {
+          "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold"},
+          "encoding": {
+            "x": {"field": "x", "type": "quantitative", "scale": null, "axis": null},
+            "y": {"field": "y", "type": "quantitative", "scale": null, "axis": null},
+            "text": {"field": "label"},
+            "color": {"field": "color", "type": "nominal", "scale": null, "legend": null}
+          }
+        }
+      ]
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "x": 560, "y": 280, "x2": 870, "y2": 400,
+            "fill": "#eaf0fb",
+            "stroke": "#1a5276",
+            "strokeWidth": 1.5,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          }
+        },
+        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 12, "fontWeight": "bold", "color": "#1a5276", "text": "High departures, low remittances"}},
+        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 10, "color": "#333", "text": "Countries like New Zealand, UK & Ireland"}},
+        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 10, "color": "#333", "text": "send many emigrants from Australia"}},
+        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 10, "color": "#333", "text": "but receive relatively little in remittances"}}
+      ]
+    }
+  ],
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": null},
+    "font": "DM Sans",
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

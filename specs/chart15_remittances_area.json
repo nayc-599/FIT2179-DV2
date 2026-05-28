@@ -69,7 +69,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["New Zealand","Malaysia","Japan","Korea South","UK","USA","Indonesia","China","Philippines","India"],
-            "range": ["#9B72CF","#E76F51","#E8A0BF","#F4D03F","#1D3557","#7B2D8B","#8B4513","#E63946","#00B4D8","#F4A261"]
+            "range": ["#9B72CF","#E76F51","#E8A0BF","#F4D03F","#1D3557","#7B2D8B","#8B4513","#E63946","#00B4D8","#E07020"]
           }
         },
         "opacity": {

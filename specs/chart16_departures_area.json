@@ -64,7 +64,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["Philippines","Indonesia","Japan","Malaysia","Korea South","USA","India","New Zealand","UK","China"],
-            "range": ["#00B4D8","#8B4513","#E8A0BF","#E76F51","#F4D03F","#7B2D8B","#F4A261","#9B72CF","#1D3557","#E63946"]
+            "range": ["#00B4D8","#8B4513","#E8A0BF","#E76F51","#F4D03F","#7B2D8B","#E07020","#9B72CF","#1D3557","#E63946"]
           }
         },
         "opacity": {
@@ -84,7 +84,7 @@
         {
           "mark": {
             "type": "rect",
-            "x": 620, "y": 20, "x2": 870, "y2": 130,
+            "x": 580, "y": 20, "x2": 790, "y2": 130,
             "fill": "#fdedec",
             "stroke": "#c0392b",
             "strokeWidth": 1.5,
@@ -93,16 +93,16 @@
           }
         },
         {
-          "mark": {"type": "text", "x": 745, "y": 46, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "COVID-19 peak then collapse"}
+          "mark": {"type": "text", "x": 685, "y": 46, "fontSize": 12, "fontWeight": "bold", "color": "#c0392b", "text": "COVID-19 peak then collapse"}
         },
         {
-          "mark": {"type": "text", "x": 745, "y": 66, "fontSize": 10, "color": "#333", "text": "2019–20 saw the highest departures"}
+          "mark": {"type": "text", "x": 685, "y": 66, "fontSize": 10, "color": "#333", "text": "2019–20 saw the highest departures"}
         },
         {
-          "mark": {"type": "text", "x": 745, "y": 84, "fontSize": 10, "color": "#333", "text": "before COVID-19 cut them by 46%"}
+          "mark": {"type": "text", "x": 685, "y": 84, "fontSize": 10, "color": "#333", "text": "before COVID-19 cut them by 46%"}
         },
         {
-          "mark": {"type": "text", "x": 745, "y": 102, "fontSize": 10, "color": "#333", "text": "in a single year — 2020–21"}
+          "mark": {"type": "text", "x": 685, "y": 102, "fontSize": 10, "color": "#333", "text": "in a single year — 2020–21"}
         }
       ]
     }
