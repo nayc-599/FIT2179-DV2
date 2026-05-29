@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Top 10 countries of birth for emigrant departures",
-    "subtitle": "Total departures from Australia, 2004\u201305 to 2024\u201325 (21 years)",
+    "subtitle": "Total departures from Australia, 2005 to 2025 (21 years)",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#8aa4c0"
+    "subtitleColor": "#b8d0e8"
   },
   "width": 580,
   "height": 320,
@@ -33,7 +33,7 @@
           "legend": null,
           "scale": {
             "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"],
-            "range": ["#E63946", "#2e86de", "#9B72CF", "#E07020", "#a855f7", "#F4D03F", "#E76F51", "#E8A0BF", "#8B4513", "#00B4D8"]}
+            "range": ["#E63946", "#2e86de", "#b8860b", "#E07020", "#a855f7", "#F4D03F", "#c5b4e3", "#ff6b9d", "#8B4513", "#00B4D8"]}
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -98,7 +98,7 @@
             "type": "text",
             "x": 350, "y": 215,
             "fontSize": 10,
-            "color": "#e2eaf4",
+            "color": "#f0f6ff",
             "text": "7 of the 10 largest emigrant sources"
           }
         },
@@ -107,7 +107,7 @@
             "type": "text",
             "x": 350, "y": 230,
             "fontSize": 10,
-            "color": "#e2eaf4",
+            "color": "#f0f6ff",
             "text": "are in the Asia-Pacific region"
           }
         }
@@ -119,21 +119,25 @@
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#8aa4c0",
-      "titleColor": "#e2eaf4",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#b8d0e8",
+      "titleColor": "#f0f6ff",
       "gridColor": "rgba(255,255,255,0.08)",
       "domainColor": "rgba(255,255,255,0.15)",
       "tickColor": "rgba(255,255,255,0.15)"
     },
     "legend": {
-      "labelColor": "#e2eaf4",
-      "titleColor": "#e2eaf4"
+      "labelColor": "#f0f6ff",
+      "titleColor": "#f0f6ff",
+      "labelFontSize": 13,
+      "titleFontSize": 14
     },
     "title": {
-      "color": "#e2eaf4",
-      "subtitleColor": "#8aa4c0"
+      "color": "#f0f6ff",
+      "subtitleColor": "#b8d0e8",
+      "fontSize": 15,
+      "subtitleFontSize": 13
     }
   }
 }

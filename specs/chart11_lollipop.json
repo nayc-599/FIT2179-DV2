@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "COVID-19 recovery: 2024\u201325 vs 2018\u201319 departures",
+    "text": "COVID-19 recovery: 2025 vs 2019 departures",
     "subtitle": "Positive = exceeded pre-COVID levels. Negative = still below pre-COVID levels.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#8aa4c0"
+    "subtitleColor": "#b8d0e8"
   },
   "width": 950,
   "height": 360,
@@ -32,7 +32,7 @@
         "x": {
           "field": "gap",
           "type": "quantitative",
-          "title": "Change in annual departures (2024\u201325 minus 2018\u201319)",
+          "title": "Change in annual departures (2025 minus 2019)",
           "axis": {"format": ",.0f"}
         },
         "color": {
@@ -67,8 +67,8 @@
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
-          {"field": "pre_covid", "title": "2018\u201319", "format": ","},
-          {"field": "post_covid", "title": "2024\u201325", "format": ","},
+          {"field": "pre_covid", "title": "2019", "format": ","},
+          {"field": "post_covid", "title": "2025", "format": ","},
           {"field": "gap", "title": "Change", "format": "+,"}
         ]
       }
@@ -80,7 +80,7 @@
           "mark": {
             "type": "rect",
             "x": 800, "y": 120,
-            "x2": 970, "y2": 205,
+            "x2": 970, "y2": 220,
             "fill": "rgba(93,173,226,0.15)",
             "stroke": "#2e86de",
             "strokeWidth": 1.5,
@@ -89,13 +89,13 @@
           }
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 145, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "3 countries recovered"}
+          "mark": {"type": "text", "x": 885, "y": 145, "fontSize": 14, "fontWeight": "bold", "color": "#2e86de", "text": "3 countries recovered"}
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 165, "fontSize": 10, "color": "#e2eaf4", "text": "India, Philippines & Japan"}
+          "mark": {"type": "text", "x": 885, "y": 165, "fontSize": 12, "color": "#f0f6ff", "text": "India, Philippines & Japan"}
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 182, "fontSize": 10, "color": "#e2eaf4", "text": "exceeded pre-COVID levels"}
+          "mark": {"type": "text", "x": 885, "y": 182, "fontSize": 12, "color": "#f0f6ff", "text": "exceeded pre-COVID levels"}
         }
       ]
     },
@@ -106,7 +106,7 @@
           "mark": {
             "type": "rect",
             "x": 50, "y": 155,
-            "x2": 260, "y2": 240,
+            "x2": 260, "y2": 255,
             "fill": "rgba(231,76,60,0.15)",
             "stroke": "#e74c3c",
             "strokeWidth": 1.5,
@@ -115,13 +115,13 @@
           }
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 178, "fontSize": 12, "fontWeight": "bold", "color": "#e74c3c", "text": "China: largest gap"}
+          "mark": {"type": "text", "x": 155, "y": 178, "fontSize": 14, "fontWeight": "bold", "color": "#e74c3c", "text": "China: largest gap"}
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 198, "fontSize": 10, "color": "#e2eaf4", "text": "Still 17,940 departures below"}
+          "mark": {"type": "text", "x": 155, "y": 198, "fontSize": 12, "color": "#f0f6ff", "text": "Still 17,940 departures below"}
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 215, "fontSize": 10, "color": "#e2eaf4", "text": "its 2018\u201319 peak"}
+          "mark": {"type": "text", "x": 155, "y": 215, "fontSize": 12, "color": "#f0f6ff", "text": "its 2019 peak"}
         }
       ]
     },
@@ -132,7 +132,7 @@
           "mark": {
             "type": "rect",
             "x": 450, "y": 35,
-            "x2": 690, "y2": 115,
+            "x2": 690, "y2": 130,
             "fill": "rgba(212,172,13,0.15)",
             "stroke": "#d4ac0d",
             "strokeWidth": 1.5,
@@ -141,13 +141,13 @@
           }
         },
         {
-          "mark": {"type": "text", "x": 570, "y": 58, "fontSize": 12, "fontWeight": "bold", "color": "#d4ac0d", "text": "Indonesia: almost recovered"}
+          "mark": {"type": "text", "x": 570, "y": 58, "fontSize": 14, "fontWeight": "bold", "color": "#d4ac0d", "text": "Indonesia: almost recovered"}
         },
         {
-          "mark": {"type": "text", "x": 570, "y": 78, "fontSize": 10, "color": "#e2eaf4", "text": "Just 20 departures below"}
+          "mark": {"type": "text", "x": 570, "y": 78, "fontSize": 12, "color": "#f0f6ff", "text": "Just 20 departures below"}
         },
         {
-          "mark": {"type": "text", "x": 570, "y": 95, "fontSize": 10, "color": "#e2eaf4", "text": "its 2018\u201319 level"}
+          "mark": {"type": "text", "x": 570, "y": 95, "fontSize": 12, "color": "#f0f6ff", "text": "its 2019 level"}
         }
       ]
     }
@@ -157,21 +157,25 @@
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#8aa4c0",
-      "titleColor": "#e2eaf4",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#b8d0e8",
+      "titleColor": "#f0f6ff",
       "gridColor": "rgba(255,255,255,0.08)",
       "domainColor": "rgba(255,255,255,0.15)",
       "tickColor": "rgba(255,255,255,0.15)"
     },
     "legend": {
-      "labelColor": "#e2eaf4",
-      "titleColor": "#e2eaf4"
+      "labelColor": "#f0f6ff",
+      "titleColor": "#f0f6ff",
+      "labelFontSize": 13,
+      "titleFontSize": 14
     },
     "title": {
-      "color": "#e2eaf4",
-      "subtitleColor": "#8aa4c0"
+      "color": "#f0f6ff",
+      "subtitleColor": "#b8d0e8",
+      "fontSize": 15,
+      "subtitleFontSize": 13
     }
   }
 }

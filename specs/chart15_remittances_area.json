@@ -5,7 +5,7 @@
     "subtitle": "Personal remittances received (current US$). Hover to highlight a country.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#8aa4c0"
+    "subtitleColor": "#b8d0e8"
   },
   "width": 890,
   "height": 380,
@@ -15,21 +15,25 @@
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#8aa4c0",
-      "titleColor": "#e2eaf4",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#b8d0e8",
+      "titleColor": "#f0f6ff",
       "gridColor": "rgba(255,255,255,0.08)",
       "domainColor": "rgba(255,255,255,0.15)",
       "tickColor": "rgba(255,255,255,0.15)"
     },
     "legend": {
-      "labelColor": "#e2eaf4",
-      "titleColor": "#e2eaf4"
+      "labelColor": "#f0f6ff",
+      "titleColor": "#f0f6ff",
+      "labelFontSize": 13,
+      "titleFontSize": 14
     },
     "title": {
-      "color": "#e2eaf4",
-      "subtitleColor": "#8aa4c0"
+      "color": "#f0f6ff",
+      "subtitleColor": "#b8d0e8",
+      "fontSize": 15,
+      "subtitleFontSize": 13
     }
   },
   "layer": [
@@ -93,7 +97,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["New Zealand","Malaysia","Japan","Korea South","UK","USA","Indonesia","China","Philippines","India"],
-            "range": ["#9B72CF","#E76F51","#E8A0BF","#F4D03F","#2e86de","#a855f7","#8B4513","#E63946","#00B4D8","#E07020"]
+            "range": ["#b8860b","#c5b4e3","#ff6b9d","#F4D03F","#2e86de","#a855f7","#8B4513","#E63946","#00B4D8","#E07020"]
           }
         },
         "opacity": {
@@ -123,7 +127,7 @@
         {
           "mark": {
             "type": "rect",
-            "x": 20, "y": 15, "x2": 280, "y2": 95,
+            "x": 20, "y": 15, "x2": 280, "y2": 110,
             "fill": "rgba(93,173,226,0.12)",
             "stroke": "#5dade2",
             "strokeWidth": 1.5,
@@ -132,13 +136,13 @@
           }
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 12, "fontWeight": "bold", "color": "#5dade2", "text": "India towers above all"}
+          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 14, "fontWeight": "bold", "color": "#5dade2", "text": "India towers above all"}
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 10, "color": "#e2eaf4", "text": "$19B in 2004 -> $120B in 2023"}
+          "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 12, "color": "#f0f6ff", "text": "$19B in 2004 -> $120B in 2023"}
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 78, "fontSize": 10, "color": "#e2eaf4", "text": "a 6× increase in 20 years"}
+          "mark": {"type": "text", "x": 150, "y": 78, "fontSize": 12, "color": "#f0f6ff", "text": "a 6× increase in 20 years"}
         }
       ]
     }

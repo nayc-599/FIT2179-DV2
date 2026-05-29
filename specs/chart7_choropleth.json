@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Total emigrant departures by state and territory",
-    "subtitle": "Sum of all countries of birth, 2004\u201305 to 2024\u201325",
+    "subtitle": "Sum of all countries of birth, 2005 to 2025",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#8aa4c0"
+    "subtitleColor": "#b8d0e8"
   },
   "width": 550,
   "height": 420,
@@ -63,7 +63,7 @@
         "type": "text",
         "fontSize": 11,
         "fontWeight": 600,
-        "fill": "#e2eaf4",
+        "fill": "#ffffff",
         "align": "center",
         "baseline": "middle"
       },
@@ -83,21 +83,25 @@
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#8aa4c0",
-      "titleColor": "#e2eaf4",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#b8d0e8",
+      "titleColor": "#f0f6ff",
       "gridColor": "rgba(255,255,255,0.08)",
       "domainColor": "rgba(255,255,255,0.15)",
       "tickColor": "rgba(255,255,255,0.15)"
     },
     "legend": {
-      "labelColor": "#e2eaf4",
-      "titleColor": "#e2eaf4"
+      "labelColor": "#f0f6ff",
+      "titleColor": "#f0f6ff",
+      "labelFontSize": 13,
+      "titleFontSize": 14
     },
     "title": {
-      "color": "#e2eaf4",
-      "subtitleColor": "#8aa4c0"
+      "color": "#f0f6ff",
+      "subtitleColor": "#b8d0e8",
+      "fontSize": 15,
+      "subtitleFontSize": 13
     }
   }
 }

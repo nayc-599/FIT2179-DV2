@@ -5,7 +5,7 @@
     "subtitle": "Shading shows total departures 2004\u201325. Line width = departure volume. Hover to highlight.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#8aa4c0"
+    "subtitleColor": "#b8d0e8"
   },
   "width": 900,
   "height": 450,
@@ -98,7 +98,7 @@
           "legend": {"orient": "bottom", "title": "Continent"},
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
-            "range": ["#E91E8C", "#54a0ff", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
+            "range": ["#ff6eb4", "#54a0ff", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
           }
         },
         "opacity": {
@@ -134,7 +134,7 @@
           "legend": null,
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
-            "range": ["#E91E8C", "#54a0ff", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
+            "range": ["#ff6eb4", "#54a0ff", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
           }
         },
         "opacity": {
@@ -170,7 +170,7 @@
           "legend": null,
           "scale": {
             "domain": ["Asia", "Europe", "Oceania", "Americas", "Africa", "Middle East"],
-            "range": ["#E91E8C", "#54a0ff", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
+            "range": ["#ff6eb4", "#54a0ff", "#16a085", "#7d3c98", "#d35400", "#d4ac0d"]
           }
         },
         "opacity": {"value": 1},
@@ -187,7 +187,7 @@
         {
           "mark": {
             "type": "rect",
-            "x": 20, "y": 280, "x2": 260, "y2": 355,
+            "x": 20, "y": 280, "x2": 260, "y2": 370,
             "fill": "rgba(93,173,226,0.15)",
             "stroke": "#2e86de",
             "strokeWidth": 1.5,
@@ -196,13 +196,13 @@
           }
         },
         {
-          "mark": {"type": "text", "x": 140, "y": 300, "fontSize": 12, "fontWeight": "bold", "color": "#2e86de", "text": "3.9M total departures"}
+          "mark": {"type": "text", "x": 140, "y": 300, "fontSize": 14, "fontWeight": "bold", "color": "#2e86de", "text": "3.9M total departures"}
         },
         {
-          "mark": {"type": "text", "x": 140, "y": 320, "fontSize": 10, "color": "#e2eaf4", "text": "from 10 countries over 21 years"}
+          "mark": {"type": "text", "x": 140, "y": 320, "fontSize": 12, "color": "#f0f6ff", "text": "from 10 countries over 21 years"}
         },
         {
-          "mark": {"type": "text", "x": 140, "y": 335, "fontSize": 10, "color": "#e2eaf4", "text": "Darker shading = more emigrants"}
+          "mark": {"type": "text", "x": 140, "y": 335, "fontSize": 12, "color": "#f0f6ff", "text": "Darker shading = more emigrants"}
         }
       ]
     }
@@ -212,21 +212,25 @@
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#8aa4c0",
-      "titleColor": "#e2eaf4",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#b8d0e8",
+      "titleColor": "#f0f6ff",
       "gridColor": "rgba(255,255,255,0.08)",
       "domainColor": "rgba(255,255,255,0.15)",
       "tickColor": "rgba(255,255,255,0.15)"
     },
     "legend": {
-      "labelColor": "#e2eaf4",
-      "titleColor": "#e2eaf4"
+      "labelColor": "#f0f6ff",
+      "titleColor": "#f0f6ff",
+      "labelFontSize": 13,
+      "titleFontSize": 14
     },
     "title": {
-      "color": "#e2eaf4",
-      "subtitleColor": "#8aa4c0"
+      "color": "#f0f6ff",
+      "subtitleColor": "#b8d0e8",
+      "fontSize": 15,
+      "subtitleFontSize": 13
     }
   }
 }

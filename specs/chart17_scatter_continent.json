@@ -5,7 +5,7 @@
     "subtitle": "Each bubble = one country. Size = population. Colour = continent. Hover for details.",
     "font": "DM Sans",
     "subtitleFontSize": 12,
-    "subtitleColor": "#8aa4c0"
+    "subtitleColor": "#b8d0e8"
   },
   "width": 900,
   "height": 430,
@@ -63,7 +63,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#E91E8C","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#ff6eb4","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
           }
         },
         "opacity": {
@@ -95,7 +95,7 @@
           "legend": null,
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#E91E8C","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#ff6eb4","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
           }
         },
         "opacity": {
@@ -111,29 +111,12 @@
       }
     },
     {
-      "data": {"values": [
-        {"label": "India", "x": 770, "y": 10, "color": "#E91E8C"},
-        {"label": "China", "x": 850, "y": 50, "color": "#E91E8C"}
-      ]},
-      "layer": [
-        {
-          "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold"},
-          "encoding": {
-            "x": {"field": "x", "type": "quantitative", "scale": null, "axis": null},
-            "y": {"field": "y", "type": "quantitative", "scale": null, "axis": null},
-            "text": {"field": "label"},
-            "color": {"field": "color", "type": "nominal", "scale": null, "legend": null}
-          }
-        }
-      ]
-    },
-    {
       "data": {"values": [{}]},
       "layer": [
         {
           "mark": {
             "type": "rect",
-            "x": 560, "y": 280, "x2": 870, "y2": 400,
+            "x": 560, "y": 280, "x2": 870, "y2": 385,
             "fill": "rgba(46,134,222,0.15)",
             "stroke": "#5dade2",
             "strokeWidth": 1.5,
@@ -141,10 +124,10 @@
             "opacity": 0.95
           }
         },
-        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 12, "fontWeight": "bold", "color": "#5dade2", "text": "High departures, low remittances"}},
-        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 10, "color": "#c8d8e8", "text": "Countries like New Zealand, UK & Ireland"}},
-        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 10, "color": "#c8d8e8", "text": "send many emigrants from Australia"}},
-        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 10, "color": "#c8d8e8", "text": "but receive relatively little in remittances"}}
+        {"mark": {"type": "text", "x": 715, "y": 305, "fontSize": 14, "fontWeight": "bold", "color": "#5dade2", "text": "High departures, low remittances"}},
+        {"mark": {"type": "text", "x": 715, "y": 325, "fontSize": 12, "color": "#c8d8e8", "text": "Countries like New Zealand, UK & Ireland"}},
+        {"mark": {"type": "text", "x": 715, "y": 342, "fontSize": 12, "color": "#c8d8e8", "text": "send many emigrants from Australia"}},
+        {"mark": {"type": "text", "x": 715, "y": 359, "fontSize": 12, "color": "#c8d8e8", "text": "but receive relatively little in remittances"}}
       ]
     }
   ],
@@ -153,21 +136,25 @@
     "view": {"stroke": null},
     "font": "DM Sans",
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#8aa4c0",
-      "titleColor": "#e2eaf4",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#b8d0e8",
+      "titleColor": "#f0f6ff",
       "gridColor": "rgba(255,255,255,0.08)",
       "domainColor": "rgba(255,255,255,0.15)",
       "tickColor": "rgba(255,255,255,0.15)"
     },
     "legend": {
-      "labelColor": "#e2eaf4",
-      "titleColor": "#e2eaf4"
+      "labelColor": "#f0f6ff",
+      "titleColor": "#f0f6ff",
+      "labelFontSize": 13,
+      "titleFontSize": 14
     },
     "title": {
-      "color": "#e2eaf4",
-      "subtitleColor": "#8aa4c0"
+      "color": "#f0f6ff",
+      "subtitleColor": "#b8d0e8",
+      "fontSize": 15,
+      "subtitleFontSize": 13
     }
   }
 }

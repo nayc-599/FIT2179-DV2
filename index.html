@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Who Comes, Who Goes: Australia's Migration Story</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <style>
     :root {
       --bg: #f9f9f9;
-      --surface: rgba(255,255,255,0.06);
-      --text: #e2eaf4;
-      --muted: #8aa4c0;
+      --surface: rgba(255, 255, 255, 0.06);
+      --text: #f0f6ff;
+      --muted: #b8d0e8;
       --accent: #5dade2;
       --max-text: 42rem;
       --gap: 2.5rem;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -33,24 +38,32 @@
       position: relative;
     }
 
-    header, main, footer {
+    header,
+    main,
+    footer {
       max-width: 72rem;
       margin: 0 auto;
       position: relative;
       z-index: 1;
     }
 
-    header, footer { padding: 0 1.5rem; }
-    main { padding: 0; }
+    header,
+    footer {
+      padding: 0 1.5rem;
+    }
+
+    main {
+      padding: 0;
+    }
 
     header {
       padding-top: 3rem;
       padding-bottom: 2rem;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-bottom: 3px solid var(--accent);
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.07);
       border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
       margin-top: 2rem;
     }
 
@@ -85,16 +98,16 @@
     }
 
     .stat-card {
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.07);
       border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
       padding: 1.25rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 0.4rem;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-top: 3px solid var(--accent);
     }
 
@@ -111,16 +124,25 @@
       line-height: 1.4;
     }
 
-    @media (max-width: 900px) { .stats-bar { grid-template-columns: repeat(3,1fr); } }
-    @media (max-width: 600px) { .stats-bar { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 900px) {
+      .stats-bar {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
     section {
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.07);
       border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
       padding: 2rem;
       margin: 2rem 0;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     section h2 {
@@ -140,7 +162,7 @@
       max-width: var(--max-text);
       margin: 0.75rem 0 1rem;
       padding: 0.75rem 1rem;
-      background: rgba(93,173,226,0.1);
+      background: rgba(93, 173, 226, 0.1);
       border-left: 4px solid var(--accent);
       font-size: 0.98rem;
       color: var(--text);
@@ -150,12 +172,14 @@
       background: var(--surface);
       border-radius: 8px;
       padding: 1rem 1rem 0.5rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
       margin-bottom: 1rem;
       overflow: hidden;
     }
 
-    .chart-full { width: 100%; }
+    .chart-full {
+      width: 100%;
+    }
 
     .chart-medium {
       width: 100%;
@@ -164,11 +188,14 @@
       margin-right: auto;
     }
 
-    #chart8 { display: flex; justify-content: center; }
+    #chart8 {
+      display: flex;
+      justify-content: center;
+    }
 
     .chart-caption {
-      font-size: 0.82rem;
-      color: #8aa4c0;
+      font-size: 0.88rem;
+      color: #b8d0e8;
       margin: 0.25rem 0 0.75rem;
       font-style: italic;
       max-width: 34rem;
@@ -181,7 +208,11 @@
       align-items: start;
     }
 
-    @media (max-width: 900px) { .row-2 { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) {
+      .row-2 {
+        grid-template-columns: 1fr;
+      }
+    }
 
     .two-col {
       display: grid;
@@ -197,9 +228,16 @@
       min-width: 0;
     }
 
-    .two-col-chart .chart-wrap { width: 100%; height: 100%; }
+    .two-col-chart .chart-wrap {
+      width: 100%;
+      height: 100%;
+    }
 
-    @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
 
     footer {
       padding-top: 2rem;
@@ -208,15 +246,26 @@
       margin-bottom: 3rem;
       font-size: 0.9rem;
       color: var(--muted);
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.07);
       border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
-      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    footer h3 { font-size: 1rem; color: var(--accent); margin: 0 0 0.5rem; }
-    footer ul { padding-left: 1.2rem; margin: 0 0 1rem; }
-    footer a { color: var(--accent); }
+    footer h3 {
+      font-size: 1rem;
+      color: var(--accent);
+      margin: 0 0 0.5rem;
+    }
+
+    footer ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1rem;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
 
     .tooltip-wrap {
       position: relative;
@@ -230,14 +279,14 @@
       left: 50%;
       transform: translateX(-50%);
       background: #0d1b2a;
-      color: #e2eaf4;
-      border: 1px solid rgba(255,255,255,0.15);
+      color: #f0f6ff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 8px;
       padding: 0.6rem 0.9rem;
-      font-size: 0.82rem;
+      font-size: 0.88rem;
       width: 230px;
       z-index: 100;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
       line-height: 1.5;
       pointer-events: none;
       font-weight: 400;
@@ -248,7 +297,7 @@
     }
 
     .player-btn {
-      background: rgba(93,173,226,0.2);
+      background: rgba(93, 173, 226, 0.2);
       color: #5dade2;
       border: 1px solid #5dade2;
       font-family: "DM Sans", sans-serif;
@@ -259,36 +308,38 @@
     }
 
     .player-btn:hover {
-      background: rgba(93,173,226,0.35);
+      background: rgba(93, 173, 226, 0.35);
     }
 
     .player-btn.secondary {
-      background: rgba(255,255,255,0.05);
-      color: #8aa4c0;
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.05);
+      color: #b8d0e8;
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .player-btn.secondary:hover {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
     }
 
     .continent-btn {
       padding: 0.3rem 0.9rem;
       border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.05);
-      color: #8aa4c0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.05);
+      color: #b8d0e8;
       font-family: "DM Sans", sans-serif;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       cursor: pointer;
       transition: all 0.2s;
     }
+
     .continent-btn:hover {
-      background: rgba(255,255,255,0.1);
-      color: #e2eaf4;
+      background: rgba(255, 255, 255, 0.1);
+      color: #f0f6ff;
     }
+
     .continent-btn.active {
-      background: rgba(93,173,226,0.25);
+      background: rgba(93, 173, 226, 0.25);
       border-color: #5dade2;
       color: #5dade2;
     }
@@ -297,44 +348,55 @@
       display: block;
       padding: 0.4rem 0.9rem;
       border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.05);
-      color: #e2eaf4;
-      font-size: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.05);
+      color: #f0f6ff;
+      font-size: 0.9rem;
       text-decoration: none;
       transition: all 0.2s;
       font-family: "DM Sans", sans-serif;
     }
+
     .nav-pill:hover {
-      background: rgba(93,173,226,0.2);
+      background: rgba(93, 173, 226, 0.2);
       border-color: #5dade2;
       color: #5dade2;
     }
 
-    #scatter-search::placeholder { color: #8aa4c0; }
+    #scatter-search::placeholder {
+      color: #b8d0e8;
+    }
   </style>
 </head>
+
 <body>
-  <header style="display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center;">
-    <div>
-      <h1>Who Comes, Who Goes: Australia's Migration Story</h1>
-      <p class="subtitle">Understanding who arrives, who leaves, and what it means for the economy</p>
-      <p class="intro">Every year, hundreds of thousands of people move in and out of Australia. This page follows two decades of movement &mdash; from steady growth to the sudden stop of COVID-19 &mdash; and asks what happens to money when people cross borders.</p>
+  <header>
+    <h1>Who Comes, Who Goes: Australia's Migration Story</h1>
+    <p class="subtitle">Understanding who arrives, who leaves, and what it means for the economy</p>
+    <div style="display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; margin-top: 1rem;">
+      <p class="intro" style="margin: 0;">Every year, hundreds of thousands of people move in and out of Australia. This
+        page follows two decades of movement &mdash; from steady growth to the sudden stop of COVID-19 &mdash; and asks
+        what happens to money when people cross borders.</p>
+      <nav>
+        <p
+          style="margin: 0 0 0.4rem; font-size: 0.75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;">
+          Jump to</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem;">
+          <a href="#section-1" class="nav-pill">&#x2460; Where from?</a>
+          <a href="#section-2" class="nav-pill">&#x2461; Rankings</a>
+          <a href="#section-3" class="nav-pill">&#x2462; States</a>
+          <a href="#section-4" class="nav-pill">&#x2463; Economy</a>
+          <a href="#section-5" class="nav-pill" style="grid-column: span 2; text-align: center;">&#x2464; Global
+            view</a>
+        </div>
+      </nav>
     </div>
-    <nav style="display: flex; flex-direction: column; gap: 0.6rem; min-width: 160px;">
-      <p style="margin: 0 0 0.3rem; font-size: 0.75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;">Jump to</p>
-      <a href="#section-1" class="nav-pill">&#x2460; Where from?</a>
-      <a href="#section-2" class="nav-pill">&#x2461; Rankings</a>
-      <a href="#section-3" class="nav-pill">&#x2462; States</a>
-      <a href="#section-4" class="nav-pill">&#x2463; Economy</a>
-      <a href="#section-5" class="nav-pill">&#x2464; Global view</a>
-    </nav>
   </header>
 
   <div class="stats-bar">
     <div class="stat-card">
       <span class="stat-number">3.9M</span>
-      <span class="stat-label">People left Australia<br>2004&ndash;05 to 2024&ndash;25</span>
+      <span class="stat-label">People left Australia<br>2005 to 2025</span>
     </div>
     <div class="stat-card">
       <span class="stat-number">🇨🇳 China</span>
@@ -360,8 +422,25 @@
       <h2>1. Where Do Australia's Emigrants Come From?</h2>
 
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative">Every year, hundreds of thousands of people born overseas leave Australia and return to their home countries. The flow map below traces the major emigration corridors across the globe &mdash; <span class="tooltip-wrap"><span style="color: #E91E8C; font-weight: 600; border-bottom: 1.5px dotted #E91E8C; cursor: help;">Asia</span><span class="tooltip-box">7 of the top 10 emigrant source countries are in Asia-Pacific. The region's share of departures has grown every decade since 2004.</span></span> dominates overwhelmingly, with thick arcs stretching toward Australia's east coast. <span class="tooltip-wrap"><span style="color: #54a0ff; font-weight: 600; border-bottom: 1.5px dotted #54a0ff; cursor: help;">Europe</span><span class="tooltip-box">Led by the UK, Europe contributes the second-largest share of departures. Most European emigrants are long-term residents returning home.</span></span> follows at a distance, while <span class="tooltip-wrap"><span style="color: #16a085; font-weight: 600; border-bottom: 1.5px dotted #16a085; cursor: help;">Oceania</span><span class="tooltip-box">Dominated by New Zealand. Pacific Island nations also contribute smaller but growing flows.</span></span>, the <span class="tooltip-wrap"><span style="color: #a78bfa; font-weight: 600; border-bottom: 1.5px dotted #a78bfa; cursor: help;">Americas</span><span class="tooltip-box">The USA leads the Americas, followed by Canada. Most are skilled workers and students completing their time in Australia.</span></span> and <span class="tooltip-wrap"><span style="color: #d35400; font-weight: 600; border-bottom: 1.5px dotted #d35400; cursor: help;">Africa</span><span class="tooltip-box">South Africa and Zimbabwe lead African departures. Many came as skilled migrants and return after several years.</span></span> each contribute smaller but meaningful flows. The darker a country is shaded, the more emigrants it has sent.</p>
-        <p class="insight"><span style="color: #E91E8C; font-weight: 600;">Asia</span> accounts for the majority of emigrant departures &mdash; with <span style="color: #E63946; font-weight: 600;">China</span> alone contributing over 590,000 people across the 21 years of this dataset.</p>
+        <p class="narrative">The flow map below traces the top 10 emigrant-source countries &mdash; together accounting for the vast majority of all overseas-born departures from Australia. Flow line thickness reflects departure volume &mdash; <span
+            class="tooltip-wrap"><span
+              style="color: #ff6eb4; font-weight: 600; border-bottom: 1.5px dotted #ff6eb4; cursor: help;">Asia</span><span
+              class="tooltip-box">7 of the top 10 emigrant source countries are in Asia-Pacific. The region's share of
+              departures has grown every decade since 2004.</span></span> dominates overwhelmingly, with thick arcs
+          stretching toward Australia's east coast. <span class="tooltip-wrap"><span
+              style="color: #54a0ff; font-weight: 600; border-bottom: 1.5px dotted #54a0ff; cursor: help;">Europe</span><span
+              class="tooltip-box">Led by the UK, Europe contributes the second-largest share of departures. Most
+              European emigrants are long-term residents returning home.</span></span> follows at a distance, while
+          <span class="tooltip-wrap"><span
+              style="color: #16a085; font-weight: 600; border-bottom: 1.5px dotted #16a085; cursor: help;">Oceania</span><span
+              class="tooltip-box">Dominated by New Zealand. Pacific Island nations also contribute smaller but growing
+              flows.</span></span>, the <span class="tooltip-wrap"><span
+              style="color: #a78bfa; font-weight: 600; border-bottom: 1.5px dotted #a78bfa; cursor: help;">Americas</span><span
+              class="tooltip-box">The USA leads the Americas, followed by Canada. Most are skilled workers and students
+              completing their time in Australia.</span></span> contribute smaller but meaningful flows. The choropleth shading shows total departures &mdash; darker means more.</p>
+        <p class="insight"><span style="color: #ff6eb4; font-weight: 600;">Asia</span> accounts for the majority of
+          emigrant departures &mdash; with <span style="color: #E63946; font-weight: 600;">China</span> alone
+          contributing over 590,000 people across the 21 years of this dataset.</p>
       </div>
 
       <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
@@ -372,20 +451,47 @@
           <button class="continent-btn" data-continent="Oceania" onclick="filterFlowMap('Oceania')">Oceania</button>
           <button class="continent-btn" data-continent="Americas" onclick="filterFlowMap('Americas')">Americas</button>
           <button class="continent-btn" data-continent="Africa" onclick="filterFlowMap('Africa')">Africa</button>
-          <button class="continent-btn" data-continent="Middle East" onclick="filterFlowMap('Middle East')">Middle East</button>
+          <button class="continent-btn" data-continent="Middle East" onclick="filterFlowMap('Middle East')">Middle
+            East</button>
         </div>
-        <p class="chart-caption" style="margin: 0; font-style: italic;">&#x1F4A1; Use the buttons to highlight flows by continent. Hover a country for details.</p>
+        <p class="chart-caption" style="margin: 0; font-style: italic;">&#x1F4A1; Use the buttons to highlight flows by
+          continent. Hover a country for details.</p>
       </div>
       <div class="chart-wrap chart-full" id="chart9"></div>
 
-      <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--accent); margin: 1.5rem 0 0.5rem;">A closer look at the top 10</h3>
-      <div class="two-col" style="grid-template-columns: 1fr 2fr; align-items: stretch; margin-bottom: 1rem; margin-top: 0.5rem;">
+      <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--accent); margin: 1.5rem 0 0.5rem;">A closer look at
+        the top 10</h3>
+      <div class="two-col"
+        style="grid-template-columns: 1fr 2fr; align-items: stretch; margin-bottom: 1rem; margin-top: 0.5rem;">
         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center;">
-          <p class="narrative" style="margin: 0;">Breaking it down by country, ten nations account for the lion's share of departures. <span class="tooltip-wrap"><span style="color: #E63946; font-weight: 600; border-bottom: 1.5px dotted #E63946; cursor: help;">China</span><span class="tooltip-box">592,460 total departures &mdash; the largest of any country. China's share grew dramatically through the 2010s as student and temporary visa numbers surged.</span></span> stands in a league of its own &mdash; contributing over 590,000 departures across 21 years, nearly double the <span class="tooltip-wrap"><span style="color: #2e86de; font-weight: 600; border-bottom: 1.5px dotted #2e86de; cursor: help;">United Kingdom</span><span class="tooltip-box">396,040 total departures. Australia's British-born population is one of its largest migrant communities, with deep historical ties.</span></span> in second place. <span class="tooltip-wrap"><span style="color: #9B72CF; font-weight: 600; border-bottom: 1.5px dotted #9B72CF; cursor: help;">New Zealand</span><span class="tooltip-box">331,410 total departures. NZ citizens can live and work in Australia freely &mdash; making movement unusually easy between the two countries.</span></span> and <span class="tooltip-wrap"><span style="color: #E07020; font-weight: 600; border-bottom: 1.5px dotted #E07020; cursor: help;">India</span><span class="tooltip-box">260,650 total departures &mdash; fourth largest overall, but India's emigrant numbers grew fastest of all top 10 countries post-COVID.</span></span> round out the top four. Seven of the ten largest sources are in the <span class="tooltip-wrap"><span style="color: #E91E8C; font-weight: 600; border-bottom: 1.5px dotted #E91E8C; cursor: help;">Asia</span><span class="tooltip-box">7 of the top 10 emigrant source countries are in Asia-Pacific. The region's share of departures has grown every decade since 2004.</span></span>-Pacific region &mdash; underscoring how thoroughly Australia's migration story has shifted eastward over the past two decades.</p>
-          <p class="insight" style="margin: 0;"><span style="color: #E63946; font-weight: 600;">China</span> alone contributes over 590,000 departures &mdash; nearly double the <span style="color: #2e86de; font-weight: 600;">United Kingdom</span> in second place.</p>
+          <p class="narrative" style="margin: 0;">Breaking it down by country, ten nations account for the lion's share
+            of departures. <span class="tooltip-wrap"><span
+                style="color: #E63946; font-weight: 600; border-bottom: 1.5px dotted #E63946; cursor: help;">China</span><span
+                class="tooltip-box">592,460 total departures &mdash; the largest of any country. China's share grew
+                dramatically through the 2010s as student and temporary visa numbers surged.</span></span> stands in a
+            league of its own &mdash; contributing over 590,000 departures across 21 years, nearly double the <span
+              class="tooltip-wrap"><span
+                style="color: #2e86de; font-weight: 600; border-bottom: 1.5px dotted #2e86de; cursor: help;">United
+                Kingdom</span><span class="tooltip-box">396,040 total departures. Australia's British-born population is
+                one of its largest migrant communities, with deep historical ties.</span></span> in second place. <span
+              class="tooltip-wrap"><span
+                style="color: #b8860b; font-weight: 600; border-bottom: 1.5px dotted #b8860b; cursor: help;">New
+                Zealand</span><span class="tooltip-box">331,410 total departures. NZ citizens can live and work in
+                Australia freely &mdash; making movement unusually easy between the two countries.</span></span> and
+            <span class="tooltip-wrap"><span
+                style="color: #E07020; font-weight: 600; border-bottom: 1.5px dotted #E07020; cursor: help;">India</span><span
+                class="tooltip-box">260,650 total departures &mdash; fourth largest overall, but India's emigrant
+                numbers grew fastest of all top 10 countries post-COVID.</span></span> round out the top four. Seven of the top ten are from the <span class="tooltip-wrap"><span
+                style="color: #ff6eb4; font-weight: 600; border-bottom: 1.5px dotted #ff6eb4; cursor: help;">Asia</span><span
+                class="tooltip-box">7 of the top 10 emigrant source countries are in Asia-Pacific. The region's share of
+                departures has grown every decade since 2004.</span></span>-Pacific &mdash; a shift that has only accelerated over the past two decades.</p>
+          <p class="insight" style="margin: 0;"><span style="color: #E63946; font-weight: 600;">China</span> alone
+            contributes over 590,000 departures &mdash; nearly double the <span
+              style="color: #2e86de; font-weight: 600;">United Kingdom</span> in second place.</p>
         </div>
         <div>
-          <p class="chart-caption">&#x1F4A1; Click a bar to filter the departures chart below. Double-click to reset.</p>
+          <p class="chart-caption">&#x1F4A1; Click a bar to filter the departures chart below. Double-click to reset.
+          </p>
           <div class="chart-wrap" id="chart2"></div>
         </div>
       </div>
@@ -397,10 +503,22 @@
     <section id="section-2">
       <h2>2. How Have Rankings Changed Over Time?</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative" style="margin: 0;">These rankings were not always fixed. <span class="tooltip-wrap"><span style="color: #E63946; font-weight: 600; border-bottom: 1.5px dotted #E63946; cursor: help;">China</span><span class="tooltip-box">China held the #1 spot from 2019 onwards &mdash; but COVID-19 caused the sharpest drop of any country, cutting departures by over 60% in 2020&ndash;21.</span></span>'s rise was dramatic &mdash; climbing from second place in 2014 to an undisputed first by 2019, driven by a surge of international students and temporary residents completing their time in Australia. Then COVID-19 struck in 2020&ndash;21 and reshuffled the order entirely, collapsing every country's ribbon toward the bottom simultaneously. Press Play to watch a decade of change unfold.</p>
-        <p class="insight" style="margin: 0;">Recovery from COVID-19 was deeply uneven. <span style="color: #E07020; font-weight: 600;">India</span> and the <span style="color: #00B4D8; font-weight: 600;">Philippines</span> bounced back strongest &mdash; both exceeded pre-pandemic levels. <span style="color: #E76F51; font-weight: 600;">Malaysia</span> and the <span style="color: #a855f7; font-weight: 600;">USA</span> still lag well behind where they were in 2018&ndash;19.</p>
+        <p class="narrative" style="margin: 0;">The story behind these numbers is one of dramatic rise, sudden collapse, and uneven recovery. <span class="tooltip-wrap"><span
+              style="color: #E63946; font-weight: 600; border-bottom: 1.5px dotted #E63946; cursor: help;">China</span><span
+              class="tooltip-box">China held the #1 spot from 2019 onwards &mdash; but COVID-19 caused the sharpest drop
+              of any country, cutting departures by over 60% in 2021.</span></span>'s rise was dramatic &mdash;
+          climbing from second place in 2014 to an undisputed first by 2019, driven by a surge of international students
+          and temporary residents completing their time in Australia. Then COVID-19 struck in 2021 and
+          reshuffled the order entirely, collapsing every country's ribbon toward the bottom simultaneously. Use the Play button below to watch the rankings shift year by year.</p>
+        <p class="insight" style="margin: 0;">Recovery from COVID-19 was deeply uneven. <span
+            style="color: #E07020; font-weight: 600;">India</span> and the <span
+            style="color: #00B4D8; font-weight: 600;">Philippines</span> bounced back strongest &mdash; both exceeded
+          pre-pandemic levels. <span style="color: #c5b4e3; font-weight: 600;">Malaysia</span> and the <span
+            style="color: #a855f7; font-weight: 600;">USA</span> still lag well behind where they were in 2019.
+        </p>
       </div>
-      <p class="chart-caption" style="white-space: nowrap;">&#x1F4A1; Press Play to animate rankings, or drag the slider. Each ribbon = one country.</p>
+      <p class="chart-caption" style="white-space: nowrap;">&#x1F4A1; Press Play to animate rankings, or drag the
+        slider. Each ribbon = one country.</p>
       <div class="chart-wrap chart-full" id="chart4"></div>
       <p class="chart-caption">&#x1F4A1; Hover over a bar or dot to see exact departure figures for that country.</p>
       <div class="chart-wrap chart-full" id="chart11"></div>
@@ -410,8 +528,12 @@
       <h2>3. Where in Australia Are They Leaving From?</h2>
       <div class="two-col">
         <div class="two-col-text">
-          <p class="narrative">Emigrant departures are not evenly spread across Australia &mdash; they flow overwhelmingly from the states where migrant communities are most concentrated. New South Wales, Victoria and Queensland account for the vast majority of all departures, consistent with their populations and international connectivity. <mark style="background-color: rgba(93,173,226,0.3); padding: 2px 4px; border-radius: 3px; color: #e2eaf4;">Every state shows the same sharp COVID dip in 2020&ndash;21, followed by a gradual recovery that is still incomplete.</mark></p>
-          <p class="insight">New South Wales accounts for the largest share of national departures &mdash; home to Sydney, Australia's most globally connected city and the first stop for many newly arrived migrants.</p>
+          <p class="narrative">Departures concentrate heavily in Australia's most populous, internationally connected states. New South Wales, Victoria
+            and Queensland account for the vast majority of all departures, consistent with their populations and
+            international connectivity. <mark
+              style="background-color: rgba(93,173,226,0.3); padding: 2px 4px; border-radius: 3px; color: #f0f6ff;">Every state shows the same sharp COVID collapse in 2021 &mdash; and a recovery that, years later, remains unfinished.</mark></p>
+          <p class="insight">New South Wales accounts for the largest share of national departures &mdash; home to
+            Sydney, Australia's most globally connected city and the first stop for many newly arrived migrants.</p>
         </div>
         <div class="two-col-chart">
           <div class="chart-wrap" id="chart7"></div>
@@ -423,28 +545,63 @@
     <section id="section-4">
       <h2>4. The Economic Angle &mdash; Remittances Over Time</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative">Migration is never just about people &mdash; money follows. The dual axis chart below places total overseas-born departures alongside Australia's personal remittances received across the same two decades. The two lines move broadly together through the 2000s &mdash; but COVID-19 reveals a critical divergence. <mark style="background-color: rgba(93,173,226,0.3); padding: 2px 4px; border-radius: 3px; color: #e2eaf4;">Departures collapsed in 2020&ndash;21, yet remittances barely dipped before resuming their climb.</mark> The stacked line chart below then breaks this down by country, showing how <span class="tooltip-wrap"><span style="color: #E07020; font-weight: 600; border-bottom: 1.5px dotted #E07020; cursor: help;">India</span><span class="tooltip-box">India receives A$189B in remittances annually &mdash; a figure that grew sixfold since 2004, making it the world's largest remittance recipient by far.</span></span>'s remittance income has grown sixfold since 2004 &mdash; dwarfing every other nation in this dataset.</p>
-        <p class="insight">Even as emigrant departures collapsed during COVID-19, remittances kept growing for most countries. The economic ties between Australia and its diaspora source nations proved far more resilient than the movement of people itself &mdash; money outlasts movement.</p>
+        <p class="narrative">Migration leaves an economic footprint long after the departure gate closes. The dual axis chart below
+          places total overseas-born departures alongside Australia's personal remittances received across the same two
+          decades. For two decades the lines tracked each other closely &mdash; until COVID-19 pulled them apart. <mark
+            style="background-color: rgba(93,173,226,0.3); padding: 2px 4px; border-radius: 3px; color: #f0f6ff;">Departures
+            collapsed in 2021, yet remittances barely dipped before resuming their climb.</mark> The stacked
+          line chart below then breaks this down by country, showing how <span class="tooltip-wrap"><span
+              style="color: #E07020; font-weight: 600; border-bottom: 1.5px dotted #E07020; cursor: help;">India</span><span
+              class="tooltip-box">India receives A$189B in remittances annually &mdash; a figure that grew sixfold since
+              2004, making it the world's largest remittance recipient by far.</span></span>'s remittance income has
+          grown sixfold since 2004 &mdash; dwarfing every other nation in this dataset.</p>
+        <p class="insight">Even as emigrant departures collapsed during COVID-19, remittances kept growing for most
+          countries. The economic ties between Australia and its diaspora source nations proved far more resilient than
+          the movement of people itself &mdash; money outlasts movement.</p>
       </div>
       <div class="chart-wrap chart-full" id="chart1"></div>
-      <p class="chart-caption">&#x1F4A1; Click a country in the legend to isolate its line. Hover any point for exact figures.</p>
+      <p class="chart-caption">&#x1F4A1; Click a country in the legend to isolate its line. Hover any point for exact
+        figures.</p>
       <div class="chart-wrap chart-full" id="chart15"></div>
     </section>
 
     <section id="section-5">
       <h2>5. Departures vs Remittances &mdash; A Global View</h2>
       <div class="two-col" style="grid-template-columns: 1.5fr 1fr; align-items: stretch; margin-bottom: 1.25rem;">
-        <p class="narrative">Plotting every country on a single chart &mdash; departures on the x-axis, remittances on the y-axis &mdash; reveals a striking pattern. Most countries sit in a loose diagonal band, suggesting a rough relationship between how many emigrants leave Australia and how much money flows back home. <mark style="background-color: rgba(93,173,226,0.3); padding: 2px 4px; border-radius: 3px; color: #e2eaf4;">But several countries break the pattern dramatically.</mark> <span class="tooltip-wrap"><span style="color: #E07020; font-weight: 600; border-bottom: 1.5px dotted #E07020; cursor: help;">India</span><span class="tooltip-box">India is the biggest outlier &mdash; far above the trend line. Its remittances are enormous relative to its departure count, driven by its vast global diaspora beyond just Australia.</span></span> sits far above the trend &mdash; enormous remittance receipts relative to its departure count, driven by its vast global diaspora. <span class="tooltip-wrap"><span style="color: #9B72CF; font-weight: 600; border-bottom: 1.5px dotted #9B72CF; cursor: help;">New Zealand</span><span class="tooltip-box">New Zealand sits far below the trend &mdash; lots of departures but low remittances, because NZ is a wealthy country where emigrants don't need to send money home.</span></span> and the <span class="tooltip-wrap"><span style="color: #2e86de; font-weight: 600; border-bottom: 1.5px dotted #2e86de; cursor: help;">UK</span><span class="tooltip-box">Like New Zealand, the UK sits below trend &mdash; high departures but modest remittances, reflecting a wealthy destination economy.</span></span> sit far below &mdash; high departure numbers but comparatively modest remittances, reflecting wealthy destination economies where emigrants have less financial need to send money home.</p>
-        <p class="insight"><span style="color: #E91E8C; font-weight: 600;">Asia</span> dominates both axes &mdash; Asian countries cluster in the top right with the most departures and the most remittances. No other continent comes close on either measure. Meanwhile, <span style="color: #16a085; font-weight: 600;">Oceania</span> is a striking outlier &mdash; <span style="color: #9B72CF; font-weight: 600;">New Zealand</span> contributes the third-largest emigrant flow from Australia yet receives relatively little in remittances. Wealth follows proximity, not volume.</p>
+        <p class="narrative">When departure volume meets remittance flow on a single chart, a clear pattern emerges &mdash; but the outliers tell the real story. Most countries cluster along a diagonal &mdash; more emigrants, more remittances. But several break from this pattern entirely. <mark
+            style="background-color: rgba(93,173,226,0.3); padding: 2px 4px; border-radius: 3px; color: #f0f6ff;">But
+            several countries break the pattern dramatically.</mark> <span class="tooltip-wrap"><span
+              style="color: #E07020; font-weight: 600; border-bottom: 1.5px dotted #E07020; cursor: help;">India</span><span
+              class="tooltip-box">India is the biggest outlier &mdash; far above the trend line. Its remittances are
+              enormous relative to its departure count, driven by its vast global diaspora beyond just
+              Australia.</span></span> sits far above the trend &mdash; enormous remittance receipts relative to its
+          departure count, driven by its vast global diaspora. <span class="tooltip-wrap"><span
+              style="color: #b8860b; font-weight: 600; border-bottom: 1.5px dotted #b8860b; cursor: help;">New
+              Zealand</span><span class="tooltip-box">New Zealand sits far below the trend &mdash; lots of departures
+              but low remittances, because NZ is a wealthy country where emigrants don't need to send money
+              home.</span></span> and the <span class="tooltip-wrap"><span
+              style="color: #2e86de; font-weight: 600; border-bottom: 1.5px dotted #2e86de; cursor: help;">UK</span><span
+              class="tooltip-box">Like New Zealand, the UK sits below trend &mdash; high departures but modest
+              remittances, reflecting a wealthy destination economy.</span></span> sit far below &mdash; high departure
+          numbers but comparatively modest remittances, reflecting wealthy destination economies where emigrants have
+          less financial need to send money home.</p>
+        <p class="insight"><span style="color: #ff6eb4; font-weight: 600;">Asia</span> dominates both axes &mdash; Asian
+          countries cluster in the top right with the most departures and the most remittances. No other continent comes
+          close on either measure. Meanwhile, <span style="color: #16a085; font-weight: 600;">Oceania</span> is a
+          striking outlier &mdash; <span style="color: #b8860b; font-weight: 600;">New Zealand</span> contributes the
+          third-largest emigrant flow from Australia yet receives relatively little in remittances. Wealth follows
+          proximity, not volume.</p>
       </div>
-      <p class="chart-caption" style="white-space: nowrap;">&#x1F4A1; Search or filter by continent. Scroll to zoom, drag to pan. Click Recentre to reset view.</p>
+      <p class="chart-caption" style="white-space: nowrap;">&#x1F4A1; Search or filter by continent. Scroll to zoom,
+        drag to pan. Click Recentre to reset view.</p>
       <div style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
         <input type="text" id="scatter-search" placeholder="Search a country..." oninput="searchScatter(this.value)"
-          style="padding: 0.4rem 0.9rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #e2eaf4; font-family: DM Sans, sans-serif; font-size: 0.9rem; width: 220px; outline: none;">
+          style="padding: 0.4rem 0.9rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #f0f6ff; font-family: DM Sans, sans-serif; font-size: 0.9rem; width: 220px; outline: none;">
         <button onclick="searchScatter(''); document.getElementById('scatter-search').value=''"
-          style="padding: 0.3rem 0.8rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: #8aa4c0; font-family: DM Sans, sans-serif; font-size: 0.85rem; cursor: pointer;">Clear</button>
+          style="padding: 0.3rem 0.8rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: #b8d0e8; font-family: DM Sans, sans-serif; font-size: 0.85rem; cursor: pointer;">Clear</button>
         <button onclick="recentreScatter()"
-          style="padding: 0.3rem 0.8rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: #8aa4c0; font-family: DM Sans, sans-serif; font-size: 0.85rem; cursor: pointer;">&#x27F3; Recentre</button>
+          style="padding: 0.3rem 0.8rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: #b8d0e8; font-family: DM Sans, sans-serif; font-size: 0.85rem; cursor: pointer;">&#x27F3;
+          Recentre</button>
       </div>
       <div class="chart-wrap chart-full" id="chart17"></div>
     </section>
@@ -454,10 +611,15 @@
   <footer>
     <h3>Data sources</h3>
     <ul>
-      <li><a href="https://www.abs.gov.au/statistics/people/population/overseas-migration/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics &mdash; Overseas Migration 2024&ndash;25</a> (departures and arrivals by country of birth and state)</li>
-      <li><a href="https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=AU" target="_blank" rel="noopener">World Bank &mdash; Personal remittances, received (current US$), Australia</a></li>
-      <li>Australian state boundaries: <a href="https://github.com/tonywr71/GeoJson-Data" target="_blank" rel="noopener">GeoJson-Data (australian-states.json)</a></li>
-      <li>World map: <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas countries-110m</a></li>
+      <li><a href="https://www.abs.gov.au/statistics/people/population/overseas-migration/latest-release"
+          target="_blank" rel="noopener">Australian Bureau of Statistics &mdash; Overseas Migration 2024&ndash;25</a>
+        (departures and arrivals by country of birth and state)</li>
+      <li><a href="https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=AU" target="_blank"
+          rel="noopener">World Bank &mdash; Personal remittances, received (current US$), Australia</a></li>
+      <li>Australian state boundaries: <a href="https://github.com/tonywr71/GeoJson-Data" target="_blank"
+          rel="noopener">GeoJson-Data (australian-states.json)</a></li>
+      <li>World map: <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas
+          countries-110m</a></li>
       <li>Flag icons: <a href="https://flagcdn.com" target="_blank" rel="noopener">flagcdn.com</a></li>
     </ul>
     <p><strong>Author:</strong> [Your Name]</p>
@@ -474,12 +636,12 @@
     let chart17View = null;
 
     const charts = [
-      ["#chart1",  "specs/chart1_dual_axis.json"],
-      ["#chart2",  "specs/chart2_bar_top10.json"],
-      ["#chart4",  "specs/chart4_bump.json"],
-      ["#chart7",  "specs/chart7_choropleth.json"],
-      ["#chart8",  "specs/chart8_small_multiples.json"],
-      ["#chart9",  "specs/chart9_flow_map.json"],
+      ["#chart1", "specs/chart1_dual_axis.json"],
+      ["#chart2", "specs/chart2_bar_top10.json"],
+      ["#chart4", "specs/chart4_bump.json"],
+      ["#chart7", "specs/chart7_choropleth.json"],
+      ["#chart8", "specs/chart8_small_multiples.json"],
+      ["#chart9", "specs/chart9_flow_map.json"],
       ["#chart11", "specs/chart11_lollipop.json"],
       ["#chart15", "specs/chart15_remittances_area.json"],
       ["#chart16", "specs/chart16_departures_area.json"]
@@ -488,7 +650,7 @@
     charts.forEach(([sel, spec]) => {
       if (sel === '#chart4') {
         vegaEmbed(sel, spec, { actions: false, renderer: "canvas" })
-          .then(function(result) {
+          .then(function (result) {
             window.dispatchEvent(new CustomEvent('bumpChartReady', { detail: { view: result.view } }));
           }).catch(console.error);
       } else if (sel === '#chart9') {
@@ -496,10 +658,10 @@
           .then(result => { chart9View = result.view; }).catch(console.error);
       } else if (sel === '#chart2') {
         vegaEmbed(sel, spec, { actions: false, renderer: "canvas" })
-          .then(function(result) {
+          .then(function (result) {
             chart2View = result.view;
-            chart2View.addEventListener('click', function() {
-              setTimeout(function() {
+            chart2View.addEventListener('click', function () {
+              setTimeout(function () {
                 if (!chart16View) return;
                 try {
                   const store = chart2View.data('bar_select_store');
@@ -510,7 +672,7 @@
                   } else {
                     chart16View.signal('selected_country', null).run();
                   }
-                } catch(e) {
+                } catch (e) {
                   chart16View.signal('selected_country', null).run();
                 }
               }, 50);
@@ -518,7 +680,7 @@
           }).catch(console.error);
       } else if (sel === '#chart16') {
         vegaEmbed(sel, spec, { actions: false, renderer: "canvas" })
-          .then(function(result) {
+          .then(function (result) {
             chart16View = result.view;
           }).catch(console.error);
       } else {
@@ -553,4 +715,5 @@
     }
   </script>
 </body>
+
 </html>
