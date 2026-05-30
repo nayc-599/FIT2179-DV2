@@ -47,7 +47,7 @@
       }
     },
     {
-      "mark": {"type": "point", "filled": true, "size": 80},
+      "mark": {"type": "point", "filled": true, "size": 250},
       "encoding": {
         "y": {
           "field": "display_country",
@@ -82,14 +82,14 @@
             "x": 800, "y": 120,
             "x2": 970, "y2": 220,
             "fill": "rgba(93,173,226,0.15)",
-            "stroke": "#2e86de",
+            "stroke": "#5dade2",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 885, "y": 145, "fontSize": 14, "fontWeight": "bold", "color": "#2e86de", "text": "3 countries recovered"}
+          "mark": {"type": "text", "x": 885, "y": 145, "fontSize": 14, "fontWeight": "bold", "color": "#5dade2", "text": "3 countries recovered"}
         },
         {
           "mark": {"type": "text", "x": 885, "y": 165, "fontSize": 12, "color": "#f0f6ff", "text": "India, Philippines & Japan"}
@@ -107,15 +107,15 @@
             "type": "rect",
             "x": 50, "y": 155,
             "x2": 260, "y2": 255,
-            "fill": "rgba(231,76,60,0.15)",
-            "stroke": "#e74c3c",
+            "fill": "rgba(230,57,70,0.12)",
+            "stroke": "#E63946",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 155, "y": 178, "fontSize": 14, "fontWeight": "bold", "color": "#e74c3c", "text": "China: largest gap"}
+          "mark": {"type": "text", "x": 155, "y": 178, "fontSize": 14, "fontWeight": "bold", "color": "#E63946", "text": "China: largest gap"}
         },
         {
           "mark": {"type": "text", "x": 155, "y": 198, "fontSize": 12, "color": "#f0f6ff", "text": "Still 17,940 departures below"}
@@ -133,15 +133,15 @@
             "type": "rect",
             "x": 450, "y": 35,
             "x2": 690, "y2": 130,
-            "fill": "rgba(212,172,13,0.15)",
-            "stroke": "#d4ac0d",
+            "fill": "rgba(160,82,45,0.12)",
+            "stroke": "#a0522d",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 570, "y": 58, "fontSize": 14, "fontWeight": "bold", "color": "#d4ac0d", "text": "Indonesia: almost recovered"}
+          "mark": {"type": "text", "x": 570, "y": 58, "fontSize": 14, "fontWeight": "bold", "color": "#a0522d", "text": "Indonesia: almost recovered"}
         },
         {
           "mark": {"type": "text", "x": 570, "y": 78, "fontSize": 12, "color": "#f0f6ff", "text": "Just 20 departures below"}

@@ -72,7 +72,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["Philippines","Indonesia","Japan","Malaysia","Korea South","USA","India","New Zealand","UK","China"],
-            "range": ["#00B4D8","#8B4513","#ff6b9d","#c5b4e3","#F4D03F","#a855f7","#E07020","#b8860b","#2e86de","#E63946"]
+            "range": ["#00B4D8","#a0522d","#ff6b9d","#c5b4e3","#F4D03F","#a855f7","#E07020","#b8860b","#2e86de","#E63946"]
           }
         },
         "opacity": {

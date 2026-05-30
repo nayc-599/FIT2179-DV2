@@ -7,7 +7,7 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#b8d0e8"
   },
-  "width": 900,
+  "width": 880,
   "height": 430,
   "data": {"url": "data/chart17_scatter.csv"},
   "params": [
@@ -53,7 +53,7 @@
         "size": {
           "field": "population_millions",
           "type": "quantitative",
-          "scale": {"range": [100, 3000]},
+          "scale": {"range": [50, 3000]},
           "legend": null
         },
         "color": {
@@ -63,7 +63,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#ff6eb4","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#ff6eb4","#54a0ff","#16a085","#a78bfa","#d35400","#d4ac0d"]
           }
         },
         "opacity": {
@@ -95,7 +95,7 @@
           "legend": null,
           "scale": {
             "domain": ["Asia","Europe","Oceania","Americas","Africa","Middle East"],
-            "range": ["#ff6eb4","#54a0ff","#16a085","#7d3c98","#d35400","#d4ac0d"]
+            "range": ["#ff6eb4","#54a0ff","#16a085","#a78bfa","#d35400","#d4ac0d"]
           }
         },
         "opacity": {
@@ -117,7 +117,7 @@
           "mark": {
             "type": "rect",
             "x": 560, "y": 280, "x2": 870, "y2": 385,
-            "fill": "rgba(46,134,222,0.15)",
+            "fill": "rgba(93,173,226,0.15)",
             "stroke": "#5dade2",
             "strokeWidth": 1.5,
             "cornerRadius": 6,

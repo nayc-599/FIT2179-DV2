@@ -33,7 +33,7 @@
           "legend": null,
           "scale": {
             "domain": ["China", "UK", "New Zealand", "India", "USA", "Korea South", "Malaysia", "Japan", "Indonesia", "Philippines"],
-            "range": ["#E63946", "#2e86de", "#b8860b", "#E07020", "#a855f7", "#F4D03F", "#c5b4e3", "#ff6b9d", "#8B4513", "#00B4D8"]}
+            "range": ["#E63946", "#2e86de", "#b8860b", "#E07020", "#a855f7", "#F4D03F", "#c5b4e3", "#ff6b9d", "#a0522d", "#00B4D8"]}
         },
         "tooltip": [
           {"field": "display_country", "title": "Country"},
@@ -77,8 +77,8 @@
           "mark": {
             "type": "rect",
             "x": 230, "y": 165, "x2": 470, "y2": 260,
-            "fill": "rgba(93,173,226,0.15)",
-            "stroke": "#2e86de",
+            "fill": "rgba(255,110,180,0.12)",
+            "stroke": "#ff6eb4",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
@@ -89,7 +89,7 @@
             "type": "text",
             "x": 350, "y": 190,
             "fontSize": 12, "fontWeight": "bold",
-            "color": "#2e86de",
+            "color": "#ff6eb4",
             "text": "Asia dominates the top 10"
           }
         },

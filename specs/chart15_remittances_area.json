@@ -2,12 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Remittances received over time \u2014 top emigrant-source countries",
-    "subtitle": "Personal remittances received (current US$). Hover to highlight a country.",
+    "subtitle": "Personal remittances received (current AUD). Hover to highlight a country. (2025 country-level data not yet available.)",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#b8d0e8"
   },
-  "width": 890,
+  "width": 870,
   "height": 380,
   "data": {"url": "data/chart_remittances_top10.csv"},
   "config": {
@@ -82,7 +82,7 @@
         "y": {
           "field": "remittances_usd",
           "type": "quantitative",
-          "title": "Remittances received (US$)",
+          "title": "Remittances received (A$)",
           "axis": {"format": "~s"},
           "stack": true
         },
@@ -97,7 +97,7 @@
           "legend": {"orient": "right"},
           "scale": {
             "domain": ["New Zealand","Malaysia","Japan","Korea South","UK","USA","Indonesia","China","Philippines","India"],
-            "range": ["#b8860b","#c5b4e3","#ff6b9d","#F4D03F","#2e86de","#a855f7","#8B4513","#E63946","#00B4D8","#E07020"]
+            "range": ["#b8860b","#c5b4e3","#ff6b9d","#F4D03F","#2e86de","#a855f7","#a0522d","#E63946","#00B4D8","#E07020"]
           }
         },
         "opacity": {
@@ -117,7 +117,7 @@
         "tooltip": [
           {"field": "display_country", "title": "Country"},
           {"field": "year", "title": "Year"},
-          {"field": "remittances_usd", "title": "Remittances (US$)", "format": "~s"}
+          {"field": "remittances_usd", "title": "Remittances (A$)", "format": "~s"}
         ]
       }
     },
@@ -128,15 +128,15 @@
           "mark": {
             "type": "rect",
             "x": 20, "y": 15, "x2": 280, "y2": 110,
-            "fill": "rgba(93,173,226,0.12)",
-            "stroke": "#5dade2",
+            "fill": "rgba(224,112,32,0.12)",
+            "stroke": "#E07020",
             "strokeWidth": 1.5,
             "cornerRadius": 6,
             "opacity": 0.95
           }
         },
         {
-          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 14, "fontWeight": "bold", "color": "#5dade2", "text": "India towers above all"}
+          "mark": {"type": "text", "x": 150, "y": 40, "fontSize": 14, "fontWeight": "bold", "color": "#E07020", "text": "India towers above all"}
         },
         {
           "mark": {"type": "text", "x": 150, "y": 60, "fontSize": 12, "color": "#f0f6ff", "text": "$19B in 2004 -> $120B in 2023"}

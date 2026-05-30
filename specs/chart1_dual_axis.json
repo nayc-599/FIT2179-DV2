@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Migration departures and remittances, 2005 to 2025",
-    "subtitle": "Overseas-born departures (left) and personal remittances received by Australia in AUD dollars (right)",
+    "subtitle": "Overseas-born departures (left) and personal remittances received by Australia in Australian dollars (right)",
     "font": "DM Sans",
     "subtitleFontSize": 12,
     "subtitleColor": "#b8d0e8"

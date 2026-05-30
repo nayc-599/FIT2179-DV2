@@ -95,7 +95,7 @@
           "legend": {"orient": "right", "columns": 1, "title": "Country"},
           "scale": {
             "domain": ["China","UK","New Zealand","India","USA","Korea South","Malaysia","Japan","Indonesia","Philippines"],
-            "range": ["#E63946","#2e86de","#b8860b","#E07020","#a855f7","#F4D03F","#c5b4e3","#ff6b9d","#8B4513","#00B4D8"]
+            "range": ["#E63946","#2e86de","#b8860b","#E07020","#a855f7","#F4D03F","#c5b4e3","#ff6b9d","#a0522d","#00B4D8"]
           }
         },
         "opacity": {
